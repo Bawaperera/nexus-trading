@@ -1,0 +1,55 @@
+# ── Python cache ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Environment / secrets ───────────────────────────────
+# NEVER commit your real .env — it has API keys
+.env
+*.key
+*.secret
+
+# ── Trained ML models (large binary files) ─────────────
+models/*.pkl
+models/*.joblib
+models/*.model
+*.pkl
+*.joblib
+
+# ── Logs and journal data ───────────────────────────────
+logs/
+*.log
+
+# ── Downloaded data cache ───────────────────────────────
+data/cache/
+*.csv
+nexus_dashboard_data.json
+
+# ── IDE and OS files ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter notebooks ───────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Test artifacts ──────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/

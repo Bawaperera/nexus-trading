@@ -1,0 +1,27 @@
+# NEXUS AI Trading System — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Data & market connectivity
+ccxt==4.5.57              # Exchange API (Binance WebSocket + REST)
+yfinance==1.4.1           # Stock/crypto historical data (backtesting)
+websockets==16.0          # Real-time WebSocket price stream
+requests==2.33.1          # HTTP for news APIs and sentiment feeds
+feedparser==6.0.12        # RSS news feeds (CoinDesk, CoinTelegraph)
+
+# Data processing
+pandas==3.0.2
+numpy==2.4.4
+
+# Technical indicators
+ta==0.11.0                # RSI, MACD, ATR, Bollinger Bands, etc.
+
+# Machine learning
+scikit-learn==1.8.0       # Walk-forward validation, preprocessing
+xgboost==3.2.0            # Primary prediction model
+joblib==1.5.3             # Model serialization (save/load)
+
+# Utilities
+python-dotenv==1.2.2      # Load .env config files
+
+# Optional — uncomment to enable SHAP explainability charts
+# shap>=0.46.0

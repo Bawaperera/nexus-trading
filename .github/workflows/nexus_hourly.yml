@@ -1,13 +1,17 @@
 # NEXUS — Free Hourly Runner
 # Runs automatically every hour using GitHub's free computers.
-# No server needed. No credit card. 100% free.
+# Signal appears on the Actions run page — no need to find a CSV file.
 
 name: NEXUS Hourly Signal
 
 on:
   schedule:
     - cron: "0 * * * *"   # every hour at :00 (UTC)
-  workflow_dispatch:        # also allow manual trigger from GitHub UI
+  workflow_dispatch:        # manual trigger from GitHub Actions tab
+
+# ── REQUIRED: lets the bot commit signals_log.csv back to the repo ──────────
+permissions:
+  contents: write
 
 jobs:
   run-nexus:
@@ -15,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    # Use Node.js 24 to avoid deprecation warning (required from Sept 2026)
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -23,6 +26,8 @@ jobs:
       # ── Get the code ────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # ── Set up Python ────────────────────────────────────────────────────────
       - name: Set up Python 3.11
@@ -46,11 +51,12 @@ jobs:
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_nexus.py
 
-      # ── Save signal log back to repo ─────────────────────────────────────────
-      - name: Commit updated signal log
+      # ── Save signal log to repo ──────────────────────────────────────────────
+      - name: Commit signal log
         run: |
           git config user.name  "NEXUS Bot"
           git config user.email "nexus@github-actions"
-          git add logs/signals_log.csv
+          mkdir -p logs
+          git add -f logs/signals_log.csv
           git diff --staged --quiet || git commit -m "signal: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push

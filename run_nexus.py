@@ -36,6 +36,7 @@ def fetch_live_hourly_data(symbol: str = "BTC/USDT", limit: int = 500):
     """Fetch recent hourly candles with a fallback when Binance is unavailable."""
     import ccxt
     import pandas as pd
+    import yfinance as yf
 
     def _fetch_from_exchange(exchange_id: str, market_symbol: str):
         exchange_class = getattr(ccxt, exchange_id)
@@ -51,8 +52,6 @@ def fetch_live_hourly_data(symbol: str = "BTC/USDT", limit: int = 500):
         df = _fetch_from_exchange("binance", symbol)
         source = "Binance"
     except Exception as e:
-        import yfinance as yf
-
         usd_symbol = symbol.replace("USDT", "USD")
         fallback_exchanges = [("coinbase", "Coinbase"), ("kraken", "Kraken")]
         df = None

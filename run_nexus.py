@@ -3,14 +3,15 @@ NEXUS — Hourly Runner
 Designed to run inside GitHub Actions every hour (completely free).
 
 What it does in ~60 seconds:
-  1. Fetches 500 hours of live BTC/USDT data (Binance public API — no key needed)
+  1. Fetches 2 years of live BTC hourly data via yfinance (no API key, no geo-block)
   2. Engineers 102 features
-  3. Trains XGBoost on all historical data (~5 seconds)
-  4. Fetches live news sentiment + Fear & Greed Index
-  5. Generates signal (BUY / SELL / HOLD)
-  6. Appends result to logs/signals_log.csv
-  7. Prints full report
-  8. Sends Telegram alert if BUY or SELL (optional)
+  3. Cleans inf/NaN values from feature matrix
+  4. Trains XGBoost on all historical data (~5 seconds)
+  5. Fetches live news sentiment + Fear & Greed Index
+  6. Generates signal (BUY / SELL / HOLD)
+  7. Appends result to logs/signals_log.csv
+  8. Prints full report
+  9. Sends Telegram alert if BUY or SELL (optional)
 """
 
 import sys, os, logging, warnings, json, csv
@@ -38,16 +39,26 @@ def main():
     log.info("=" * 55)
 
     # ── 1. Fetch live hourly BTC data ─────────────────────────────────────────
-    log.info("Fetching live BTC/USDT hourly data from Binance...")
-    import ccxt
-    exchange = ccxt.binance({"enableRateLimit": True})
-
-    ohlcv = exchange.fetch_ohlcv("BTC/USDT", "1h", limit=500)
-
+    # Using yfinance instead of ccxt/Binance because:
+    #   - Binance blocks GitHub Actions servers (US geo-restriction, HTTP 451)
+    #   - yfinance pulls from Yahoo Finance — no API key, no geo-blocks, always works
+    log.info("Fetching live BTC/USDT hourly data via yfinance...")
+    import yfinance as yf
     import pandas as pd
-    df = pd.DataFrame(ohlcv, columns=["timestamp", "open", "high", "low", "close", "volume"])
-    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
-    df = df.set_index("timestamp").astype(float)
+
+    raw = yf.download("BTC-USD", period="2y", interval="1h", progress=False, auto_adjust=True)
+
+    if raw.empty:
+        raise RuntimeError("yfinance returned no data — check your internet connection")
+
+    # Flatten MultiIndex columns (yfinance sometimes returns them)
+    if isinstance(raw.columns, pd.MultiIndex):
+        raw.columns = raw.columns.get_level_values(0)
+
+    raw.columns = [c.lower() for c in raw.columns]
+    raw.index   = pd.to_datetime(raw.index, utc=True)
+
+    df = raw[["open", "high", "low", "close", "volume"]].dropna().copy()
     df["symbol"]    = "BTC/USDT"
     df["timeframe"] = "1h"
 
@@ -60,7 +71,7 @@ def main():
     fe      = FeatureEngineer(target_horizon=1, target_pct=0.003)
     feat_df = fe.build(df)
     X, y    = fe.get_targets(feat_df)
-    log.info(f"Feature matrix: {X.shape[0]} samples × {X.shape[1]} features")
+    log.info(f"Feature matrix: {X.shape[0]} samples x {X.shape[1]} features")
 
     # ── 2b. Clean inf/NaN values ──────────────────────────────────────────────
     # Some features (VWAP, AD-line pct_change) can produce inf when volume = 0
@@ -73,14 +84,14 @@ def main():
         log.info(f"Cleaning {bad_rows.sum()} rows with inf/NaN (VWAP/volume edge cases)...")
         X = X[~bad_rows]
         y = y[~bad_rows]
-    log.info(f"Clean feature matrix: {X.shape[0]} rows × {X.shape[1]} features")
+    log.info(f"Clean feature matrix: {X.shape[0]} rows x {X.shape[1]} features")
 
     # ── 3. Train XGBoost ──────────────────────────────────────────────────────
     log.info("Training XGBoost model...")
     from models.model_trainer import ModelTrainer
-    trainer = ModelTrainer(n_splits=3, model_dir="models")   # 3 folds = faster
+    trainer = ModelTrainer(n_splits=3, model_dir="models")
     model   = trainer.train_final(X, y)
-    log.info("Model trained ✅")
+    log.info("Model trained")
 
     # ── 4. Get model prediction ───────────────────────────────────────────────
     pred        = trainer.predict(model, X)
@@ -93,7 +104,7 @@ def main():
     collector      = NewsCollector()
     sentiment      = collector.get_sentiment_report()
     log.info(f"Sentiment: {sentiment.composite_score:+.3f} ({sentiment.sentiment_label})")
-    log.info(f"Fear & Greed: {sentiment.fear_greed_value} — {sentiment.fear_greed_label}")
+    log.info(f"Fear & Greed: {sentiment.fear_greed_value} -- {sentiment.fear_greed_label}")
 
     # ── 6. Signal generation ──────────────────────────────────────────────────
     latest = feat_df.iloc[-1]
@@ -179,21 +190,21 @@ def send_telegram(signal, order, sentiment, price):
     """Send a Telegram notification when there's a trade signal."""
     import requests
 
-    icon = "🟢" if signal.action == "BUY" else "🔴"
+    icon = "BUY" if signal.action == "BUY" else "SELL"
     sl   = f"${order['stop_loss']:,.2f}"   if order and order.get("approved") else "n/a"
     tp   = f"${order['take_profit']:,.2f}" if order and order.get("approved") else "n/a"
     size = f"${order['position_size_usd']:,.2f}" if order and order.get("approved") else "n/a"
 
     msg = (
-        f"{icon} *NEXUS {signal.action} SIGNAL*\n\n"
-        f"💰 Price:      `${price:,.2f}`\n"
-        f"🎯 Confidence: `{signal.confidence:.0%}`\n"
-        f"🛑 Stop Loss:  `{sl}`\n"
-        f"✅ Take Profit:`{tp}`\n"
-        f"📊 Size:       `{size}`\n\n"
-        f"📰 Sentiment: `{sentiment.composite_score:+.3f}` ({sentiment.sentiment_label})\n"
-        f"😨 Fear/Greed: `{sentiment.fear_greed_value}` ({sentiment.fear_greed_label})\n\n"
-        f"_{signal.reasoning[0]}_"
+        f"*NEXUS {signal.action} SIGNAL*\n\n"
+        f"Price:       ${price:,.2f}\n"
+        f"Confidence:  {signal.confidence:.0%}\n"
+        f"Stop Loss:   {sl}\n"
+        f"Take Profit: {tp}\n"
+        f"Size:        {size}\n\n"
+        f"Sentiment: {sentiment.composite_score:+.3f} ({sentiment.sentiment_label})\n"
+        f"Fear/Greed: {sentiment.fear_greed_value} ({sentiment.fear_greed_label})\n\n"
+        f"{signal.reasoning[0]}"
     )
 
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -203,7 +214,7 @@ def send_telegram(signal, order, sentiment, price):
             "text":       msg,
             "parse_mode": "Markdown",
         }, timeout=10)
-        log.info("Telegram alert sent ✅")
+        log.info("Telegram alert sent")
     except Exception as e:
         log.warning(f"Telegram failed: {e}")
 

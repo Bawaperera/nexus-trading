@@ -1,0 +1,61 @@
+# NEXUS — Free Hourly Runner
+# Runs automatically every hour using GitHub's free computers.
+# No server needed. No credit card. 100% free.
+#
+# What happens every hour:
+#   1. GitHub spins up a free Ubuntu machine
+#   2. Installs Python dependencies
+#   3. Runs run_nexus.py (fetches live BTC data → signal → logs result)
+#   4. Commits the updated signals_log.csv back to your repo
+#   5. Machine shuts down (you pay nothing)
+#
+# You can also trigger it manually from the GitHub Actions tab.
+
+name: NEXUS Hourly Signal
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour at :00 (UTC)
+  workflow_dispatch:        # also allow manual trigger from GitHub UI
+
+jobs:
+  run-nexus:
+    name: Generate trading signal
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── Get the code ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Set up Python ────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"            # cache packages so installs are fast
+
+      # ── Install dependencies ─────────────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── Run NEXUS ────────────────────────────────────────────────────────────
+      - name: Run NEXUS signal engine
+        env:
+          TRADING_SYMBOL:    "BTC/USDT"
+          ACCOUNT_SIZE:      "1000"
+          RISK_PCT:          "0.01"
+          MIN_CONFIDENCE:    "0.58"
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_nexus.py
+
+      # ── Save signal log back to repo ─────────────────────────────────────────
+      - name: Commit updated signal log
+        run: |
+          git config user.name  "NEXUS Bot"
+          git config user.email "nexus@github-actions"
+          git add logs/signals_log.csv
+          git diff --staged --quiet || git commit -m "signal: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

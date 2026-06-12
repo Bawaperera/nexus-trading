@@ -32,24 +32,67 @@ TELEGRAM_TOKEN   = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID",   "")
 
 
+def fetch_live_hourly_data(symbol: str = "BTC/USDT", limit: int = 500):
+    """Fetch recent hourly candles with a fallback when Binance is unavailable."""
+    import ccxt
+    import pandas as pd
+
+    def _fetch_from_exchange(exchange_id: str, market_symbol: str):
+        exchange_class = getattr(ccxt, exchange_id)
+        exchange = exchange_class({"enableRateLimit": True})
+        ohlcv = exchange.fetch_ohlcv(market_symbol, "1h", limit=limit)
+        out = pd.DataFrame(ohlcv, columns=["timestamp", "open", "high", "low", "close", "volume"])
+        out["timestamp"] = pd.to_datetime(out["timestamp"], unit="ms", utc=True)
+        out = out.set_index("timestamp").astype(float)
+        return out
+
+    try:
+        log.info("Fetching live BTC/USDT hourly data from Binance...")
+        df = _fetch_from_exchange("binance", symbol)
+        source = "Binance"
+    except Exception as e:
+        import yfinance as yf
+
+        usd_symbol = symbol.replace("USDT", "USD")
+        fallback_exchanges = [("coinbase", "Coinbase"), ("kraken", "Kraken")]
+        df = None
+        source = None
+
+        log.warning(f"Binance data fetch failed ({e}). Trying fallback exchanges...")
+        for exchange_id, exchange_name in fallback_exchanges:
+            try:
+                df = _fetch_from_exchange(exchange_id, usd_symbol)
+                source = exchange_name
+                break
+            except Exception as exchange_error:
+                log.warning(f"{exchange_name} data fetch failed ({exchange_error}).")
+
+        if df is None:
+            log.warning("All exchange fallbacks failed. Falling back to yfinance...")
+            ticker = symbol.replace("/USDT", "-USD").replace("/", "-")
+            yf_df = yf.download(ticker, period="60d", interval="1h", progress=False)
+            if yf_df.empty:
+                raise RuntimeError("Fallback data fetch failed: yfinance returned no rows")
+            if isinstance(yf_df.columns, pd.MultiIndex):
+                yf_df.columns = yf_df.columns.get_level_values(0)
+            yf_df.columns = [c.lower() for c in yf_df.columns]
+            yf_df.index = pd.to_datetime(yf_df.index, utc=True)
+            df = yf_df[["open", "high", "low", "close", "volume"]].astype(float).tail(limit)
+            source = "yfinance"
+
+    df["symbol"] = symbol
+    df["timeframe"] = "1h"
+    log.info(f"Loaded {len(df)} candles from {source}")
+    return df
+
+
 def main():
     log.info("=" * 55)
     log.info("  NEXUS Hourly Run — " + datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
     log.info("=" * 55)
 
     # ── 1. Fetch live hourly BTC data ─────────────────────────────────────────
-    log.info("Fetching live BTC/USDT hourly data from Binance...")
-    import ccxt
-    exchange = ccxt.binance({"enableRateLimit": True})
-
-    ohlcv = exchange.fetch_ohlcv("BTC/USDT", "1h", limit=500)
-
-    import pandas as pd
-    df = pd.DataFrame(ohlcv, columns=["timestamp", "open", "high", "low", "close", "volume"])
-    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
-    df = df.set_index("timestamp").astype(float)
-    df["symbol"]    = "BTC/USDT"
-    df["timeframe"] = "1h"
+    df = fetch_live_hourly_data(symbol=SYMBOL, limit=500)
 
     current_price = float(df["close"].iloc[-1])
     log.info(f"Current BTC price: ${current_price:,.2f} | {len(df)} candles loaded")

@@ -1,15 +1,10 @@
-# NEXUS — Free Hourly Runner
-# Runs automatically every hour using GitHub's free computers.
-# Signal appears on the Actions run page — no need to find a CSV file.
-
 name: NEXUS Hourly Signal
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour at :00 (UTC)
-  workflow_dispatch:        # manual trigger from GitHub Actions tab
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
-# ── REQUIRED: lets the bot commit signals_log.csv back to the repo ──────────
 permissions:
   contents: write
 
@@ -23,40 +18,40 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      # ── Get the code ────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── Set up Python ────────────────────────────────────────────────────────
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
 
-      # ── Install dependencies ─────────────────────────────────────────────────
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── Run NEXUS ────────────────────────────────────────────────────────────
       - name: Run NEXUS signal engine
         env:
           TRADING_SYMBOL:     "BTC/USDT"
+          TRADING_MODE:       "paper"
           ACCOUNT_SIZE:       "1000"
           RISK_PCT:           "0.01"
           MIN_CONFIDENCE:     "0.58"
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          BINANCE_API_KEY:     ${{ secrets.BINANCE_API_KEY }}
+          BINANCE_API_SECRET:  ${{ secrets.BINANCE_API_SECRET }}
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_nexus.py
 
-      # ── Save signal log to repo ──────────────────────────────────────────────
-      - name: Commit signal log
+      - name: Commit logs
         run: |
           git config user.name  "NEXUS Bot"
           git config user.email "nexus@github-actions"
           mkdir -p logs
-          git add -f logs/signals_log.csv
+          git add -f logs/signals_log.csv    || true
+          git add -f logs/validation_log.csv || true
           git diff --staged --quiet || git commit -m "signal: $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase origin main
+          git push origin main

@@ -1,0 +1,2 @@
+timestamp,price,action,confidence,model_buy,model_sell,sentiment,fear_greed,fg_label,regime,atr,stop_loss,take_profit,position_usd,reasoning
+2026-06-12T06:11:33.043369+00:00,63246.0,HOLD,5.5,14.4,16.4,-0.3168,12,Extreme Fear,1,387.27,,,,Model: BUY 14% / SELL 16% / HOLD 69% | Sentiment: -0.317 | Fear/Greed: 12 | ✅ Market regime: UPTREND — BUY signals favoured

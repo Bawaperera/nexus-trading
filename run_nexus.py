@@ -50,7 +50,7 @@ def validate_past_signals():
     os.makedirs("logs", exist_ok=True)
 
     if not os.path.exists(SIGNALS_CSV):
-        return {"total": 0, "wins": 0, "losses": 0, "win_rate": 0.0, "pending": 0}
+        return {"total": 0, "wins": 0, "losses": 0, "win_rate": 0.0, "pending": 0, "new_resolved": 0, "all_rows": []}
 
     # Load past signals
     signals = pd.read_csv(SIGNALS_CSV)
@@ -61,7 +61,7 @@ def validate_past_signals():
     ].copy()
 
     if signals.empty:
-        return {"total": 0, "wins": 0, "losses": 0, "win_rate": 0.0, "pending": 0}
+        return {"total": 0, "wins": 0, "losses": 0, "win_rate": 0.0, "pending": 0, "new_resolved": 0, "all_rows": []}
 
     # Load already validated
     already_validated = set()

@@ -52,5 +52,8 @@ jobs:
           git add -f logs/signals_log.csv    || true
           git add -f logs/validation_log.csv || true
           git diff --staged --quiet || git commit -m "signal: $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git pull --rebase origin main
-          git push origin main
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && echo "Pushed on attempt $i" && break
+            echo "Attempt $i failed, retrying in ${i}s..."
+            sleep $i
+          done

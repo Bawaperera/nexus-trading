@@ -47,7 +47,7 @@ def fetch_live_hourly_data(symbol: str = "BTC/USDT", limit: int = 500):
         return out
 
     try:
-        log.info("Fetching live BTC/USDT hourly data from Binance...")
+        log.info(f"Fetching live {symbol} hourly data from Binance...")
         df = _fetch_from_exchange("binance", symbol)
         source = "Binance"
     except Exception as e:

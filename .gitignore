@@ -20,6 +20,11 @@ env/
 *.key
 *.secret
 
+# ── Test files with credentials ─────────────────────────
+# test_telegram.py reads from .env so it's safe to keep,
+# but gitignore it anyway to avoid accidents
+test_telegram.py
+
 # ── Trained ML models (large binary files) ─────────────
 models/*.pkl
 models/*.joblib
@@ -28,8 +33,8 @@ models/*.model
 *.joblib
 
 # ── Logs ────────────────────────────────────────────────
-# Only ignore .log files — NOT the signals_log.csv
-# signals_log.csv is auto-committed by GitHub Actions every hour
+# Only ignore .log files — NOT the signals_log.csv or validation_log.csv
+# Those CSVs are auto-committed by GitHub Actions every hour
 logs/*.log
 nexus.log
 

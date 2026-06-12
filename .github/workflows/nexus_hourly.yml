@@ -1,15 +1,6 @@
 # NEXUS — Free Hourly Runner
 # Runs automatically every hour using GitHub's free computers.
 # No server needed. No credit card. 100% free.
-#
-# What happens every hour:
-#   1. GitHub spins up a free Ubuntu machine
-#   2. Installs Python dependencies
-#   3. Runs run_nexus.py (fetches live BTC data → signal → logs result)
-#   4. Commits the updated signals_log.csv back to your repo
-#   5. Machine shuts down (you pay nothing)
-#
-# You can also trigger it manually from the GitHub Actions tab.
 
 name: NEXUS Hourly Signal
 
@@ -24,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
+    # Use Node.js 24 to avoid deprecation warning (required from Sept 2026)
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       # ── Get the code ────────────────────────────────────────────────────────
       - name: Checkout repository
@@ -34,7 +29,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"            # cache packages so installs are fast
+          cache: "pip"
 
       # ── Install dependencies ─────────────────────────────────────────────────
       - name: Install dependencies
@@ -43,10 +38,10 @@ jobs:
       # ── Run NEXUS ────────────────────────────────────────────────────────────
       - name: Run NEXUS signal engine
         env:
-          TRADING_SYMBOL:    "BTC/USDT"
-          ACCOUNT_SIZE:      "1000"
-          RISK_PCT:          "0.01"
-          MIN_CONFIDENCE:    "0.58"
+          TRADING_SYMBOL:     "BTC/USDT"
+          ACCOUNT_SIZE:       "1000"
+          RISK_PCT:           "0.01"
+          MIN_CONFIDENCE:     "0.58"
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_nexus.py

@@ -3,7 +3,7 @@ NEXUS — Hourly Runner
 Designed to run inside GitHub Actions every hour (completely free).
 
 What it does in ~60 seconds:
-  1. Fetches 500 hours of live BTC/USDT data (Binance public API — no key needed)
+  1. Fetches 2 years of live BTC hourly data via yfinance (no API key, no geo-block)
   2. Engineers 102 features
   3. Trains XGBoost on all historical data (~5 seconds)
   4. Fetches live news sentiment + Fear & Greed Index
@@ -38,16 +38,26 @@ def main():
     log.info("=" * 55)
 
     # ── 1. Fetch live hourly BTC data ─────────────────────────────────────────
-    log.info("Fetching live BTC/USDT hourly data from Binance...")
-    import ccxt
-    exchange = ccxt.binance({"enableRateLimit": True})
-
-    ohlcv = exchange.fetch_ohlcv("BTC/USDT", "1h", limit=500)
-
+    # Using yfinance instead of ccxt/Binance because:
+    #   - Binance blocks GitHub Actions servers (US geo-restriction, HTTP 451)
+    #   - yfinance pulls from Yahoo Finance — no API key, no geo-blocks, always works
+    log.info("Fetching live BTC/USDT hourly data via yfinance...")
+    import yfinance as yf
     import pandas as pd
-    df = pd.DataFrame(ohlcv, columns=["timestamp", "open", "high", "low", "close", "volume"])
-    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
-    df = df.set_index("timestamp").astype(float)
+
+    raw = yf.download("BTC-USD", period="2y", interval="1h", progress=False, auto_adjust=True)
+
+    if raw.empty:
+        raise RuntimeError("yfinance returned no data — check your internet connection")
+
+    # Flatten MultiIndex columns if present (yfinance sometimes returns them)
+    if isinstance(raw.columns, pd.MultiIndex):
+        raw.columns = raw.columns.get_level_values(0)
+
+    raw.columns = [c.lower() for c in raw.columns]
+    raw.index   = pd.to_datetime(raw.index, utc=True)
+
+    df = raw[["open", "high", "low", "close", "volume"]].dropna().copy()
     df["symbol"]    = "BTC/USDT"
     df["timeframe"] = "1h"
 

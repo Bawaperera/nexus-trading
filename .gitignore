@@ -27,13 +27,14 @@ models/*.model
 *.pkl
 *.joblib
 
-# ── Logs and journal data ───────────────────────────────
-logs/
-*.log
+# ── Logs ────────────────────────────────────────────────
+# Only ignore .log files — NOT the signals_log.csv
+# signals_log.csv is auto-committed by GitHub Actions every hour
+logs/*.log
+nexus.log
 
 # ── Downloaded data cache ───────────────────────────────
 data/cache/
-*.csv
 nexus_dashboard_data.json
 
 # ── IDE and OS files ────────────────────────────────────

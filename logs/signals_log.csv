@@ -8,3 +8,4 @@ timestamp,price,action,confidence,model_buy,model_sell,sentiment,fear_greed,fg_l
 2026-06-12T19:09:18.518155+00:00,63688.33,HOLD,3.1,15.1,15.2,-0.2135,12,Extreme Fear,1,415.83,,,,Model: BUY 15% / SELL 15% / HOLD 70% | Sentiment: -0.213 | Fear/Greed: 12
 2026-06-12T21:51:36.998327+00:00,63420.99,HOLD,2.6,17.3,15.3,-0.2096,12,Extreme Fear,0,399.47,,,,Model: BUY 17% / SELL 15% / HOLD 67% | Sentiment: -0.210 | Fear/Greed: 12
 2026-06-12T23:22:18.337363+00:00,63395.6,HOLD,2.0,32.2,24.6,-0.2176,12,Extreme Fear,0,363.79,,,,Model: BUY 32% / SELL 25% / HOLD 43% | Sentiment: -0.218 | Fear/Greed: 12
+2026-06-13T04:10:17.496498+00:00,63461.59,HOLD,19.3,19.9,26.5,-0.6997,13,Extreme Fear,0,315.83,,,,Model: BUY 20% / SELL 26% / HOLD 54% | Sentiment: -0.700 | Fear/Greed: 13

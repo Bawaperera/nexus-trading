@@ -41,7 +41,7 @@ class ConfluenceEngine:
     """
 
     SIGNAL_THRESHOLD     = 60    # minimum score to send Telegram alert
-    AUTO_TRADE_THRESHOLD = 75    # minimum score to place a real/paper order
+    AUTO_TRADE_THRESHOLD = 65    # minimum score to place a real/paper order
     MIN_RR               = 2.0   # minimum risk:reward ratio
     AVG_VOLUME_PERIODS   = 20    # periods for average volume calculation
 

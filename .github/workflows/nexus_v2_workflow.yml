@@ -1,0 +1,69 @@
+name: NEXUS v2 — Professional Signal System
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Every hour on the hour
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  TRADING_MODE:   paper         # Change to "live" when you're ready
+  ACCOUNT_SIZE:   "1000"        # Your total trading capital in USDT
+  TRADING_SYMBOL: "BTC/USDT"
+
+jobs:
+  nexus-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install \
+            yfinance==1.4.1 \
+            ccxt==4.5.57 \
+            pandas==3.0.2 \
+            numpy==2.4.4 \
+            ta==0.11.0 \
+            scikit-learn==1.8.0 \
+            xgboost==3.2.0 \
+            requests==2.33.1 \
+            feedparser==6.0.12 \
+            python-dotenv==1.2.2 \
+            scipy==1.15.3
+
+      - name: Run NEXUS v2
+        env:
+          BINANCE_API_KEY:     ${{ secrets.BINANCE_API_KEY }}
+          BINANCE_API_SECRET:  ${{ secrets.BINANCE_API_SECRET }}
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_nexus_v2.py
+
+      - name: Commit logs and memory
+        run: |
+          git config user.name  "NEXUS v2 Bot"
+          git config user.email "nexus@github-actions"
+          git add logs/signals_v2.csv logs/trade_memory.csv || true
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "NEXUS v2: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Retry $i..."
+            sleep $i
+          done

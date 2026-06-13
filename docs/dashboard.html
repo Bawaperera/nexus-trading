@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS v2 — Paper Trading Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060c14;--surface:#0c1520;--surface2:#0a1826;
+  --border:#1a2840;--border2:#111d2a;
+  --cyan:#00d4aa;--green:#22c55e;--red:#f43f5e;
+  --amber:#f59e0b;--blue:#3b82f6;
+  --text:#c8d3e0;--muted:#4a6080;
+  --font:'Space Grotesk',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;padding:14px;font-size:14px;line-height:1.4}
+
+/* Layout */
+.hdr{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-radius:10px}
+.logo{font-size:15px;font-weight:600;color:var(--cyan);letter-spacing:.5px}
+.paper-badge{background:#1a3320;border:1px solid #22c55e44;color:var(--green);font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500}
+.price-block{display:flex;align-items:baseline;gap:6px}
+.price-val{font-family:var(--mono);font-size:22px;font-weight:500;color:#e2e8f0;transition:color .3s}
+.price-flash{color:var(--cyan)!important}
+.price-chg{font-size:12px}
+.up{color:var(--green)}
+.dn{color:var(--red)}
+.hdr-right{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.dot{width:7px;height:7px;background:var(--green);border-radius:50%;display:inline-block;margin-right:5px;box-shadow:0 0 6px #22c55e77}
+.stat-bold{color:#e2e8f0;font-weight:500}
+
+/* Stats row */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:5px}
+.stat-val{font-family:var(--mono);font-size:20px;font-weight:500;color:#e2e8f0}
+.stat-val.g{color:var(--green)}.stat-val.r{color:var(--red)}.stat-val.c{color:var(--cyan)}.stat-val.a{color:var(--amber)}
+.stat-sub{font-size:10px;color:var(--muted);margin-top:3px}
+
+/* Cards */
+.main{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.bottom{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}
+@media(max-width:900px){.main,.bottom{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px}
+.card-title{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card-title::before{content:'';display:inline-block;width:3px;height:12px;background:var(--cyan);border-radius:2px}
+
+/* Chart */
+.chart-wrap{width:100%;height:150px;position:relative}
+.chart-wrap canvas{width:100%!important;height:100%!important}
+
+/* Signal list */
+.sig-list{display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto}
+.sig-row{display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:8px;padding:7px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;font-size:11px;cursor:default;transition:border-color .2s}
+.sig-row:hover{border-color:#2a3a50}
+.sig-name{font-weight:500;color:#c8d3e0}
+.sig-tf{font-size:9px;color:var(--muted);background:#141f2e;padding:2px 5px;border-radius:4px;margin-left:4px}
+.sig-status{font-size:9px;color:var(--muted)}
+.dir-badge{font-size:9px;padding:2px 7px;border-radius:4px;font-weight:600;font-family:var(--mono)}
+.dir-badge.buy{background:#0d2418;color:var(--green);border:1px solid #22c55e44}
+.dir-badge.sell{background:#2a0d14;color:var(--red);border:1px solid #f43f5e44}
+.score-pill{font-family:var(--mono);font-size:10px;width:32px;text-align:center;padding:2px 0;border-radius:4px}
+.sc-h{background:#0a2035;color:var(--cyan);border:1px solid #00d4aa44}
+.sc-m{background:#1a2010;color:#84cc16;border:1px solid #84cc1644}
+.sc-l{background:#1a1a10;color:var(--amber);border:1px solid #f59e0b44}
+.outcome{font-size:9px;padding:2px 6px;border-radius:4px;font-family:var(--mono);font-weight:600}
+.out-win{background:#0d2418;color:var(--green)}
+.out-loss{background:#2a0d14;color:var(--red)}
+.out-open{background:#0a1a2a;color:var(--muted)}
+
+/* Pattern table */
+.ptable{width:100%;border-collapse:collapse;font-size:11px}
+.ptable th{color:var(--muted);text-align:left;padding:4px 6px;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)}
+.ptable td{padding:5px 6px;border-bottom:1px solid var(--border2);color:var(--text)}
+.wr-bar-bg{background:var(--border2);border-radius:2px;height:4px;width:50px;overflow:hidden;display:inline-block;vertical-align:middle}
+.wr-bar{height:100%;border-radius:2px}
+.bar-g{background:var(--green)}.bar-a{background:var(--amber)}.bar-r{background:var(--red)}
+
+/* Open trades */
+.open-trade{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:10px;margin-bottom:8px;font-size:11px}
+.ot-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.ot-name{font-weight:600;color:#c8d3e0;font-size:12px;margin-bottom:2px}
+.ot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ot-item label{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}
+.ot-item span{font-family:var(--mono);font-size:11px}
+.prog-wrap{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);margin-top:7px}
+.prog-bg{flex:1;height:3px;background:var(--border2);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:var(--cyan);border-radius:2px}
+
+/* Scrollbar */
+*::-webkit-scrollbar{width:3px;height:3px}
+*::-webkit-scrollbar-track{background:var(--surface2)}
+*::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+
+/* Loader */
+.loader{text-align:center;padding:40px;color:var(--muted);font-size:13px}
+.empty{text-align:center;padding:20px;color:var(--muted);font-size:12px}
+
+/* Go-live banner */
+.go-live-bar{background:#0a1826;border:1px solid #1a2840;border-radius:6px;padding:10px 14px;margin-top:10px;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.go-live-bar strong{color:#c8d3e0}
+.progress-30{background:var(--border2);border-radius:3px;height:6px;flex:1;overflow:hidden;min-width:80px}
+.progress-30-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:3px}
+
+/* Refresh badge */
+.refresh-dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;display:inline-block;margin-right:4px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+</style>
+</head>
+<body>
+
+<div id="root">
+  <div class="loader">Loading NEXUS v2 data...</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+// ─── CONFIG — update your GitHub username and repo name ───────────────────────
+const GITHUB_USER   = "Bawaperera";
+const GITHUB_REPO   = "nexus-trading";
+const GITHUB_BRANCH = "main";
+
+const RAW_BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}`;
+const MEMORY_URL  = `${RAW_BASE}/logs/trade_memory.csv`;
+const SIGNALS_URL = `${RAW_BASE}/logs/signals_v2.csv`;
+const COINGECKO   = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true&include_24hr_vol=true";
+const FNG_URL     = "https://api.alternative.me/fng/?limit=1";
+
+// ─── Parse CSV ─────────────────────────────────────────────────────────────────
+function parseCSV(text) {
+  const lines = text.trim().split("\n").filter(Boolean);
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(",").map(h => h.trim().replace(/"/g,''));
+  return lines.slice(1).map(line => {
+    const vals = line.split(",").map(v => v.trim().replace(/"/g,''));
+    const row = {};
+    headers.forEach((h,i) => row[h] = vals[i] || "");
+    return row;
+  });
+}
+
+// ─── Fetch with fallback ────────────────────────────────────────────────────────
+async function safeFetch(url) {
+  try {
+    const r = await fetch(url + "?t=" + Date.now());
+    if (!r.ok) return null;
+    return r.text ? await r.text() : await r.json();
+  } catch { return null; }
+}
+
+// ─── Format numbers ────────────────────────────────────────────────────────────
+const fmt = n => typeof n === "number" ? n.toLocaleString("en-US", {minimumFractionDigits:2,maximumFractionDigits:2}) : "—";
+const fmtPrice = n => n ? "$" + Number(n).toLocaleString("en-US",{minimumFractionDigits:0,maximumFractionDigits:0}) : "—";
+const fmtPnl = n => {
+  if (!n && n !== 0) return "—";
+  const num = Number(n);
+  return (num >= 0 ? "+" : "") + "$" + Math.abs(num).toFixed(2);
+};
+
+// ─── Compute stats from trade memory ──────────────────────────────────────────
+function computeStats(trades) {
+  const wins   = trades.filter(t => t.outcome === "WIN");
+  const losses = trades.filter(t => t.outcome === "LOSS");
+  const open   = trades.filter(t => t.outcome === "OPEN");
+  const closed = wins.length + losses.length;
+  const wr     = closed > 0 ? (wins.length / closed * 100).toFixed(1) : "—";
+  const totalPnl = trades.reduce((s,t) => s + (parseFloat(t.pnl_usd) || 0), 0);
+  const avgRR    = trades.filter(t=>t.risk_reward).reduce((s,t,_,a) => s + parseFloat(t.risk_reward||0)/a.length, 0);
+
+  // Best pattern
+  const patternWins = {};
+  trades.forEach(t => {
+    if (!patternWins[t.pattern_name]) patternWins[t.pattern_name] = {w:0,l:0};
+    if (t.outcome === "WIN") patternWins[t.pattern_name].w++;
+    if (t.outcome === "LOSS") patternWins[t.pattern_name].l++;
+  });
+  let bestPattern = "—", bestWR = 0;
+  Object.entries(patternWins).forEach(([name,{w,l}]) => {
+    const total = w + l;
+    if (total >= 2) {
+      const wr = w / total;
+      if (wr > bestWR) { bestWR = wr; bestPattern = name.replace(/_/g," "); }
+    }
+  });
+
+  // Equity curve data
+  let cum = 0;
+  const equityPoints = trades
+    .filter(t => t.outcome !== "OPEN" && t.closed_at)
+    .sort((a,b) => new Date(a.closed_at) - new Date(b.closed_at))
+    .map(t => {
+      cum += parseFloat(t.pnl_usd) || 0;
+      return { label: t.closed_at.slice(0,10), value: cum };
+    });
+
+  return { wins: wins.length, losses: losses.length, open: open.length,
+           wr, totalPnl, avgRR, bestPattern, equityPoints, patternWins };
+}
+
+// ─── Compute go-live readiness ─────────────────────────────────────────────────
+function goLiveStatus(stats, trades) {
+  const checks = [
+    { label: "≥30 signals",    met: trades.length >= 30,   val: trades.length },
+    { label: "≥55% win rate",  met: parseFloat(stats.wr) >= 55, val: stats.wr + "%" },
+    { label: "No 5+ loss run", met: !hasConsecutiveLosses(trades, 5), val: "ok" },
+    { label: "30 days running",met: false, val: "waiting" },
+  ];
+  const pct = Math.round(checks.filter(c=>c.met).length / checks.length * 100);
+  return { checks, pct };
+}
+function hasConsecutiveLosses(trades, n) {
+  let streak = 0;
+  for (const t of trades) {
+    if (t.outcome === "LOSS") { streak++; if (streak >= n) return true; }
+    else if (t.outcome === "WIN") streak = 0;
+  }
+  return false;
+}
+
+// ─── Score pill ────────────────────────────────────────────────────────────────
+function scorePill(score) {
+  const n = parseInt(score);
+  const cls = n >= 75 ? "sc-h" : n >= 60 ? "sc-m" : "sc-l";
+  return `<div class="score-pill ${cls}">${n}</div>`;
+}
+
+// ─── Signal row HTML ───────────────────────────────────────────────────────────
+function signalRow(s) {
+  const isBuy = s.direction === "bullish";
+  const outcomeMap = { WIN:"out-win", LOSS:"out-loss", OPEN:"out-open" };
+  const pnlStr = s.pnl_usd && s.pnl_usd !== "" ? fmtPnl(s.pnl_usd) : s.outcome;
+  return `
+  <div class="sig-row">
+    <div>
+      <div class="sig-name">${(s.pattern_name||s.pattern||"—").replace(/_/g," ")} <span class="sig-tf">${s.timeframe||""}</span></div>
+      <div class="sig-status">${s.status_at_signal||s.status||""}</div>
+    </div>
+    <div class="dir-badge ${isBuy?"buy":"sell"}">${isBuy?"BUY":"SELL"}</div>
+    ${scorePill(s.score)}
+    <div class="outcome ${outcomeMap[s.outcome]||"out-open"}">${pnlStr}</div>
+  </div>`;
+}
+
+// ─── Pattern table HTML ────────────────────────────────────────────────────────
+function patternTable(patternWins) {
+  const rows = Object.entries(patternWins)
+    .map(([name,{w,l}]) => ({ name, w, l, total: w+l, wr: w+l>0 ? w/(w+l) : 0 }))
+    .sort((a,b) => b.wr - a.wr || b.total - a.total);
+
+  if (!rows.length) return "<div class='empty'>No pattern data yet</div>";
+
+  return `<table class="ptable">
+    <thead><tr><th>Pattern</th><th>W</th><th>L</th><th>Win rate</th></tr></thead>
+    <tbody>
+    ${rows.map(r => {
+      const barCls = r.wr >= 0.6 ? "bar-g" : r.wr >= 0.4 ? "bar-a" : "bar-r";
+      const textCls = r.wr >= 0.6 ? "g" : r.wr >= 0.4 ? "a" : "r";
+      const wrPct = Math.round(r.wr * 100);
+      return `<tr>
+        <td>${r.name.replace(/_/g," ")}</td>
+        <td style="color:var(--green)">${r.w}</td>
+        <td style="color:var(--red)">${r.l}</td>
+        <td>
+          <div class="wr-bar-bg"><div class="wr-bar ${barCls}" style="width:${wrPct}%"></div></div>
+          <span style="color:var(--${textCls==="g"?"green":textCls==="a"?"amber":"red"});margin-left:6px">${wrPct}%</span>
+        </td>
+      </tr>`;
+    }).join("")}
+    </tbody>
+  </table>`;
+}
+
+// ─── Open trades HTML ──────────────────────────────────────────────────────────
+function openTradesHTML(trades) {
+  const open = trades.filter(t => t.outcome === "OPEN");
+  if (!open.length) return `<div class="empty">No open paper trades right now</div>`;
+
+  return open.map(t => {
+    const isBuy = t.direction === "bullish";
+    const entry = parseFloat(t.entry_price);
+    const sl    = parseFloat(t.stop_loss);
+    const tp    = parseFloat(t.take_profit);
+    const range = tp - sl;
+    const progress = range > 0 ? Math.max(0, Math.min(100, (entry - sl) / range * 100)) : 0;
+
+    return `<div class="open-trade">
+      <div class="ot-head">
+        <div>
+          <div class="ot-name">${(t.pattern_name||"").replace(/_/g," ")} — ${isBuy?"BUY":"SELL"}</div>
+          <div style="font-size:10px;color:var(--muted)">${t.timeframe||""} · score ${t.score||"—"}</div>
+        </div>
+        <div style="font-family:var(--mono);font-weight:600;color:var(--muted)">OPEN</div>
+      </div>
+      <div class="ot-grid">
+        <div class="ot-item"><label>Entry</label><span>${fmtPrice(entry)}</span></div>
+        <div class="ot-item"><label>Stop loss</label><span style="color:var(--red)">${fmtPrice(sl)}</span></div>
+        <div class="ot-item"><label>Target</label><span style="color:var(--green)">${fmtPrice(tp)}</span></div>
+      </div>
+      <div class="prog-wrap">
+        <span>SL</span>
+        <div class="prog-bg"><div class="prog-fill" style="width:${progress}%"></div></div>
+        <span>TP</span>
+        <span style="color:#c8d3e0;margin-left:4px">${progress.toFixed(0)}% toward target</span>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+// ─── Build equity chart ────────────────────────────────────────────────────────
+let equityChart = null;
+function buildChart(points) {
+  const ctx = document.getElementById("equity-chart");
+  if (!ctx) return;
+  if (equityChart) equityChart.destroy();
+
+  const labels = points.length ? points.map(p=>p.label) : ["Start","...","Now"];
+  const data   = points.length ? points.map(p=>p.value)  : [0,0,0];
+
+  equityChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        data,
+        borderColor: "#00d4aa",
+        backgroundColor: ctx => {
+          const g = ctx.chart.ctx.createLinearGradient(0,0,0,150);
+          g.addColorStop(0,"rgba(0,212,170,0.2)");
+          g.addColorStop(1,"rgba(0,212,170,0.01)");
+          return g;
+        },
+        fill: true,
+        borderWidth: 1.5,
+        pointRadius: 3,
+        pointBackgroundColor: p => p.raw >= 0 ? "#22c55e" : "#f43f5e",
+        tension: 0.4,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#0c1520",
+          borderColor: "#1a2840",
+          borderWidth: 1,
+          titleColor: "#4a6080",
+          bodyColor: "#c8d3e0",
+          callbacks: {
+            label: ctx => ` P&L: ${ctx.raw >= 0 ? "+" : ""}$${ctx.raw.toFixed(2)}`
+          }
+        }
+      },
+      scales: {
+        x: { display: false },
+        y: {
+          grid: { color: "#1a2840" },
+          ticks: { color: "#4a6080", font: { family: "JetBrains Mono", size: 10 },
+                   callback: v => "$" + v.toFixed(0) },
+        }
+      }
+    }
+  });
+}
+
+// ─── Render full dashboard ─────────────────────────────────────────────────────
+function render(btcData, fng, trades, signals) {
+  const stats  = computeStats(trades);
+  const goLive = goLiveStatus(stats, trades);
+
+  // Combine and sort recent signals
+  const recent = trades.slice().sort((a,b) => new Date(b.timestamp||0) - new Date(a.timestamp||0)).slice(0,12);
+
+  const btcPrice  = btcData?.bitcoin?.usd || 0;
+  const btcChg    = btcData?.bitcoin?.usd_24h_change || 0;
+  const fgVal     = parseInt(fng?.[0]?.value || 50);
+  const fgLabel   = fng?.[0]?.value_classification || "Neutral";
+  const fgColor   = fgVal > 60 ? "var(--green)" : fgVal < 40 ? "var(--red)" : "var(--amber)";
+
+  const lastRun = trades.length
+    ? new Date(trades[trades.length-1].timestamp).toLocaleString()
+    : "Not yet";
+
+  document.getElementById("root").innerHTML = `
+
+  <!-- Header -->
+  <div class="hdr">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <span class="logo">⬡ NEXUS v2</span>
+      <span class="paper-badge">PAPER MODE — No real money</span>
+      <div class="price-block">
+        <span class="price-val" id="btc-price">${btcPrice ? "$" + btcPrice.toLocaleString("en-US") : "Loading..."}</span>
+        <span class="price-chg ${btcChg >= 0 ? "up" : "dn"}">${btcChg >= 0 ? "▲" : "▼"} ${Math.abs(btcChg).toFixed(2)}%</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <span><span class="dot"></span>Live</span>
+      <span>F&G: <b style="color:${fgColor}">${fgVal} — ${fgLabel}</b></span>
+      <span>Last run: <b class="stat-bold">${lastRun}</b></span>
+      <span>Next: <b class="stat-bold" id="countdown">—</b></span>
+      <span><span class="refresh-dot"></span>Auto-refresh 2 min</span>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-label">Total signals</div>
+      <div class="stat-val">${trades.length}</div>
+      <div class="stat-sub">${stats.open} open · ${stats.wins + stats.losses} closed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Win rate</div>
+      <div class="stat-val ${parseFloat(stats.wr) >= 55 ? "g" : parseFloat(stats.wr) >= 45 ? "a" : "r"}">${stats.wr}%</div>
+      <div class="stat-sub">${stats.wins}W / ${stats.losses}L</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Paper P&L</div>
+      <div class="stat-val ${stats.totalPnl >= 0 ? "c" : "r"}">${fmtPnl(stats.totalPnl)}</div>
+      <div class="stat-sub">Simulated trades</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Avg R:R</div>
+      <div class="stat-val">${stats.avgRR.toFixed(1)}×</div>
+      <div class="stat-sub">min required: 2.0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Best pattern</div>
+      <div class="stat-val" style="font-size:14px;color:var(--cyan)">${stats.bestPattern || "—"}</div>
+      <div class="stat-sub">By win rate</div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="card">
+      <div class="card-title">Paper equity curve</div>
+      <div class="chart-wrap"><canvas id="equity-chart"></canvas></div>
+      ${stats.equityPoints.length === 0 ? "<div class='empty' style='margin-top:8px'>No closed trades yet — equity curve builds as trades close</div>" : ""}
+    </div>
+    <div class="card">
+      <div class="card-title">Recent signals (${recent.length})</div>
+      <div class="sig-list">
+        ${recent.length ? recent.map(signalRow).join("") : "<div class='empty'>No signals yet — system is scanning...</div>"}
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bottom">
+    <div class="card">
+      <div class="card-title">Pattern performance</div>
+      ${patternTable(stats.patternWins)}
+    </div>
+    <div class="card">
+      <div class="card-title">Open paper trades</div>
+      ${openTradesHTML(trades)}
+      <div class="go-live-bar" style="margin-top:${stats.open ? "10px" : "0"}">
+        <span>Go-live readiness:</span>
+        <div class="progress-30"><div class="progress-30-fill" style="width:${goLive.pct}%"></div></div>
+        <strong>${goLive.pct}%</strong>
+        <span style="font-size:10px">${goLive.checks.filter(c=>c.met).length}/${goLive.checks.length} checks passed</span>
+      </div>
+    </div>
+  </div>`;
+
+  // Build equity chart after DOM renders
+  buildChart(stats.equityPoints);
+
+  // Start countdown
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+
+function updateCountdown() {
+  const el = document.getElementById("countdown");
+  if (!el) return;
+  const now = new Date();
+  const mins = 59 - now.getMinutes();
+  const secs = 59 - now.getSeconds();
+  el.textContent = `${mins}m ${secs}s`;
+}
+
+// ─── Main load ─────────────────────────────────────────────────────────────────
+async function load() {
+  // Fetch everything in parallel
+  const [memText, sigText, priceText, fngText] = await Promise.all([
+    safeFetch(MEMORY_URL),
+    safeFetch(SIGNALS_URL),
+    fetch(COINGECKO).then(r => r.json()).catch(() => null),
+    fetch(FNG_URL).then(r => r.json()).then(d => d.data).catch(() => null),
+  ]);
+
+  const trades  = memText  ? parseCSV(memText)  : [];
+  const signals = sigText  ? parseCSV(sigText)  : [];
+
+  render(priceText, fngText, trades, signals);
+}
+
+// Load now and every 2 minutes
+load();
+setInterval(load, 120_000);
+</script>
+</body>
+</html>

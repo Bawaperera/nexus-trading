@@ -1,0 +1,1 @@
+signal_id,timestamp,pattern_name,direction,timeframe,status_at_signal,score,n_confluences,trade_type,entry_price,stop_loss,take_profit,risk_reward,spot_order_id,futures_order_id,position_size_usd,spot_sl_order_id,spot_tp_order_id,futures_sl_order_id,futures_tp_order_id,outcome,exit_price,pnl_usd,pnl_pct,closed_at,notes

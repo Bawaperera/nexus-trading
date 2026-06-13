@@ -1,4 +1,4 @@
-# NEXUS — AI Trading System
+# NEXUS - AI Trading System
 
 > An end-to-end algorithmic trading system using XGBoost, real-time news sentiment, and professional risk management. Built for educational purposes and paper trading.
 

@@ -7,8 +7,8 @@ and sentiment into a single score (0–100).
 A signal only fires when:
   1. A valid pattern is detected
   2. At least 3 independent confluences agree
-  3. Score >= 60 (for Telegram signal) or >= 75 (for auto-trade)
-  4. R:R >= 2.0
+  3. Score >= 60 (Telegram signal) or >= 60 (auto-trade)
+  4. R:R >= 2.0 (only achievable with RETEST_CONFIRMED tight stop)
 
 Scoring breakdown (max 100):
   Pattern quality:    0–25  (confidence × 25)
@@ -20,6 +20,12 @@ Scoring breakdown (max 100):
 
 Memory bonus/penalty: patterns with >65% recent win rate get +5,
 patterns with <50% recent win rate get -5.
+
+Note on R:R and auto-trading:
+  The 2.0 R:R requirement is only achievable when status = RETEST_CONFIRMED
+  because only that status uses a tight stop (1.5×ATR from breakout level).
+  BREAKOUT signals will Telegram-alert but NOT auto-trade (R:R ~1.0).
+  This is intentional — wait for the retest, then auto-trade.
 """
 
 import logging
@@ -40,50 +46,41 @@ class ConfluenceEngine:
             executor.execute(result)
     """
 
-    SIGNAL_THRESHOLD     = 60    # minimum score to send Telegram alert
-    AUTO_TRADE_THRESHOLD = 65    # minimum score to place a real/paper order
-    MIN_RR               = 2.0   # minimum risk:reward ratio
-    AVG_VOLUME_PERIODS   = 20    # periods for average volume calculation
+    SIGNAL_THRESHOLD     = 60   # minimum score to send Telegram alert
+    AUTO_TRADE_THRESHOLD = 60   # minimum score to place a paper/real order
+    MIN_RR               = 2.0  # minimum risk:reward — only RETEST_CONFIRMED achieves this
+    AVG_VOLUME_PERIODS   = 20
 
     def score(
         self,
-        pattern,                     # PatternSignal from pattern_engine.py
-        mtf_features: dict,          # from MultiTimeframeAnalyzer.analyze()
-        df_1h: pd.DataFrame,         # 1H OHLCV for volume check
-        sentiment_score: float,      # -1.0 to +1.0
-        fg_value: int,               # 0-100 Fear & Greed Index
-        trade_memory: list = None,   # past trades for pattern reliability
+        pattern,
+        mtf_features: dict,
+        df_1h: pd.DataFrame,
+        sentiment_score: float,
+        fg_value: int,
+        trade_memory: list = None,
     ) -> dict:
-        """
-        Score a pattern signal across all confluence factors.
-
-        Returns dict with score, reasons, tradeable flags, and trade params.
-        """
         total   = 0
         reasons = []
 
         # ── 1. Pattern quality (0–25) ──────────────────────────────────────────
         p_score = round(pattern.confidence * 25)
         total  += p_score
-        reasons.append(f"Pattern confidence {pattern.confidence:.0%}: +{p_score}")
+        reasons.append(f"+{p_score} Pattern confidence {pattern.confidence:.0%}")
 
         # ── 2. Multi-timeframe alignment (0–20) ───────────────────────────────
         direction = pattern.direction
-        bull_c = int(mtf_features.get("mtf_bull_count", 0))
-        bear_c = int(mtf_features.get("mtf_bear_count", 0))
-        aligned = bull_c if direction == "bullish" else bear_c
+        bull_c    = int(mtf_features.get("mtf_bull_count", 0))
+        bear_c    = int(mtf_features.get("mtf_bear_count", 0))
+        aligned   = bull_c if direction == "bullish" else bear_c
 
-        if aligned >= 4:
-            tf_score = 20
-        elif aligned >= 3:
-            tf_score = 15
-        elif aligned >= 2:
-            tf_score = 8
-        else:
-            tf_score = 0
+        if aligned >= 4:    tf_score = 20
+        elif aligned >= 3:  tf_score = 15
+        elif aligned >= 2:  tf_score = 8
+        else:               tf_score = 0
 
         total  += tf_score
-        reasons.append(f"MTF {aligned}/4 aligned: +{tf_score}")
+        reasons.append(f"+{tf_score} MTF {aligned}/4 timeframes aligned")
 
         # ── 3. Retest status (0–20) ────────────────────────────────────────────
         retest_scores = {
@@ -94,31 +91,24 @@ class ConfluenceEngine:
         }
         rt_score = retest_scores.get(pattern.status, 0)
         total   += rt_score
-        reasons.append(f"Status {pattern.status}: +{rt_score}")
+        reasons.append(f"+{rt_score} Status: {pattern.status}")
 
         # ── 4. Volume confirmation (0–15) ──────────────────────────────────────
-        # IMPORTANT: vol_ratio initialized here to avoid NameError if try block fails
         vol_ratio = 1.0
         vol_score = 0
         try:
             avg_vol    = float(df_1h["volume"].iloc[-self.AVG_VOLUME_PERIODS:].mean())
             recent_vol = float(df_1h["volume"].iloc[-3:].mean())
-            if avg_vol > 0:
-                vol_ratio = recent_vol / avg_vol
-            else:
-                vol_ratio = 1.0
+            vol_ratio  = recent_vol / avg_vol if avg_vol > 0 else 1.0
 
-            if vol_ratio >= 2.0:
-                vol_score = 15
-            elif vol_ratio >= 1.5:
-                vol_score = 8
-            elif vol_ratio >= 1.2:
-                vol_score = 4
+            if vol_ratio >= 2.0:   vol_score = 15
+            elif vol_ratio >= 1.5: vol_score = 8
+            elif vol_ratio >= 1.2: vol_score = 4
 
-            reasons.append(f"Volume {vol_ratio:.1f}x avg: +{vol_score}")
+            reasons.append(f"+{vol_score} Volume {vol_ratio:.1f}× average")
         except Exception as e:
             log.debug(f"Volume check failed: {e}")
-            reasons.append("Volume data unavailable: +0")
+            reasons.append("+0 Volume data unavailable")
 
         total += vol_score
 
@@ -127,48 +117,31 @@ class ConfluenceEngine:
         rsi_score = 0
 
         if direction == "bullish":
-            if rsi_val < 40:
-                rsi_score = 10   # Oversold + bullish pattern = excellent setup
-            elif rsi_val < 55:
-                rsi_score = 7    # Neutral RSI, room to run upward
-            elif rsi_val < 65:
-                rsi_score = 3    # Getting extended
-            else:
-                rsi_score = 0    # Overbought — risky to buy here
-        else:  # bearish
-            if rsi_val > 60:
-                rsi_score = 10
-            elif rsi_val > 45:
-                rsi_score = 7
-            elif rsi_val > 35:
-                rsi_score = 3
-            else:
-                rsi_score = 0    # Oversold — risky to short here
+            if rsi_val < 40:   rsi_score = 10
+            elif rsi_val < 55: rsi_score = 7
+            elif rsi_val < 65: rsi_score = 3
+        else:
+            if rsi_val > 60:   rsi_score = 10
+            elif rsi_val > 45: rsi_score = 7
+            elif rsi_val > 35: rsi_score = 3
 
         total   += rsi_score
-        reasons.append(f"RSI {rsi_val:.0f} ({'bullish' if rsi_score >= 7 else 'neutral' if rsi_score >= 3 else 'risky'}): +{rsi_score}")
+        label    = "oversold/overbought" if rsi_score == 10 else "neutral" if rsi_score >= 3 else "risky"
+        reasons.append(f"+{rsi_score} RSI {rsi_val:.0f} ({label})")
 
         # ── 6. Sentiment (0–10) ────────────────────────────────────────────────
         sent_score = 0
         if direction == "bullish":
-            if sentiment_score > 0.1:
-                sent_score = 10   # Positive news supports BUY
-            elif sentiment_score > -0.2:
-                sent_score = 6    # Neutral news is OK for BUY
-            else:
-                sent_score = 0    # Very bearish news blocks BUY signal
-        else:  # bearish
-            if sentiment_score < -0.1:
-                sent_score = 10
-            elif sentiment_score < 0.2:
-                sent_score = 6
-            else:
-                sent_score = 0
+            if sentiment_score > 0.1:    sent_score = 10
+            elif sentiment_score > -0.2: sent_score = 6
+        else:
+            if sentiment_score < -0.1:   sent_score = 10
+            elif sentiment_score < 0.2:  sent_score = 6
 
         total   += sent_score
-        reasons.append(f"Sentiment {sentiment_score:+.2f}: +{sent_score}")
+        reasons.append(f"+{sent_score} Sentiment {sentiment_score:+.2f}")
 
-        # ── Memory bonus/penalty from past trades ──────────────────────────────
+        # ── Memory bonus/penalty ───────────────────────────────────────────────
         memory_adj = 0
         if trade_memory:
             past = [
@@ -181,15 +154,14 @@ class ConfluenceEngine:
                 wr   = wins / len(past)
                 if wr >= 0.65:
                     memory_adj = 5
-                    reasons.append(f"Pattern memory {wr:.0%} WR ({len(past)} trades): +5")
+                    reasons.append(f"+5 Pattern memory {wr:.0%} WR ({len(past)} trades)")
                 elif wr < 0.50:
                     memory_adj = -5
-                    reasons.append(f"Pattern memory {wr:.0%} WR ({len(past)} trades): -5")
+                    reasons.append(f"-5 Pattern memory {wr:.0%} WR ({len(past)} trades)")
 
         total = max(0, min(100, total + memory_adj))
 
         # ── Count independent confluences ──────────────────────────────────────
-        # Each factor counts as one confluence if it contributed meaningfully
         n_confluences = sum([
             1 if tf_score  >= 8  else 0,
             1 if rt_score  >= 5  else 0,
@@ -201,16 +173,20 @@ class ConfluenceEngine:
         tradeable_signal    = (total >= self.SIGNAL_THRESHOLD   and n_confluences >= 3)
         tradeable_autotrade = (total >= self.AUTO_TRADE_THRESHOLD and n_confluences >= 3)
 
-        # Auto-trade also requires minimum R:R
+        # Auto-trade requires minimum R:R (only achievable with RETEST_CONFIRMED tight stop)
         if pattern.risk_reward < self.MIN_RR:
             tradeable_autotrade = False
-            reasons.append(f"R:R {pattern.risk_reward:.1f} < {self.MIN_RR} min: auto-trade blocked")
+            reasons.append(
+                f"R:R {pattern.risk_reward:.1f} < {self.MIN_RR} min: auto-trade blocked "
+                f"(will unlock when status = RETEST_CONFIRMED)"
+            )
 
         trade_type = self._decide_trade_type(total)
 
         log.info(
             f"Confluence [{pattern.name} {pattern.timeframe}] "
             f"score={total}/100 | {n_confluences} confluences | "
+            f"R:R={pattern.risk_reward} | "
             f"{'SIGNAL' if tradeable_signal else 'skip'} | "
             f"{'AUTO-TRADE' if tradeable_autotrade else ''}"
         )
@@ -233,9 +209,9 @@ class ConfluenceEngine:
         """
         Decide spot vs futures and leverage based on signal score.
 
-        Score 85+  → Spot + Futures 3x (highest conviction)
-        Score 75+  → Spot + Futures 2x
-        Score 60+  → Spot only (lower confidence)
+        Score 85+  → Spot + Futures 3× (highest conviction)
+        Score 75+  → Spot + Futures 2×
+        Score 60+  → Spot only
         Score < 60 → No trade
         """
         if score >= 85:

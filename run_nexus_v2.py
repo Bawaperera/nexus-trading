@@ -3,20 +3,20 @@ NEXUS v2 — Professional Trading Signal System
 ===============================================
 Full pipeline every hour:
 
-  1. Load trade memory → validate open positions (hit TP or SL?)
-  2. Fetch BTC price data (1H, resampled to 4H and Daily)
-  3. Detect chart patterns across all 3 timeframes
-  4. Run multi-timeframe alignment analysis
+  1. Load trade memory → validate open positions
+  2. Fetch BTC 1H data (2 years) + 15M data (60 days)
+  3. Detect chart patterns on Daily, 4H, 1H
+  4. Run MTF analysis: Weekly → Daily → 4H → 15M entry
   5. Score each pattern with full confluence engine
-  6. If score >= 60 AND 3+ confluences: send Telegram signal
-  7. If score >= 75 AND retest confirmed: auto-place order on Binance
-  8. Log everything to trade_memory.csv for future decisions
-  9. Write GitHub Actions step summary
+  6. If score >= 60 AND 3+ confluences: Telegram + paper trade
+  7. Log everything to trade_memory.csv
+  8. Write GitHub Actions step summary
 
-Signal hierarchy (Daily → 4H → 1H):
-  - Daily pattern gives the direction and target
-  - 4H confirms the setup is forming
-  - 1H provides the entry trigger (retest confirmation)
+Trading framework (Day Trader style):
+  Daily  → confirm the overall trend direction
+  4H     → find the pattern setup
+  15M    → confirm the entry moment (engulfing candle + volume)
+  → ENTER when all three agree
 """
 
 import os, sys, csv, logging, warnings
@@ -54,8 +54,8 @@ def main():
     # ── Step 0: Load trade memory ─────────────────────────────────────────────
     from execution.trade_executor import TradeExecutor
     executor = TradeExecutor(
-        api_key     = BINANCE_KEY,
-        api_secret  = BINANCE_SECRET,
+        api_key      = BINANCE_KEY,
+        api_secret   = BINANCE_SECRET,
         account_size = ACCOUNT_SIZE,
         paper_mode   = PAPER_MODE,
     )
@@ -71,27 +71,42 @@ def main():
     import pandas as pd
     import numpy as np
 
-    log.info("Fetching BTC/USDT data...")
+    log.info("Fetching BTC/USDT 1H data (2 years)...")
     raw = yf.download("BTC-USD", period="2y", interval="1h",
                       progress=False, auto_adjust=True)
-
     if raw.empty:
-        raise RuntimeError("yfinance returned no data")
-
+        raise RuntimeError("yfinance returned no 1H data")
     if isinstance(raw.columns, pd.MultiIndex):
         raw.columns = raw.columns.get_level_values(0)
     raw.columns = [c.lower() for c in raw.columns]
     raw.index   = pd.to_datetime(raw.index, utc=True)
-
     df = raw[["open", "high", "low", "close", "volume"]].dropna().copy()
     df["symbol"] = "BTC/USDT"
     df["timeframe"] = "1h"
 
     current_price = float(df["close"].iloc[-1])
-    log.info(f"BTC price: ${current_price:,.2f} | {len(df)} candles loaded")
+    log.info(f"BTC price: ${current_price:,.2f} | {len(df)} 1H candles loaded")
+
+    # ── Fetch 15M data (60 days, for entry timing) ─────────────────────────────
+    df_15m = None
+    try:
+        log.info("Fetching BTC/USDT 15M data (60 days)...")
+        raw_15m = yf.download("BTC-USD", period="60d", interval="15m",
+                              progress=False, auto_adjust=True)
+        if not raw_15m.empty:
+            if isinstance(raw_15m.columns, pd.MultiIndex):
+                raw_15m.columns = raw_15m.columns.get_level_values(0)
+            raw_15m.columns = [c.lower() for c in raw_15m.columns]
+            raw_15m.index   = pd.to_datetime(raw_15m.index, utc=True)
+            df_15m = raw_15m[["open", "high", "low", "close", "volume"]].dropna().copy()
+            log.info(f"15M data: {len(df_15m)} candles loaded")
+        else:
+            log.warning("15M data empty — using 1H only for entry timing")
+    except Exception as e:
+        log.warning(f"15M fetch failed: {e} — continuing without 15M")
 
     # ── Step 3: Pattern detection ─────────────────────────────────────────────
-    log.info("Scanning for chart patterns...")
+    log.info("Scanning for chart patterns (Daily, 4H, 1H)...")
     from data.pattern_engine import PatternEngine
     patterns = PatternEngine().scan_all(df)
 
@@ -104,16 +119,20 @@ def main():
     for p in patterns:
         log.info(f"  → {p.summary()}")
 
-    # ── Step 4: Multi-timeframe analysis ─────────────────────────────────────
-    log.info("Running MTF analysis...")
+    # ── Step 4: MTF analysis (now includes 15M) ───────────────────────────────
+    log.info("Running MTF analysis (Daily → 4H → 15M entry)...")
     try:
         from data.multi_timeframe import MultiTimeframeAnalyzer
-        mtf_features = MultiTimeframeAnalyzer().analyze(df)
+        mtf_features = MultiTimeframeAnalyzer().analyze(df, df_15m)
         log.info(
-            f"MTF alignment: {mtf_features.get('mtf_alignment', 0):+.2f} | "
-            f"Bull {mtf_features.get('mtf_bull_count', 0)}/4 | "
-            f"Bear {mtf_features.get('mtf_bear_count', 0)}/4"
+            f"MTF: Daily={mtf_features.get('mtf_daily_trend')} | "
+            f"4H={mtf_features.get('mtf_4h_trend')} | "
+            f"Bull {mtf_features.get('mtf_bull_count',0)}/4 | "
+            f"15M trigger: {mtf_features.get('mtf_15m_trigger',False)}"
         )
+        if mtf_features.get("mtf_15m_reasons"):
+            for r in mtf_features["mtf_15m_reasons"]:
+                log.info(f"  15M: {r}")
     except Exception as e:
         log.warning(f"MTF failed: {e}")
         mtf_features = {}
@@ -122,7 +141,7 @@ def main():
     log.info("Fetching news sentiment...")
     try:
         from data.news_collector import NewsCollector
-        sentiment      = NewsCollector().get_sentiment_report()
+        sentiment       = NewsCollector().get_sentiment_report()
         sentiment_score = sentiment.composite_score
         fg_value        = sentiment.fear_greed_value
         fg_label        = sentiment.fear_greed_label
@@ -134,8 +153,8 @@ def main():
     # ── Step 6: Score each pattern ────────────────────────────────────────────
     log.info("Scoring confluences...")
     from signals.confluence_engine import ConfluenceEngine
-    engine   = ConfluenceEngine()
-    results  = []
+    engine  = ConfluenceEngine()
+    results = []
 
     for pattern in patterns:
         result = engine.score(
@@ -154,7 +173,6 @@ def main():
             f"{'AUTO-TRADE' if result['tradeable_autotrade'] else ''}"
         )
 
-    # Sort by score, take top 3
     results.sort(key=lambda r: r["score"], reverse=True)
     top_results = results[:3]
 
@@ -165,15 +183,8 @@ def main():
         if not result["tradeable_signal"]:
             continue
 
-        pattern = result["pattern"]
-
-        # Auto-trade
         exec_result = executor.execute(result)
-
-        # Telegram alert
-        _send_telegram(result, exec_result, sentiment_score, fg_value, fg_label, current_price)
-
-        # Log signal
+        _send_telegram(result, exec_result, sentiment_score, fg_value, fg_label, current_price, mtf_features)
         _log_signal(result, exec_result, sentiment_score, fg_value)
 
         if exec_result.get("executed"):
@@ -188,44 +199,37 @@ def main():
             trade_memory, executed_trades,
         )
 
-    log.info(f"Run complete | Signals sent: {sum(1 for r in results if r['tradeable_signal'])} | Auto-trades: {len(executed_trades)}")
+    signals_fired = sum(1 for r in results if r["tradeable_signal"])
+    log.info(f"Run complete | Signals: {signals_fired} | Auto-trades: {len(executed_trades)}")
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 def _validate_open_trades(executor, open_trades: list):
-    """Check if any open trades have hit their TP or SL."""
     if not open_trades:
         return
-
     try:
         import yfinance as yf
         import pandas as pd
-
         recent = yf.download("BTC-USD", period="5d", interval="1h",
                              progress=False, auto_adjust=True)
         if recent.empty:
             return
-
         if isinstance(recent.columns, pd.MultiIndex):
             recent.columns = recent.columns.get_level_values(0)
         recent.columns = [c.lower() for c in recent.columns]
         recent.index   = pd.to_datetime(recent.index, utc=True)
-
         for trade in open_trades:
             try:
-                opened_at  = pd.Timestamp(trade["timestamp"])
+                opened_at = pd.Timestamp(trade["timestamp"])
                 if opened_at.tzinfo is None:
                     opened_at = opened_at.tz_localize("UTC")
-
                 since = recent[recent.index >= opened_at]
                 if len(since) < 1:
                     continue
-
-                sl = float(trade["stop_loss"])
-                tp = float(trade["take_profit"])
+                sl   = float(trade["stop_loss"])
+                tp   = float(trade["take_profit"])
                 dir_ = trade["direction"]
-
                 for _, bar in since.iterrows():
                     h, l = float(bar["high"]), float(bar["low"])
                     if dir_ == "bullish":
@@ -244,16 +248,13 @@ def _validate_open_trades(executor, open_trades: list):
                             break
             except Exception as e:
                 log.debug(f"Validation failed for {trade.get('signal_id')}: {e}")
-
     except Exception as e:
         log.warning(f"Trade validation failed: {e}")
 
 
-def _send_telegram(result, exec_result, sent, fg, fg_label, price):
-    """Send detailed Telegram alert."""
+def _send_telegram(result, exec_result, sent, fg, fg_label, price, mtf):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         return
-
     import requests
 
     pattern    = result["pattern"]
@@ -268,13 +269,22 @@ def _send_telegram(result, exec_result, sent, fg, fg_label, price):
         for r in result["reasons"]
     )
 
+    # 15M entry status
+    trigger_15m = mtf.get("mtf_15m_trigger", False)
+    reasons_15m = mtf.get("mtf_15m_reasons", [])
+    entry_line  = ""
+    if trigger_15m:
+        entry_line = "\n15M entry: " + ", ".join(reasons_15m[:2])
+    elif reasons_15m:
+        entry_line = "\n15M entry: " + reasons_15m[0] + " (watching)"
+
     spot_line = ""
     fut_line  = ""
     if trade_type["spot"]:
         spot_line = f"\nSPOT {dir_icon}: entry ${pattern.entry:,.2f}"
     if trade_type["futures"]:
         lev = trade_type["leverage"]
-        fut_line = f"\nFUTURES {'LONG' if pattern.direction == 'bullish' else 'SHORT'} {lev}x: notional ${exec_result.get('position_usd', 0) * lev:,.0f}"
+        fut_line = f"\nFUTURES {'LONG' if pattern.direction=='bullish' else 'SHORT'} {lev}x"
 
     msg = (
         f"*NEXUS v2 — {dir_icon} SIGNAL*\n"
@@ -286,13 +296,15 @@ def _send_telegram(result, exec_result, sent, fg, fg_label, price):
         f"*Stop Loss:* ${pattern.stop_loss:,.2f}\n"
         f"*Target:*    ${pattern.target:,.2f}\n"
         f"*R:R:*       1:{pattern.risk_reward:.1f}\n"
-        f"{spot_line}{fut_line}\n\n"
+        f"{spot_line}{fut_line}{entry_line}\n\n"
         f"*Confluences:*\n{confluences}\n\n"
+        f"Daily: {mtf.get('mtf_daily_trend','?')} | 4H: {mtf.get('mtf_4h_trend','?')}\n"
         f"Sentiment: {sent:+.2f} | F&G: {fg} ({fg_label})\n"
         f"BTC: ${price:,.2f}"
     )
 
     try:
+        import requests
         requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             json={"chat_id": TELEGRAM_CHAT_ID, "text": msg, "parse_mode": "Markdown"},
@@ -306,20 +318,20 @@ def _send_telegram(result, exec_result, sent, fg, fg_label, price):
 def _log_signal(result, exec_result, sentiment, fg):
     pattern = result["pattern"]
     row = {
-        "timestamp":    datetime.now(tz=timezone.utc).isoformat(),
-        "pattern":      pattern.name,
-        "direction":    pattern.direction,
-        "timeframe":    pattern.timeframe,
-        "status":       pattern.status,
-        "score":        result["score"],
-        "confluences":  result["n_confluences"],
-        "entry":        round(pattern.entry, 2),
-        "stop_loss":    round(pattern.stop_loss, 2),
-        "take_profit":  round(pattern.target, 2),
-        "risk_reward":  pattern.risk_reward,
-        "auto_traded":  exec_result.get("executed", False),
-        "sentiment":    round(sentiment, 4),
-        "fear_greed":   fg,
+        "timestamp":   datetime.now(tz=timezone.utc).isoformat(),
+        "pattern":     pattern.name,
+        "direction":   pattern.direction,
+        "timeframe":   pattern.timeframe,
+        "status":      pattern.status,
+        "score":       result["score"],
+        "confluences": result["n_confluences"],
+        "entry":       round(pattern.entry, 2),
+        "stop_loss":   round(pattern.stop_loss, 2),
+        "take_profit": round(pattern.target, 2),
+        "risk_reward": pattern.risk_reward,
+        "auto_traded": exec_result.get("executed", False),
+        "sentiment":   round(sentiment, 4),
+        "fear_greed":  fg,
     }
     write_head = not os.path.exists(SIGNAL_LOG)
     with open(SIGNAL_LOG, "a", newline="") as f:
@@ -333,14 +345,13 @@ def _write_summary(path, results, price, mtf, sent, fg, fg_label, memory, execut
     now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [
         f"## NEXUS v2 — {now}",
-        f"**BTC Price:** ${price:,.2f}",
+        f"**BTC:** ${price:,.2f} | Daily: {mtf.get('mtf_daily_trend','?')} | 4H: {mtf.get('mtf_4h_trend','?')} | 15M trigger: {mtf.get('mtf_15m_trigger',False)}",
         "",
     ]
-
     if results and results[0]["tradeable_signal"]:
         p = results[0]["pattern"]
         lines += [
-            f"### {'BUY' if p.direction == 'bullish' else 'SELL'} — {p.name.replace('_',' ').title()} [{p.timeframe}]",
+            f"### {'BUY' if p.direction=='bullish' else 'SELL'} — {p.name.replace('_',' ').title()} [{p.timeframe}]",
             "",
             "| Field | Value |",
             "|---|---|",
@@ -356,25 +367,25 @@ def _write_summary(path, results, price, mtf, sent, fg, fg_label, memory, execut
         ]
         for r in results[0]["reasons"]:
             lines.append(f"- {r}")
+        if mtf.get("mtf_15m_reasons"):
+            lines.append(f"- 15M: " + ", ".join(mtf["mtf_15m_reasons"][:2]))
     else:
         lines.append("### No tradeable signals this run")
         if results:
             lines.append(f"Best score: {results[0]['score']}/100 — below threshold")
 
-    # Memory stats
-    wins   = sum(1 for t in memory if t.get("outcome") == "WIN")
-    losses = sum(1 for t in memory if t.get("outcome") == "LOSS")
-    opens  = sum(1 for t in memory if t.get("outcome") == "OPEN")
-    total  = wins + losses
-    wr     = f"{wins/total*100:.1f}%" if total > 0 else "—"
+    wins  = sum(1 for t in memory if t.get("outcome") == "WIN")
+    losses= sum(1 for t in memory if t.get("outcome") == "LOSS")
+    opens = sum(1 for t in memory if t.get("outcome") == "OPEN")
+    total = wins + losses
+    wr    = f"{wins/total*100:.1f}%" if total > 0 else "—"
 
     lines += [
         "",
         "---",
         "### Trade memory",
-        f"**Total signals:** {len(memory)} | **Open:** {opens} | **Win rate:** {wr} ({wins}W / {losses}L)",
-        f"**Sentiment:** {sent:+.2f} | **Fear & Greed:** {fg} ({fg_label})",
-        f"**MTF:** Bull {mtf.get('mtf_bull_count',0)}/4 · Bear {mtf.get('mtf_bear_count',0)}/4",
+        f"**Total:** {len(memory)} | **Open:** {opens} | **Win rate:** {wr} ({wins}W / {losses}L)",
+        f"**Sentiment:** {sent:+.2f} | **F&G:** {fg} ({fg_label})",
     ]
 
     with open(path, "a") as f:

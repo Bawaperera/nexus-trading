@@ -1,0 +1,53 @@
+name: NEXUS v2 — 15-Minute Entry Check
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes — GitHub minimum
+  workflow_dispatch:          # Manual trigger for testing
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  entry-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5        # Fast job — should finish in <30 seconds
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install lightweight deps
+        # Only what entry_check needs — NOT the full requirements.txt
+        # This makes the job start much faster than the hourly scan
+        run: pip install yfinance pandas numpy requests
+
+      - name: Run 15M entry check
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_entry_check.py
+
+      - name: Commit any changes
+        run: |
+          git config user.name  "NEXUS Entry Check"
+          git config user.email "nexus-entry@github-actions"
+          git add logs/active_patterns.json logs/signals_v2.csv 2>/dev/null || true
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "entry: $(date -u '+%H:%M UTC')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Retry $i..."
+            sleep $i
+          done

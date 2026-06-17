@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-06-17T15:31:46.567099+00:00",
+  "timestamp": "2026-06-17T18:10:30.572476+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.3h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,34 +19,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Federal Funds Rate",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 2.5,
-        "forecast": "3.75%",
-        "previous": "3.75%"
-      },
-      {
-        "title": "FOMC Economic Projections",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 2.5,
-        "forecast": "",
-        "previous": ""
-      },
-      {
-        "title": "FOMC Statement",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 2.5,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 3.0,
+        "hours_until": 0.3,
         "forecast": "",
         "previous": ""
       },
@@ -52,7 +30,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.0,
+        "hours_until": 18.3,
         "forecast": "9.8",
         "previous": "-0.4"
       },
@@ -60,14 +38,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.0,
+        "hours_until": 18.3,
         "forecast": "225K",
         "previous": "229K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 2.5,
-    "event_count_24h": 6
+    "risk_level": "high",
+    "hours_until_next": 0.3,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -80,12 +58,12 @@
   "trending": {
     "trending_coins": [
       "Plasma",
-      "ZIGChain",
-      "Aster",
       "Hyperliquid",
+      "ZIGChain",
       "Pudgy Penguins",
-      "Siren",
-      "Backpack"
+      "Aster",
+      "Ether.fi",
+      "Lighter"
     ],
     "btc_in_trending": false,
     "trend_count": 7

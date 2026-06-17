@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-06-17T15:31:46.567099+00:00",
+  "composite_signal": 0.0,
+  "signal_label": "Neutral",
+  "onchain_score_adj": 0,
+  "warnings": [],
+  "derivatives": {
+    "funding_rate": 0.0,
+    "funding_signal": "Neutral \u2014 balanced",
+    "open_interest_btc": 0.0,
+    "oi_change_pct": 0.0,
+    "long_short_ratio": 1.0,
+    "long_pct": 50.0,
+    "short_pct": 50.0,
+    "top_trader_ls": 1.0
+  },
+  "macro": {
+    "upcoming_events": [
+      {
+        "title": "Federal Funds Rate",
+        "time_utc": "14:00 UTC",
+        "impact": "High",
+        "hours_until": 2.5,
+        "forecast": "3.75%",
+        "previous": "3.75%"
+      },
+      {
+        "title": "FOMC Economic Projections",
+        "time_utc": "14:00 UTC",
+        "impact": "High",
+        "hours_until": 2.5,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Statement",
+        "time_utc": "14:00 UTC",
+        "impact": "High",
+        "hours_until": 2.5,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Press Conference",
+        "time_utc": "14:30 UTC",
+        "impact": "High",
+        "hours_until": 3.0,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "Philly Fed Manufacturing Index",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 21.0,
+        "forecast": "9.8",
+        "previous": "-0.4"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 21.0,
+        "forecast": "225K",
+        "previous": "229K"
+      }
+    ],
+    "risk_level": "medium",
+    "hours_until_next": 2.5,
+    "event_count_24h": 6
+  },
+  "social": {
+    "sentiment": 0.0,
+    "label": "Neutral",
+    "bull_score": 0,
+    "bear_score": 0,
+    "post_count": 0,
+    "top_titles": []
+  },
+  "trending": {
+    "trending_coins": [
+      "Plasma",
+      "ZIGChain",
+      "Aster",
+      "Hyperliquid",
+      "Pudgy Penguins",
+      "Siren",
+      "Backpack"
+    ],
+    "btc_in_trending": false,
+    "trend_count": 7
+  }
+}

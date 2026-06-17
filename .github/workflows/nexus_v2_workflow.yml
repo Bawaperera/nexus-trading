@@ -1,0 +1,58 @@
+name: NEXUS v2 — Pattern Signal System
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Every hour on the hour (free tier)
+  workflow_dispatch:        # Manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  TRADING_MODE:   paper         # NEVER change to "live" without 30 days of paper results
+  ACCOUNT_SIZE:   "1000"        # Your paper trading capital in USDT
+  TRADING_SYMBOL: "BTC/USDT"
+
+jobs:
+  nexus-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run NEXUS v2
+        env:
+          BINANCE_API_KEY:     ${{ secrets.BINANCE_API_KEY }}
+          BINANCE_API_SECRET:  ${{ secrets.BINANCE_API_SECRET }}
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_nexus_v2.py
+
+      - name: Commit logs and intelligence data
+        run: |
+          git config user.name  "NEXUS v2 Bot"
+          git config user.email "nexus-v2@github-actions"
+          git add logs/signals_v2.csv logs/trade_memory.csv logs/active_patterns.json logs/market_intel.json 2>/dev/null || true
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "nexus-v2: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Retry $i..."
+            sleep $i
+          done

@@ -44,11 +44,11 @@ jobs:
           TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_nexus_v2.py
 
-      - name: Commit logs and memory
+      - name: Commit logs and intelligence data
         run: |
           git config user.name  "NEXUS v2 Bot"
           git config user.email "nexus-v2@github-actions"
-          git add logs/signals_v2.csv logs/trade_memory.csv 2>/dev/null || true
+          git add logs/signals_v2.csv logs/trade_memory.csv logs/active_patterns.json logs/market_intel.json 2>/dev/null || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "nexus-v2: $(date -u '+%Y-%m-%d %H:%M UTC')"
           for i in 1 2 3 4 5; do

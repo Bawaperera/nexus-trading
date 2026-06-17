@@ -7,10 +7,12 @@ Full pipeline every hour:
   2. Fetch BTC 1H data (2 years) + 15M data (60 days)
   3. Detect chart patterns on Daily, 4H, 1H
   4. Run MTF analysis: Weekly → Daily → 4H → 15M entry
-  5. Score each pattern with full confluence engine
-  6. If score >= 60 AND 3+ confluences: Telegram + paper trade
-  7. Log everything to trade_memory.csv
-  8. Write GitHub Actions step summary
+  5. Fetch news sentiment (8 RSS feeds: crypto + macro)
+  5b. Collect on-chain intelligence (derivatives + Reddit + calendar + CoinGecko)
+  6. Score each pattern with full confluence engine
+  7. If score >= 60 AND 3+ confluences: Telegram + paper trade
+  8. Save active_patterns.json + market_intel.json
+  9. Write GitHub Actions step summary
 
 Trading framework (Day Trader style):
   Daily  → confirm the overall trend direction
@@ -81,13 +83,13 @@ def main():
     raw.columns = [c.lower() for c in raw.columns]
     raw.index   = pd.to_datetime(raw.index, utc=True)
     df = raw[["open", "high", "low", "close", "volume"]].dropna().copy()
-    df["symbol"] = "BTC/USDT"
+    df["symbol"]    = "BTC/USDT"
     df["timeframe"] = "1h"
 
     current_price = float(df["close"].iloc[-1])
     log.info(f"BTC price: ${current_price:,.2f} | {len(df)} 1H candles loaded")
 
-    # ── Fetch 15M data (60 days, for entry timing) ─────────────────────────────
+    # ── Fetch 15M data ────────────────────────────────────────────────────────
     df_15m = None
     try:
         log.info("Fetching BTC/USDT 15M data (60 days)...")
@@ -101,7 +103,7 @@ def main():
             df_15m = raw_15m[["open", "high", "low", "close", "volume"]].dropna().copy()
             log.info(f"15M data: {len(df_15m)} candles loaded")
         else:
-            log.warning("15M data empty — using 1H only for entry timing")
+            log.warning("15M data empty — using 1H only")
     except Exception as e:
         log.warning(f"15M fetch failed: {e} — continuing without 15M")
 
@@ -119,8 +121,9 @@ def main():
     for p in patterns:
         log.info(f"  → {p.summary()}")
 
-    # ── Step 4: MTF analysis (now includes 15M) ───────────────────────────────
+    # ── Step 4: MTF analysis ──────────────────────────────────────────────────
     log.info("Running MTF analysis (Daily → 4H → 15M entry)...")
+    mtf_features = {}
     try:
         from data.multi_timeframe import MultiTimeframeAnalyzer
         mtf_features = MultiTimeframeAnalyzer().analyze(df, df_15m)
@@ -130,25 +133,52 @@ def main():
             f"Bull {mtf_features.get('mtf_bull_count',0)}/4 | "
             f"15M trigger: {mtf_features.get('mtf_15m_trigger',False)}"
         )
-        if mtf_features.get("mtf_15m_reasons"):
-            for r in mtf_features["mtf_15m_reasons"]:
-                log.info(f"  15M: {r}")
+        for r in mtf_features.get("mtf_15m_reasons", []):
+            log.info(f"  15M: {r}")
     except Exception as e:
         log.warning(f"MTF failed: {e}")
-        mtf_features = {}
 
-    # ── Step 5: News sentiment ────────────────────────────────────────────────
-    log.info("Fetching news sentiment...")
+    # ── Step 5: News sentiment (crypto + macro RSS feeds) ─────────────────────
+    log.info("Fetching news sentiment (8 RSS feeds: crypto + macro)...")
+    sentiment_score = 0.0
+    fg_value        = 50
+    fg_label        = "Neutral"
     try:
         from data.news_collector import NewsCollector
         sentiment       = NewsCollector().get_sentiment_report()
         sentiment_score = sentiment.composite_score
         fg_value        = sentiment.fear_greed_value
         fg_label        = sentiment.fear_greed_label
-        log.info(f"Sentiment: {sentiment_score:+.3f} | F&G: {fg_value} ({fg_label})")
+        log.info(
+            f"Sentiment: {sentiment_score:+.3f} | F&G: {fg_value} ({fg_label}) | "
+            f"Crypto news: {sentiment.news_score:+.3f} | "
+            f"Macro news: {sentiment.macro_score:+.3f}"
+        )
     except Exception as e:
         log.warning(f"Sentiment failed: {e}")
-        sentiment_score, fg_value, fg_label = 0.0, 50, "Neutral"
+
+    # ── Step 5b: On-chain market intelligence ─────────────────────────────────
+    log.info("Collecting on-chain intelligence (derivatives + Reddit + calendar + CoinGecko)...")
+    onchain_adj  = 0
+    intel_report = {}
+    try:
+        from data.onchain_collector import OnChainCollector
+        collector    = OnChainCollector()
+        intel_report = collector.collect()
+        collector.save(intel_report)
+        onchain_adj  = intel_report.get("onchain_score_adj", 0)
+
+        deriv = intel_report.get("derivatives", {})
+        log.info(
+            f"On-chain: Funding {deriv.get('funding_rate',0)*100:+.4f}% | "
+            f"L/S {deriv.get('long_short_ratio',1):.2f} | "
+            f"Score adj: {onchain_adj:+d} | "
+            f"Intel: {intel_report.get('signal_label','?')}"
+        )
+        for w in intel_report.get("warnings", []):
+            log.warning(w)
+    except Exception as e:
+        log.warning(f"On-chain intelligence failed: {e}")
 
     # ── Step 6: Score each pattern ────────────────────────────────────────────
     log.info("Scoring confluences...")
@@ -164,6 +194,7 @@ def main():
             sentiment_score = sentiment_score,
             fg_value        = fg_value,
             trade_memory    = trade_memory,
+            onchain_adj     = onchain_adj,
         )
         results.append(result)
         log.info(
@@ -184,19 +215,22 @@ def main():
             continue
 
         exec_result = executor.execute(result)
-        _send_telegram(result, exec_result, sentiment_score, fg_value, fg_label, current_price, mtf_features)
+        _send_telegram(result, exec_result, sentiment_score, fg_value, fg_label, current_price, mtf_features, intel_report)
         _log_signal(result, exec_result, sentiment_score, fg_value)
 
         if exec_result.get("executed"):
             executed_trades.append(exec_result)
 
-    # ── Step 8: GitHub Actions summary ───────────────────────────────────────
+    # ── Step 8: Save active patterns + market intel ───────────────────────────
+    _save_active_patterns(results, mtf_features, sentiment_score, fg_value, current_price)
+
+    # ── Step 9: GitHub Actions summary ───────────────────────────────────────
     summary_path = os.getenv("GITHUB_STEP_SUMMARY", "")
     if summary_path:
         _write_summary(
             summary_path, top_results, current_price,
             mtf_features, sentiment_score, fg_value, fg_label,
-            trade_memory, executed_trades,
+            trade_memory, executed_trades, intel_report,
         )
 
     signals_fired = sum(1 for r in results if r["tradeable_signal"])
@@ -234,25 +268,68 @@ def _validate_open_trades(executor, open_trades: list):
                     h, l = float(bar["high"]), float(bar["low"])
                     if dir_ == "bullish":
                         if l <= sl:
-                            executor.update_outcome(trade["signal_id"], "LOSS", sl)
-                            break
+                            executor.update_outcome(trade["signal_id"], "LOSS", sl); break
                         if h >= tp:
-                            executor.update_outcome(trade["signal_id"], "WIN", tp)
-                            break
+                            executor.update_outcome(trade["signal_id"], "WIN",  tp); break
                     else:
                         if h >= sl:
-                            executor.update_outcome(trade["signal_id"], "LOSS", sl)
-                            break
+                            executor.update_outcome(trade["signal_id"], "LOSS", sl); break
                         if l <= tp:
-                            executor.update_outcome(trade["signal_id"], "WIN", tp)
-                            break
+                            executor.update_outcome(trade["signal_id"], "WIN",  tp); break
             except Exception as e:
                 log.debug(f"Validation failed for {trade.get('signal_id')}: {e}")
     except Exception as e:
         log.warning(f"Trade validation failed: {e}")
 
 
-def _send_telegram(result, exec_result, sent, fg, fg_label, price, mtf):
+def _save_active_patterns(results, mtf, sent, fg, price):
+    """
+    Save all tradeable patterns to active_patterns.json.
+    Includes component_scores and reasons so the dashboard
+    can show the full score breakdown for each signal.
+    """
+    import json
+    patterns_to_save = []
+    for r in results:
+        if r.get("tradeable_signal"):
+            p = r["pattern"]
+            patterns_to_save.append({
+                "name":               p.name,
+                "direction":          p.direction,
+                "timeframe":          p.timeframe,
+                "status":             p.status,
+                "entry":              round(float(p.entry), 2),
+                "stop_loss":          round(float(p.stop_loss), 2),
+                "target":             round(float(p.target), 2),
+                "risk_reward":        float(p.risk_reward),
+                "confidence":         round(float(p.confidence), 2),
+                "score":              r["score"],
+                "n_confluences":      r["n_confluences"],
+                "tradeable_signal":   r["tradeable_signal"],
+                "tradeable_autotrade":r["tradeable_autotrade"],
+                "already_traded":     False,
+                # Dashboard needs these for score breakdown bars
+                "component_scores":   r.get("component_scores", {}),
+                "reasons":            r.get("reasons", []),
+            })
+    data = {
+        "scan_time":       datetime.now(tz=timezone.utc).isoformat(),
+        "btc_price":       round(float(price), 2),
+        "daily_trend":     mtf.get("mtf_daily_trend", "neutral"),
+        "4h_trend":        mtf.get("mtf_4h_trend",    "neutral"),
+        "weekly_trend":    mtf.get("mtf_weekly_trend", "neutral"),
+        "bull_count":      mtf.get("mtf_bull_count", 0),
+        "fg_value":        fg,
+        "sentiment_score": round(float(sent), 4),
+        "patterns":        patterns_to_save,
+    }
+    os.makedirs("logs", exist_ok=True)
+    with open("logs/active_patterns.json", "w") as f:
+        json.dump(data, f, indent=2)
+    log.info(f"Saved {len(patterns_to_save)} active pattern(s) to active_patterns.json")
+
+
+def _send_telegram(result, exec_result, sent, fg, fg_label, price, mtf, intel):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         return
     import requests
@@ -260,51 +337,43 @@ def _send_telegram(result, exec_result, sent, fg, fg_label, price, mtf):
     pattern    = result["pattern"]
     trade_type = result["trade_type"]
     executed   = exec_result.get("executed", False)
+    dir_icon   = "BUY" if pattern.direction == "bullish" else "SELL"
+    status     = "AUTO-TRADE PLACED ✅" if executed else "SIGNAL — manual entry"
 
-    dir_icon = "BUY" if pattern.direction == "bullish" else "SELL"
-    status   = "AUTO-TRADE PLACED" if executed else "SIGNAL — manual entry"
+    confluences = "\n".join(f"   {r}" for r in result["reasons"][:6])
 
-    confluences = "\n".join(
-        f"   {'OK' if '+' in r else '--'} {r}"
-        for r in result["reasons"]
-    )
-
-    # 15M entry status
-    trigger_15m = mtf.get("mtf_15m_trigger", False)
-    reasons_15m = mtf.get("mtf_15m_reasons", [])
-    entry_line  = ""
+    trigger_15m  = mtf.get("mtf_15m_trigger", False)
+    reasons_15m  = mtf.get("mtf_15m_reasons", [])
+    entry_line   = ""
     if trigger_15m:
         entry_line = "\n15M entry: " + ", ".join(reasons_15m[:2])
     elif reasons_15m:
-        entry_line = "\n15M entry: " + reasons_15m[0] + " (watching)"
+        entry_line = "\n15M watching: " + reasons_15m[0]
 
-    spot_line = ""
-    fut_line  = ""
-    if trade_type["spot"]:
-        spot_line = f"\nSPOT {dir_icon}: entry ${pattern.entry:,.2f}"
-    if trade_type["futures"]:
-        lev = trade_type["leverage"]
-        fut_line = f"\nFUTURES {'LONG' if pattern.direction=='bullish' else 'SHORT'} {lev}x"
+    # On-chain warning
+    warnings = intel.get("warnings", [])
+    warn_line = ("\n⚠️ " + warnings[0]) if warnings else ""
+
+    spot_line = f"\nSPOT {dir_icon}: ${pattern.entry:,.2f}" if trade_type["spot"] else ""
+    fut_line  = f"\nFUTURES {trade_type['leverage']}x" if trade_type["futures"] else ""
 
     msg = (
         f"*NEXUS v2 — {dir_icon} SIGNAL*\n"
         f"_{status}_\n\n"
-        f"*Pattern:* {pattern.name.replace('_',' ').title()}\n"
-        f"*Timeframe:* {pattern.timeframe} | Status: {pattern.status}\n"
-        f"*Score:* {result['score']}/100 | Confluences: {result['n_confluences']}/5\n\n"
-        f"*Entry:*     ${pattern.entry:,.2f}\n"
-        f"*Stop Loss:* ${pattern.stop_loss:,.2f}\n"
-        f"*Target:*    ${pattern.target:,.2f}\n"
-        f"*R:R:*       1:{pattern.risk_reward:.1f}\n"
-        f"{spot_line}{fut_line}{entry_line}\n\n"
-        f"*Confluences:*\n{confluences}\n\n"
+        f"*{pattern.name.replace('_',' ').title()}* [{pattern.timeframe}] {pattern.status}\n"
+        f"Score: {result['score']}/100 | Confluences: {result['n_confluences']}/5\n\n"
+        f"*Entry:*  ${pattern.entry:,.2f}\n"
+        f"*Stop:*   ${pattern.stop_loss:,.2f}\n"
+        f"*Target:* ${pattern.target:,.2f}\n"
+        f"*R:R:*    1:{pattern.risk_reward:.1f}\n"
+        f"{spot_line}{fut_line}{entry_line}{warn_line}\n\n"
+        f"*Breakdown:*\n{confluences}\n\n"
         f"Daily: {mtf.get('mtf_daily_trend','?')} | 4H: {mtf.get('mtf_4h_trend','?')}\n"
         f"Sentiment: {sent:+.2f} | F&G: {fg} ({fg_label})\n"
         f"BTC: ${price:,.2f}"
     )
 
     try:
-        import requests
         requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             json={"chat_id": TELEGRAM_CHAT_ID, "text": msg, "parse_mode": "Markdown"},
@@ -341,15 +410,18 @@ def _log_signal(result, exec_result, sentiment, fg):
         w.writerow(row)
 
 
-def _write_summary(path, results, price, mtf, sent, fg, fg_label, memory, executed):
+def _write_summary(path, results, price, mtf, sent, fg, fg_label, memory, executed, intel):
     now = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    deriv = intel.get("derivatives", {})
     lines = [
         f"## NEXUS v2 — {now}",
-        f"**BTC:** ${price:,.2f} | Daily: {mtf.get('mtf_daily_trend','?')} | 4H: {mtf.get('mtf_4h_trend','?')} | 15M trigger: {mtf.get('mtf_15m_trigger',False)}",
+        f"**BTC:** ${price:,.2f} | Daily: {mtf.get('mtf_daily_trend','?')} | 4H: {mtf.get('mtf_4h_trend','?')} | 15M: {mtf.get('mtf_15m_trigger',False)}",
+        f"**Funding:** {deriv.get('funding_rate',0)*100:+.4f}% | **L/S:** {deriv.get('long_short_ratio',1):.2f} | **Intel:** {intel.get('signal_label','?')}",
         "",
     ]
     if results and results[0]["tradeable_signal"]:
-        p = results[0]["pattern"]
+        p  = results[0]["pattern"]
+        cs = results[0].get("component_scores", {})
         lines += [
             f"### {'BUY' if p.direction=='bullish' else 'SELL'} — {p.name.replace('_',' ').title()} [{p.timeframe}]",
             "",
@@ -362,23 +434,34 @@ def _write_summary(path, results, price, mtf, sent, fg, fg_label, memory, execut
             f"| Stop Loss | ${p.stop_loss:,.2f} |",
             f"| Take Profit | ${p.target:,.2f} |",
             f"| R:R | 1:{p.risk_reward:.1f} |",
+            f"| Pattern | {cs.get('pattern',0)}/25 |",
+            f"| MTF | {cs.get('mtf',0)}/20 |",
+            f"| Retest | {cs.get('retest',0)}/20 |",
+            f"| Volume | {cs.get('volume',0)}/15 |",
+            f"| RSI | {cs.get('rsi',0)}/10 |",
+            f"| Sentiment | {cs.get('sentiment',0)}/10 |",
+            f"| On-chain adj | {cs.get('onchain',0):+d} |",
             "",
             "**Reasons:**",
         ]
         for r in results[0]["reasons"]:
             lines.append(f"- {r}")
-        if mtf.get("mtf_15m_reasons"):
-            lines.append(f"- 15M: " + ", ".join(mtf["mtf_15m_reasons"][:2]))
     else:
         lines.append("### No tradeable signals this run")
         if results:
-            lines.append(f"Best score: {results[0]['score']}/100 — below threshold")
+            lines.append(f"Best score: {results[0]['score']}/100 — below 60 threshold")
 
-    wins  = sum(1 for t in memory if t.get("outcome") == "WIN")
-    losses= sum(1 for t in memory if t.get("outcome") == "LOSS")
-    opens = sum(1 for t in memory if t.get("outcome") == "OPEN")
-    total = wins + losses
-    wr    = f"{wins/total*100:.1f}%" if total > 0 else "—"
+    warns = intel.get("warnings", [])
+    if warns:
+        lines += ["", "**⚠️ Market Warnings:**"]
+        for w in warns:
+            lines.append(f"- {w}")
+
+    wins   = sum(1 for t in memory if t.get("outcome") == "WIN")
+    losses = sum(1 for t in memory if t.get("outcome") == "LOSS")
+    opens  = sum(1 for t in memory if t.get("outcome") == "OPEN")
+    total  = wins + losses
+    wr     = f"{wins/total*100:.1f}%" if total > 0 else "—"
 
     lines += [
         "",

@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-06-17T18:10:30.572476+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-06-17T21:01:49.038385+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.3h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "FOMC Press Conference",
-        "time_utc": "14:30 UTC",
-        "impact": "High",
-        "hours_until": 0.3,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 18.3,
+        "hours_until": 15.5,
         "forecast": "9.8",
         "previous": "-0.4"
       },
@@ -38,14 +28,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 18.3,
+        "hours_until": 15.5,
         "forecast": "225K",
         "previous": "229K"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.3,
-    "event_count_24h": 3
+    "risk_level": "low",
+    "hours_until_next": 15.5,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -58,14 +48,14 @@
   "trending": {
     "trending_coins": [
       "Plasma",
-      "Hyperliquid",
-      "ZIGChain",
-      "Pudgy Penguins",
       "Aster",
-      "Ether.fi",
-      "Lighter"
+      "Pudgy Penguins",
+      "Hyperliquid",
+      "Bitcoin",
+      "Synapse",
+      "Uniswap"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

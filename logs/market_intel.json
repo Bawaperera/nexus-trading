@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-18T07:30:04.953718+00:00",
+  "timestamp": "2026-06-18T11:46:25.190668+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 5.0,
+        "hours_until": 0.7,
         "forecast": "9.8",
         "previous": "-0.4"
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 5.0,
+        "hours_until": 0.7,
         "forecast": "225K",
         "previous": "229K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 5.0,
+    "hours_until_next": 0.7,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Aster",
-      "Siren",
-      "Pudgy Penguins",
+      "Yooldo Games",
       "Hyperliquid",
-      "Solana",
+      "Collector Crypt",
+      "Aster",
+      "Pudgy Penguins",
       "Bitcoin",
-      "o1.exchange"
+      "LAB"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -17,3 +17,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-17T23:18:34.147062+00:00,descending_triangle,bearish,1h,BREAKOUT,65,5,64394.47,66990.08,61852.34,0.98,False,-0.0823,22
 2026-06-17T23:18:34.768616+00:00,bear_flag,bearish,daily,FORMING,62,4,59093.99,67429.62,45798.2,1.6,False,-0.0823,22
 2026-06-18T02:48:41.655982+00:00,double_top,bearish,1h,BREAKOUT,61,5,64491.88,66423.69,62613.55,0.97,False,0.0535,15
+2026-06-18T07:30:05.654665+00:00,head_and_shoulders,bearish,1h,BREAKOUT,61,5,64182.94,64804.02,61995.68,3.52,False,0.1188,15

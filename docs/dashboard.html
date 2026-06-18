@@ -536,54 +536,100 @@ function renderOB(bids,asks){
   }).join('');
 }
 
-// ── Futures (Binance public API) ──────────────
-async function loadFutures(){
+// ── Futures state (shared by REST + WebSocket) ─
+var _fr=0,_lsRatio=1,_longPct=50,_shortPct=50,_oiChg=0,_ttRatio=1;
+var _futRestFails=0;  // back off after 3 consecutive REST failures
+
+function _applyFundingRate(fr){
+  _fr=fr;
+  var frEl=document.getElementById('hfunding');
+  frEl.textContent=(fr>=0?'+':'')+(fr*100).toFixed(4)+'%';
+  frEl.style.color=fr>0.0003?'var(--r)':fr<-0.0003?'var(--g)':'var(--t2)';
+  document.getElementById('oc-fr').textContent=(fr>=0?'+':'')+(fr*100).toFixed(4)+'%';
+  document.getElementById('oc-fr').style.color=fr>0.0003?'var(--r)':fr<-0.0003?'var(--g)':'var(--t2)';
+  var frsig=fr>0.001?'Extreme: longs at risk':fr>0.0003?'Positive: mild bearish':fr<-0.001?'Extreme: shorts at risk':fr<-0.0003?'Negative: mild bullish':'Neutral: balanced';
+  document.getElementById('oc-fr-sig').textContent=frsig;
+}
+
+// Binance Futures WebSocket — bypasses CORS/geo-block, gives live funding rate
+function connectFuturesWS(){
   try{
-    var [funding,oiHist,ls,tt]=await Promise.all([
-      fetch(BINF+'/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1').then(function(r){return r.json();}),
-      fetch(BINF+'/futures/data/openInterestHist?symbol=BTCUSDT&period=1h&limit=2').then(function(r){return r.json();}),
-      fetch(BINF+'/futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=1h&limit=1').then(function(r){return r.json();}),
-      fetch(BINF+'/futures/data/topLongShortPositionRatio?symbol=BTCUSDT&period=1h&limit=1').then(function(r){return r.json();}),
-    ]);
-    var fr=+funding[0].fundingRate;
-    var frEl=document.getElementById('hfunding');
-    frEl.textContent=(fr>=0?'+':'')+(fr*100).toFixed(4)+'%';
-    frEl.style.color=fr>0.0003?'var(--r)':fr<-0.0003?'var(--g)':'var(--t2)';
-    var oiNow=0,oiPrev=0,oiChg=0;
-    if(Array.isArray(oiHist)&&oiHist.length>=2){
-      oiNow=+oiHist[oiHist.length-1].sumOpenInterest;
-      oiPrev=+oiHist[oiHist.length-2].sumOpenInterest;
-      oiChg=(oiNow-oiPrev)/oiPrev*100;
+    var wsF=new WebSocket('wss://fstream.binance.com/ws/btcusdt@markPrice@1s');
+    wsF.onopen=function(){console.info('Futures WS connected (funding rate live)');};
+    wsF.onmessage=function(e){
+      try{
+        var d=JSON.parse(e.data);
+        if(d.r!==undefined) _applyFundingRate(+d.r);
+      }catch(ex){}
+    };
+    wsF.onclose=function(){
+      // Reconnect after 10s
+      setTimeout(connectFuturesWS,10000);
+    };
+    wsF.onerror=function(){};  // silence — onclose will handle reconnect
+  }catch(e){}
+}
+
+// REST API for OI + L/S ratio — try each endpoint independently
+// Falls back gracefully if geo-blocked (fapi.binance.com is blocked in some regions)
+async function loadFutures(){
+  if(_futRestFails>=3) return;  // stopped retrying after 3 consecutive failures
+
+  var anySuccess=false;
+
+  // OI history
+  try{
+    var r=await fetch(BINF+'/futures/data/openInterestHist?symbol=BTCUSDT&period=1h&limit=2',{signal:AbortSignal.timeout(5000)});
+    var d=await r.json();
+    if(Array.isArray(d)&&d.length>=2){
+      var oiNow=+d[d.length-1].sumOpenInterest;
+      var oiPrev=+d[d.length-2].sumOpenInterest;
+      _oiChg=(oiNow-oiPrev)/Math.max(oiPrev,1)*100;
       var oiUsd=oiNow*(liveBTC||65000);
-      document.getElementById('hoi').innerHTML='$'+(oiUsd/1e9).toFixed(2)+'B '+(oiChg>=0?'<span class="g">↑</span>':'<span class="r">↓</span>')+Math.abs(oiChg).toFixed(1)+'%';
+      document.getElementById('hoi').innerHTML='$'+(oiUsd/1e9).toFixed(2)+'B '+((_oiChg>=0)?'<span class="g">↑</span>':'<span class="r">↓</span>')+Math.abs(_oiChg).toFixed(1)+'%';
+      document.getElementById('oc-oi').innerHTML='$'+(oiUsd/1e9).toFixed(2)+'B '+((_oiChg>=0)?'<span class="g">↑</span>':'<span class="r">↓</span>')+Math.abs(_oiChg).toFixed(1)+'%';
+      document.getElementById('oc-oi-sig').textContent=_oiChg>1?'Rising: trend confirmation':_oiChg<-1?'Falling: exit signal':'Stable';
+      anySuccess=true;
     }
-    var lsRatio=1,longPct=50,shortPct=50;
-    if(Array.isArray(ls)&&ls.length>0){
-      lsRatio=+ls[0].longShortRatio;
-      longPct=(+ls[0].longAccount*100).toFixed(1);
-      shortPct=(+ls[0].shortAccount*100).toFixed(1);
+  }catch(e){ /* geo-blocked or timeout — silently skip */ }
+
+  // Long/Short ratio
+  try{
+    var r=await fetch(BINF+'/futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=1h&limit=1',{signal:AbortSignal.timeout(5000)});
+    var d=await r.json();
+    if(Array.isArray(d)&&d.length>0){
+      _lsRatio=+d[0].longShortRatio;
+      _longPct=(+d[0].longAccount*100).toFixed(1);
+      _shortPct=(+d[0].shortAccount*100).toFixed(1);
       var lsEl=document.getElementById('hls');
-      lsEl.textContent=lsRatio.toFixed(2)+' ('+longPct+'L/'+shortPct+'S)';
-      lsEl.style.color=lsRatio>1.4?'var(--r)':lsRatio<0.75?'var(--g)':'var(--t2)';
+      lsEl.textContent=_lsRatio.toFixed(2)+' ('+_longPct+'L/'+_shortPct+'S)';
+      lsEl.style.color=_lsRatio>1.4?'var(--r)':_lsRatio<0.75?'var(--g)':'var(--t2)';
+      document.getElementById('oc-ls').textContent=_lsRatio.toFixed(3);
+      document.getElementById('oc-ls').style.color=_lsRatio>1.4?'var(--r)':_lsRatio<0.75?'var(--g)':'var(--t2)';
+      document.getElementById('oc-ls-sig').textContent=_lsRatio>1.4?'Crowded longs — squeeze risk':_lsRatio<0.75?'Crowded shorts — squeeze risk':'Balanced';
+      anySuccess=true;
     }
-    // On-chain tiles
-    var frsig=fr>0.001?'⚠️ Extreme: longs at risk':fr>0.0003?'Positive: mild bearish':fr<-0.001?'⚠️ Extreme: shorts at risk':fr<-0.0003?'Negative: mild bullish':'Neutral: balanced';
-    document.getElementById('oc-fr').textContent=(fr>=0?'+':'')+(fr*100).toFixed(4)+'%';
-    document.getElementById('oc-fr').style.color=fr>0.0003?'var(--r)':fr<-0.0003?'var(--g)':'var(--t2)';
-    document.getElementById('oc-fr-sig').textContent=frsig;
-    if(oiNow>0){
-      document.getElementById('oc-oi').innerHTML='$'+((oiNow*(liveBTC||65000))/1e9).toFixed(2)+'B '+(oiChg>=0?'<span class="g">↑</span>':'<span class="r">↓</span>')+Math.abs(oiChg).toFixed(1)+'%';
-      document.getElementById('oc-oi-sig').textContent=oiChg>1?'Rising: trend confirmation':oiChg<-1?'Falling: exit signal':'Stable';
+  }catch(e){ /* silent */ }
+
+  // Top trader ratio
+  try{
+    var r=await fetch(BINF+'/futures/data/topLongShortPositionRatio?symbol=BTCUSDT&period=1h&limit=1',{signal:AbortSignal.timeout(5000)});
+    var d=await r.json();
+    if(Array.isArray(d)&&d.length>0){
+      _ttRatio=+d[0].longShortRatio;
+      document.getElementById('oc-tt').textContent=_ttRatio.toFixed(3);
+      document.getElementById('oc-tt').style.color=_ttRatio>1.2?'var(--g)':_ttRatio<0.85?'var(--r)':'var(--t2)';
+      anySuccess=true;
     }
-    document.getElementById('oc-ls').textContent=lsRatio.toFixed(3);
-    document.getElementById('oc-ls').style.color=lsRatio>1.4?'var(--r)':lsRatio<0.75?'var(--g)':'var(--t2)';
-    document.getElementById('oc-ls-sig').textContent=lsRatio>1.4?'⚠️ Crowded longs':lsRatio<0.75?'⚠️ Crowded shorts':'Balanced';
-    var ttRatio=1;
-    if(Array.isArray(tt)&&tt.length>0){ttRatio=+tt[0].longShortRatio;}
-    document.getElementById('oc-tt').textContent=ttRatio.toFixed(3);
-    document.getElementById('oc-tt').style.color=ttRatio>1.2?'var(--g)':ttRatio<0.85?'var(--r)':'var(--t2)';
-    renderIntelDeriv({fr,lsRatio,longPct,shortPct,oiChg,ttRatio});
-  }catch(e){console.error('Futures:',e);}
+  }catch(e){ /* silent */ }
+
+  if(anySuccess){
+    _futRestFails=0;
+    renderIntelDeriv({fr:_fr,lsRatio:_lsRatio,longPct:_longPct,shortPct:_shortPct,oiChg:_oiChg,ttRatio:_ttRatio});
+  } else {
+    _futRestFails++;
+    if(_futRestFails===3) console.warn('Futures REST API geo-blocked — funding rate via WebSocket only, OI/L/S unavailable.');
+  }
 }
 
 // ── CSV parse ─────────────────────────────────
@@ -1044,11 +1090,12 @@ function countdown(){
 async function boot(){
   initChart();
   connect();
+  connectFuturesWS();   // WebSocket for live funding rate (bypasses geo-block)
   await loadChart('1h');
-  await loadFutures();
+  await loadFutures();  // REST for OI + L/S (may be blocked — silently skipped)
   await loadNexus();
   setInterval(loadNexus,120000);
-  setInterval(loadFutures,30000);
+  setInterval(loadFutures,300000); // retry REST every 5min, stops after 3 failures
   setInterval(function(){loadChart(curIv);},60000);
   setInterval(countdown,1000);
   countdown();

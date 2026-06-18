@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-18T14:51:42.258996+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-06-18T17:56:58.459855+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Autonomi",
+      "Bitcoin",
       "Backpack",
-      "Synapse",
-      "Pudgy Penguins",
-      "LAB",
       "Hyperliquid",
-      "Aerodrome Finance"
+      "LAB",
+      "Stellar",
+      "Velvet"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

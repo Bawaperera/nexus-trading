@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-18T11:46:25.190668+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-18T14:51:42.258996+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -15,27 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Philly Fed Manufacturing Index",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 0.7,
-        "forecast": "9.8",
-        "previous": "-0.4"
-      },
-      {
-        "title": "Unemployment Claims",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 0.7,
-        "forecast": "225K",
-        "previous": "229K"
-      }
-    ],
-    "risk_level": "low",
-    "hours_until_next": 0.7,
-    "event_count_24h": 2
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -47,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Yooldo Games",
-      "Hyperliquid",
-      "Collector Crypt",
-      "Aster",
+      "Autonomi",
+      "Backpack",
+      "Synapse",
       "Pudgy Penguins",
-      "Bitcoin",
-      "LAB"
+      "LAB",
+      "Hyperliquid",
+      "Aerodrome Finance"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

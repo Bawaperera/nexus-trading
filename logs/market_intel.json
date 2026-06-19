@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-18T22:53:06.222332+00:00",
+  "timestamp": "2026-06-19T00:21:37.788925+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -33,10 +33,10 @@
       "Autonomi",
       "Asteroid Shiba",
       "Siren",
-      "Pudgy Penguins",
       "LAB",
-      "Venice Token",
-      "Plasma"
+      "Pudgy Penguins",
+      "Collector Crypt",
+      "Ethereum"
     ],
     "btc_in_trending": false,
     "trend_count": 7

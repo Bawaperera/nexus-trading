@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-20T05:06:06.142840+00:00",
+  "timestamp": "2026-06-20T08:44:02.854887+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Bitway",
-      "EigenCloud (prev. EigenLayer)",
-      "Hyperliquid",
-      "Aerodrome Finance",
       "Siren",
-      "Uniswap"
+      "Solana",
+      "Pudgy Penguins",
+      "Pi Network",
+      "Re Protocol reUSD",
+      "Bitway",
+      "EigenCloud (prev. EigenLayer)"
     ],
     "btc_in_trending": false,
     "trend_count": 7

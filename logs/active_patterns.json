@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-06-20T19:13:02.026460+00:00",
-  "btc_price": 63815.04,
+  "scan_time": "2026-06-20T21:07:25.635620+00:00",
+  "btc_price": 63860.45,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 1,
   "fg_value": 23,
-  "sentiment_score": -0.1633,
+  "sentiment_score": -0.0842,
   "patterns": [
     {
       "name": "head_and_shoulders",
@@ -14,11 +14,11 @@
       "timeframe": "4h",
       "status": "BREAKOUT",
       "entry": 63840.72,
-      "stop_loss": 66417.28,
+      "stop_loss": 66415.83,
       "target": 60426.69,
       "risk_reward": 1.33,
       "confidence": 0.75,
-      "score": 60,
+      "score": 63,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
@@ -27,9 +27,9 @@
         "pattern": 19,
         "mtf": 15,
         "retest": 5,
-        "volume": 8,
+        "volume": 15,
         "rsi": 3,
-        "sentiment": 10,
+        "sentiment": 6,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+8 Volume 1.7\u00d7 average",
+        "+15 Volume 2.1\u00d7 average",
         "+3 RSI 39 (neutral)",
-        "+10 Sentiment -0.16",
+        "+6 Sentiment -0.08",
         "R:R 1.3 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

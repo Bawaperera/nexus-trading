@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-20T21:07:24.976684+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-06-20T23:00:06.509338+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Biconomy",
       "RE",
-      "Bitway",
+      "Biconomy",
+      "Siren",
       "Pudgy Penguins",
-      "Solana",
       "Aerodrome Finance",
-      "Main Street USD"
+      "Bitcoin",
+      "Solana"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

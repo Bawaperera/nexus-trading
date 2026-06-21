@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-20T23:00:06.509338+00:00",
+  "timestamp": "2026-06-21T00:12:29.083749+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "RE",
       "Biconomy",
+      "Hyperliquid",
+      "Backpack",
       "Siren",
-      "Pudgy Penguins",
       "Aerodrome Finance",
-      "Bitcoin",
-      "Solana"
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

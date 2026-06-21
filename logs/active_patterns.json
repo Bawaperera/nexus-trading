@@ -127,7 +127,7 @@
       "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 16,
         "mtf": 0,
@@ -147,5 +147,6 @@
         "+0 Sentiment -0.41"
       ]
     }
-  ]
+  ],
+  "last_entry_check": "2026-06-21T21:42:39.155070+00:00"
 }

@@ -78,3 +78,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-21T05:55:29.417986+00:00,head_and_shoulders,bearish,4h,BREAKOUT,60,5,63840.72,66418.17,60426.69,1.32,False,-0.1269,23
 2026-06-21T12:07:12.155023+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,72,5,61038.45,60340.44,75226.32,20.33,False,-0.1748,23
 2026-06-21T12:07:12.802466+00:00,head_and_shoulders,bearish,4h,BREAKOUT,60,5,63840.72,66418.17,60426.69,1.32,False,-0.1748,23
+2026-06-21T19:18:51.956293+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,72,5,61038.01,60338.63,75226.47,20.29,False,-0.0692,23

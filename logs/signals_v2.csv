@@ -86,3 +86,6 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-21T23:05:38.374407+00:00,head_and_shoulders,bearish,4h,BREAKOUT,67,5,63817.67,66406.66,60380.62,1.33,False,-0.2324,23
 2026-06-21T23:05:38.860715+00:00,double_top,bearish,4h,BREAKOUT,63,5,63995.04,67290.96,60735.35,0.99,False,-0.2324,23
 2026-06-21T23:05:39.350036+00:00,bear_flag,bearish,daily,FORMING,61,4,59463.99,67394.6,46740.82,1.6,False,-0.2324,23
+2026-06-22T00:12:13.278095+00:00,head_and_shoulders,bearish,4h,BREAKOUT+15M,67,5,63817.67,66406.66,60380.62,1.33,False,0,0
+2026-06-22T00:12:13.950140+00:00,double_top,bearish,4h,BREAKOUT+15M,63,5,63995.04,67290.96,60735.35,0.99,False,0,0
+2026-06-22T00:12:14.616382+00:00,bear_flag,bearish,daily,FORMING+15M,61,4,59463.99,67394.6,46740.82,1.6,False,0,0

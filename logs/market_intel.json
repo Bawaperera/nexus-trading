@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-22T02:58:59.884631+00:00",
+  "timestamp": "2026-06-22T08:56:55.162964+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "EigenCloud (prev. EigenLayer)",
-      "Backpack",
-      "Collector Crypt",
+      "RE",
       "Taiko",
-      "Aerodrome Finance",
-      "Ethereum"
+      "Backpack",
+      "Synapse",
+      "Altura Vault Tokens",
+      "Pudgy Penguins",
+      "EigenCloud (prev. EigenLayer)"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-22T14:30:06.939016+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-22T18:42:24.977989+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Flash Manufacturing PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 19.0,
         "forecast": "54.6",
         "previous": "55.3"
       },
@@ -28,13 +28,13 @@
         "title": "Flash Services PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 19.0,
         "forecast": "51.0",
         "previous": "50.9"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 23.2,
+    "hours_until_next": 19.0,
     "event_count_24h": 2
   },
   "social": {
@@ -47,15 +47,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Arcium",
       "Synapse",
-      "Hyperliquid",
-      "Backpack",
-      "Bitcoin",
+      "RE",
       "Pudgy Penguins",
-      "RE"
+      "Arcium",
+      "Solana",
+      "Lighter",
+      "Aerodrome Finance"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

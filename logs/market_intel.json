@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-21T23:05:37.882069+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-22T02:58:59.884631+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Tensor",
-      "Bitcoin",
-      "Bittensor",
-      "XRP",
       "Pudgy Penguins",
+      "EigenCloud (prev. EigenLayer)",
       "Backpack",
-      "Stellar"
+      "Collector Crypt",
+      "Taiko",
+      "Aerodrome Finance",
+      "Ethereum"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

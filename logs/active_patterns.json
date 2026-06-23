@@ -1,11 +1,115 @@
 {
-  "scan_time": "2026-06-23T02:31:57.928982+00:00",
-  "btc_price": 64108.48,
+  "scan_time": "2026-06-23T06:42:15.026392+00:00",
+  "btc_price": 62905.19,
   "daily_trend": "bearish",
-  "4h_trend": "neutral",
+  "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 23,
-  "sentiment_score": -0.0948,
-  "patterns": []
+  "sentiment_score": -0.0263,
+  "patterns": [
+    {
+      "name": "double_top",
+      "direction": "bearish",
+      "timeframe": "4h",
+      "status": "RETEST_CONFIRMED",
+      "entry": 64038.47,
+      "stop_loss": 64365.14,
+      "target": 60822.19,
+      "risk_reward": 9.85,
+      "confidence": 0.6,
+      "score": 72,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 15,
+        "mtf": 20,
+        "retest": 20,
+        "volume": 8,
+        "rsi": 3,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+15 Pattern confidence 60%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+8 Volume 1.7\u00d7 average",
+        "+3 RSI 38 (neutral)",
+        "+6 Sentiment -0.03"
+      ]
+    },
+    {
+      "name": "head_and_shoulders",
+      "direction": "bearish",
+      "timeframe": "4h",
+      "status": "BREAKOUT",
+      "entry": 63840.72,
+      "stop_loss": 66435.54,
+      "target": 60426.69,
+      "risk_reward": 1.32,
+      "confidence": 0.75,
+      "score": 61,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 19,
+        "mtf": 20,
+        "retest": 5,
+        "volume": 8,
+        "rsi": 3,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+19 Pattern confidence 75%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+8 Volume 1.7\u00d7 average",
+        "+3 RSI 38 (neutral)",
+        "+6 Sentiment -0.03",
+        "R:R 1.3 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    },
+    {
+      "name": "falling_wedge",
+      "direction": "bullish",
+      "timeframe": "daily",
+      "status": "RETEST_CONFIRMED",
+      "entry": 60921.23,
+      "stop_loss": 60226.91,
+      "target": 74860.05,
+      "risk_reward": 20.08,
+      "confidence": 0.62,
+      "score": 60,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 0,
+        "retest": 20,
+        "volume": 8,
+        "rsi": 10,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 62%",
+        "+0 MTF 0/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+8 Volume 1.7\u00d7 average",
+        "+10 RSI 38 (oversold/overbought)",
+        "+6 Sentiment -0.03"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-23T13:38:43.764651+00:00",
+  "timestamp": "2026-06-23T16:23:40.178831+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,25 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Flash Manufacturing PMI",
-        "time_utc": "09:45 UTC",
+        "title": "President Trump Speaks",
+        "time_utc": "14:05 UTC",
         "impact": "Medium",
-        "hours_until": 0.1,
-        "forecast": "54.6",
-        "previous": "55.3"
-      },
-      {
-        "title": "Flash Services PMI",
-        "time_utc": "09:45 UTC",
-        "impact": "Medium",
-        "hours_until": 0.1,
-        "forecast": "51.1",
-        "previous": "50.9"
+        "hours_until": 1.7,
+        "forecast": "",
+        "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.1,
-    "event_count_24h": 2
+    "hours_until_next": 1.7,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -47,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Arcium",
-      "Pudgy Penguins",
-      "Bitcoin",
+      "Rain",
       "Solana",
-      "RE",
-      "Sui",
-      "Aerodrome Finance"
+      "Arcium",
+      "Hyperliquid",
+      "Bitcoin",
+      "Pudgy Penguins",
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

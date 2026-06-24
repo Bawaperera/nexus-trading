@@ -120,3 +120,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-24T10:15:39.702338+00:00,descending_triangle,bearish,1h,BREAKOUT,69,5,62137.98,64611.28,59678.66,0.99,False,-0.1322,17
 2026-06-24T10:15:40.184776+00:00,double_top,bearish,4h,BREAKOUT,68,5,62190.0,66448.98,58009.58,0.98,False,-0.1322,17
 2026-06-24T10:15:40.684065+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,67,4,60775.51,60154.55,73187.97,19.99,False,-0.1322,17
+2026-06-24T13:13:43.291167+00:00,double_top,bearish,4h,BREAKOUT,68,5,62190.0,66448.98,58009.58,0.98,False,-0.115,17

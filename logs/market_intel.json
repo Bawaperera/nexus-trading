@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-06-25T11:34:11.881741+00:00",
+  "timestamp": "2026-06-25T14:07:50.611749+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.9h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,41 +17,25 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core PCE Price Index m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.9,
-        "forecast": "0.3%",
-        "previous": "0.2%"
-      },
-      {
-        "title": "Final GDP q/q",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.9,
-        "forecast": "1.6%",
-        "previous": "1.6%"
-      },
-      {
-        "title": "Final GDP Price Index q/q",
-        "time_utc": "08:30 UTC",
+        "title": "Revised UoM Consumer Sentiment",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "3.5%",
-        "previous": "3.5%"
+        "hours_until": 23.9,
+        "forecast": "50.0",
+        "previous": "48.9"
       },
       {
-        "title": "Unemployment Claims",
-        "time_utc": "08:30 UTC",
+        "title": "Revised UoM Inflation Expectations",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "225K",
-        "previous": "226K"
+        "hours_until": 23.9,
+        "forecast": "",
+        "previous": "4.6%"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.9,
-    "event_count_24h": 4
+    "risk_level": "low",
+    "hours_until_next": 23.9,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -65,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Zano",
-      "Rain",
       "Synapse",
+      "Bitcoin",
+      "Rain",
       "MemeCore",
       "Pudgy Penguins",
-      "Bitcoin",
-      "Solana"
+      "Collector Crypt",
+      "Solstice"
     ],
     "btc_in_trending": true,
     "trend_count": 7

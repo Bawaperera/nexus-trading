@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-25T00:01:23.602871+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-25T04:58:22.123146+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "President Trump Speaks",
-        "time_utc": "20:30 UTC",
-        "impact": "Medium",
-        "hours_until": 0.5,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.5,
+        "hours_until": 7.5,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -36,7 +28,7 @@
         "title": "Final GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.5,
+        "hours_until": 7.5,
         "forecast": "1.6%",
         "previous": "1.6%"
       },
@@ -44,7 +36,7 @@
         "title": "Final GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.5,
+        "hours_until": 7.5,
         "forecast": "3.5%",
         "previous": "3.5%"
       },
@@ -52,14 +44,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.5,
+        "hours_until": 7.5,
         "forecast": "225K",
         "previous": "226K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 0.5,
-    "event_count_24h": 5
+    "hours_until_next": 7.5,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -72,14 +64,14 @@
   "trending": {
     "trending_coins": [
       "Zano",
-      "Bitcoin",
       "Rain",
-      "Pudgy Penguins",
-      "Aerodrome Finance",
+      "MemeCore",
       "Aave",
-      "Hyperliquid"
+      "Arcium",
+      "Hyperliquid",
+      "Pudgy Penguins"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

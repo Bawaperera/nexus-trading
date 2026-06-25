@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-06-24T22:09:46.888935+00:00",
-  "btc_price": 60962.91,
+  "scan_time": "2026-06-25T00:01:24.091064+00:00",
+  "btc_price": 60979.38,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
-  "fg_value": 50,
-  "sentiment_score": -0.047,
+  "fg_value": 12,
+  "sentiment_score": -0.1157,
   "patterns": [
     {
       "name": "double_top",
@@ -14,12 +14,12 @@
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
       "entry": 62190.0,
-      "stop_loss": 62807.13,
+      "stop_loss": 62787.27,
       "target": 58009.58,
-      "risk_reward": 6.77,
+      "risk_reward": 7.0,
       "confidence": 0.6,
-      "score": 69,
-      "n_confluences": 4,
+      "score": 65,
+      "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
       "already_traded": false,
@@ -27,9 +27,9 @@
         "pattern": 15,
         "mtf": 20,
         "retest": 20,
-        "volume": 8,
+        "volume": 0,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +37,9 @@
         "+15 Pattern confidence 60%",
         "+20 MTF 4/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.6\u00d7 average",
+        "+0 Volume 0.2\u00d7 average",
         "+0 RSI 33 (risky)",
-        "+6 Sentiment -0.05"
+        "+10 Sentiment -0.12"
       ]
     }
   ]

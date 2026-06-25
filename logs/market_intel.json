@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-24T22:09:46.238958+00:00",
+  "timestamp": "2026-06-25T00:01:23.602871+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "President Trump Speaks",
         "time_utc": "20:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.3,
+        "hours_until": 0.5,
         "forecast": "",
         "previous": ""
       },
@@ -28,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.3,
+        "hours_until": 12.5,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -36,7 +36,7 @@
         "title": "Final GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.3,
+        "hours_until": 12.5,
         "forecast": "1.6%",
         "previous": "1.6%"
       },
@@ -44,7 +44,7 @@
         "title": "Final GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.3,
+        "hours_until": 12.5,
         "forecast": "3.5%",
         "previous": "3.5%"
       },
@@ -52,13 +52,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.3,
+        "hours_until": 12.5,
         "forecast": "225K",
         "previous": "226K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 2.3,
+    "hours_until_next": 0.5,
     "event_count_24h": 5
   },
   "social": {
@@ -72,12 +72,12 @@
   "trending": {
     "trending_coins": [
       "Zano",
-      "Rain",
       "Bitcoin",
-      "Hyperliquid",
-      "Synapse",
+      "Rain",
+      "Pudgy Penguins",
+      "Aerodrome Finance",
       "Aave",
-      "Lighter"
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

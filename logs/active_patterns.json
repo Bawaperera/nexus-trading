@@ -1,24 +1,24 @@
 {
-  "scan_time": "2026-06-25T14:07:52.212271+00:00",
-  "btc_price": 58975.71,
+  "scan_time": "2026-06-25T17:05:36.330734+00:00",
+  "btc_price": 59087.34,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 12,
-  "sentiment_score": -0.0725,
+  "sentiment_score": -0.1212,
   "patterns": [
     {
       "name": "descending_triangle",
       "direction": "bearish",
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
-      "entry": 60662.3,
-      "stop_loss": 61204.07,
-      "target": 55774.59,
-      "risk_reward": 9.02,
+      "entry": 60465.37,
+      "stop_loss": 61007.15,
+      "target": 55380.75,
+      "risk_reward": 9.39,
       "confidence": 0.65,
-      "score": 77,
+      "score": 81,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -29,7 +29,7 @@
         "retest": 20,
         "volume": 15,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 65%",
         "+20 MTF 4/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.6\u00d7 average",
         "+0 RSI 29 (risky)",
-        "+6 Sentiment -0.07"
+        "+10 Sentiment -0.12"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "target": 42893.22,
       "risk_reward": 0.99,
       "confidence": 0.65,
-      "score": 65,
+      "score": 69,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
@@ -63,7 +63,7 @@
         "retest": 8,
         "volume": 15,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -71,9 +71,9 @@
         "+16 Pattern confidence 65%",
         "+20 MTF 4/4 timeframes aligned",
         "+8 Status: AWAITING_RETEST",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.6\u00d7 average",
         "+0 RSI 29 (risky)",
-        "+6 Sentiment -0.07",
+        "+10 Sentiment -0.12",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -82,12 +82,12 @@
       "direction": "bearish",
       "timeframe": "1h",
       "status": "BREAKOUT",
-      "entry": 59515.98,
+      "entry": 59069.4,
       "stop_loss": 63168.4,
-      "target": 55945.81,
+      "target": 55052.67,
       "risk_reward": 0.98,
       "confidence": 0.65,
-      "score": 62,
+      "score": 66,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
@@ -98,7 +98,7 @@
         "retest": 5,
         "volume": 15,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -106,9 +106,9 @@
         "+16 Pattern confidence 65%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.6\u00d7 average",
         "+0 RSI 29 (risky)",
-        "+6 Sentiment -0.07",
+        "+10 Sentiment -0.12",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

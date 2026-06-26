@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T13:05:31.435505+00:00",
+  "timestamp": "2026-06-26T16:09:35.014707+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,33 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Revised UoM Consumer Sentiment",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "50.0",
-        "previous": "48.9"
-      },
-      {
-        "title": "Revised UoM Inflation Expectations",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "",
-        "previous": "4.6%"
-      },
-      {
         "title": "President Trump Speaks",
         "time_utc": "13:30 UTC",
         "impact": "Medium",
-        "hours_until": 4.4,
+        "hours_until": 1.3,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.9,
-    "event_count_24h": 3
+    "hours_until_next": 1.3,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -56,12 +40,12 @@
   "trending": {
     "trending_coins": [
       "Cap",
-      "Aave",
-      "Hyperliquid",
+      "Pudgy Penguins",
       "Rain",
-      "Ethereum",
-      "Bitcoin",
-      "Arcium"
+      "Hyperliquid",
+      "Lighter",
+      "Aave",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

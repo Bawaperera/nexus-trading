@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T06:46:40.197621+00:00",
+  "timestamp": "2026-06-26T10:16:50.710797+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 7.2,
+        "hours_until": 3.7,
         "forecast": "50.0",
         "previous": "48.9"
       },
@@ -28,13 +28,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 7.2,
+        "hours_until": 3.7,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 7.2,
+    "hours_until_next": 3.7,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Arcium",
-      "Solstice",
-      "Aave",
       "Bitcoin",
-      "Audiera",
-      "Canton",
-      "Hyperliquid"
+      "Hyperliquid",
+      "Jito",
+      "Arcium",
+      "Aave",
+      "Bittensor",
+      "Backpack"
     ],
     "btc_in_trending": true,
     "trend_count": 7

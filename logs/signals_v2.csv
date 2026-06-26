@@ -140,3 +140,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-25T19:48:15.178596+00:00,descending_triangle,bearish,4h,RETEST_CONFIRMED,66,4,60465.37,61007.15,55380.75,9.39,False,-0.0797,12
 2026-06-25T20:31:50.421458+00:00,descending_triangle,bearish,4h,RETEST_CONFIRMED+15M,66,4,60465.37,61007.15,55380.75,9.39,False,0,0
 2026-06-25T23:10:30.977836+00:00,descending_triangle,bearish,daily,AWAITING_RETEST,62,4,60729.86,78755.06,42902.43,0.99,False,-0.1549,12
+2026-06-26T02:36:52.792315+00:00,head_and_shoulders,bearish,1h,BREAKOUT,65,4,59318.76,60208.94,56769.15,2.86,False,-0.0855,13
+2026-06-26T02:36:53.278387+00:00,descending_triangle,bearish,1h,BREAKOUT,62,4,59031.78,63155.09,54977.42,0.98,False,-0.0855,13

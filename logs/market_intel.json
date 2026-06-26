@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-25T23:10:30.285822+00:00",
+  "timestamp": "2026-06-26T02:36:52.216155+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 14.8,
+        "hours_until": 11.4,
         "forecast": "50.0",
         "previous": "48.9"
       },
@@ -28,13 +28,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 14.8,
+        "hours_until": 11.4,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 14.8,
+    "hours_until_next": 11.4,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Rain",
-      "Hyperliquid",
       "Bitcoin",
-      "Aave",
-      "Venice Token",
-      "Bittensor",
-      "Sui"
+      "Pudgy Penguins",
+      "MemeCore",
+      "Hyperliquid",
+      "Synapse",
+      "Stellar",
+      "Plasma"
     ],
     "btc_in_trending": true,
     "trend_count": 7

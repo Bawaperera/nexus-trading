@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-26T18:25:03.728776+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-06-26T20:29:08.439537+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Aave",
-      "Rain",
-      "Lighter",
-      "Cap",
       "Pudgy Penguins",
+      "Solana",
       "Jito",
-      "Solana"
+      "Cap",
+      "Aave",
+      "Bitcoin",
+      "Hyperliquid"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

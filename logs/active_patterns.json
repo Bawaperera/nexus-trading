@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-06-27T21:57:06.426232+00:00",
-  "btc_price": 60109.2,
+  "scan_time": "2026-06-27T22:59:25.083360+00:00",
+  "btc_price": 60132.28,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 15,
-  "sentiment_score": -0.3483,
+  "sentiment_score": -0.3913,
   "patterns": [
     {
       "name": "descending_triangle",
       "direction": "bearish",
       "timeframe": "daily",
       "status": "BREAKOUT",
-      "entry": 59685.68,
+      "entry": 59682.61,
       "stop_loss": 78302.03,
-      "target": 41267.02,
+      "target": 41260.87,
       "risk_reward": 0.99,
       "confidence": 0.65,
       "score": 61,
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 4.9\u00d7 average",
+        "+15 Volume 4.5\u00d7 average",
         "+0 RSI 33 (risky)",
-        "+10 Sentiment -0.35",
+        "+10 Sentiment -0.39",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

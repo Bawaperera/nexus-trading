@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-28T08:42:41.340455+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-28T11:00:40.702886+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
-      "Solstice",
-      "Pump.fun",
-      "Velvet",
       "Pudgy Penguins",
-      "Bittensor",
-      "Bitcoin"
+      "Pump.fun",
+      "Solstice",
+      "Solana",
+      "Hyperliquid",
+      "Sui"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -169,3 +169,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-06-28T08:42:42.508294+00:00,falling_wedge,bullish,4h,RETEST_CONFIRMED,61,3,59339.81,59094.69,63987.45,18.96,False,-0.3464,18
 2026-06-28T11:00:41.306755+00:00,descending_triangle,bearish,daily,BREAKOUT,66,4,59616.56,78302.03,41128.78,0.99,False,-0.2562,18
 2026-06-28T11:00:41.790465+00:00,descending_triangle,bearish,4h,FORMING,61,3,59113.17,65599.02,52676.34,0.99,False,-0.2562,18
+2026-06-28T12:19:10.564677+00:00,descending_triangle,bearish,daily,FORMING,61,3,59613.21,78313.7,41110.49,0.99,False,-0.1309,18
+2026-06-28T12:19:11.208613+00:00,descending_triangle,bearish,4h,FORMING,61,3,59116.11,65601.43,52682.29,0.99,False,-0.1309,18

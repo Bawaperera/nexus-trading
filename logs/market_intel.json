@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-29T10:26:59.197833+00:00",
+  "timestamp": "2026-06-29T14:43:38.192720+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,27 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "CB Consumer Confidence",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 23.3,
+        "forecast": "94.2",
+        "previous": "93.1"
+      },
+      {
+        "title": "JOLTS Job Openings",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 23.3,
+        "forecast": "7.28M",
+        "previous": "7.62M"
+      }
+    ],
+    "risk_level": "low",
+    "hours_until_next": 23.3,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -31,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
-      "Synapse",
-      "Solstice",
       "TAC",
-      "Pudgy Penguins",
       "Bitcoin",
-      "RaveDAO"
+      "Ethena",
+      "Synapse",
+      "Pudgy Penguins",
+      "Solstice"
     ],
     "btc_in_trending": true,
     "trend_count": 7

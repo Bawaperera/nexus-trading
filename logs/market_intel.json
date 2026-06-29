@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-29T19:46:13.465318+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-06-29T21:18:59.698225+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,21 +20,21 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.2,
-        "forecast": "94.2",
+        "hours_until": 16.7,
+        "forecast": "94.4",
         "previous": "93.1"
       },
       {
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.2,
+        "hours_until": 16.7,
         "forecast": "7.28M",
         "previous": "7.62M"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 18.2,
+    "hours_until_next": 16.7,
     "event_count_24h": 2
   },
   "social": {
@@ -50,12 +50,12 @@
       "United States Water Reserve",
       "The Black Bull",
       "TAC",
-      "Pudgy Penguins",
-      "Bitcoin",
       "Synapse",
-      "Solana"
+      "Solana",
+      "Pudgy Penguins",
+      "Hyperliquid"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

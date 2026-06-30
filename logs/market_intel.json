@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-30T18:30:29.924837+00:00",
+  "timestamp": "2026-06-30T20:53:15.922872+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 17.7,
+        "hours_until": 15.4,
         "forecast": "118K",
         "previous": "122K"
       },
@@ -28,7 +28,7 @@
         "title": "Fed Chairman Warsh Speaks",
         "time_utc": "09:00 UTC",
         "impact": "High",
-        "hours_until": 18.5,
+        "hours_until": 16.1,
         "forecast": "",
         "previous": ""
       },
@@ -36,7 +36,7 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 19.5,
+        "hours_until": 17.1,
         "forecast": "53.8",
         "previous": "54.0"
       },
@@ -44,13 +44,13 @@
         "title": "ISM Manufacturing Prices",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 19.5,
+        "hours_until": 17.1,
         "forecast": "77.7",
         "previous": "82.1"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 17.7,
+    "hours_until_next": 15.4,
     "event_count_24h": 4
   },
   "social": {
@@ -64,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
+      "Solana",
       "Bitcoin",
+      "Chainlink",
       "Synapse",
       "Pudgy Penguins",
-      "Lighter",
-      "Pyth Network",
-      "NEAR Protocol"
+      "Bittensor"
     ],
     "btc_in_trending": true,
     "trend_count": 7

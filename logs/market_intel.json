@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-01T11:54:25.169347+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-01T14:14:04.333272+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,48 +17,48 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "ADP Non-Farm Employment Change",
-        "time_utc": "08:15 UTC",
-        "impact": "Medium",
-        "hours_until": 0.3,
-        "forecast": "118K",
-        "previous": "122K"
-      },
-      {
-        "title": "Fed Chairman Warsh Speaks",
-        "time_utc": "09:00 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "",
-        "previous": ""
-      },
-      {
-        "title": "ISM Manufacturing PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 2.1,
-        "forecast": "53.8",
-        "previous": "54.0"
-      },
-      {
-        "title": "ISM Manufacturing Prices",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 2.1,
-        "forecast": "77.7",
-        "previous": "82.1"
-      },
-      {
         "title": "President Trump Speaks",
         "time_utc": "15:15 UTC",
         "impact": "Medium",
-        "hours_until": 7.3,
+        "hours_until": 5.0,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Average Hourly Earnings m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 22.3,
+        "forecast": "0.3%",
+        "previous": "0.3%"
+      },
+      {
+        "title": "Non-Farm Employment Change",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 22.3,
+        "forecast": "114K",
+        "previous": "172K"
+      },
+      {
+        "title": "Unemployment Rate",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 22.3,
+        "forecast": "4.3%",
+        "previous": "4.3%"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.3,
+        "forecast": "219K",
+        "previous": "215K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 0.3,
+    "hours_until_next": 5.0,
     "event_count_24h": 5
   },
   "social": {
@@ -72,14 +72,14 @@
   "trending": {
     "trending_coins": [
       "Taiko",
-      "Bitcoin",
+      "Morpho",
+      "Jupiter",
       "The Black Bull",
-      "Pudgy Penguins",
+      "Synapse",
       "Aave",
-      "Bittensor",
       "Solana"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

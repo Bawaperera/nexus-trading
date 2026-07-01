@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-01T17:08:49.054969+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-01T19:41:44.637315+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "President Trump Speaks",
-        "time_utc": "15:15 UTC",
-        "impact": "Medium",
-        "hours_until": 2.1,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.4,
+        "hours_until": 16.8,
         "forecast": "0.3%",
         "previous": "0.3%"
       },
@@ -36,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.4,
+        "hours_until": 16.8,
         "forecast": "114K",
         "previous": "172K"
       },
@@ -44,7 +36,7 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.4,
+        "hours_until": 16.8,
         "forecast": "4.3%",
         "previous": "4.3%"
       },
@@ -52,14 +44,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 19.4,
+        "hours_until": 16.8,
         "forecast": "219K",
         "previous": "215K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 2.1,
-    "event_count_24h": 5
+    "hours_until_next": 16.8,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -72,14 +64,14 @@
   "trending": {
     "trending_coins": [
       "Venice Token",
-      "Bitcoin",
-      "Jupiter",
-      "Solana",
       "Morpho",
-      "Taiko",
-      "XRP"
+      "Lighter",
+      "dYdX",
+      "Pudgy Penguins",
+      "NFPrompt",
+      "The Black Bull"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

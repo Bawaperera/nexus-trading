@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-02T02:32:49.866765+00:00",
+  "timestamp": "2026-07-02T06:33:27.695208+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.0,
+        "hours_until": 5.9,
         "forecast": "0.3%",
         "previous": "0.3%"
       },
@@ -28,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.0,
+        "hours_until": 5.9,
         "forecast": "114K",
         "previous": "172K"
       },
@@ -36,7 +36,7 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.0,
+        "hours_until": 5.9,
         "forecast": "4.3%",
         "previous": "4.3%"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 10.0,
+        "hours_until": 5.9,
         "forecast": "219K",
         "previous": "215K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 10.0,
+    "hours_until_next": 5.9,
     "event_count_24h": 4
   },
   "social": {
@@ -64,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "Taiko",
+      "The Black Bull",
       "Lighter",
-      "Hyperliquid",
-      "Venice Token",
-      "Bitcoin",
+      "Pudgy Penguins",
+      "Solana",
       "Grass",
-      "Artificial Superintelligence Alliance"
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

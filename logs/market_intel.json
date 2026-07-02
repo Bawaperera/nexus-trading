@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-07-02T12:04:38.407090+00:00",
+  "timestamp": "2026-07-02T15:08:22.113200+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.4h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,43 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Average Hourly Earnings m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.4,
-        "forecast": "0.3%",
-        "previous": "0.3%"
-      },
-      {
-        "title": "Non-Farm Employment Change",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.4,
-        "forecast": "114K",
-        "previous": "172K"
-      },
-      {
-        "title": "Unemployment Rate",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.4,
-        "forecast": "4.3%",
-        "previous": "4.3%"
-      },
-      {
-        "title": "Unemployment Claims",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 0.4,
-        "forecast": "219K",
-        "previous": "215K"
-      }
-    ],
-    "risk_level": "high",
-    "hours_until_next": 0.4,
-    "event_count_24h": 4
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -66,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
-      "Solana",
-      "Taiko",
-      "Velvet",
-      "Bitcoin",
       "Lighter",
-      "Venice Token"
+      "Bitcoin",
+      "Grass",
+      "Venice Token",
+      "Taiko",
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

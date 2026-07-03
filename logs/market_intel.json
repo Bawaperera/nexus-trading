@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-03T06:24:06.222215+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-03T09:51:34.704587+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Metaplex",
-      "Nexus",
-      "Pudgy Penguins",
       "The Black Bull",
+      "Nexus",
+      "Metaplex",
+      "Bitcoin",
       "Lighter",
-      "Venice Token",
-      "Solana"
+      "Solana",
+      "Jupiter"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-03T19:05:28.230590+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-03T20:55:16.669134+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
+      "Pudgy Penguins",
+      "Alien Worlds",
+      "Lighter",
       "Hyperliquid",
-      "LAB",
-      "Bitcoin",
-      "Ethereum",
       "Aerodrome Finance",
-      "Lighter"
+      "Cardano"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

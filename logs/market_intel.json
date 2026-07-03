@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-03T21:59:21.447412+00:00",
+  "timestamp": "2026-07-03T23:06:45.104603+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "The Black Bull",
       "Pudgy Penguins",
-      "Hyperliquid",
+      "The Black Bull",
       "Alien Worlds",
+      "Bonk",
       "Bitcoin",
-      "Venice Token",
-      "Lighter"
+      "Solana",
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

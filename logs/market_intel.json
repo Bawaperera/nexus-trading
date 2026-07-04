@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-04T13:04:55.063285+00:00",
+  "timestamp": "2026-07-04T14:59:37.633317+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "manlet",
       "The Black Bull",
       "LAB",
       "Hamster Kombat",
       "Pudgy Penguins",
-      "Lighter",
       "Bitcoin",
-      "manlet"
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

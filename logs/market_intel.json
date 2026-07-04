@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-04T19:11:21.752736+00:00",
+  "timestamp": "2026-07-04T20:45:18.119191+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "manlet",
       "The Black Bull",
       "LAB",
-      "manlet",
-      "Pudgy Penguins",
+      "Hyperliquid",
       "Venice Token",
-      "Lighter",
-      "Hyperliquid"
+      "Pudgy Penguins",
+      "Ether.fi"
     ],
     "btc_in_trending": false,
     "trend_count": 7

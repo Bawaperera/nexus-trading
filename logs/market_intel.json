@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-04T21:51:10.573647+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-04T22:50:47.025796+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "The Black Bull",
       "LAB",
-      "Pudgy Penguins",
+      "The Black Bull",
       "Siren",
-      "Solana",
-      "Ether.fi",
-      "Bitcoin"
+      "Cardano",
+      "XRP",
+      "Pudgy Penguins",
+      "Based"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-05T15:07:28.443890+00:00",
+  "timestamp": "2026-07-05T16:59:03.534090+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 22.9,
+        "hours_until": 21.0,
         "forecast": "54.2",
         "previous": "54.5"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 22.9,
+    "hours_until_next": 21.0,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "The Black Bull",
       "Lighter",
-      "Pudgy Penguins",
+      "The Black Bull",
       "Bitcoin",
-      "Solana",
       "LAB",
-      "Venice Token"
+      "Venice Token",
+      "Velvet",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-05T02:14:51.900545+00:00",
-  "btc_price": 62690.0,
+  "scan_time": "2026-07-05T06:33:10.251837+00:00",
+  "btc_price": 62744.68,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 23,
-  "sentiment_score": 0.4339,
+  "sentiment_score": 0.2367,
   "patterns": [
     {
       "name": "falling_wedge",
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 62%",
         "+8 MTF 2/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 4.9\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+10 Sentiment +0.43"
+        "+15 Volume 4.6\u00d7 average",
+        "+7 RSI 49 (neutral)",
+        "+10 Sentiment +0.24"
       ]
     },
     {
@@ -71,9 +71,9 @@
         "+15 Pattern confidence 60%",
         "+8 MTF 2/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 4.9\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+10 Sentiment +0.43"
+        "+15 Volume 4.6\u00d7 average",
+        "+7 RSI 49 (neutral)",
+        "+10 Sentiment +0.24"
       ]
     },
     {
@@ -81,9 +81,9 @@
       "direction": "bullish",
       "timeframe": "4h",
       "status": "BREAKOUT",
-      "entry": 62879.29,
+      "entry": 62891.66,
       "stop_loss": 57672.69,
-      "target": 68037.84,
+      "target": 68062.58,
       "risk_reward": 0.99,
       "confidence": 0.65,
       "score": 61,
@@ -105,9 +105,9 @@
         "+16 Pattern confidence 65%",
         "+8 MTF 2/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 4.9\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+10 Sentiment +0.43",
+        "+15 Volume 4.6\u00d7 average",
+        "+7 RSI 49 (neutral)",
+        "+10 Sentiment +0.24",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -117,7 +117,7 @@
       "timeframe": "1h",
       "status": "BREAKOUT",
       "entry": 62890.52,
-      "stop_loss": 61143.19,
+      "stop_loss": 61144.44,
       "target": 64618.25,
       "risk_reward": 0.99,
       "confidence": 0.6,
@@ -140,9 +140,9 @@
         "+15 Pattern confidence 60%",
         "+8 MTF 2/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 4.9\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+10 Sentiment +0.43",
+        "+15 Volume 4.6\u00d7 average",
+        "+7 RSI 49 (neutral)",
+        "+10 Sentiment +0.24",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

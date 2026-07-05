@@ -1,80 +1,11 @@
 {
-  "scan_time": "2026-07-05T18:04:46.023811+00:00",
-  "btc_price": 62575.69,
+  "scan_time": "2026-07-05T20:08:05.561386+00:00",
+  "btc_price": 62739.74,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 1,
   "fg_value": 23,
-  "sentiment_score": -0.0705,
-  "patterns": [
-    {
-      "name": "falling_wedge",
-      "direction": "bullish",
-      "timeframe": "daily",
-      "status": "RETEST_CONFIRMED",
-      "entry": 59774.98,
-      "stop_loss": 58936.13,
-      "target": 71085.07,
-      "risk_reward": 13.48,
-      "confidence": 0.62,
-      "score": 64,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 0,
-        "retest": 20,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 62%",
-        "+0 MTF 1/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.5\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+6 Sentiment -0.07"
-      ]
-    },
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "4h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 60687.3,
-      "stop_loss": 60499.06,
-      "target": 63653.87,
-      "risk_reward": 15.76,
-      "confidence": 0.6,
-      "score": 63,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 15,
-        "mtf": 0,
-        "retest": 20,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+15 Pattern confidence 60%",
-        "+0 MTF 1/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.5\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+6 Sentiment -0.07"
-      ]
-    }
-  ]
+  "sentiment_score": 0.0633,
+  "patterns": []
 }

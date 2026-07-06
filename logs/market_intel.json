@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-06T12:39:19.415583+00:00",
+  "timestamp": "2026-07-06T16:14:08.919537+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,19 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "ISM Services PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 1.3,
-        "forecast": "54.2",
-        "previous": "54.5"
-      }
-    ],
-    "risk_level": "medium",
-    "hours_until_next": 1.3,
-    "event_count_24h": 1
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -39,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "The Black Bull",
       "Lighter",
-      "Monad",
       "Vanar Chain",
+      "The Black Bull",
+      "Monad",
       "Pudgy Penguins",
       "Bitcoin",
-      "Hyperliquid"
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

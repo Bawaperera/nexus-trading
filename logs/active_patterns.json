@@ -1,13 +1,47 @@
 {
-  "scan_time": "2026-07-06T08:12:57.968511+00:00",
-  "btc_price": 62980.67,
+  "scan_time": "2026-07-06T12:39:20.875344+00:00",
+  "btc_price": 61967.59,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
-  "bull_count": 2,
+  "bull_count": 1,
   "fg_value": 24,
-  "sentiment_score": 0.0354,
+  "sentiment_score": 0.0173,
   "patterns": [
+    {
+      "name": "rising_wedge",
+      "direction": "bearish",
+      "timeframe": "4h",
+      "status": "RETEST_CONFIRMED",
+      "entry": 63515.28,
+      "stop_loss": 63744.52,
+      "target": 59672.98,
+      "risk_reward": 16.76,
+      "confidence": 0.62,
+      "score": 79,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 15,
+        "retest": 20,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 62%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+15 Volume 2.8\u00d7 average",
+        "+7 RSI 46 (neutral)",
+        "+6 Sentiment +0.02"
+      ]
+    },
     {
       "name": "falling_wedge",
       "direction": "bullish",
@@ -18,14 +52,14 @@
       "target": 70579.27,
       "risk_reward": 14.91,
       "confidence": 0.62,
-      "score": 72,
-      "n_confluences": 5,
+      "score": 64,
+      "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
       "already_traded": false,
       "component_scores": {
         "pattern": 16,
-        "mtf": 8,
+        "mtf": 0,
         "retest": 20,
         "volume": 15,
         "rsi": 7,
@@ -35,11 +69,46 @@
       },
       "reasons": [
         "+16 Pattern confidence 62%",
-        "+8 MTF 2/4 timeframes aligned",
+        "+0 MTF 1/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 3.0\u00d7 average",
-        "+7 RSI 49 (neutral)",
-        "+6 Sentiment +0.04"
+        "+15 Volume 2.8\u00d7 average",
+        "+7 RSI 46 (neutral)",
+        "+6 Sentiment +0.02"
+      ]
+    },
+    {
+      "name": "bear_flag",
+      "direction": "bearish",
+      "timeframe": "daily",
+      "status": "FORMING",
+      "entry": 57720.73,
+      "stop_loss": 64076.8,
+      "target": 51803.7,
+      "risk_reward": 0.93,
+      "confidence": 0.7,
+      "score": 61,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 18,
+        "mtf": 15,
+        "retest": 0,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+18 Pattern confidence 70%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+0 Status: FORMING",
+        "+15 Volume 2.8\u00d7 average",
+        "+7 RSI 46 (neutral)",
+        "+6 Sentiment +0.02",
+        "R:R 0.9 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-06T16:14:08.919537+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-06T18:51:22.023926+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Lighter",
-      "Vanar Chain",
       "The Black Bull",
-      "Monad",
+      "Bonk",
       "Pudgy Penguins",
-      "Bitcoin",
-      "Ethereum"
+      "Lighter",
+      "yearn.finance",
+      "Monad",
+      "Grass"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

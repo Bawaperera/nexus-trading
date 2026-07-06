@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-06T03:53:31.178774+00:00",
-  "btc_price": 63133.28,
+  "scan_time": "2026-07-06T08:12:57.968511+00:00",
+  "btc_price": 62980.67,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 24,
-  "sentiment_score": 0.0028,
+  "sentiment_score": 0.0354,
   "patterns": [
     {
       "name": "falling_wedge",
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 62%",
         "+8 MTF 2/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 4.5\u00d7 average",
-        "+7 RSI 50 (neutral)",
-        "+6 Sentiment +0.00"
+        "+15 Volume 3.0\u00d7 average",
+        "+7 RSI 49 (neutral)",
+        "+6 Sentiment +0.04"
       ]
     }
   ]

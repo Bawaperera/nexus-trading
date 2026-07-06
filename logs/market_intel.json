@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-06T03:53:30.666824+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-06T08:12:57.454677+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 10.1,
+        "hours_until": 5.8,
         "forecast": "54.2",
         "previous": "54.5"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 10.1,
+    "hours_until_next": 5.8,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Lighter",
       "The Black Bull",
-      "Pudgy Penguins",
-      "Hyperliquid",
-      "Synapse",
       "Monad",
-      "Bittensor"
+      "Hyperliquid",
+      "Pudgy Penguins",
+      "Lighter",
+      "Bitcoin",
+      "Synapse"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

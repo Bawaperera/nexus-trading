@@ -22,7 +22,7 @@
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 16,
         "mtf": 0,
@@ -111,5 +111,6 @@
         "R:R 0.8 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ]
+  ],
+  "last_entry_check": "2026-07-07T15:50:34.818178+00:00"
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-07T14:11:22.455027+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-07T17:07:22.484812+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "TAC",
       "LAB",
-      "The Black Bull",
-      "Lighter",
       "Pudgy Penguins",
-      "Bitcoin",
-      "Bonk",
-      "Grove"
+      "Grove",
+      "The Black Bull",
+      "Venice Token",
+      "Monad"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

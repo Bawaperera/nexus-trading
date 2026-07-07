@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-06T22:07:59.114305+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-07T00:01:13.762910+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "The Black Bull",
       "Pudgy Penguins",
-      "Monad",
-      "Bitcoin",
-      "Bonk",
+      "The Black Bull",
       "Lighter",
-      "yearn.finance"
+      "Bonk",
+      "yearn.finance",
+      "Grove",
+      "NEAR Protocol"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-07-08T15:12:17.138129+00:00",
+  "timestamp": "2026-07-08T17:21:53.305764+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.6h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 2.8,
+        "hours_until": 0.6,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +30,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.3,
+        "hours_until": 19.1,
         "forecast": "218K",
         "previous": "215K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 2.8,
+    "risk_level": "high",
+    "hours_until_next": 0.6,
     "event_count_24h": 2
   },
   "social": {
@@ -51,9 +53,9 @@
       "LAB",
       "The Black Bull",
       "Bitcoin",
-      "TAC",
-      "Grass",
-      "Hyperliquid"
+      "Solana",
+      "Pudgy Penguins",
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

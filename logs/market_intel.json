@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-08T10:56:10.560855+00:00",
+  "timestamp": "2026-07-08T12:16:37.819087+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 7.1,
+        "hours_until": 5.7,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 7.1,
+    "hours_until_next": 5.7,
     "event_count_24h": 1
   },
   "social": {
@@ -41,10 +41,10 @@
     "trending_coins": [
       "Cash Cat",
       "LAB",
-      "The Black Bull",
       "EVAA Protocol",
       "Grass",
-      "Solana",
+      "The Black Bull",
+      "Pudgy Penguins",
       "Lighter"
     ],
     "btc_in_trending": false,

@@ -358,3 +358,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-07-09T08:20:43.724429+00:00,double_top,bearish,1h,BREAKOUT,60,5,62621.98,64634.01,60642.24,0.98,False,0.0022,22
 2026-07-09T11:48:12.044284+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,64,4,61359.6,60622.35,71515.43,13.78,False,-0.0897,22
 2026-07-09T11:48:12.696673+00:00,double_top,bearish,1h,BREAKOUT,60,5,62621.98,64634.01,60642.24,0.98,False,-0.0897,22
+2026-07-09T14:36:33.591773+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,64,4,61359.7,60622.45,71515.54,13.78,False,-0.0168,22

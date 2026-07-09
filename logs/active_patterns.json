@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-07-09T11:48:12.696903+00:00",
-  "btc_price": 62604.85,
+  "scan_time": "2026-07-09T14:36:33.591960+00:00",
+  "btc_price": 62730.91,
   "daily_trend": "bearish",
   "4h_trend": "neutral",
   "weekly_trend": "bearish",
   "bull_count": 1,
   "fg_value": 22,
-  "sentiment_score": -0.0897,
+  "sentiment_score": -0.0168,
   "patterns": [
     {
       "name": "falling_wedge",
       "direction": "bullish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 61359.6,
-      "stop_loss": 60622.35,
-      "target": 71515.43,
+      "entry": 61359.7,
+      "stop_loss": 60622.45,
+      "target": 71515.54,
       "risk_reward": 13.78,
       "confidence": 0.62,
       "score": 64,
@@ -37,44 +37,9 @@
         "+16 Pattern confidence 62%",
         "+0 MTF 1/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.6\u00d7 average",
+        "+15 Volume 3.3\u00d7 average",
         "+7 RSI 48 (neutral)",
-        "+6 Sentiment -0.09"
-      ]
-    },
-    {
-      "name": "double_top",
-      "direction": "bearish",
-      "timeframe": "1h",
-      "status": "BREAKOUT",
-      "entry": 62621.98,
-      "stop_loss": 64634.01,
-      "target": 60642.24,
-      "risk_reward": 0.98,
-      "confidence": 0.75,
-      "score": 60,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 2.6\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+6 Sentiment -0.09",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+        "+6 Sentiment -0.02"
       ]
     }
   ]

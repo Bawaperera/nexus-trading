@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-09T21:15:10.010327+00:00",
+  "timestamp": "2026-07-09T23:04:24.616306+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Cash Cat",
-      "Pudgy Penguins",
       "LAB",
+      "Pudgy Penguins",
       "The Black Bull",
       "Arbitrum",
-      "Uniswap",
-      "Arrow"
+      "Solstice",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

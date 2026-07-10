@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-10T16:17:28.924781+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-10T18:18:13.943726+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
       "Zano",
-      "LAB",
+      "Cash Cat",
+      "Pudgy Penguins",
       "The Black Bull",
-      "Bitcoin",
-      "DeXe",
-      "Venice Token"
+      "LAB",
+      "Solana",
+      "Virtuals Protocol"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

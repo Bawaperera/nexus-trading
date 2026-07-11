@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-11T14:24:04.592678+00:00",
+  "timestamp": "2026-07-11T15:46:28.127967+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -33,10 +33,10 @@
       "HOODIE",
       "Cash Cat",
       "Pudgy Penguins",
-      "Lighter",
       "LAB",
-      "The Black Bull",
-      "Hedera"
+      "Moo Deng",
+      "Arbitrum",
+      "The Black Bull"
     ],
     "btc_in_trending": false,
     "trend_count": 7

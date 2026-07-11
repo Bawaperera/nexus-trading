@@ -381,3 +381,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-07-10T23:52:30.219293+00:00,falling_wedge,bullish,daily,RETEST_CONFIRMED,79,5,61905.59,61162.1,71949.89,13.51,False,0.0838,23
 2026-07-10T23:52:30.719571+00:00,double_bottom,bullish,4h,BREAKOUT,67,5,64596.55,61203.27,67924.73,0.98,False,0.0838,23
 2026-07-10T23:52:31.216126+00:00,ascending_triangle,bullish,1h,BREAKOUT,64,5,64436.41,62382.73,66467.84,0.99,False,0.0838,23
+2026-07-11T10:57:12.010638+00:00,double_bottom,bullish,4h,BREAKOUT,71,5,64601.72,61217.55,67926.88,0.98,False,0.1796,26
+2026-07-11T10:57:12.685929+00:00,double_bottom,bullish,1h,FORMING,62,4,64662.02,62873.36,66440.38,0.99,False,0.1796,26

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-11T18:48:57.279201+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-11T20:01:08.555212+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "HOODIE",
-      "Cash Cat",
       "Pudgy Penguins",
+      "Space and Time",
       "LAB",
+      "Cash Cat",
       "The Black Bull",
-      "Bitcoin",
-      "Lighter"
+      "Injective"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

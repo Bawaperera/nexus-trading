@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T17:53:51.644407+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-12T18:54:14.381960+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Bycocket",
       "$1 is all you need",
+      "Cash Cat",
+      "LAB",
+      "Solana",
+      "Bittensor",
       "Uniswap",
-      "DeXe",
-      "Pudgy Penguins",
-      "Ethereum",
-      "Bitcoin"
+      "DeXe"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

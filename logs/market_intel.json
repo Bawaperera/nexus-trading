@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T18:54:14.381960+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-12T20:03:10.697115+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -33,12 +33,12 @@
       "$1 is all you need",
       "Cash Cat",
       "LAB",
-      "Solana",
-      "Bittensor",
+      "Bitcoin",
       "Uniswap",
-      "DeXe"
+      "The Black Bull",
+      "Solana"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

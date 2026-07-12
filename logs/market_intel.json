@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T11:52:14.452704+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-12T13:00:53.529065+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -34,11 +34,11 @@
       "$1 is all you need",
       "HOODIE",
       "Cash Cat",
-      "Sui",
-      "LAB",
+      "Bitcoin",
+      "DeXe",
       "Pudgy Penguins"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

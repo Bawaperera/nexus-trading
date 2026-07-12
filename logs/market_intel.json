@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-12T13:00:53.529065+00:00",
+  "timestamp": "2026-07-12T14:48:20.378645+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Cat in Hood",
       "$1 is all you need",
-      "HOODIE",
+      "Cat in Hood",
+      "LAB",
       "Cash Cat",
-      "Bitcoin",
       "DeXe",
+      "Bitcoin",
       "Pudgy Penguins"
     ],
     "btc_in_trending": true,

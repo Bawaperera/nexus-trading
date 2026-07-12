@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T20:03:10.697115+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-12T21:41:08.323172+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "$1 is all you need",
+      "Little John",
+      "Cash Dog in Hood",
       "Cash Cat",
-      "LAB",
-      "Bitcoin",
-      "Uniswap",
-      "The Black Bull",
-      "Solana"
+      "Pudgy Penguins",
+      "Monad",
+      "Arbitrum"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

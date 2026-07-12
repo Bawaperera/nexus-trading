@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T08:03:43.731124+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-12T10:19:48.209435+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "HOODIE",
+      "Cat in Hood",
       "LAB",
+      "Pudgy Penguins",
       "Cash Cat",
-      "Ethereum",
-      "Bitcoin",
       "Lighter",
-      "Solana",
-      "Arbitrum"
+      "The Black Bull"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

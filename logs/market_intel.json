@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-13T05:39:07.412644+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-13T08:53:23.506281+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Dog in Hood",
+      "ADI",
       "LAB",
       "Cash Cat",
       "Pudgy Penguins",
-      "The Black Bull",
       "DeXe",
-      "Bitcoin"
+      "Aster",
+      "Aave"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-13T08:53:23.506281+00:00",
+  "timestamp": "2026-07-13T11:54:28.772431+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "ADI",
+      "The Black Bull",
+      "Pudgy Penguins",
       "LAB",
       "Cash Cat",
-      "Pudgy Penguins",
-      "DeXe",
-      "Aster",
-      "Aave"
+      "ADI",
+      "Uniswap",
+      "DeXe"
     ],
     "btc_in_trending": false,
     "trend_count": 7

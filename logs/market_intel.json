@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-13T14:11:37.718941+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-13T17:09:05.852203+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.3,
+        "hours_until": 19.3,
         "forecast": "0.2%",
         "previous": "0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.3,
+        "hours_until": 19.3,
         "forecast": "2.8%",
         "previous": "2.9%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.3,
+        "hours_until": 19.3,
         "forecast": "-0.1%",
         "previous": "0.5%"
       },
@@ -44,7 +44,7 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.3,
+        "hours_until": 19.3,
         "forecast": "3.8%",
         "previous": "4.2%"
       },
@@ -52,13 +52,13 @@
         "title": "Fed Chairman Warsh Testifies",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 23.8,
+        "hours_until": 20.8,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 22.3,
+    "hours_until_next": 19.3,
     "event_count_24h": 5
   },
   "social": {
@@ -71,15 +71,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
-      "Uniswap",
-      "Pudgy Penguins",
+      "Concordium",
+      "The Black Bull",
       "LAB",
-      "ADI",
-      "Bitcoin",
-      "Lighter"
+      "Cash Cat",
+      "Jito",
+      "Pudgy Penguins",
+      "ADI"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

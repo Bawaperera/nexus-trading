@@ -412,3 +412,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-07-12T01:56:51.955798+00:00,ascending_triangle,bullish,4h,BREAKOUT,61,5,64371.44,61230.25,67474.51,0.99,False,0.1722,26
 2026-07-12T05:24:09.531524+00:00,ascending_triangle,bullish,4h,BREAKOUT,61,5,64372.83,61238.45,67469.1,0.99,False,0.3044,26
 2026-07-12T11:52:15.016042+00:00,ascending_triangle,bullish,4h,BREAKOUT,61,5,64371.44,61245.68,67474.51,0.99,False,0.1499,26
+2026-07-13T05:39:07.964294+00:00,head_and_shoulders,bearish,4h,BREAKOUT,71,5,62546.14,64495.69,60432.29,1.08,False,-0.2476,28
+2026-07-13T05:39:08.445686+00:00,bear_flag,bearish,daily,FORMING,65,4,57720.73,64808.69,52294.05,0.77,False,-0.2476,28

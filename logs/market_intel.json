@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-13T23:44:58.443357+00:00",
+  "timestamp": "2026-07-14T01:45:43.545007+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 10.7,
         "forecast": "0.2%",
         "previous": "0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 10.7,
         "forecast": "2.8%",
         "previous": "2.9%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 10.7,
         "forecast": "-0.1%",
         "previous": "0.5%"
       },
@@ -44,7 +44,7 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 10.7,
         "forecast": "3.8%",
         "previous": "4.2%"
       },
@@ -52,13 +52,13 @@
         "title": "Fed Chairman Warsh Testifies",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 14.3,
+        "hours_until": 12.2,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 12.8,
+    "hours_until_next": 10.7,
     "event_count_24h": 5
   },
   "social": {
@@ -72,12 +72,12 @@
   "trending": {
     "trending_coins": [
       "Concordium",
-      "Cash Cat",
-      "LAB",
-      "Pudgy Penguins",
-      "Jupiter",
       "ADI",
-      "Bitcoin"
+      "LAB",
+      "Bitcoin",
+      "Ethereum",
+      "Cash Cat",
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-07-14T11:20:00.844365+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-14T13:14:02.331588+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,49 +19,33 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core CPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.2,
-        "forecast": "0.2%",
-        "previous": "0.2%"
-      },
-      {
-        "title": "Core CPI y/y",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.2,
-        "forecast": "2.8%",
-        "previous": "2.9%"
-      },
-      {
-        "title": "CPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.2,
-        "forecast": "-0.1%",
-        "previous": "0.5%"
-      },
-      {
-        "title": "CPI y/y",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.2,
-        "forecast": "3.8%",
-        "previous": "4.2%"
-      },
-      {
         "title": "Fed Chairman Warsh Testifies",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 2.7,
+        "hours_until": 0.8,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Core PPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.3,
+        "forecast": "0.4%",
+        "previous": "0.4%"
+      },
+      {
+        "title": "PPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.3,
+        "forecast": "0.0%",
+        "previous": "1.1%"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 1.2,
-    "event_count_24h": 5
+    "risk_level": "high",
+    "hours_until_next": 0.8,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -71,15 +57,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Concordium",
-      "Derive",
       "Cash Cat",
-      "LAB",
       "The Black Bull",
-      "Lighter",
-      "Pi Network"
+      "Derive",
+      "Concordium",
+      "LAB",
+      "Pudgy Penguins",
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-14T17:05:46.090446+00:00",
-  "btc_price": 64652.11,
+  "scan_time": "2026-07-14T19:06:10.250465+00:00",
+  "btc_price": 64546.49,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 22,
-  "sentiment_score": -0.0611,
+  "sentiment_score": 0.0027,
   "patterns": [
     {
       "name": "double_bottom",
@@ -18,7 +18,7 @@
       "target": 64687.72,
       "risk_reward": 5.59,
       "confidence": 0.6,
-      "score": 67,
+      "score": 71,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -28,7 +28,7 @@
         "mtf": 15,
         "retest": 20,
         "volume": 8,
-        "rsi": 3,
+        "rsi": 7,
         "sentiment": 6,
         "onchain": 0,
         "memory": 0
@@ -37,9 +37,44 @@
         "+15 Pattern confidence 60%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.7\u00d7 average",
-        "+3 RSI 55 (neutral)",
-        "+6 Sentiment -0.06"
+        "+8 Volume 1.9\u00d7 average",
+        "+7 RSI 55 (neutral)",
+        "+6 Sentiment +0.00"
+      ]
+    },
+    {
+      "name": "double_bottom",
+      "direction": "bullish",
+      "timeframe": "4h",
+      "status": "BREAKOUT",
+      "entry": 64659.99,
+      "stop_loss": 61403.89,
+      "target": 67849.05,
+      "risk_reward": 0.98,
+      "confidence": 0.75,
+      "score": 60,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 19,
+        "mtf": 15,
+        "retest": 5,
+        "volume": 8,
+        "rsi": 7,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+19 Pattern confidence 75%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+8 Volume 1.9\u00d7 average",
+        "+7 RSI 55 (neutral)",
+        "+6 Sentiment +0.00",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
   ]

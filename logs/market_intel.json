@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-14T21:50:53.440832+00:00",
+  "timestamp": "2026-07-14T22:50:32.318627+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.7,
+        "hours_until": 13.7,
         "forecast": "0.3%",
         "previous": "0.4%"
       },
@@ -28,7 +28,7 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.7,
+        "hours_until": 13.7,
         "forecast": "0.0%",
         "previous": "1.1%"
       },
@@ -36,13 +36,13 @@
         "title": "Fed Chairman Warsh Testifies",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 16.2,
+        "hours_until": 15.2,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 14.7,
+    "hours_until_next": 13.7,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
       "Arrow",
-      "LAB",
       "ADI",
+      "Cash Cat",
+      "LAB",
       "Pudgy Penguins",
       "Grass",
-      "Ethereum"
+      "Aerodrome Finance"
     ],
     "btc_in_trending": false,
     "trend_count": 7

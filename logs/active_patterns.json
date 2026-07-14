@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-14T15:18:32.883643+00:00",
-  "btc_price": 64237.95,
-  "daily_trend": "neutral",
-  "4h_trend": "neutral",
+  "scan_time": "2026-07-14T17:05:46.090446+00:00",
+  "btc_price": 64652.11,
+  "daily_trend": "bullish",
+  "4h_trend": "bullish",
   "weekly_trend": "bearish",
-  "bull_count": 1,
+  "bull_count": 3,
   "fg_value": 22,
-  "sentiment_score": 0.1394,
+  "sentiment_score": -0.0611,
   "patterns": [
     {
       "name": "double_bottom",
@@ -14,32 +14,32 @@
       "timeframe": "1h",
       "status": "RETEST_CONFIRMED",
       "entry": 63219.31,
-      "stop_loss": 62993.11,
+      "stop_loss": 62956.49,
       "target": 64687.72,
-      "risk_reward": 6.49,
+      "risk_reward": 5.59,
       "confidence": 0.6,
-      "score": 60,
-      "n_confluences": 4,
+      "score": 67,
+      "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
       "already_traded": false,
       "component_scores": {
         "pattern": 15,
-        "mtf": 0,
+        "mtf": 15,
         "retest": 20,
         "volume": 8,
-        "rsi": 7,
-        "sentiment": 10,
+        "rsi": 3,
+        "sentiment": 6,
         "onchain": 0,
         "memory": 0
       },
       "reasons": [
         "+15 Pattern confidence 60%",
-        "+0 MTF 1/4 timeframes aligned",
+        "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.5\u00d7 average",
-        "+7 RSI 54 (neutral)",
-        "+10 Sentiment +0.14"
+        "+8 Volume 1.7\u00d7 average",
+        "+3 RSI 55 (neutral)",
+        "+6 Sentiment -0.06"
       ]
     }
   ]

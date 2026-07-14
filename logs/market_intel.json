@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-07-14T13:14:02.331588+00:00",
+  "timestamp": "2026-07-14T15:18:31.708980+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Fed Chairman Warsh Testifies",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 23.3,
+        "hours_until": 21.2,
         "forecast": "0.4%",
         "previous": "0.4%"
       },
@@ -38,13 +28,21 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 23.3,
+        "hours_until": 21.2,
         "forecast": "0.0%",
         "previous": "1.1%"
+      },
+      {
+        "title": "Fed Chairman Warsh Testifies",
+        "time_utc": "10:00 UTC",
+        "impact": "High",
+        "hours_until": 22.7,
+        "forecast": "",
+        "previous": ""
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.8,
+    "risk_level": "medium",
+    "hours_until_next": 21.2,
     "event_count_24h": 3
   },
   "social": {
@@ -58,12 +56,12 @@
   "trending": {
     "trending_coins": [
       "Cash Cat",
-      "The Black Bull",
+      "LAB",
       "Derive",
       "Concordium",
-      "LAB",
-      "Pudgy Penguins",
-      "Bitcoin"
+      "The Black Bull",
+      "Bitcoin",
+      "ADI"
     ],
     "btc_in_trending": true,
     "trend_count": 7

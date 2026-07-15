@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-07-15T13:18:10.630853+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-15T15:20:08.055901+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.7h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Fed Chairman Warsh Testifies",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 0.7,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 21.2,
         "forecast": "0.0%",
         "previous": "0.8%"
       },
@@ -38,7 +28,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 21.2,
         "forecast": "12.7",
         "previous": "10.3"
       },
@@ -46,7 +36,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 21.2,
         "forecast": "0.2%",
         "previous": "0.9%"
       },
@@ -54,14 +44,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 21.2,
         "forecast": "216K",
         "previous": "215K"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.7,
-    "event_count_24h": 5
+    "risk_level": "low",
+    "hours_until_next": 21.2,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -73,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Akedo",
       "Pudgy Penguins",
+      "Ethereum",
+      "Lighter",
+      "LAB",
       "Cash Cat",
-      "Pi Network",
-      "Arrow",
-      "The Black Bull",
-      "Bitcoin",
-      "Bittensor"
+      "Pi Network"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-07-15T11:23:51.838211+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-15T13:18:10.630853+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.7h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,33 +19,49 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "0.3%",
-        "previous": "0.4%"
-      },
-      {
-        "title": "PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "0.0%",
-        "previous": "1.1%"
-      },
-      {
         "title": "Fed Chairman Warsh Testifies",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 2.6,
+        "hours_until": 0.7,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Core Retail Sales m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 23.2,
+        "forecast": "0.0%",
+        "previous": "0.8%"
+      },
+      {
+        "title": "Philly Fed Manufacturing Index",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 23.2,
+        "forecast": "12.7",
+        "previous": "10.3"
+      },
+      {
+        "title": "Retail Sales m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 23.2,
+        "forecast": "0.2%",
+        "previous": "0.9%"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 23.2,
+        "forecast": "216K",
+        "previous": "215K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 1.1,
-    "event_count_24h": 3
+    "risk_level": "high",
+    "hours_until_next": 0.7,
+    "event_count_24h": 5
   },
   "social": {
     "sentiment": 0.0,
@@ -57,13 +75,13 @@
     "trending_coins": [
       "Pudgy Penguins",
       "Cash Cat",
-      "LAB",
-      "Arrow",
       "Pi Network",
-      "Lighter",
-      "Hyperliquid"
+      "Arrow",
+      "The Black Bull",
+      "Bitcoin",
+      "Bittensor"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

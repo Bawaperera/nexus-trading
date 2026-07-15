@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-15T21:51:30.696431+00:00",
+  "timestamp": "2026-07-15T22:51:54.225782+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.6,
+        "hours_until": 13.6,
         "forecast": "0.0%",
         "previous": "0.8%"
       },
@@ -28,7 +28,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.6,
+        "hours_until": 13.6,
         "forecast": "12.7",
         "previous": "10.3"
       },
@@ -36,7 +36,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.6,
+        "hours_until": 13.6,
         "forecast": "0.2%",
         "previous": "0.9%"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.6,
+        "hours_until": 13.6,
         "forecast": "216K",
         "previous": "215K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 14.6,
+    "hours_until_next": 13.6,
     "event_count_24h": 4
   },
   "social": {
@@ -63,12 +63,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Akedo",
-      "Pudgy Penguins",
-      "Ondo",
-      "Bitcoin",
       "Cash Cat",
-      "The Black Bull",
+      "Pudgy Penguins",
+      "Akedo",
+      "LAB",
+      "Hyperliquid",
+      "Bitcoin",
       "Lighter"
     ],
     "btc_in_trending": true,

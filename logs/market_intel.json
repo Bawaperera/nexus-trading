@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-16T10:00:18.329754+00:00",
+  "timestamp": "2026-07-16T11:44:14.490535+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.5,
+        "hours_until": 0.8,
         "forecast": "0.0%",
         "previous": "0.8%"
       },
@@ -28,7 +28,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.5,
+        "hours_until": 0.8,
         "forecast": "12.7",
         "previous": "10.3"
       },
@@ -36,7 +36,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.5,
+        "hours_until": 0.8,
         "forecast": "0.2%",
         "previous": "0.9%"
       },
@@ -44,7 +44,7 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.5,
+        "hours_until": 0.8,
         "forecast": "216K",
         "previous": "215K"
       },
@@ -52,13 +52,13 @@
         "title": "President Trump Speaks",
         "time_utc": "21:00 UTC",
         "impact": "Medium",
-        "hours_until": 15.0,
+        "hours_until": 13.3,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 2.5,
+    "hours_until_next": 0.8,
     "event_count_24h": 5
   },
   "social": {
@@ -71,13 +71,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
       "Ondo",
-      "Akedo",
       "The Black Bull",
       "Bitcoin",
       "Cash Cat",
-      "LAB"
+      "Hyperliquid",
+      "Akedo",
+      "Solana"
     ],
     "btc_in_trending": true,
     "trend_count": 7

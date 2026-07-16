@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-15T23:52:47.830126+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-16T01:51:56.091391+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.6,
         "forecast": "0.0%",
         "previous": "0.8%"
       },
@@ -28,7 +28,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.6,
         "forecast": "12.7",
         "previous": "10.3"
       },
@@ -36,7 +36,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.6,
         "forecast": "0.2%",
         "previous": "0.9%"
       },
@@ -44,14 +44,22 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.6,
         "forecast": "216K",
         "previous": "215K"
+      },
+      {
+        "title": "President Trump Speaks",
+        "time_utc": "21:00 UTC",
+        "impact": "Medium",
+        "hours_until": 23.1,
+        "forecast": "",
+        "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 12.6,
-    "event_count_24h": 4
+    "hours_until_next": 10.6,
+    "event_count_24h": 5
   },
   "social": {
     "sentiment": 0.0,
@@ -63,15 +71,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Ondo",
       "Pudgy Penguins",
-      "Hyperliquid",
+      "Ondo",
+      "Akedo",
+      "The Black Bull",
       "Lighter",
-      "Ethereum",
-      "Cash Cat",
-      "Akedo"
+      "Bitcoin",
+      "Cash Cat"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

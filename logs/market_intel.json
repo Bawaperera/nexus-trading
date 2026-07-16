@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-16T13:25:15.444273+00:00",
+  "timestamp": "2026-07-16T15:28:07.171389+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,14 +20,30 @@
         "title": "President Trump Speaks",
         "time_utc": "21:00 UTC",
         "impact": "Medium",
-        "hours_until": 11.6,
+        "hours_until": 9.5,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Prelim UoM Consumer Sentiment",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 22.5,
+        "forecast": "51.0",
+        "previous": "48.9"
+      },
+      {
+        "title": "Prelim UoM Inflation Expectations",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 22.5,
+        "forecast": "",
+        "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 11.6,
-    "event_count_24h": 1
+    "hours_until_next": 9.5,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -39,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Zano",
       "Ondo",
+      "Pudgy Penguins",
       "Cash Cat",
       "The Black Bull",
       "Ethereum",
-      "Pudgy Penguins",
-      "Aave",
-      "Hyperliquid"
+      "Virtuals Protocol"
     ],
     "btc_in_trending": false,
     "trend_count": 7

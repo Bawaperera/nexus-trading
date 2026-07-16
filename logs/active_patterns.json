@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-16T04:53:51.530685+00:00",
-  "btc_price": 64574.0,
+  "scan_time": "2026-07-16T07:18:26.018686+00:00",
+  "btc_price": 64546.12,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 25,
-  "sentiment_score": 0.0116,
+  "sentiment_score": -0.0339,
   "patterns": [
     {
       "name": "double_bottom",
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+8 MTF 2/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.9\u00d7 average",
-        "+7 RSI 55 (neutral)",
-        "+6 Sentiment +0.01",
+        "+15 Volume 2.7\u00d7 average",
+        "+7 RSI 54 (neutral)",
+        "+6 Sentiment -0.03",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

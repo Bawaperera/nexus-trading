@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-16T23:53:17.108862+00:00",
+  "timestamp": "2026-07-17T01:55:34.614867+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "President Trump Speaks",
-        "time_utc": "21:00 UTC",
-        "impact": "Medium",
-        "hours_until": 1.1,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 14.1,
+        "hours_until": 12.1,
         "forecast": "51.0",
         "previous": "48.9"
       },
@@ -36,14 +28,14 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 14.1,
+        "hours_until": 12.1,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.1,
-    "event_count_24h": 3
+    "hours_until_next": 12.1,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -56,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "Zano",
-      "ZIGChain",
+      "The Black Bull",
       "Pudgy Penguins",
+      "Hyperliquid",
+      "Ondo",
       "Cash Cat",
-      "Solana",
-      "Lighter",
-      "Ethereum"
+      "ZIGChain"
     ],
     "btc_in_trending": false,
     "trend_count": 7

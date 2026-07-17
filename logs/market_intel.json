@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-17T09:49:46.878433+00:00",
+  "timestamp": "2026-07-17T11:16:38.557951+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 4.2,
+        "hours_until": 2.7,
         "forecast": "51.0",
         "previous": "48.9"
       },
@@ -28,13 +28,13 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 4.2,
+        "hours_until": 2.7,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 4.2,
+    "hours_until_next": 2.7,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "ADI",
-      "Cash Cat",
-      "Hyperliquid",
-      "Aerodrome Finance",
       "Zano",
-      "LAB"
+      "Aerodrome Finance",
+      "ADI",
+      "Hyperliquid",
+      "The Black Bull",
+      "Pudgy Penguins",
+      "Ondo"
     ],
     "btc_in_trending": false,
     "trend_count": 7

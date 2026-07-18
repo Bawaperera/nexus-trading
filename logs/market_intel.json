@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-18T21:42:23.778851+00:00",
+  "timestamp": "2026-07-18T22:40:48.249627+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
+      "Hyperliquid",
       "Pudgy Penguins",
-      "ADI",
-      "Solana",
+      "Cash Cat",
       "Ondo",
-      "The Black Bull",
-      "Ethereum"
+      "ADI",
+      "Pi Network",
+      "The Black Bull"
     ],
     "btc_in_trending": false,
     "trend_count": 7

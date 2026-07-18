@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-18T10:12:21.870816+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-18T11:46:32.711993+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "ADI",
-      "LAB",
-      "Pudgy Penguins",
-      "Bitcoin",
-      "Pi Network",
       "Cash Cat",
-      "Hyperliquid"
+      "Akedo",
+      "Pudgy Penguins",
+      "Ondo",
+      "ADI",
+      "Lighter",
+      "Pi Network"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

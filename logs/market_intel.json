@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-19T20:04:18.967889+00:00",
+  "timestamp": "2026-07-19T21:43:08.203683+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Lorenzo Protocol",
-      "The Black Bull",
-      "Cash Cat",
-      "Bitcoin",
+      "Pump.fun",
       "Pudgy Penguins",
-      "Pi Network",
-      "Alien Worlds"
+      "Lorenzo Protocol",
+      "Hyperliquid",
+      "XRP",
+      "Bitcoin",
+      "Gram (prev. Toncoin)"
     ],
     "btc_in_trending": true,
     "trend_count": 7

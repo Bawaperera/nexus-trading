@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-19T01:54:18.699295+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-19T05:16:12.843966+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "Pudgy Penguins",
       "ADI",
-      "Akedo",
-      "Bitcoin",
-      "Bittensor",
       "Cash Cat",
-      "LAB"
+      "LAB",
+      "Ondo",
+      "Ethereum",
+      "Venice Token"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

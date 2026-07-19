@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-19T15:50:31.075169+00:00",
+  "timestamp": "2026-07-19T16:48:12.050427+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Lorenzo Protocol",
-      "Pudgy Penguins",
       "The Black Bull",
-      "Pi Network",
       "Bitcoin",
-      "Kaspa",
-      "KAITO"
+      "Pudgy Penguins",
+      "Cash Cat",
+      "Bittensor",
+      "Akedo"
     ],
     "btc_in_trending": true,
     "trend_count": 7

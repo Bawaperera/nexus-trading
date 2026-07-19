@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-19T05:16:12.843966+00:00",
+  "timestamp": "2026-07-19T08:02:56.262764+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Pudgy Penguins",
-      "ADI",
       "Cash Cat",
+      "Pi Network",
+      "Credible Finance",
       "LAB",
-      "Ondo",
-      "Ethereum",
-      "Venice Token"
+      "Bittensor",
+      "Monero"
     ],
     "btc_in_trending": false,
     "trend_count": 7

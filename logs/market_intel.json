@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-20T19:28:13.820564+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-20T21:03:20.559348+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
       "ADI",
-      "Lorenzo Protocol",
       "Pump.fun",
-      "Hyperliquid",
-      "Bittensor",
-      "Bitcoin"
+      "Lorenzo Protocol",
+      "Pudgy Penguins",
+      "Cash Cat",
+      "Ethereum",
+      "Zama"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

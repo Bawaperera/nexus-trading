@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-20T06:08:33.889133+00:00",
+  "timestamp": "2026-07-20T09:51:58.602765+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Fusionist",
       "Pump.fun",
-      "Cash Cat",
-      "Pi Network",
       "Lorenzo Protocol",
       "Pudgy Penguins",
-      "The Black Bull",
-      "Hyperliquid"
+      "Pi Network",
+      "ADI",
+      "Bonk"
     ],
     "btc_in_trending": false,
     "trend_count": 7

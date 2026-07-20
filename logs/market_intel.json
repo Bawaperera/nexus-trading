@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-20T21:03:20.559348+00:00",
+  "timestamp": "2026-07-20T22:51:10.961111+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "ADI",
-      "Pump.fun",
-      "Lorenzo Protocol",
       "Pudgy Penguins",
-      "Cash Cat",
+      "Lorenzo Protocol",
       "Ethereum",
-      "Zama"
+      "Bonk",
+      "Cash Cat",
+      "Sui"
     ],
     "btc_in_trending": false,
     "trend_count": 7

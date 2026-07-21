@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-21T12:24:44.778253+00:00",
-  "btc_price": 66428.1,
+  "scan_time": "2026-07-21T14:57:57.786151+00:00",
+  "btc_price": 66862.33,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 25,
-  "sentiment_score": 0.1628,
+  "sentiment_score": 0.1465,
   "patterns": [
     {
       "name": "double_bottom",
@@ -14,11 +14,11 @@
       "timeframe": "1h",
       "status": "RETEST_CONFIRMED",
       "entry": 65040.47,
-      "stop_loss": 64894.05,
+      "stop_loss": 64849.12,
       "target": 66378.93,
-      "risk_reward": 9.14,
+      "risk_reward": 6.99,
       "confidence": 0.75,
-      "score": 75,
+      "score": 82,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -27,7 +27,7 @@
         "pattern": 19,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
+        "volume": 15,
         "rsi": 3,
         "sentiment": 10,
         "onchain": 0,
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+3 RSI 61 (neutral)",
-        "+10 Sentiment +0.16"
+        "+15 Volume 2.5\u00d7 average",
+        "+3 RSI 63 (neutral)",
+        "+10 Sentiment +0.15"
       ]
     },
     {
@@ -48,11 +48,11 @@
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
       "entry": 65040.47,
-      "stop_loss": 64745.79,
+      "stop_loss": 64696.12,
       "target": 67618.4,
-      "risk_reward": 8.75,
+      "risk_reward": 7.49,
       "confidence": 0.6,
-      "score": 71,
+      "score": 78,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -61,7 +61,7 @@
         "pattern": 15,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
+        "volume": 15,
         "rsi": 3,
         "sentiment": 10,
         "onchain": 0,
@@ -71,9 +71,44 @@
         "+15 Pattern confidence 60%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+3 RSI 61 (neutral)",
-        "+10 Sentiment +0.16"
+        "+15 Volume 2.5\u00d7 average",
+        "+3 RSI 63 (neutral)",
+        "+10 Sentiment +0.15"
+      ]
+    },
+    {
+      "name": "ascending_triangle",
+      "direction": "bullish",
+      "timeframe": "1h",
+      "status": "BREAKOUT",
+      "entry": 66317.37,
+      "stop_loss": 63663.74,
+      "target": 68932.72,
+      "risk_reward": 0.99,
+      "confidence": 0.65,
+      "score": 64,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 15,
+        "retest": 5,
+        "volume": 15,
+        "rsi": 3,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+15 Volume 2.5\u00d7 average",
+        "+3 RSI 63 (neutral)",
+        "+10 Sentiment +0.15",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
   ]

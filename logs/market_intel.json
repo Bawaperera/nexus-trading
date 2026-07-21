@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-21T18:11:55.613042+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-21T20:15:39.968692+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Caldera",
-      "Pons",
       "DeXe",
-      "Bitcoin",
+      "Pudgy Penguins",
+      "Ondo",
       "Pump.fun",
-      "Ethereum",
-      "Gram (prev. Toncoin)"
+      "Hyperliquid",
+      "Venice Token"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

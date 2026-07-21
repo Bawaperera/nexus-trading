@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-21T21:58:06.536439+00:00",
+  "timestamp": "2026-07-21T22:54:59.733166+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Caldera",
-      "Movement",
-      "Hyperliquid",
       "Pudgy Penguins",
       "Pons",
-      "Ondo",
-      "Cash Cat"
+      "Caldera",
+      "DeXe",
+      "Pump.fun",
+      "Movement",
+      "Injective"
     ],
     "btc_in_trending": false,
     "trend_count": 7

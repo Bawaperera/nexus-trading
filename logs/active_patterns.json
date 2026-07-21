@@ -1,81 +1,11 @@
 {
-  "scan_time": "2026-07-21T22:55:00.768245+00:00",
-  "btc_price": 66241.41,
+  "scan_time": "2026-07-21T23:51:13.170651+00:00",
+  "btc_price": 66441.97,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 25,
-  "sentiment_score": -0.0079,
-  "patterns": [
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "1h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 65040.47,
-      "stop_loss": 64949.89,
-      "target": 66378.93,
-      "risk_reward": 14.78,
-      "confidence": 0.75,
-      "score": 71,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": true,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 8,
-        "rsi": 3,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+3 RSI 61 (neutral)",
-        "+6 Sentiment -0.01"
-      ]
-    },
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "4h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 65040.47,
-      "stop_loss": 64696.12,
-      "target": 67618.4,
-      "risk_reward": 7.49,
-      "confidence": 0.6,
-      "score": 67,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": true,
-      "component_scores": {
-        "pattern": 15,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 8,
-        "rsi": 3,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+15 Pattern confidence 60%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+3 RSI 61 (neutral)",
-        "+6 Sentiment -0.01"
-      ]
-    }
-  ],
-  "last_entry_check": "2026-07-21T23:41:26.364922+00:00"
+  "sentiment_score": 0.038,
+  "patterns": []
 }

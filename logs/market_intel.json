@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-22T01:52:49.573485+00:00",
+  "timestamp": "2026-07-22T05:12:56.598324+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,19 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "President Trump Speaks",
+        "time_utc": "15:00 UTC",
+        "impact": "Medium",
+        "hours_until": 13.8,
+        "forecast": "",
+        "previous": ""
+      }
+    ],
+    "risk_level": "low",
+    "hours_until_next": 13.8,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -30,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Caldera",
-      "Pudgy Penguins",
-      "Pons",
       "Bitcoin",
-      "Ondo",
-      "Pump.fun",
-      "XRP"
+      "DeXe",
+      "Caldera",
+      "LAB",
+      "Virtuals Protocol",
+      "Pons",
+      "Kaspa"
     ],
     "btc_in_trending": true,
     "trend_count": 7

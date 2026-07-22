@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-22T11:00:34.545251+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-22T12:28:03.170676+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "President Trump Speaks",
         "time_utc": "15:00 UTC",
         "impact": "Medium",
-        "hours_until": 8.0,
+        "hours_until": 6.5,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 8.0,
+    "hours_until_next": 6.5,
     "event_count_24h": 1
   },
   "social": {
@@ -40,14 +40,14 @@
   "trending": {
     "trending_coins": [
       "DeXe",
-      "Hyperliquid",
+      "Ondo",
+      "Gram (prev. Toncoin)",
       "Pudgy Penguins",
-      "Pons",
       "Cash Cat",
-      "Movement",
-      "Ondo"
+      "Bitcoin",
+      "Bittensor"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

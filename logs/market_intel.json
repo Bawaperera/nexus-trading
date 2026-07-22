@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-22T14:58:54.835260+00:00",
+  "timestamp": "2026-07-22T16:20:18.289736+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "President Trump Speaks",
         "time_utc": "15:00 UTC",
         "impact": "Medium",
-        "hours_until": 4.0,
+        "hours_until": 2.7,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.5,
+        "hours_until": 20.2,
         "forecast": "211K",
         "previous": "208K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 4.0,
+    "hours_until_next": 2.7,
     "event_count_24h": 2
   },
   "social": {
@@ -48,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "DeXe",
-      "Pudgy Penguins",
       "Hyperliquid",
-      "Bitcoin",
-      "Pons",
+      "Pudgy Penguins",
       "Movement",
-      "Lighter"
+      "Ondo",
+      "Ethereum",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

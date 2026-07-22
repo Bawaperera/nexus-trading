@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-22T18:04:35.170668+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-22T20:08:34.009388+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,25 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "President Trump Speaks",
-        "time_utc": "15:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 18.4,
+        "hours_until": 16.4,
         "forecast": "211K",
         "previous": "208K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.9,
-    "event_count_24h": 2
+    "hours_until_next": 16.4,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -47,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Zama",
       "LAB",
-      "Ondo",
       "DeXe",
-      "Hyperliquid",
-      "Morpho",
-      "Uniswap",
-      "Gram (prev. Toncoin)"
+      "Bitcoin",
+      "Cardano",
+      "Pudgy Penguins",
+      "Lighter"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

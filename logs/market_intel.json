@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-23T20:53:42.797421+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-23T21:58:54.563559+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Ondo",
+      "Pudgy Penguins",
       "ADI",
-      "Zama",
-      "DeXe",
-      "Hyperliquid",
-      "The Black Bull",
-      "Solana"
+      "Bittensor",
+      "XRP",
+      "Ondo",
+      "Bitcoin",
+      "DeXe"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

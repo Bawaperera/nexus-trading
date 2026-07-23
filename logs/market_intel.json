@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-23T17:11:24.844904+00:00",
+  "timestamp": "2026-07-23T19:01:54.840387+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Zama",
       "DeXe",
-      "KAITO",
-      "Ondo",
       "ADI",
       "Hyperliquid",
-      "Akedo"
+      "Bittensor",
+      "Solana",
+      "Cash Cat"
     ],
     "btc_in_trending": false,
     "trend_count": 7

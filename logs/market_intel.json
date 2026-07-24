@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-24T05:42:26.184522+00:00",
+  "timestamp": "2026-07-24T08:11:13.210957+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "ADI",
+      "Cash Cat",
+      "Akedo",
       "DeXe",
-      "Solana",
-      "Bitcoin",
+      "Zama",
       "Pudgy Penguins",
-      "Stacks",
-      "Kaspa"
+      "Bitcoin",
+      "Lorenzo Protocol"
     ],
     "btc_in_trending": true,
     "trend_count": 7

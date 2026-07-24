@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-23T23:57:15.078081+00:00",
+  "timestamp": "2026-07-24T02:22:29.912897+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "ADI",
       "DeXe",
-      "Hyperliquid",
+      "Pudgy Penguins",
+      "ADI",
       "Bitcoin",
+      "Ethereum",
       "Solana",
-      "Cash Cat",
-      "Pudgy Penguins"
+      "Venice Token"
     ],
     "btc_in_trending": true,
     "trend_count": 7

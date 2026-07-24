@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-24T08:11:13.210957+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-24T10:56:04.103810+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
-      "Akedo",
+      "Lorenzo Protocol",
+      "Pons",
       "DeXe",
-      "Zama",
+      "Pump.fun",
       "Pudgy Penguins",
-      "Bitcoin",
-      "Lorenzo Protocol"
+      "Gram (prev. Toncoin)",
+      "KAITO"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

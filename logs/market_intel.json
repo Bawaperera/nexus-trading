@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-25T06:17:27.891203+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-25T08:55:50.548196+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "DeXe",
-      "Lorenzo Protocol",
+      "Zama",
+      "Morpho",
       "Pudgy Penguins",
-      "Pi Network",
-      "Monad",
-      "POL (ex-MATIC)",
-      "Bitcoin"
+      "Euler",
+      "Ethereum",
+      "Bittensor"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

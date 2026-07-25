@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-25T08:55:50.548196+00:00",
+  "timestamp": "2026-07-25T10:22:10.935932+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Solana",
       "DeXe",
-      "Zama",
-      "Morpho",
-      "Pudgy Penguins",
       "Euler",
-      "Ethereum",
-      "Bittensor"
+      "Monad",
+      "Zama",
+      "Pudgy Penguins",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

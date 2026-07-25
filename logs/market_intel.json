@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-25T03:58:23.527499+00:00",
+  "timestamp": "2026-07-25T06:17:27.891203+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,11 +31,11 @@
   "trending": {
     "trending_coins": [
       "DeXe",
+      "Lorenzo Protocol",
       "Pudgy Penguins",
-      "Cash Cat",
-      "Pons",
-      "Grass",
       "Pi Network",
+      "Monad",
+      "POL (ex-MATIC)",
       "Bitcoin"
     ],
     "btc_in_trending": true,

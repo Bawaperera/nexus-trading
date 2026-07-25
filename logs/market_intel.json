@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-25T19:10:21.003906+00:00",
+  "timestamp": "2026-07-25T20:42:01.394058+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Shiba Inu",
       "Euler",
-      "ADI",
-      "DeXe",
-      "Solana",
+      "Shiba Inu",
       "Venice Token",
-      "Monad"
+      "Pudgy Penguins",
+      "DeXe",
+      "Monad",
+      "Pepe"
     ],
     "btc_in_trending": false,
     "trend_count": 7

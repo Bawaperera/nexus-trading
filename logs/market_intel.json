@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-26T08:11:23.914436+00:00",
+  "timestamp": "2026-07-26T10:37:07.086331+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Pudgy Penguins",
       "BitMart",
-      "Shiba Inu",
-      "The Black Bull",
+      "Pons",
       "DeXe",
-      "Euler",
-      "Solana"
+      "Solana",
+      "The Black Bull",
+      "Shiba Inu"
     ],
     "btc_in_trending": false,
     "trend_count": 7

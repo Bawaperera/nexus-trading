@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-26T21:52:13.628642+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-26T22:52:43.579579+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "buy and retire",
-      "Shiba Inu",
-      "BitMart",
-      "Espresso",
-      "Solana",
       "Pudgy Penguins",
-      "Bittensor"
+      "Pump.fun",
+      "Shiba Inu",
+      "Pons",
+      "Bitcoin",
+      "Ondo"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

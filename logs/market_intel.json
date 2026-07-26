@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-26T15:59:50.981700+00:00",
+  "timestamp": "2026-07-26T17:05:30.526290+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "BitMart",
       "Pudgy Penguins",
-      "Espresso",
       "KAITO",
-      "Euler",
-      "Hyperliquid",
-      "Shiba Inu"
+      "Monad",
+      "Shiba Inu",
+      "BitMart",
+      "Ondo",
+      "Espresso"
     ],
     "btc_in_trending": false,
     "trend_count": 7

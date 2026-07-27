@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-27T21:58:14.654276+00:00",
+  "timestamp": "2026-07-27T23:00:56.019489+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 16.0,
+        "hours_until": 15.0,
         "forecast": "92.4",
         "previous": "91.2"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 16.0,
+    "hours_until_next": 15.0,
     "event_count_24h": 1
   },
   "social": {
@@ -41,11 +41,11 @@
     "trending_coins": [
       "Casper Network",
       "ZIGChain",
-      "Pump.fun",
-      "Hyperliquid",
+      "Pudgy Penguins",
       "COTI",
-      "Lighter",
-      "Solana"
+      "Hyperliquid",
+      "Pons",
+      "Pump.fun"
     ],
     "btc_in_trending": false,
     "trend_count": 7

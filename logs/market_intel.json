@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-27T02:07:36.754318+00:00",
+  "timestamp": "2026-07-27T06:19:55.085969+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Ondo",
+      "Pudgy Penguins",
+      "Geodnet",
+      "Pump.fun",
       "BitMart",
       "Pons",
       "Ethereum",
-      "Pudgy Penguins",
-      "Shiba Inu",
-      "Solana"
+      "Pepe"
     ],
     "btc_in_trending": false,
     "trend_count": 7

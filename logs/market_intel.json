@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-27T18:19:36.897174+00:00",
+  "timestamp": "2026-07-27T20:15:43.045457+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,25 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "President Trump Speaks",
-        "time_utc": "14:50 UTC",
-        "impact": "Medium",
-        "hours_until": 0.5,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 19.7,
+        "hours_until": 17.7,
         "forecast": "92.1",
         "previous": "91.2"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.5,
-    "event_count_24h": 2
+    "hours_until_next": 17.7,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -49,11 +41,11 @@
     "trending_coins": [
       "Casper Network",
       "ZIGChain",
+      "Pons",
       "Zama",
       "Pump.fun",
-      "Pudgy Penguins",
-      "Ondo",
-      "AEON"
+      "Hyperliquid",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": false,
     "trend_count": 7

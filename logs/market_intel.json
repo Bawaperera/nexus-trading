@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-28T01:48:46.227119+00:00",
+  "timestamp": "2026-07-28T04:57:09.965244+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.2,
+        "hours_until": 9.0,
         "forecast": "92.4",
         "previous": "91.2"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 12.2,
+    "hours_until_next": 9.0,
     "event_count_24h": 1
   },
   "social": {
@@ -40,11 +40,11 @@
   "trending": {
     "trending_coins": [
       "Casper Network",
-      "Shiba Inu",
+      "Hyperliquid",
+      "AEON",
+      "Pudgy Penguins",
       "COTI",
-      "Pons",
-      "Ondo",
-      "Aave",
+      "Lorenzo Protocol",
       "Solana"
     ],
     "btc_in_trending": false,

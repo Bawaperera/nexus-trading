@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-28T10:27:02.121484+00:00",
+  "timestamp": "2026-07-28T12:49:46.017559+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 3.5,
+        "hours_until": 1.2,
         "forecast": "92.4",
         "previous": "91.2"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 3.5,
+    "hours_until_next": 1.2,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "COTI",
-      "Sui",
-      "Pudgy Penguins",
-      "Bitcoin",
       "Hyperliquid",
-      "AEON",
-      "Storj"
+      "Pons",
+      "Bitcoin",
+      "Pi Network",
+      "Bittensor",
+      "Lighter",
+      "COTI"
     ],
     "btc_in_trending": true,
     "trend_count": 7

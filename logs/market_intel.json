@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-29T11:15:44.957667+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-29T13:50:00.070468+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Federal Funds Rate",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 6.7,
+        "hours_until": 4.2,
         "forecast": "3.75%",
         "previous": "3.75%"
       },
@@ -28,7 +28,7 @@
         "title": "FOMC Statement",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 6.7,
+        "hours_until": 4.2,
         "forecast": "",
         "previous": ""
       },
@@ -36,14 +36,38 @@
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 7.2,
+        "hours_until": 4.7,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Advance GDP q/q",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 22.7,
+        "forecast": "2.1%",
+        "previous": "2.0%"
+      },
+      {
+        "title": "Core PCE Price Index m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 22.7,
+        "forecast": "0.2%",
+        "previous": "0.3%"
+      },
+      {
+        "title": "Advance GDP Price Index q/q",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.7,
+        "forecast": "4.1%",
+        "previous": "3.6%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 6.7,
-    "event_count_24h": 3
+    "hours_until_next": 4.2,
+    "event_count_24h": 7
   },
   "social": {
     "sentiment": 0.0,
@@ -56,14 +80,14 @@
   "trending": {
     "trending_coins": [
       "Casper Network",
-      "COTI",
+      "Pump.fun",
+      "Uniswap",
+      "KAITO",
+      "Zama",
       "Pudgy Penguins",
-      "ADI",
-      "MetaDAO",
-      "Gram (prev. Toncoin)",
-      "Bitcoin"
+      "MetaDAO"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

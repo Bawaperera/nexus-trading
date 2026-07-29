@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-28T23:53:38.939130+00:00",
+  "timestamp": "2026-07-29T01:50:58.156304+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Federal Funds Rate",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 18.1,
+        "hours_until": 16.2,
         "forecast": "3.75%",
         "previous": "3.75%"
       },
@@ -28,7 +28,7 @@
         "title": "FOMC Statement",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 18.1,
+        "hours_until": 16.2,
         "forecast": "",
         "previous": ""
       },
@@ -36,13 +36,13 @@
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 18.6,
+        "hours_until": 16.7,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 18.1,
+    "hours_until_next": 16.2,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Casper Network",
-      "Ondo",
-      "Zama",
       "Cash Cat",
-      "Canton",
-      "DeXe",
-      "Solana"
+      "Pudgy Penguins",
+      "Plasma",
+      "Casper Network",
+      "Chainlink",
+      "Lighter",
+      "Pons"
     ],
     "btc_in_trending": false,
     "trend_count": 7

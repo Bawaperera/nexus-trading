@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-29T20:44:42.299988+00:00",
-  "btc_price": 63552.73,
+  "scan_time": "2026-07-29T21:53:00.391487+00:00",
+  "btc_price": 63666.48,
   "daily_trend": "neutral",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 29,
-  "sentiment_score": -0.0795,
+  "sentiment_score": -0.0671,
   "patterns": [
     {
       "name": "head_and_shoulders",
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 5.1\u00d7 average",
+        "+15 Volume 3.8\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.08",
+        "+6 Sentiment -0.07",
         "R:R 1.6 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -48,10 +48,10 @@
       "direction": "bearish",
       "timeframe": "daily",
       "status": "BREAKOUT",
-      "entry": 64536.32,
+      "entry": 64526.39,
       "stop_loss": 65887.59,
-      "target": 58854.88,
-      "risk_reward": 4.2,
+      "target": 58844.95,
+      "risk_reward": 4.17,
       "confidence": 0.62,
       "score": 64,
       "n_confluences": 5,
@@ -72,9 +72,9 @@
         "+16 Pattern confidence 62%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 5.1\u00d7 average",
+        "+15 Volume 3.8\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.08"
+        "+6 Sentiment -0.07"
       ]
     },
     {
@@ -106,9 +106,9 @@
         "+15 Pattern confidence 60%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 5.1\u00d7 average",
+        "+15 Volume 3.8\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.08",
+        "+6 Sentiment -0.07",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -141,9 +141,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 5.1\u00d7 average",
+        "+15 Volume 3.8\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.08",
+        "+6 Sentiment -0.07",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

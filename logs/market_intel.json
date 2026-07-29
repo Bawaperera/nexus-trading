@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-29T20:44:40.098304+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-29T21:52:58.491062+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 15.8,
+        "hours_until": 14.6,
         "forecast": "2.1%",
         "previous": "2.0%"
       },
@@ -28,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 15.8,
+        "hours_until": 14.6,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -36,7 +36,7 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.8,
+        "hours_until": 14.6,
         "forecast": "4.1%",
         "previous": "3.6%"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.8,
+        "hours_until": 14.6,
         "forecast": "201K",
         "previous": "187K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 15.8,
+    "hours_until_next": 14.6,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
+      "COTI",
       "ADI",
-      "Venice Token",
       "The Black Bull",
+      "Ethereum",
       "Hyperliquid",
-      "Kaspa",
       "Pudgy Penguins",
-      "Cash Cat"
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

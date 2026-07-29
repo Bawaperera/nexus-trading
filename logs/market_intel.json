@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-29T05:14:37.602053+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-29T08:24:36.609265+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Federal Funds Rate",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 9.6,
         "forecast": "3.75%",
         "previous": "3.75%"
       },
@@ -28,7 +28,7 @@
         "title": "FOMC Statement",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 12.8,
+        "hours_until": 9.6,
         "forecast": "",
         "previous": ""
       },
@@ -36,13 +36,13 @@
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 13.3,
+        "hours_until": 10.1,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 12.8,
+    "hours_until_next": 9.6,
     "event_count_24h": 3
   },
   "social": {
@@ -57,13 +57,13 @@
     "trending_coins": [
       "Casper Network",
       "MetaDAO",
-      "Lorenzo Protocol",
-      "Pi Network",
-      "Pons",
-      "Sui",
-      "DeXe"
+      "COTI",
+      "Hyperliquid",
+      "Pump.fun",
+      "Bitcoin",
+      "ADI"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

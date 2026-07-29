@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-07-29T21:53:00.391487+00:00",
-  "btc_price": 63666.48,
+  "scan_time": "2026-07-29T22:54:07.223019+00:00",
+  "btc_price": 63847.97,
   "daily_trend": "neutral",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 29,
-  "sentiment_score": -0.0671,
+  "sentiment_score": -0.0547,
   "patterns": [
     {
       "name": "head_and_shoulders",
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.8\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.07",
+        "+15 Volume 2.6\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+6 Sentiment -0.05",
         "R:R 1.6 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -72,9 +72,9 @@
         "+16 Pattern confidence 62%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.8\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.07"
+        "+15 Volume 2.6\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+6 Sentiment -0.05"
       ]
     },
     {
@@ -106,9 +106,9 @@
         "+15 Pattern confidence 60%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.8\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.07",
+        "+15 Volume 2.6\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+6 Sentiment -0.05",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -141,9 +141,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 3.8\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+6 Sentiment -0.07",
+        "+15 Volume 2.6\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+6 Sentiment -0.05",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

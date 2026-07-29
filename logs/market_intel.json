@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-07-29T15:45:50.129893+00:00",
+  "timestamp": "2026-07-29T17:06:36.133376+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.9h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "Federal Funds Rate",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 2.2,
+        "hours_until": 0.9,
         "forecast": "3.75%",
         "previous": "3.75%"
       },
@@ -28,7 +30,7 @@
         "title": "FOMC Statement",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 2.2,
+        "hours_until": 0.9,
         "forecast": "",
         "previous": ""
       },
@@ -36,7 +38,7 @@
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 2.7,
+        "hours_until": 1.4,
         "forecast": "",
         "previous": ""
       },
@@ -44,7 +46,7 @@
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 20.7,
+        "hours_until": 19.4,
         "forecast": "2.1%",
         "previous": "2.0%"
       },
@@ -52,7 +54,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 20.7,
+        "hours_until": 19.4,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -60,13 +62,13 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.7,
+        "hours_until": 19.4,
         "forecast": "4.1%",
         "previous": "3.6%"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 2.2,
+    "risk_level": "high",
+    "hours_until_next": 0.9,
     "event_count_24h": 7
   },
   "social": {
@@ -79,13 +81,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Lighter",
-      "Casper Network",
-      "KAITO",
       "ADI",
-      "Pudgy Penguins",
       "COTI",
-      "Uniswap"
+      "Pudgy Penguins",
+      "KAITO",
+      "AEON",
+      "Cash Cat",
+      "Solana"
     ],
     "btc_in_trending": false,
     "trend_count": 7

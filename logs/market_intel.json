@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-30T15:04:38.358541+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-30T17:17:59.953501+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Employment Cost Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.4,
+        "hours_until": 19.2,
         "forecast": "0.8%",
         "previous": "0.9%"
       },
@@ -28,7 +28,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 22.9,
+        "hours_until": 20.7,
         "forecast": "53.9",
         "previous": "54.4"
       },
@@ -36,13 +36,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 22.9,
+        "hours_until": 20.7,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 21.4,
+    "hours_until_next": 19.2,
     "event_count_24h": 3
   },
   "social": {
@@ -56,14 +56,14 @@
   "trending": {
     "trending_coins": [
       "GRVT Token",
-      "COTI",
-      "Pi Network",
-      "The Black Bull",
-      "Solana",
-      "Pudgy Penguins",
-      "Uniswap"
+      "Uniswap",
+      "Ondo",
+      "Artificial Superintelligence Alliance",
+      "Cash Cat",
+      "Bitcoin",
+      "Pi Network"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

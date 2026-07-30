@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-07-30T12:25:28.527534+00:00",
+  "timestamp": "2026-07-30T15:04:38.358541+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.1h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,41 +17,33 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Advance GDP q/q",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.1,
-        "forecast": "2.1%",
-        "previous": "2.0%"
-      },
-      {
-        "title": "Core PCE Price Index m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.1,
-        "forecast": "0.2%",
-        "previous": "0.3%"
-      },
-      {
-        "title": "Advance GDP Price Index q/q",
+        "title": "Employment Cost Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 0.1,
-        "forecast": "4.1%",
-        "previous": "3.6%"
+        "hours_until": 21.4,
+        "forecast": "0.8%",
+        "previous": "0.9%"
       },
       {
-        "title": "Unemployment Claims",
-        "time_utc": "08:30 UTC",
+        "title": "Revised UoM Consumer Sentiment",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 0.1,
-        "forecast": "201K",
-        "previous": "187K"
+        "hours_until": 22.9,
+        "forecast": "53.9",
+        "previous": "54.4"
+      },
+      {
+        "title": "Revised UoM Inflation Expectations",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 22.9,
+        "forecast": "",
+        "previous": "4.2%"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.1,
-    "event_count_24h": 4
+    "risk_level": "low",
+    "hours_until_next": 21.4,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -65,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Ondo",
-      "Hyperliquid",
+      "GRVT Token",
       "COTI",
-      "Pudgy Penguins",
-      "Fartcoin",
       "Pi Network",
-      "Lorenzo Protocol"
+      "The Black Bull",
+      "Solana",
+      "Pudgy Penguins",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

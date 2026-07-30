@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-07-30T10:15:00.959685+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-30T12:25:28.527534+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.1h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 2.2,
+        "hours_until": 0.1,
         "forecast": "2.1%",
         "previous": "2.0%"
       },
@@ -28,7 +30,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 2.2,
+        "hours_until": 0.1,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -36,7 +38,7 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.2,
+        "hours_until": 0.1,
         "forecast": "4.1%",
         "previous": "3.6%"
       },
@@ -44,13 +46,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.2,
+        "hours_until": 0.1,
         "forecast": "201K",
         "previous": "187K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 2.2,
+    "risk_level": "high",
+    "hours_until_next": 0.1,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +65,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Ondo",
+      "Hyperliquid",
       "COTI",
-      "Pi Network",
       "Pudgy Penguins",
-      "Bitcoin",
-      "Lorenzo Protocol",
-      "Ethereum",
-      "Solana"
+      "Fartcoin",
+      "Pi Network",
+      "Lorenzo Protocol"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

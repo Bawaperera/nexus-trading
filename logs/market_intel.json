@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-29T23:55:16.594995+00:00",
+  "timestamp": "2026-07-30T01:44:00.583825+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.6,
+        "hours_until": 10.8,
         "forecast": "2.1%",
         "previous": "2.0%"
       },
@@ -28,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.6,
+        "hours_until": 10.8,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -36,7 +36,7 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.8,
         "forecast": "4.1%",
         "previous": "3.6%"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.6,
+        "hours_until": 10.8,
         "forecast": "201K",
         "previous": "187K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 12.6,
+    "hours_until_next": 10.8,
     "event_count_24h": 4
   },
   "social": {
@@ -64,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "COTI",
-      "Cash Cat",
+      "Bittensor",
+      "Lighter",
       "Bitcoin",
-      "Hyperliquid",
-      "Pons",
-      "Ondo",
-      "Uniswap"
+      "Zama",
+      "Solana",
+      "Global Dollar"
     ],
     "btc_in_trending": true,
     "trend_count": 7

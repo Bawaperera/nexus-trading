@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-30T19:12:53.115120+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-07-30T20:58:13.912744+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Employment Cost Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 17.3,
+        "hours_until": 15.5,
         "forecast": "0.8%",
         "previous": "0.9%"
       },
@@ -28,7 +28,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.8,
+        "hours_until": 17.0,
         "forecast": "53.9",
         "previous": "54.4"
       },
@@ -36,13 +36,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.8,
+        "hours_until": 17.0,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 17.3,
+    "hours_until_next": 15.5,
     "event_count_24h": 3
   },
   "social": {
@@ -55,15 +55,15 @@
   },
   "trending": {
     "trending_coins": [
-      "GRVT Token",
-      "Uniswap",
-      "Ethena",
+      "Moon Doge Coin",
       "Pudgy Penguins",
-      "Bitcoin",
+      "Ethena",
+      "Uniswap",
+      "GRVT Token",
       "Cap",
-      "Lorenzo Protocol"
+      "Solana"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

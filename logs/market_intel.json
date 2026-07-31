@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-31T08:47:02.644096+00:00",
+  "timestamp": "2026-07-31T11:23:14.040388+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Employment Cost Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 3.7,
+        "hours_until": 1.1,
         "forecast": "0.8%",
         "previous": "0.9%"
       },
@@ -28,7 +28,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 5.2,
+        "hours_until": 2.6,
         "forecast": "53.9",
         "previous": "54.4"
       },
@@ -36,13 +36,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 5.2,
+        "hours_until": 2.6,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 3.7,
+    "hours_until_next": 1.1,
     "event_count_24h": 3
   },
   "social": {
@@ -56,12 +56,12 @@
   "trending": {
     "trending_coins": [
       "Moon Doge Coin",
-      "Pudgy Penguins",
-      "Giggle Fund",
+      "Momentum",
       "GRVT Token",
-      "Ondo",
+      "Giggle Fund",
       "Uniswap",
-      "Lorenzo Protocol"
+      "Pudgy Penguins",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-31T11:23:14.040388+00:00",
+  "timestamp": "2026-07-31T13:45:19.771116+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Employment Cost Index q/q",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 1.1,
-        "forecast": "0.8%",
-        "previous": "0.9%"
-      },
-      {
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 2.6,
+        "hours_until": 0.2,
         "forecast": "53.9",
         "previous": "54.4"
       },
@@ -36,14 +28,14 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 2.6,
+        "hours_until": 0.2,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.1,
-    "event_count_24h": 3
+    "hours_until_next": 0.2,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -55,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Moon Doge Coin",
-      "Momentum",
-      "GRVT Token",
-      "Giggle Fund",
-      "Uniswap",
       "Pudgy Penguins",
-      "Hyperliquid"
+      "Moon Doge Coin",
+      "GRVT Token",
+      "Uniswap",
+      "Hyperliquid",
+      "AEON",
+      "Pump.fun"
     ],
     "btc_in_trending": false,
     "trend_count": 7

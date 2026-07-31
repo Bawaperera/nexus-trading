@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-31T17:22:57.965925+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-07-31T19:10:58.899863+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "Ethena",
       "Pudgy Penguins",
-      "Uniswap",
-      "GRVT Token",
+      "Solana",
+      "Bitcoin",
+      "XRP",
       "Ethereum",
-      "Pump.fun",
-      "Lighter"
+      "Fake World Assets"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

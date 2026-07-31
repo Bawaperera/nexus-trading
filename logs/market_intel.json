@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-31T21:59:24.281657+00:00",
+  "timestamp": "2026-07-31T23:02:39.381046+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Ethena",
       "GRVT Token",
+      "Pudgy Penguins",
+      "Ondo",
       "Uniswap",
       "Ethereum",
-      "Pudgy Penguins",
-      "Pump.fun",
-      "Solana"
+      "Cash Cat"
     ],
     "btc_in_trending": false,
     "trend_count": 7

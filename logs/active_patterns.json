@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-08-01T02:02:43.942970+00:00",
-  "btc_price": 62920.3,
+  "scan_time": "2026-08-01T05:47:48.631540+00:00",
+  "btc_price": 62943.87,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 27,
-  "sentiment_score": 0.0336,
+  "sentiment_score": 0.0909,
   "patterns": [
     {
       "name": "rising_wedge",
       "direction": "bearish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 64855.66,
-      "stop_loss": 65340.5,
-      "target": 59173.05,
+      "entry": 64893.33,
+      "stop_loss": 65378.04,
+      "target": 59211.89,
       "risk_reward": 11.72,
       "confidence": 0.62,
       "score": 65,
@@ -38,8 +38,8 @@
         "+20 MTF 4/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
         "+0 Volume 0.8\u00d7 average",
-        "+3 RSI 45 (neutral)",
-        "+6 Sentiment +0.03"
+        "+3 RSI 44 (neutral)",
+        "+6 Sentiment +0.09"
       ]
     }
   ]

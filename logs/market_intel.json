@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-01T17:54:59.152209+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-01T18:57:46.191839+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "GRVT Token",
-      "Audiera",
-      "Shiba Inu",
-      "Pi Network",
       "Pudgy Penguins",
-      "The Black Bull",
-      "Bitcoin"
+      "Akedo",
+      "Pi Network",
+      "Hyperliquid",
+      "Pump.fun",
+      "Solana",
+      "The Black Bull"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

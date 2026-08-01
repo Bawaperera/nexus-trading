@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-01T20:08:28.344011+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-01T21:46:15.762720+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "The Black Bull",
       "Pudgy Penguins",
-      "Akash Network",
-      "Pi Network",
-      "Bittensor",
-      "LAB",
-      "Chainlink",
-      "Aave"
+      "Akedo",
+      "Bitcoin",
+      "Pump.fun",
+      "Internet Computer",
+      "Polkadot"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-01T05:47:47.919241+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-01T08:06:56.033913+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Ethena",
-      "ADI",
-      "Giggle Fund",
-      "Ethereum",
+      "Pudgy Penguins",
+      "GRVT Token",
+      "Pump.fun",
+      "Uniswap",
       "Solana",
-      "Bitcoin",
-      "GRVT Token"
+      "Ethereum"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

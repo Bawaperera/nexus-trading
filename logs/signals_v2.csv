@@ -639,3 +639,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-08-01T22:45:44.327275+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,80,5,64797.65,65300.5,59115.03,11.3,False,-0.0607,27
 2026-08-01T22:45:44.807594+00:00,double_top,bearish,4h,BREAKOUT,68,5,62711.5,65721.45,59768.13,0.98,False,-0.0607,27
 2026-08-01T22:45:45.283529+00:00,descending_triangle,bearish,4h,BREAKOUT,65,5,62759.34,65721.45,59863.82,0.98,False,-0.0607,27
+2026-08-01T23:50:31.917667+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,69,5,64835.07,65337.99,59153.63,11.3,False,-0.0033,27

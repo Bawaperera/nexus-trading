@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-02T16:51:25.358428+00:00",
+  "timestamp": "2026-08-02T17:55:52.489409+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 21.1,
+        "hours_until": 20.1,
         "forecast": "54.0",
         "previous": "53.3"
       },
@@ -28,13 +28,13 @@
         "title": "ISM Manufacturing Prices",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 21.1,
+        "hours_until": 20.1,
         "forecast": "70.0",
         "previous": "73.0"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 21.1,
+    "hours_until_next": 20.1,
     "event_count_24h": 2
   },
   "social": {
@@ -48,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "Catecoin",
-      "Bless",
       "Pudgy Penguins",
-      "Hyperliquid",
-      "Uniswap",
+      "Bless",
       "Aerodrome Finance",
-      "Lighter"
+      "Cardano",
+      "Uniswap",
+      "Solana"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-02T10:27:27.149393+00:00",
+  "timestamp": "2026-08-02T11:56:09.670808+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Cardano",
       "Catecoin",
+      "Cardano",
+      "Pudgy Penguins",
       "Bitcoin",
-      "Hyperliquid",
-      "Cosmos Hub",
-      "Pi Network"
+      "Pepe",
+      "Solstice",
+      "Cash Cat"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-02T11:56:09.670808+00:00",
+  "timestamp": "2026-08-02T13:05:11.481453+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,11 +31,11 @@
   "trending": {
     "trending_coins": [
       "Catecoin",
-      "Cardano",
-      "Pudgy Penguins",
       "Bitcoin",
-      "Pepe",
-      "Solstice",
+      "Hyperliquid",
+      "Cardano",
+      "Shiba Inu",
+      "Render",
       "Cash Cat"
     ],
     "btc_in_trending": true,

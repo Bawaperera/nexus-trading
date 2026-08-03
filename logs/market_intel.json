@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-08-03T10:34:11.070165+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-03T13:34:11.747466+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.4h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 3.4,
+        "hours_until": 0.4,
         "forecast": "54.0",
         "previous": "53.3"
       },
@@ -28,13 +30,13 @@
         "title": "ISM Manufacturing Prices",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 3.4,
+        "hours_until": 0.4,
         "forecast": "70.0",
         "previous": "73.0"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 3.4,
+    "risk_level": "high",
+    "hours_until_next": 0.4,
     "event_count_24h": 2
   },
   "social": {
@@ -47,15 +49,15 @@
   },
   "trending": {
     "trending_coins": [
-      "GRVT Token",
       "Bless",
       "Pudgy Penguins",
-      "Casper Network",
-      "Lighter",
+      "Bitcoin",
       "Hyperliquid",
-      "The Black Bull"
+      "Bittensor",
+      "Ethereum",
+      "GRVT Token"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

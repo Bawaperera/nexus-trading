@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-03T18:44:26.704972+00:00",
+  "timestamp": "2026-08-03T20:21:27.753089+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 19.3,
+        "hours_until": 17.6,
         "forecast": "7.44M",
         "previous": "7.59M"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 19.3,
+    "hours_until_next": 17.6,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Cash Cat",
       "Pudgy Penguins",
-      "Ethena",
       "Cosmos Hub",
       "Hyperliquid",
-      "Shiba Inu",
-      "Cash Cat",
-      "Polkadot"
+      "Solana",
+      "What IF",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

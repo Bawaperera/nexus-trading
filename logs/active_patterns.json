@@ -1,22 +1,22 @@
 {
-  "scan_time": "2026-08-03T06:11:36.112993+00:00",
-  "btc_price": 62759.37,
+  "scan_time": "2026-08-03T10:34:12.568387+00:00",
+  "btc_price": 62594.38,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 28,
-  "sentiment_score": -0.0119,
+  "sentiment_score": -0.0616,
   "patterns": [
     {
       "name": "rising_wedge",
       "direction": "bearish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 64747.78,
-      "stop_loss": 65250.63,
-      "target": 59065.16,
-      "risk_reward": 11.3,
+      "entry": 64703.93,
+      "stop_loss": 65208.11,
+      "target": 59021.31,
+      "risk_reward": 11.27,
       "confidence": 0.62,
       "score": 80,
       "n_confluences": 5,
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 62%",
         "+20 MTF 4/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.3\u00d7 average",
+        "+15 Volume 2.1\u00d7 average",
         "+3 RSI 44 (neutral)",
-        "+6 Sentiment -0.01"
+        "+6 Sentiment -0.06"
       ]
     },
     {
@@ -48,7 +48,7 @@
       "timeframe": "4h",
       "status": "BREAKOUT",
       "entry": 62711.5,
-      "stop_loss": 65687.18,
+      "stop_loss": 65687.45,
       "target": 59768.13,
       "risk_reward": 0.99,
       "confidence": 0.75,
@@ -71,9 +71,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.3\u00d7 average",
+        "+15 Volume 2.1\u00d7 average",
         "+3 RSI 44 (neutral)",
-        "+6 Sentiment -0.01",
+        "+6 Sentiment -0.06",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -82,9 +82,9 @@
       "direction": "bearish",
       "timeframe": "4h",
       "status": "BREAKOUT",
-      "entry": 62696.72,
-      "stop_loss": 65361.88,
-      "target": 60063.87,
+      "entry": 62569.4,
+      "stop_loss": 65362.15,
+      "target": 59809.23,
       "risk_reward": 0.99,
       "confidence": 0.65,
       "score": 65,
@@ -106,9 +106,9 @@
         "+16 Pattern confidence 65%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.3\u00d7 average",
+        "+15 Volume 2.1\u00d7 average",
         "+3 RSI 44 (neutral)",
-        "+6 Sentiment -0.01",
+        "+6 Sentiment -0.06",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -118,7 +118,7 @@
       "timeframe": "daily",
       "status": "FORMING",
       "entry": 57720.73,
-      "stop_loss": 67355.3,
+      "stop_loss": 67355.56,
       "target": 48186.73,
       "risk_reward": 0.99,
       "confidence": 0.75,
@@ -141,9 +141,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 2.3\u00d7 average",
+        "+15 Volume 2.1\u00d7 average",
         "+3 RSI 44 (neutral)",
-        "+6 Sentiment -0.01",
+        "+6 Sentiment -0.06",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

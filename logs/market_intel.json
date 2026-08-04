@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-04T10:28:54.039849+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-04T12:58:56.090915+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,14 +20,22 @@
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 3.5,
+        "hours_until": 1.0,
         "forecast": "7.44M",
         "previous": "7.59M"
+      },
+      {
+        "title": "ADP Non-Farm Employment Change",
+        "time_utc": "08:15 UTC",
+        "impact": "Medium",
+        "hours_until": 23.3,
+        "forecast": "68K",
+        "previous": "98K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 3.5,
-    "event_count_24h": 1
+    "hours_until_next": 1.0,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -39,15 +47,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Cysic",
-      "Pudgy Penguins",
-      "Lighter",
-      "Bitcoin",
-      "Ondo",
+      "Ergo",
       "Cash Cat",
-      "GRVT Token"
+      "HOME",
+      "Cysic",
+      "Hyperliquid",
+      "Solana",
+      "Ondo"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

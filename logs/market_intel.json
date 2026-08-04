@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T22:54:58.333205+00:00",
+  "timestamp": "2026-08-04T23:57:01.361908+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 13.3,
+        "hours_until": 12.3,
         "forecast": "68K",
         "previous": "98K"
       },
@@ -28,7 +28,7 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 15.1,
+        "hours_until": 14.0,
         "forecast": "54.5",
         "previous": "54.0"
       },
@@ -36,13 +36,13 @@
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.6,
+        "hours_until": 20.5,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 13.3,
+    "hours_until_next": 12.3,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Ergo",
       "Pump.fun",
+      "Pudgy Penguins",
       "Squid",
-      "Cash Cat",
-      "Monad",
-      "Bittensor",
-      "What IF"
+      "Cardano",
+      "Morpho",
+      "Hyperliquid",
+      "XRP"
     ],
     "btc_in_trending": false,
     "trend_count": 7

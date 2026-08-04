@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T12:58:56.090915+00:00",
+  "timestamp": "2026-08-04T15:17:48.660380+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,24 +17,24 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "JOLTS Job Openings",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 1.0,
-        "forecast": "7.44M",
-        "previous": "7.59M"
-      },
-      {
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 23.3,
+        "hours_until": 21.0,
         "forecast": "68K",
         "previous": "98K"
+      },
+      {
+        "title": "ISM Services PMI",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 22.7,
+        "forecast": "54.5",
+        "previous": "54.0"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.0,
+    "hours_until_next": 21.0,
     "event_count_24h": 2
   },
   "social": {
@@ -48,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "Ergo",
-      "Cash Cat",
-      "HOME",
+      "Squid",
       "Cysic",
-      "Hyperliquid",
-      "Solana",
-      "Ondo"
+      "Pudgy Penguins",
+      "HOME",
+      "Pump.fun",
+      "Sui"
     ],
     "btc_in_trending": false,
     "trend_count": 7

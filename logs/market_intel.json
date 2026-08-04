@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T07:33:47.955670+00:00",
+  "timestamp": "2026-08-04T10:28:54.039849+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 6.4,
+        "hours_until": 3.5,
         "forecast": "7.44M",
         "previous": "7.59M"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 6.4,
+    "hours_until_next": 3.5,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
+      "Cysic",
       "Pudgy Penguins",
+      "Lighter",
       "Bitcoin",
-      "Bittensor",
-      "Gram (prev. Toncoin)",
-      "HOME",
-      "Canton"
+      "Ondo",
+      "Cash Cat",
+      "GRVT Token"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-04T01:46:40.849685+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-04T04:56:39.599694+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.2,
+        "hours_until": 9.1,
         "forecast": "7.44M",
         "previous": "7.59M"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 12.2,
+    "hours_until_next": 9.1,
     "event_count_24h": 1
   },
   "social": {
@@ -40,14 +40,14 @@
   "trending": {
     "trending_coins": [
       "Cash Cat",
-      "Bitcoin",
-      "Solana",
       "Cardano",
-      "Ethereum",
-      "Pump.fun",
-      "Pudgy Penguins"
+      "Pudgy Penguins",
+      "HOME",
+      "Gram (prev. Toncoin)",
+      "Akash Network",
+      "Ethereum"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

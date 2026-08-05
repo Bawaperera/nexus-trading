@@ -1,47 +1,13 @@
 {
-  "scan_time": "2026-08-05T22:13:45.224000+00:00",
-  "btc_price": 64619.65,
+  "scan_time": "2026-08-05T23:52:29.991938+00:00",
+  "btc_price": 64587.22,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 27,
-  "sentiment_score": -0.1197,
+  "sentiment_score": -0.0522,
   "patterns": [
-    {
-      "name": "rising_wedge",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "BREAKOUT",
-      "entry": 64539.0,
-      "stop_loss": 65969.53,
-      "target": 58856.39,
-      "risk_reward": 3.97,
-      "confidence": 0.62,
-      "score": 61,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": true,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 62%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 3.4\u00d7 average",
-        "+7 RSI 53 (neutral)",
-        "+10 Sentiment -0.12"
-      ]
-    },
     {
       "name": "double_bottom",
       "direction": "bullish",
@@ -71,12 +37,11 @@
         "+19 Pattern confidence 75%",
         "+8 MTF 2/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.4\u00d7 average",
+        "+15 Volume 2.9\u00d7 average",
         "+7 RSI 53 (neutral)",
-        "+6 Sentiment -0.12",
+        "+6 Sentiment -0.05",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-05T22:58:08.975263+00:00"
+  ]
 }

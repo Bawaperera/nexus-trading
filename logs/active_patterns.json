@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-05T19:17:44.757544+00:00",
-  "btc_price": 64817.16,
+  "scan_time": "2026-08-05T20:59:34.816559+00:00",
+  "btc_price": 64782.27,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 27,
-  "sentiment_score": -0.1511,
+  "sentiment_score": 0.0164,
   "patterns": [
     {
       "name": "double_bottom",
@@ -14,15 +14,15 @@
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
       "entry": 63730.48,
-      "stop_loss": 63463.54,
+      "stop_loss": 63549.81,
       "target": 65250.81,
-      "risk_reward": 5.7,
+      "risk_reward": 8.41,
       "confidence": 0.75,
       "score": 75,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 19,
         "mtf": 8,
@@ -37,45 +37,10 @@
         "+19 Pattern confidence 75%",
         "+8 MTF 2/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.3\u00d7 average",
+        "+15 Volume 3.0\u00d7 average",
         "+7 RSI 54 (neutral)",
-        "+6 Sentiment -0.15"
-      ]
-    },
-    {
-      "name": "rising_wedge",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "BREAKOUT",
-      "entry": 64539.0,
-      "stop_loss": 65960.1,
-      "target": 58856.39,
-      "risk_reward": 4.0,
-      "confidence": 0.62,
-      "score": 61,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 62%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 2.3\u00d7 average",
-        "+7 RSI 54 (neutral)",
-        "+10 Sentiment -0.15"
+        "+6 Sentiment +0.02"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-05T20:26:24.939227+00:00"
+  ]
 }

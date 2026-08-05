@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-04T23:57:01.361908+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-05T02:02:19.754921+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 12.3,
+        "hours_until": 10.2,
         "forecast": "68K",
         "previous": "98K"
       },
@@ -28,7 +28,7 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 14.0,
+        "hours_until": 12.0,
         "forecast": "54.5",
         "previous": "54.0"
       },
@@ -36,13 +36,13 @@
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.5,
+        "hours_until": 18.5,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 12.3,
+    "hours_until_next": 10.2,
     "event_count_24h": 3
   },
   "social": {
@@ -56,14 +56,14 @@
   "trending": {
     "trending_coins": [
       "Pump.fun",
-      "Pudgy Penguins",
-      "Squid",
-      "Cardano",
-      "Morpho",
+      "Cash Cat",
       "Hyperliquid",
-      "XRP"
+      "Bitcoin",
+      "Bittensor",
+      "Pudgy Penguins",
+      "Squid"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

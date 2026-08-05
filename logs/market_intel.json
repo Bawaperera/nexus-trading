@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-05T11:12:54.989024+00:00",
+  "timestamp": "2026-08-05T13:47:28.758127+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "ADP Non-Farm Employment Change",
-        "time_utc": "08:15 UTC",
-        "impact": "Medium",
-        "hours_until": 1.0,
-        "forecast": "68K",
-        "previous": "98K"
-      },
-      {
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 2.8,
+        "hours_until": 0.2,
         "forecast": "54.5",
         "previous": "54.0"
       },
@@ -36,13 +28,21 @@
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 9.3,
+        "hours_until": 6.7,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.7,
+        "forecast": "203K",
+        "previous": "197K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.0,
+    "hours_until_next": 0.2,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "GRVT Token",
-      "Pump.fun",
       "Cash Cat",
-      "Squid",
+      "Pump.fun",
       "Hyperliquid",
-      "Heima",
-      "Pudgy Penguins"
+      "Squid",
+      "Pudgy Penguins",
+      "Uniswap",
+      "Cysic"
     ],
     "btc_in_trending": false,
     "trend_count": 7

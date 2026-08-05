@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-05T13:47:28.758127+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-05T15:56:00.106757+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "ISM Services PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.2,
-        "forecast": "54.5",
-        "previous": "54.0"
-      },
-      {
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 6.7,
+        "hours_until": 4.6,
         "forecast": "",
         "previous": ""
       },
@@ -36,14 +28,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 22.7,
+        "hours_until": 20.6,
         "forecast": "203K",
         "previous": "197K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.2,
-    "event_count_24h": 3
+    "hours_until_next": 4.6,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -55,15 +47,15 @@
   },
   "trending": {
     "trending_coins": [
+      "ZIGChain",
       "Cash Cat",
-      "Pump.fun",
-      "Hyperliquid",
-      "Squid",
+      "Hashflow",
       "Pudgy Penguins",
-      "Uniswap",
-      "Cysic"
+      "Bitcoin",
+      "Hyperliquid",
+      "The Black Bull"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,20 +1,54 @@
 {
-  "scan_time": "2026-08-05T13:47:29.342476+00:00",
-  "btc_price": 64024.44,
+  "scan_time": "2026-08-05T15:56:01.180377+00:00",
+  "btc_price": 64386.11,
   "daily_trend": "bearish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 2,
   "fg_value": 27,
-  "sentiment_score": -0.0865,
+  "sentiment_score": -0.121,
   "patterns": [
+    {
+      "name": "rising_wedge",
+      "direction": "bearish",
+      "timeframe": "daily",
+      "status": "BREAKOUT",
+      "entry": 64539.0,
+      "stop_loss": 65944.75,
+      "target": 58856.39,
+      "risk_reward": 4.04,
+      "confidence": 0.62,
+      "score": 61,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 8,
+        "retest": 5,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 62%",
+        "+8 MTF 2/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+15 Volume 2.8\u00d7 average",
+        "+7 RSI 52 (neutral)",
+        "+10 Sentiment -0.12"
+      ]
+    },
     {
       "name": "double_bottom",
       "direction": "bullish",
       "timeframe": "4h",
       "status": "BREAKOUT",
       "entry": 63730.48,
-      "stop_loss": 62160.53,
+      "stop_loss": 62156.86,
       "target": 65250.81,
       "risk_reward": 0.97,
       "confidence": 0.75,
@@ -37,9 +71,9 @@
         "+19 Pattern confidence 75%",
         "+8 MTF 2/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.5\u00d7 average",
-        "+7 RSI 50 (neutral)",
-        "+6 Sentiment -0.09",
+        "+15 Volume 2.8\u00d7 average",
+        "+7 RSI 52 (neutral)",
+        "+6 Sentiment -0.12",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

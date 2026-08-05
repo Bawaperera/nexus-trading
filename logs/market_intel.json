@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-05T15:56:00.106757+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-05T17:23:13.569029+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 4.6,
+        "hours_until": 3.1,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.6,
+        "hours_until": 19.1,
         "forecast": "203K",
         "previous": "197K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 4.6,
+    "hours_until_next": 3.1,
     "event_count_24h": 2
   },
   "social": {
@@ -48,14 +48,14 @@
   "trending": {
     "trending_coins": [
       "ZIGChain",
-      "Cash Cat",
-      "Hashflow",
+      "Uniswap",
       "Pudgy Penguins",
-      "Bitcoin",
+      "Cash Cat",
       "Hyperliquid",
-      "The Black Bull"
+      "Squid",
+      "Pump.fun"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

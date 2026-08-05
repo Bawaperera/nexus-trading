@@ -693,3 +693,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-08-05T05:38:41.641936+00:00,rising_wedge,bearish,daily,BREAKOUT,61,5,64561.7,65922.76,58880.26,4.17,False,-0.1046,27
 2026-08-05T05:38:42.306929+00:00,double_bottom,bullish,4h,BREAKOUT,60,5,63728.3,62161.69,65246.46,0.97,False,-0.1046,27
 2026-08-05T06:11:50.714256+00:00,rising_wedge,bearish,daily,BREAKOUT+15M,61,5,64561.7,65922.76,58880.26,4.17,False,0,0
+2026-08-05T08:22:30.311635+00:00,double_bottom,bullish,4h,BREAKOUT,60,5,63730.48,62161.65,65250.81,0.97,False,0.0857,27

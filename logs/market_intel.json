@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-05T05:38:40.881512+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-05T08:22:29.698602+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 6.6,
+        "hours_until": 3.9,
         "forecast": "68K",
         "previous": "98K"
       },
@@ -28,7 +28,7 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 8.4,
+        "hours_until": 5.6,
         "forecast": "54.5",
         "previous": "54.0"
       },
@@ -36,13 +36,13 @@
         "title": "President Trump Speaks",
         "time_utc": "16:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.9,
+        "hours_until": 12.1,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 6.6,
+    "hours_until_next": 3.9,
     "event_count_24h": 3
   },
   "social": {
@@ -56,14 +56,14 @@
   "trending": {
     "trending_coins": [
       "GRVT Token",
-      "Heima",
-      "Bitcoin",
-      "Pi Network",
+      "OVERTAKE",
       "Squid",
+      "Pudgy Penguins",
+      "Uniswap",
       "Pump.fun",
-      "Pudgy Penguins"
+      "The Black Bull"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

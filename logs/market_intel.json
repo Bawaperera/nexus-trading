@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-06T12:52:08.450625+00:00",
+  "timestamp": "2026-08-06T15:07:56.733387+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 23.6,
+        "hours_until": 21.4,
         "forecast": "0.3%",
         "previous": "0.3%"
       },
@@ -28,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 23.6,
+        "hours_until": 21.4,
         "forecast": "85K",
         "previous": "57K"
       },
@@ -36,13 +36,13 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 23.6,
+        "hours_until": 21.4,
         "forecast": "4.2%",
         "previous": "4.2%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 23.6,
+    "hours_until_next": 21.4,
     "event_count_24h": 3
   },
   "social": {
@@ -56,12 +56,12 @@
   "trending": {
     "trending_coins": [
       "Cash Cat",
-      "Heima",
       "Hyperliquid",
-      "Bless",
-      "OVERTAKE",
-      "Canton",
-      "Pudgy Penguins"
+      "Pudgy Penguins",
+      "Pons",
+      "Heima",
+      "StonkBroker",
+      "Kaspa"
     ],
     "btc_in_trending": false,
     "trend_count": 7

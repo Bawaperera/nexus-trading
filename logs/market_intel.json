@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T21:30:48.145716+00:00",
+  "timestamp": "2026-08-07T22:26:55.842170+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Cash Cat",
-      "Cronos",
       "Ondo",
-      "StonkBroker",
-      "Ethereum",
-      "Solana"
+      "Biconomy",
+      "Pudgy Penguins",
+      "Pons",
+      "Cronos",
+      "Solana",
+      "Heima"
     ],
     "btc_in_trending": false,
     "trend_count": 7

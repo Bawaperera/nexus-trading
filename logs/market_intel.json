@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T12:43:28.296556+00:00",
+  "timestamp": "2026-08-07T14:06:51.571869+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Fusionist",
-      "Pudgy Penguins",
       "Cash Cat",
-      "KGeN",
-      "Bonk",
+      "Lighter",
+      "Pump.fun",
+      "Biconomy",
+      "Pudgy Penguins",
       "Solana",
-      "Ethereum"
+      "KGeN"
     ],
     "btc_in_trending": false,
     "trend_count": 7

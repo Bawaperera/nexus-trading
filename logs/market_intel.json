@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-07T08:08:36.061940+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-07T09:53:27.146452+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 4.4,
+        "hours_until": 2.6,
         "forecast": "0.3%",
         "previous": "0.3%"
       },
@@ -28,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 4.4,
+        "hours_until": 2.6,
         "forecast": "85K",
         "previous": "57K"
       },
@@ -36,13 +36,13 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 4.4,
+        "hours_until": 2.6,
         "forecast": "4.2%",
         "previous": "4.2%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 4.4,
+    "hours_until_next": 2.6,
     "event_count_24h": 3
   },
   "social": {
@@ -55,15 +55,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Block Street",
-      "Lighter",
-      "Cash Cat",
-      "Pudgy Penguins",
-      "Bonk",
       "Fusionist",
-      "Solana"
+      "Cash Cat",
+      "Bitcoin",
+      "Block Street",
+      "Plume",
+      "Hyperliquid",
+      "Pudgy Penguins"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

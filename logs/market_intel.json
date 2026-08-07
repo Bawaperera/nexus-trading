@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-08-07T11:39:37.884535+00:00",
+  "timestamp": "2026-08-07T12:43:28.296556+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,35 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Average Hourly Earnings m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.3%",
-        "previous": "0.3%"
-      },
-      {
-        "title": "Non-Farm Employment Change",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "85K",
-        "previous": "57K"
-      },
-      {
-        "title": "Unemployment Rate",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "4.2%",
-        "previous": "4.2%"
-      }
-    ],
-    "risk_level": "high",
-    "hours_until_next": 0.8,
-    "event_count_24h": 3
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -58,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Fusionist",
-      "KGeN",
-      "Cash Cat",
-      "Bonk",
-      "Lighter",
       "Pudgy Penguins",
-      "Plume"
+      "Cash Cat",
+      "KGeN",
+      "Bonk",
+      "Solana",
+      "Ethereum"
     ],
     "btc_in_trending": false,
     "trend_count": 7

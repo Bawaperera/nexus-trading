@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T19:45:50.302546+00:00",
+  "timestamp": "2026-08-07T20:32:00.214448+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Pump.fun",
       "Cash Cat",
-      "Pudgy Penguins",
       "Wiki Cat",
       "What IF",
       "Ondo",
+      "Hyperliquid",
+      "Pudgy Penguins",
       "Epic Chain"
     ],
     "btc_in_trending": false,

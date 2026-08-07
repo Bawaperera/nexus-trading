@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T15:46:28.043364+00:00",
+  "timestamp": "2026-08-07T16:43:50.118537+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Lighter",
-      "Cash Cat",
+      "Pudgy Penguins",
       "Ondo",
-      "Pump.fun",
-      "Biconomy",
-      "Ether.fi",
+      "Hyperliquid",
+      "Lighter",
+      "Bonk",
+      "Cash Cat",
       "Bitcoin"
     ],
     "btc_in_trending": true,

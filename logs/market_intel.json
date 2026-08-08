@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T16:22:36.134181+00:00",
+  "timestamp": "2026-08-08T17:22:26.400703+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "StonkBroker",
       "Tutorial",
-      "Solana",
-      "Solstice",
+      "StonkBroker",
       "Fusionist",
-      "Pi Network",
-      "Cash Cat"
+      "Monad",
+      "The Black Bull",
+      "Solstice",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

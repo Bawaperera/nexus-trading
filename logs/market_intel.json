@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-08T13:39:26.492362+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-08T14:24:22.178326+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Pons",
       "StonkBroker",
-      "Sui",
-      "Uniswap",
-      "Bitcoin",
-      "GRVT Token"
+      "Jimothy The Raccoon",
+      "Pudgy Penguins",
+      "Cash Cat",
+      "Hyperliquid",
+      "Pons",
+      "Pi Network"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T14:24:22.178326+00:00",
+  "timestamp": "2026-08-08T15:22:07.403956+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "StonkBroker",
-      "Jimothy The Raccoon",
       "Pudgy Penguins",
-      "Cash Cat",
-      "Hyperliquid",
-      "Pons",
-      "Pi Network"
+      "Tutorial",
+      "StonkBroker",
+      "Pi Network",
+      "Solstice",
+      "Jimothy The Raccoon",
+      "Pons"
     ],
     "btc_in_trending": false,
     "trend_count": 7

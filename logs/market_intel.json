@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T08:30:24.516905+00:00",
+  "timestamp": "2026-08-08T09:29:31.469517+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Biconomy",
-      "Pudgy Penguins",
       "Cysic",
-      "Zcash",
-      "Cash Cat",
-      "Canton",
-      "Wiki Cat"
+      "Ondo",
+      "Biconomy",
+      "Cronos",
+      "Sui",
+      "Pudgy Penguins",
+      "Aave"
     ],
     "btc_in_trending": false,
     "trend_count": 7

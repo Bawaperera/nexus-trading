@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-08T06:36:56.830081+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-08T07:41:54.480833+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Biconomy",
       "Pudgy Penguins",
+      "Biconomy",
+      "Cysic",
+      "Canton",
       "Wiki Cat",
-      "Kaspa",
-      "Pi Network",
-      "Bitcoin SV",
-      "Canton"
+      "Cash Cat",
+      "Uniswap"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

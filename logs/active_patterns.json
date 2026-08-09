@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-08T23:20:17.186525+00:00",
-  "btc_price": 64906.57,
+  "scan_time": "2026-08-09T01:04:05.347265+00:00",
+  "btc_price": 64938.49,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
-  "fg_value": 30,
-  "sentiment_score": 0.2872,
+  "fg_value": 31,
+  "sentiment_score": 0.4071,
   "patterns": [
     {
       "name": "ascending_triangle",
@@ -22,7 +22,7 @@
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 16,
         "mtf": 15,
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.1\u00d7 average",
+        "+15 Volume 3.2\u00d7 average",
         "+7 RSI 55 (neutral)",
-        "+10 Sentiment +0.29",
+        "+10 Sentiment +0.41",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -57,7 +57,7 @@
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 16,
         "mtf": 15,
@@ -72,12 +72,11 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 3.1\u00d7 average",
+        "+15 Volume 3.2\u00d7 average",
         "+7 RSI 55 (neutral)",
-        "+10 Sentiment +0.29",
+        "+10 Sentiment +0.41",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-08T23:37:37.174631+00:00"
+  ]
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-09T14:26:18.116146+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-09T15:23:12.595811+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Tutorial",
       "Pump.fun",
-      "Cash Cat",
-      "Bittensor",
+      "Tutorial",
       "Pudgy Penguins",
-      "Lorenzo Protocol",
-      "Ethereum"
+      "Bitcoin",
+      "Bittensor",
+      "Cash Cat",
+      "Solana"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

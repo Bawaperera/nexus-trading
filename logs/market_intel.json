@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T03:25:52.292978+00:00",
+  "timestamp": "2026-08-09T04:57:01.900453+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Tutorial",
-      "Ethereum",
-      "Fake World Assets",
       "Pudgy Penguins",
-      "Uniswap",
-      "Pepe",
-      "Bittensor"
+      "Pump.fun",
+      "OVERTAKE",
+      "Pons",
+      "Pi Network",
+      "Ethereum"
     ],
     "btc_in_trending": false,
     "trend_count": 7

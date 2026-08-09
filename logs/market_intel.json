@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T04:57:01.900453+00:00",
+  "timestamp": "2026-08-09T05:43:51.067371+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Tutorial",
       "Pudgy Penguins",
-      "Pump.fun",
-      "OVERTAKE",
-      "Pons",
+      "Cash Cat",
+      "IoTeX",
       "Pi Network",
-      "Ethereum"
+      "OVERTAKE",
+      "Monad"
     ],
     "btc_in_trending": false,
     "trend_count": 7

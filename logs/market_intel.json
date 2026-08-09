@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T17:23:32.763383+00:00",
+  "timestamp": "2026-08-09T18:27:32.325638+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,10 +32,10 @@
     "trending_coins": [
       "Pudgy Penguins",
       "Pump.fun",
-      "StonkBroker",
-      "Biconomy",
       "Cash Cat",
-      "Sui",
+      "Ethereum",
+      "Biconomy",
+      "Hyperliquid",
       "Bitcoin"
     ],
     "btc_in_trending": true,

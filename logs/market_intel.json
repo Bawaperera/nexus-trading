@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T08:32:45.772825+00:00",
+  "timestamp": "2026-08-09T09:31:06.705275+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Tutorial",
       "Pump.fun",
-      "IoTeX",
-      "Cash Cat",
-      "StonkBroker",
       "Pudgy Penguins",
-      "Canton"
+      "Cash Cat",
+      "Sui",
+      "Canton",
+      "Biconomy"
     ],
     "btc_in_trending": false,
     "trend_count": 7

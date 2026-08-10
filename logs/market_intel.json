@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T11:50:59.341529+00:00",
+  "timestamp": "2026-08-10T12:50:00.548722+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -33,10 +33,10 @@
       "MowCat",
       "Pudgy Penguins",
       "DAPPOS",
-      "Cash Cat",
-      "GRVT Token",
       "Pump.fun",
-      "Tutorial"
+      "Cash Cat",
+      "Solana",
+      "GRVT Token"
     ],
     "btc_in_trending": false,
     "trend_count": 7

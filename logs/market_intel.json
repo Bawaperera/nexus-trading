@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-08-10T01:05:58.909926+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-10T03:45:28.150246+00:00",
+  "composite_signal": -0.0027,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
   "derivatives": {
-    "funding_rate": 0.0,
+    "funding_rate": 7.497e-05,
     "funding_signal": "Neutral \u2014 balanced",
-    "open_interest_btc": 0.0,
-    "oi_change_pct": 0.0,
-    "long_short_ratio": 1.0,
-    "long_pct": 50.0,
-    "short_pct": 50.0,
-    "top_trader_ls": 1.0
+    "open_interest_btc": 106800.673,
+    "oi_change_pct": -0.355,
+    "long_short_ratio": 1.1556,
+    "long_pct": 53.61,
+    "short_pct": 46.39,
+    "top_trader_ls": 1.5497
   },
   "macro": {
     "upcoming_events": [],
@@ -33,10 +33,10 @@
       "Pudgy Penguins",
       "Pump.fun",
       "Tutorial",
-      "Cash Cat",
-      "Canton",
+      "Bubblemaps",
       "BOOK OF MEME",
-      "Bittensor"
+      "Cash Cat",
+      "Allora"
     ],
     "btc_in_trending": false,
     "trend_count": 7

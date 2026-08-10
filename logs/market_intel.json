@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T15:52:45.873744+00:00",
+  "timestamp": "2026-08-10T16:44:35.369352+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "MowCat",
-      "Pudgy Penguins",
       "DAPPOS",
       "Pump.fun",
       "Cash Cat",
       "Monad",
-      "Tutorial"
+      "Ondo",
+      "Canton"
     ],
     "btc_in_trending": false,
     "trend_count": 7

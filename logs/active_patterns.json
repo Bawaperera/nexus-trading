@@ -1,82 +1,11 @@
 {
-  "scan_time": "2026-08-10T19:49:16.501149+00:00",
-  "btc_price": 63939.72,
+  "scan_time": "2026-08-10T20:33:16.034952+00:00",
+  "btc_price": 64058.31,
   "daily_trend": "bullish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 1,
   "fg_value": 30,
-  "sentiment_score": 0.1008,
-  "patterns": [
-    {
-      "name": "double_top",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "FORMING",
-      "entry": 57720.73,
-      "stop_loss": 67323.11,
-      "target": 48186.71,
-      "risk_reward": 0.99,
-      "confidence": 0.75,
-      "score": 62,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 15,
-        "retest": 0,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+0 Status: FORMING",
-        "+15 Volume 2.2\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+6 Sentiment +0.10",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    },
-    {
-      "name": "bear_flag",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "FORMING",
-      "entry": 62210.14,
-      "stop_loss": 65468.71,
-      "target": 58949.85,
-      "risk_reward": 1.0,
-      "confidence": 0.7,
-      "score": 61,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 18,
-        "mtf": 15,
-        "retest": 0,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+18 Pattern confidence 70%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+0 Status: FORMING",
-        "+15 Volume 2.2\u00d7 average",
-        "+7 RSI 48 (neutral)",
-        "+6 Sentiment +0.10",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    }
-  ]
+  "sentiment_score": 0.1411,
+  "patterns": []
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T19:49:15.117882+00:00",
+  "timestamp": "2026-08-10T20:33:16.030729+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "MowCat",
+      "Pudgy Penguins",
       "DAPPOS",
       "Cash Cat",
       "Pump.fun",
-      "Solana",
-      "Ethereum",
-      "Convex Finance"
+      "BNB",
+      "MowCat",
+      "Morpho"
     ],
     "btc_in_trending": false,
     "trend_count": 7

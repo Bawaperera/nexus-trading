@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T04:59:58.885426+00:00",
+  "timestamp": "2026-08-11T05:55:05.088914+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "DAPPOS",
-      "Pudgy Penguins",
-      "StonkBroker",
       "Cash Cat",
-      "Pepe",
-      "Bluwhale",
-      "Chainlink"
+      "Cysic",
+      "Pudgy Penguins",
+      "Pump.fun",
+      "StonkBroker",
+      "Pepe"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-11T09:52:59.823128+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-11T10:43:24.775910+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "DAPPOS",
-      "Cysic",
-      "Bittensor",
+      "Chainlink",
       "Cash Cat",
-      "Internet Computer",
       "Pudgy Penguins",
-      "Chainlink"
+      "Bitcoin",
+      "Cysic",
+      "XRP"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

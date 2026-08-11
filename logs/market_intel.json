@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T23:27:11.777817+00:00",
+  "timestamp": "2026-08-11T01:05:08.460120+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pump.fun",
-      "Pudgy Penguins",
-      "Cash Cat",
       "DAPPOS",
       "MowCat",
+      "Pump.fun",
+      "Pudgy Penguins",
+      "Tutorial",
       "XRP",
-      "The Black Bull"
+      "Ethereum"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T22:33:56.449314+00:00",
+  "timestamp": "2026-08-11T23:32:03.845814+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.9,
+        "hours_until": 13.0,
         "forecast": "0.2%",
         "previous": "0.0%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.9,
+        "hours_until": 13.0,
         "forecast": "2.5%",
         "previous": "2.6%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.9,
+        "hours_until": 13.0,
         "forecast": "0.1%",
         "previous": "-0.4%"
       },
@@ -44,13 +44,13 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.9,
+        "hours_until": 13.0,
         "forecast": "3.4%",
         "previous": "3.5%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 13.9,
+    "hours_until_next": 13.0,
     "event_count_24h": 4
   },
   "social": {
@@ -64,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "DogBull",
-      "Pudgy Penguins",
+      "Hyperliquid",
       "Bitcoin",
-      "Holoworld",
       "Pons",
-      "Chainlink",
-      "Hyperliquid"
+      "Pi Network",
+      "Holoworld",
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-11T11:38:57.092890+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-11T12:44:52.026047+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -15,10 +15,43 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "Core CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.8,
+        "forecast": "0.2%",
+        "previous": "0.0%"
+      },
+      {
+        "title": "Core CPI y/y",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.8,
+        "forecast": "2.5%",
+        "previous": "2.6%"
+      },
+      {
+        "title": "CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.8,
+        "forecast": "0.1%",
+        "previous": "-0.4%"
+      },
+      {
+        "title": "CPI y/y",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.8,
+        "forecast": "3.4%",
+        "previous": "3.5%"
+      }
+    ],
+    "risk_level": "medium",
+    "hours_until_next": 23.8,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -31,14 +64,14 @@
   "trending": {
     "trending_coins": [
       "DAPPOS",
-      "Velvet",
       "Cash Cat",
-      "Audiera",
-      "Pudgy Penguins",
-      "Bitcoin",
-      "Pump.fun"
+      "Velvet",
+      "Pons",
+      "Ondo",
+      "Pump.fun",
+      "Audiera"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

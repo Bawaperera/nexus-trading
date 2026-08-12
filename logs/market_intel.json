@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-11T23:32:03.845814+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-12T01:12:40.044530+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.0,
+        "hours_until": 11.3,
         "forecast": "0.2%",
         "previous": "0.0%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.0,
+        "hours_until": 11.3,
         "forecast": "2.5%",
         "previous": "2.6%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.0,
+        "hours_until": 11.3,
         "forecast": "0.1%",
         "previous": "-0.4%"
       },
@@ -44,13 +44,13 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 13.0,
+        "hours_until": 11.3,
         "forecast": "3.4%",
         "previous": "3.5%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 13.0,
+    "hours_until_next": 11.3,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
-      "DogBull",
-      "Hyperliquid",
-      "Bitcoin",
-      "Pons",
-      "Pi Network",
       "Holoworld",
-      "Ethereum"
+      "XRP",
+      "Pump.fun",
+      "Pons",
+      "Pudgy Penguins",
+      "DogBull",
+      "Solana"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

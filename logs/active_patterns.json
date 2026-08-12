@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-12T16:48:49.672283+00:00",
-  "btc_price": 63412.97,
+  "scan_time": "2026-08-12T17:53:09.377505+00:00",
+  "btc_price": 63436.75,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 27,
-  "sentiment_score": -0.1208,
+  "sentiment_score": -0.0447,
   "patterns": [
     {
       "name": "double_top",
@@ -18,7 +18,7 @@
       "target": 61375.45,
       "risk_reward": 0.98,
       "confidence": 0.6,
-      "score": 72,
+      "score": 61,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
@@ -27,9 +27,9 @@
         "pattern": 15,
         "mtf": 20,
         "retest": 5,
-        "volume": 15,
+        "volume": 8,
         "rsi": 7,
-        "sentiment": 10,
+        "sentiment": 6,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +37,9 @@
         "+15 Pattern confidence 60%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.2\u00d7 average",
+        "+8 Volume 1.7\u00d7 average",
         "+7 RSI 46 (neutral)",
-        "+10 Sentiment -0.12",
+        "+6 Sentiment -0.04",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -53,7 +53,7 @@
       "target": 48186.73,
       "risk_reward": 0.99,
       "confidence": 0.75,
-      "score": 71,
+      "score": 60,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
@@ -62,9 +62,9 @@
         "pattern": 19,
         "mtf": 20,
         "retest": 0,
-        "volume": 15,
+        "volume": 8,
         "rsi": 7,
-        "sentiment": 10,
+        "sentiment": 6,
         "onchain": 0,
         "memory": 0
       },
@@ -72,44 +72,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 2.2\u00d7 average",
+        "+8 Volume 1.7\u00d7 average",
         "+7 RSI 46 (neutral)",
-        "+10 Sentiment -0.12",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    },
-    {
-      "name": "bear_flag",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "FORMING",
-      "entry": 62210.15,
-      "stop_loss": 65466.59,
-      "target": 58948.29,
-      "risk_reward": 1.0,
-      "confidence": 0.7,
-      "score": 70,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 18,
-        "mtf": 20,
-        "retest": 0,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+18 Pattern confidence 70%",
-        "+20 MTF 4/4 timeframes aligned",
-        "+0 Status: FORMING",
-        "+15 Volume 2.2\u00d7 average",
-        "+7 RSI 46 (neutral)",
-        "+10 Sentiment -0.12",
+        "+6 Sentiment -0.04",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

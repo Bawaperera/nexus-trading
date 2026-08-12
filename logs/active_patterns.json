@@ -22,7 +22,7 @@
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 15,
         "mtf": 20,
@@ -57,7 +57,7 @@
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 19,
         "mtf": 20,
@@ -92,7 +92,7 @@
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 18,
         "mtf": 20,
@@ -113,5 +113,6 @@
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ]
+  ],
+  "last_entry_check": "2026-08-12T23:58:06.713497+00:00"
 }

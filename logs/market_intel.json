@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-12T19:57:22.557399+00:00",
+  "timestamp": "2026-08-12T20:38:56.895939+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 16.5,
+        "hours_until": 15.9,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 16.5,
+        "hours_until": 15.9,
         "forecast": "0.2%",
         "previous": "-0.3%"
       },
@@ -36,13 +36,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 16.5,
+        "hours_until": 15.9,
         "forecast": "202K",
         "previous": "199K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 16.5,
+    "hours_until_next": 15.9,
     "event_count_24h": 3
   },
   "social": {
@@ -57,10 +57,10 @@
     "trending_coins": [
       "XMAQUINA",
       "Thinking Cat",
-      "Bitcoin",
-      "Lighter",
       "Pudgy Penguins",
-      "Virtuals Protocol",
+      "Hyperliquid",
+      "Bitcoin",
+      "XRP",
       "Bitway"
     ],
     "btc_in_trending": true,

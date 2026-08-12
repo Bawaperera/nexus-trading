@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-08-12T11:41:01.245988+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-12T12:49:54.462341+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,41 +17,33 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core CPI m/m",
+        "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 0.8,
+        "hours_until": 23.7,
+        "forecast": "0.3%",
+        "previous": "0.2%"
+      },
+      {
+        "title": "PPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 23.7,
         "forecast": "0.2%",
-        "previous": "0.0%"
+        "previous": "-0.3%"
       },
       {
-        "title": "Core CPI y/y",
+        "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "2.5%",
-        "previous": "2.6%"
-      },
-      {
-        "title": "CPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.1%",
-        "previous": "-0.4%"
-      },
-      {
-        "title": "CPI y/y",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "3.4%",
-        "previous": "3.5%"
+        "impact": "Medium",
+        "hours_until": 23.7,
+        "forecast": "202K",
+        "previous": "199K"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.8,
-    "event_count_24h": 4
+    "risk_level": "medium",
+    "hours_until_next": 23.7,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -65,15 +55,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Thinking Cat",
-      "Pons",
-      "Cap",
-      "Pudgy Penguins",
       "aPriori",
-      "Audiera",
-      "Bitcoin"
+      "Thinking Cat",
+      "Pudgy Penguins",
+      "Chainlink",
+      "StonkBroker",
+      "DAPPOS",
+      "Pons"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-12T17:53:09.377505+00:00",
-  "btc_price": 63436.75,
+  "scan_time": "2026-08-12T18:51:27.096189+00:00",
+  "btc_price": 63330.31,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 27,
-  "sentiment_score": -0.0447,
+  "sentiment_score": 0.0797,
   "patterns": [
     {
       "name": "double_top",
@@ -37,9 +37,9 @@
         "+15 Pattern confidence 60%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+8 Volume 1.7\u00d7 average",
-        "+7 RSI 46 (neutral)",
-        "+6 Sentiment -0.04",
+        "+8 Volume 1.5\u00d7 average",
+        "+7 RSI 45 (neutral)",
+        "+6 Sentiment +0.08",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -72,9 +72,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+8 Volume 1.7\u00d7 average",
-        "+7 RSI 46 (neutral)",
-        "+6 Sentiment -0.04",
+        "+8 Volume 1.5\u00d7 average",
+        "+7 RSI 45 (neutral)",
+        "+6 Sentiment +0.08",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

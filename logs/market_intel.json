@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-08-13T11:40:50.602703+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-13T12:51:30.870771+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,33 +17,25 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.3%",
-        "previous": "0.2%"
-      },
-      {
-        "title": "PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.2%",
-        "previous": "-0.3%"
-      },
-      {
-        "title": "Unemployment Claims",
+        "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 0.8,
-        "forecast": "202K",
-        "previous": "199K"
+        "hours_until": 23.6,
+        "forecast": "0.2%",
+        "previous": "-0.2%"
+      },
+      {
+        "title": "Retail Sales m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 23.6,
+        "forecast": "0.1%",
+        "previous": "0.2%"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.8,
-    "event_count_24h": 3
+    "risk_level": "low",
+    "hours_until_next": 23.6,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -58,14 +48,14 @@
   "trending": {
     "trending_coins": [
       "XMAQUINA",
-      "Pudgy Penguins",
       "Acurast",
+      "Lighter",
+      "Pudgy Penguins",
+      "Cysic",
       "Cash Cat",
-      "Chainlink",
-      "Bitcoin",
       "Hyperliquid"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

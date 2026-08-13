@@ -1,18 +1,20 @@
 {
-  "timestamp": "2026-08-13T20:33:07.016680+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-13T21:37:11.860038+00:00",
+  "composite_signal": -0.0609,
   "signal_label": "Neutral",
-  "onchain_score_adj": 0,
-  "warnings": [],
+  "onchain_score_adj": -2,
+  "warnings": [
+    "\u26a0\ufe0f Crowded longs (1.88x) \u2014 long squeeze possible"
+  ],
   "derivatives": {
-    "funding_rate": 0.0,
+    "funding_rate": 7.841e-05,
     "funding_signal": "Neutral \u2014 balanced",
-    "open_interest_btc": 0.0,
-    "oi_change_pct": 0.0,
-    "long_short_ratio": 1.0,
-    "long_pct": 50.0,
-    "short_pct": 50.0,
-    "top_trader_ls": 1.0
+    "open_interest_btc": 109969.946,
+    "oi_change_pct": -0.147,
+    "long_short_ratio": 1.881,
+    "long_pct": 65.29,
+    "short_pct": 34.71,
+    "top_trader_ls": 1.5093
   },
   "macro": {
     "upcoming_events": [
@@ -20,7 +22,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.9,
+        "hours_until": 14.9,
         "forecast": "0.2%",
         "previous": "-0.2%"
       },
@@ -28,7 +30,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.9,
+        "hours_until": 14.9,
         "forecast": "0.1%",
         "previous": "0.2%"
       },
@@ -36,7 +38,7 @@
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.4,
+        "hours_until": 16.4,
         "forecast": "54.7",
         "previous": "54.4"
       },
@@ -44,13 +46,13 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.4,
+        "hours_until": 16.4,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 15.9,
+    "hours_until_next": 14.9,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +65,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Ether.fi",
-      "Pudgy Penguins",
-      "Pump.fun",
       "Akedo",
-      "SIXSEVEN",
-      "Sui",
-      "Cash Cat"
+      "Ether.fi",
+      "Pump.fun",
+      "Cash Cat",
+      "Pudgy Penguins",
+      "Bitcoin",
+      "LAB"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

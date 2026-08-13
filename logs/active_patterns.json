@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-08-13T09:55:21.429904+00:00",
-  "btc_price": 63701.26,
+  "scan_time": "2026-08-13T10:55:06.385953+00:00",
+  "btc_price": 63573.81,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 29,
-  "sentiment_score": -0.2103,
+  "sentiment_score": -0.2519,
   "patterns": [
     {
       "name": "descending_triangle",
       "direction": "bearish",
       "timeframe": "4h",
       "status": "BREAKOUT",
-      "entry": 63361.76,
-      "stop_loss": 65427.51,
-      "target": 61323.16,
+      "entry": 63360.26,
+      "stop_loss": 65425.29,
+      "target": 61322.25,
       "risk_reward": 0.99,
       "confidence": 0.65,
       "score": 68,
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.6\u00d7 average",
+        "+15 Volume 3.6\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.21",
+        "+10 Sentiment -0.25",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -49,8 +49,8 @@
       "timeframe": "daily",
       "status": "FORMING",
       "entry": 57720.73,
-      "stop_loss": 67323.11,
-      "target": 48186.71,
+      "stop_loss": 67323.04,
+      "target": 48186.73,
       "risk_reward": 0.99,
       "confidence": 0.75,
       "score": 66,
@@ -72,9 +72,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 2.6\u00d7 average",
+        "+15 Volume 3.6\u00d7 average",
         "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.21",
+        "+10 Sentiment -0.25",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

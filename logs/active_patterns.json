@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-13T12:51:32.131302+00:00",
-  "btc_price": 63573.77,
+  "scan_time": "2026-08-13T14:17:34.050163+00:00",
+  "btc_price": 63790.72,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
-  "bull_count": 0,
+  "bull_count": 1,
   "fg_value": 29,
-  "sentiment_score": -0.1967,
+  "sentiment_score": -0.1041,
   "patterns": [
     {
       "name": "descending_triangle",
@@ -18,16 +18,16 @@
       "target": 61205.22,
       "risk_reward": 0.99,
       "confidence": 0.65,
-      "score": 66,
+      "score": 68,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
       "already_traded": false,
       "component_scores": {
         "pattern": 16,
-        "mtf": 20,
+        "mtf": 15,
         "retest": 5,
-        "volume": 8,
+        "volume": 15,
         "rsi": 7,
         "sentiment": 10,
         "onchain": 0,
@@ -35,11 +35,11 @@
       },
       "reasons": [
         "+16 Pattern confidence 65%",
-        "+20 MTF 4/4 timeframes aligned",
+        "+15 MTF 3/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+8 Volume 1.7\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.20",
+        "+15 Volume 3.5\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+10 Sentiment -0.10",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -53,16 +53,16 @@
       "target": 48186.73,
       "risk_reward": 0.99,
       "confidence": 0.75,
-      "score": 64,
+      "score": 66,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
       "already_traded": false,
       "component_scores": {
         "pattern": 19,
-        "mtf": 20,
+        "mtf": 15,
         "retest": 0,
-        "volume": 8,
+        "volume": 15,
         "rsi": 7,
         "sentiment": 10,
         "onchain": 0,
@@ -70,11 +70,11 @@
       },
       "reasons": [
         "+19 Pattern confidence 75%",
-        "+20 MTF 4/4 timeframes aligned",
+        "+15 MTF 3/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+8 Volume 1.7\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.20",
+        "+15 Volume 3.5\u00d7 average",
+        "+7 RSI 48 (neutral)",
+        "+10 Sentiment -0.10",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

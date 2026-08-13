@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-13T04:02:53.190717+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-13T06:10:42.517367+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 8.5,
+        "hours_until": 6.3,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 8.5,
+        "hours_until": 6.3,
         "forecast": "0.2%",
         "previous": "-0.3%"
       },
@@ -36,13 +36,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 8.5,
+        "hours_until": 6.3,
         "forecast": "202K",
         "previous": "199K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 8.5,
+    "hours_until_next": 6.3,
     "event_count_24h": 3
   },
   "social": {
@@ -56,14 +56,14 @@
   "trending": {
     "trending_coins": [
       "aPriori",
-      "Hyperliquid",
-      "XRP",
-      "Pons",
-      "Bitcoin",
-      "Solana",
-      "Chainlink"
+      "Cash Cat",
+      "Acurast",
+      "Lighter",
+      "Pudgy Penguins",
+      "Pi Network",
+      "Solana"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

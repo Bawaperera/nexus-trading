@@ -874,3 +874,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-08-13T21:37:13.211503+00:00,double_top,bearish,daily,FORMING,65,4,57720.73,67323.04,48186.73,0.99,False,-0.09,29
 2026-08-13T22:32:54.713097+00:00,descending_triangle,bearish,4h,BREAKOUT,73,5,63289.29,65435.23,61178.23,0.98,False,-0.188,29
 2026-08-13T22:32:55.417321+00:00,double_top,bearish,daily,FORMING,71,4,57720.73,67323.11,48186.71,0.99,False,-0.188,29
+2026-08-13T23:33:10.025891+00:00,descending_triangle,bearish,4h,BREAKOUT,73,5,63289.97,65432.59,61181.67,0.98,False,-0.2289,29
+2026-08-13T23:33:10.522558+00:00,double_top,bearish,daily,FORMING,71,4,57720.73,67323.04,48186.73,0.99,False,-0.2289,29

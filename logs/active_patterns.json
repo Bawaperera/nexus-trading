@@ -1,31 +1,31 @@
 {
-  "scan_time": "2026-08-13T10:55:06.385953+00:00",
-  "btc_price": 63573.81,
+  "scan_time": "2026-08-13T11:40:51.636457+00:00",
+  "btc_price": 63382.94,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 29,
-  "sentiment_score": -0.2519,
+  "sentiment_score": -0.1856,
   "patterns": [
     {
       "name": "descending_triangle",
       "direction": "bearish",
       "timeframe": "4h",
       "status": "BREAKOUT",
-      "entry": 63360.26,
+      "entry": 63301.74,
       "stop_loss": 65425.29,
-      "target": 61322.25,
+      "target": 61205.22,
       "risk_reward": 0.99,
       "confidence": 0.65,
-      "score": 68,
+      "score": 73,
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 16,
-        "mtf": 15,
+        "mtf": 20,
         "retest": 5,
         "volume": 15,
         "rsi": 7,
@@ -35,11 +35,11 @@
       },
       "reasons": [
         "+16 Pattern confidence 65%",
-        "+15 MTF 3/4 timeframes aligned",
+        "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 3.6\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.25",
+        "+15 Volume 2.9\u00d7 average",
+        "+7 RSI 45 (neutral)",
+        "+10 Sentiment -0.19",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -53,14 +53,14 @@
       "target": 48186.73,
       "risk_reward": 0.99,
       "confidence": 0.75,
-      "score": 66,
+      "score": 71,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 19,
-        "mtf": 15,
+        "mtf": 20,
         "retest": 0,
         "volume": 15,
         "rsi": 7,
@@ -70,14 +70,13 @@
       },
       "reasons": [
         "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
+        "+20 MTF 4/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 3.6\u00d7 average",
-        "+7 RSI 47 (neutral)",
-        "+10 Sentiment -0.25",
+        "+15 Volume 2.9\u00d7 average",
+        "+7 RSI 45 (neutral)",
+        "+10 Sentiment -0.19",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-13T11:22:37.351924+00:00"
+  ]
 }

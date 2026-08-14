@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T01:13:51.159820+00:00",
+  "timestamp": "2026-08-14T03:59:17.716083+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.3,
+        "hours_until": 8.5,
         "forecast": "0.2%",
         "previous": "-0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.3,
+        "hours_until": 8.5,
         "forecast": "0.1%",
         "previous": "0.2%"
       },
@@ -36,7 +36,7 @@
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.8,
+        "hours_until": 10.0,
         "forecast": "54.7",
         "previous": "54.4"
       },
@@ -44,13 +44,13 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.8,
+        "hours_until": 10.0,
         "forecast": "",
         "previous": "4.2%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 11.3,
+    "hours_until_next": 8.5,
     "event_count_24h": 4
   },
   "social": {
@@ -63,13 +63,13 @@
   },
   "trending": {
     "trending_coins": [
-      "StonkBroker",
       "LAB",
-      "Ethereum",
+      "Pump.fun",
+      "OpenEden",
       "Ether.fi",
       "Pudgy Penguins",
       "SIXSEVEN",
-      "Cash Cat"
+      "DAPPOS"
     ],
     "btc_in_trending": false,
     "trend_count": 7

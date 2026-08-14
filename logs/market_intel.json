@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-14T19:42:57.946604+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-14T20:23:36.361847+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "KiiChain",
+      "Fusionist",
+      "Bitcoin",
       "Pudgy Penguins",
       "Akedo",
-      "Uniswap",
-      "Fusionist",
-      "Cash Cat",
-      "Cap"
+      "KiiChain",
+      "Pump.fun",
+      "Uniswap"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

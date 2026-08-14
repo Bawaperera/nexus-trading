@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T18:42:27.763196+00:00",
+  "timestamp": "2026-08-14T19:42:57.946604+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,19 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "President Trump Speaks",
-        "time_utc": "15:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.3,
-        "forecast": "",
-        "previous": ""
-      }
-    ],
-    "risk_level": "low",
-    "hours_until_next": 0.3,
-    "event_count_24h": 1
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -39,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Fusionist",
-      "Akedo",
-      "Pudgy Penguins",
       "KiiChain",
-      "Cap",
+      "Pudgy Penguins",
+      "Akedo",
+      "Uniswap",
+      "Fusionist",
       "Cash Cat",
-      "Uniswap"
+      "Cap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

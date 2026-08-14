@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-14T12:45:14.729921+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-14T14:10:18.288642+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,33 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Prelim UoM Consumer Sentiment",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 1.2,
-        "forecast": "54.7",
-        "previous": "54.4"
-      },
-      {
-        "title": "Prelim UoM Inflation Expectations",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 1.2,
-        "forecast": "",
-        "previous": "4.2%"
-      },
-      {
         "title": "President Trump Speaks",
         "time_utc": "15:00 UTC",
         "impact": "Medium",
-        "hours_until": 6.2,
+        "hours_until": 4.8,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.2,
-    "event_count_24h": 3
+    "hours_until_next": 4.8,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -56,14 +40,14 @@
   "trending": {
     "trending_coins": [
       "Fusionist",
+      "KiiChain",
       "Akedo",
-      "LAB",
       "Uniswap",
-      "Bitcoin",
-      "Pump.fun",
-      "Ether.fi"
+      "Ethereum",
+      "Cap",
+      "LAB"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

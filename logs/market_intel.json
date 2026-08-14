@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-14T17:45:08.882760+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-14T18:42:27.763196+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "President Trump Speaks",
         "time_utc": "15:00 UTC",
         "impact": "Medium",
-        "hours_until": 1.2,
+        "hours_until": 0.3,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.2,
+    "hours_until_next": 0.3,
     "event_count_24h": 1
   },
   "social": {
@@ -40,14 +40,14 @@
   "trending": {
     "trending_coins": [
       "Fusionist",
-      "Bitcoin",
+      "Akedo",
+      "Pudgy Penguins",
       "KiiChain",
-      "Pump.fun",
-      "Uniswap",
-      "Ondo",
-      "Ether.fi"
+      "Cap",
+      "Cash Cat",
+      "Uniswap"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

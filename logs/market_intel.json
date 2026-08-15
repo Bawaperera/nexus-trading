@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T11:12:37.746993+00:00",
+  "timestamp": "2026-08-15T12:20:54.202483+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "CoW Protocol",
-      "Fusionist",
-      "Ether.fi",
       "The Black Bull",
-      "Chainlink",
+      "Pudgy Penguins",
       "KiiChain",
-      "Pudgy Penguins"
+      "Sui",
+      "Chainlink",
+      "LAB"
     ],
     "btc_in_trending": false,
     "trend_count": 7

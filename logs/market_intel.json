@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T05:17:47.379935+00:00",
+  "timestamp": "2026-08-15T06:23:19.064579+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "KiiChain",
       "Uniswap",
       "Pudgy Penguins",
-      "Fusionist",
-      "LAB",
+      "Chainlink",
       "Fabric Protocol",
-      "Chainlink"
+      "KiiChain",
+      "Fusionist",
+      "LAB"
     ],
     "btc_in_trending": false,
     "trend_count": 7

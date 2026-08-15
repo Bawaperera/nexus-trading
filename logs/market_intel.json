@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T21:13:57.603497+00:00",
+  "timestamp": "2026-08-15T22:12:34.640817+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Nillion",
-      "Pudgy Penguins",
-      "Avalanche",
       "Sui",
-      "Venice Token",
-      "Morpho",
-      "Artificial Superintelligence Alliance"
+      "Pump.fun",
+      "Avalanche",
+      "CoW Protocol",
+      "Virtuals Protocol",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

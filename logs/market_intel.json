@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-15T20:13:14.381243+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-15T21:13:57.603497+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Nillion",
       "Pudgy Penguins",
-      "CoW Protocol",
-      "Bitcoin",
-      "Jupiter",
-      "Chainlink",
-      "Virtuals Protocol",
-      "Solana"
+      "Avalanche",
+      "Sui",
+      "Venice Token",
+      "Morpho",
+      "Artificial Superintelligence Alliance"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

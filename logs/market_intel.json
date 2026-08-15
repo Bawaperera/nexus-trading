@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T03:32:14.108474+00:00",
+  "timestamp": "2026-08-15T04:21:48.279522+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
       "Chainlink",
-      "Fusionist",
       "KiiChain",
       "Bitcoin",
-      "Internet Computer",
-      "Akedo"
+      "Cash Cat",
+      "Akedo",
+      "Uniswap",
+      "Fabric Protocol"
     ],
     "btc_in_trending": true,
     "trend_count": 7

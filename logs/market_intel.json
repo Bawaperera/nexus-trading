@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-15T17:13:43.093524+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-15T18:16:45.585285+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "CoW Protocol",
-      "The Black Bull",
+      "Bitcoin",
       "Pudgy Penguins",
-      "Walrus",
+      "Pi Network",
+      "CoW Protocol",
+      "Cash Cat",
       "Chainlink",
-      "Pump.fun",
-      "KiiChain"
+      "Walrus"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

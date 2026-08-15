@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T08:17:22.846575+00:00",
+  "timestamp": "2026-08-15T09:18:36.167537+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "The Black Bull",
       "Fusionist",
+      "Cash Cat",
+      "Akedo",
       "KiiChain",
-      "World Liberty Financial",
       "Uniswap",
-      "Fabric Protocol",
-      "Chainlink"
+      "Pi Network"
     ],
     "btc_in_trending": false,
     "trend_count": 7

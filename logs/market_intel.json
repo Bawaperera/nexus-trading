@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-15T18:16:45.585285+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-15T19:16:00.664879+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
-      "Pudgy Penguins",
-      "Pi Network",
-      "CoW Protocol",
-      "Cash Cat",
       "Chainlink",
-      "Walrus"
+      "CoW Protocol",
+      "Hyperliquid",
+      "Pudgy Penguins",
+      "Sui",
+      "Virtuals Protocol",
+      "Jupiter"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

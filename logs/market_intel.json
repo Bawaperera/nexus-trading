@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T23:12:41.565552+00:00",
+  "timestamp": "2026-08-16T00:48:34.865591+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Chainlink",
       "CoW Protocol",
-      "Aave",
-      "Avalanche",
-      "Plume",
-      "Solana"
+      "StonkBroker",
+      "Pudgy Penguins",
+      "Hyperliquid",
+      "Pi Network",
+      "Pons",
+      "Internet Computer"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-16T11:12:49.849510+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-16T12:22:02.610974+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
+      "USD.AI",
       "MarsCoin",
-      "Solana",
+      "Sui",
       "Pudgy Penguins",
-      "Cysic",
-      "Cash Cat",
-      "USD.AI"
+      "Solana",
+      "Chainlink",
+      "Hyperliquid"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T21:12:30.834802+00:00",
+  "timestamp": "2026-08-16T22:12:33.962560+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitway",
-      "Pudgy Penguins",
-      "Bittensor",
       "Bitcoin",
-      "USD.AI",
+      "Pudgy Penguins",
       "Portal",
-      "Hyperliquid"
+      "Cash Cat",
+      "Bitway",
+      "Ethereum",
+      "Akedo"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T05:20:33.038425+00:00",
+  "timestamp": "2026-08-16T06:25:35.424821+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
+      "Akedo",
+      "Ondo",
       "Ronin",
-      "Chainlink",
       "Pi Network",
+      "Artificial Superintelligence Alliance",
       "CoW Protocol",
-      "Solana",
-      "Ondo"
+      "Fusionist"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T15:13:39.091099+00:00",
+  "timestamp": "2026-08-16T16:14:59.316699+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "USD.AI",
-      "Bitcoin",
       "Pudgy Penguins",
-      "Cash Cat",
-      "MarsCoin",
-      "Humanity",
-      "Plume"
+      "Cysic",
+      "Lighter",
+      "Bitcoin",
+      "Plume",
+      "Pi Network"
     ],
     "btc_in_trending": true,
     "trend_count": 7

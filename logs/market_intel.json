@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T17:12:57.790931+00:00",
+  "timestamp": "2026-08-16T18:16:47.196113+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Lighter",
-      "USD.AI",
-      "Worldcoin",
-      "Plume",
+      "Ondo",
+      "Avalanche",
       "Pudgy Penguins",
-      "Cysic",
-      "Chainlink"
+      "Worldcoin",
+      "Pump.fun",
+      "Polkadot"
     ],
     "btc_in_trending": false,
     "trend_count": 7

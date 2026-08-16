@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T10:14:57.352295+00:00",
+  "timestamp": "2026-08-16T11:12:49.849510+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Cysic",
-      "Solana",
       "Bitcoin",
+      "MarsCoin",
+      "Solana",
       "Pudgy Penguins",
-      "Pons",
-      "Based",
-      "XRP"
+      "Cysic",
+      "Cash Cat",
+      "USD.AI"
     ],
     "btc_in_trending": true,
     "trend_count": 7

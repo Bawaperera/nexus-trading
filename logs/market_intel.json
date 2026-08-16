@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-16T07:24:39.887168+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-16T08:19:18.797336+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Artificial Superintelligence Alliance",
       "Pudgy Penguins",
       "Ondo",
-      "Ronin",
+      "Artificial Superintelligence Alliance",
+      "Hyperliquid",
+      "Bitcoin",
       "Solana",
-      "Pi Network",
-      "Akedo"
+      "Cash Cat"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

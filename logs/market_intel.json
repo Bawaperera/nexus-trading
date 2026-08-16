@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T13:24:53.370373+00:00",
+  "timestamp": "2026-08-16T14:14:51.336318+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,11 +31,11 @@
   "trending": {
     "trending_coins": [
       "USD.AI",
-      "MarsCoin",
       "Pudgy Penguins",
       "Cash Cat",
-      "Hyperliquid",
-      "Sui",
+      "MarsCoin",
+      "Chainlink",
+      "Humanity",
       "Portal"
     ],
     "btc_in_trending": false,

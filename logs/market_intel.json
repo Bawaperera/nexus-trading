@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T02:17:23.885848+00:00",
+  "timestamp": "2026-08-16T03:41:17.880417+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "CoW Protocol",
       "Chainlink",
-      "Bitcoin",
-      "Cash Cat",
-      "Hyperliquid",
-      "Plume"
+      "CoW Protocol",
+      "Pudgy Penguins",
+      "Ronin",
+      "Plume",
+      "Avalanche",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

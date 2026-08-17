@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T09:33:01.694781+00:00",
+  "timestamp": "2026-08-17T10:23:58.590188+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pump.fun",
       "Pudgy Penguins",
-      "Cash Cat",
-      "Audiera",
+      "Pump.fun",
+      "Sui",
+      "Monad",
       "Bitway",
       "Hyperliquid",
-      "Fusionist"
+      "\u725b\u6765 (Niu Lai)"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-17T19:21:37.921788+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-17T20:17:02.750950+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
-      "Tutorial",
       "Pudgy Penguins",
-      "Bitcoin",
       "Venice Token",
-      "Pump.fun",
-      "Solana"
+      "Cash Cat",
+      "POL (ex-MATIC)",
+      "Tutorial",
+      "Pump.fun"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

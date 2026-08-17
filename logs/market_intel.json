@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-17T04:33:16.429585+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-17T05:28:13.714851+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Pudgy Penguins",
-      "Portal",
-      "Uniswap",
-      "Bitway",
       "Fusionist",
+      "Pump.fun",
       "Cash Cat",
-      "Pump.fun"
+      "Hyperliquid",
+      "Bitcoin",
+      "Uniswap"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

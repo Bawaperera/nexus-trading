@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T02:15:20.699777+00:00",
+  "timestamp": "2026-08-17T03:42:21.834111+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Portal",
       "Bitway",
-      "Sei",
-      "Pump.fun",
+      "Portal",
       "Cash Cat",
       "Bitcoin",
-      "Pons"
+      "Sei",
+      "Fusionist",
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-17T17:19:56.245141+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-17T18:26:40.548475+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "The Black Bull",
-      "Pump.fun",
-      "Venice Token",
-      "Bitcoin",
+      "Tutorial",
       "Hyperliquid",
-      "XRP",
-      "Solana"
+      "Venice Token",
+      "Pump.fun",
+      "Lighter",
+      "XRP"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

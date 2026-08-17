@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-17T13:33:41.968456+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-17T14:20:04.458252+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "GoPlus Security",
       "Hyperliquid",
-      "Bitcoin",
-      "Chainlink",
+      "GoPlus Security",
+      "Pudgy Penguins",
       "Pump.fun",
-      "Artificial Superintelligence Alliance",
-      "Sui"
+      "Ether.fi",
+      "Monad",
+      "Lighter"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

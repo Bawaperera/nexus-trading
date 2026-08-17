@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T14:20:04.458252+00:00",
+  "timestamp": "2026-08-17T15:17:43.608487+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Hyperliquid",
       "GoPlus Security",
       "Pudgy Penguins",
-      "Pump.fun",
-      "Ether.fi",
       "Monad",
-      "Lighter"
+      "Pump.fun",
+      "Solana",
+      "Ether.fi",
+      "Chainlink"
     ],
     "btc_in_trending": false,
     "trend_count": 7

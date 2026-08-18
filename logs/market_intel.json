@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-08-18T21:15:33.029530+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-18T22:14:49.172554+00:00",
+  "composite_signal": -0.0259,
   "signal_label": "Neutral",
-  "onchain_score_adj": 0,
+  "onchain_score_adj": -2,
   "warnings": [],
   "derivatives": {
-    "funding_rate": 0.0,
+    "funding_rate": 3.65e-05,
     "funding_signal": "Neutral \u2014 balanced",
-    "open_interest_btc": 0.0,
-    "oi_change_pct": 0.0,
-    "long_short_ratio": 1.0,
-    "long_pct": 50.0,
-    "short_pct": 50.0,
-    "top_trader_ls": 1.0
+    "open_interest_btc": 106582.187,
+    "oi_change_pct": -0.122,
+    "long_short_ratio": 1.3878,
+    "long_pct": 58.12,
+    "short_pct": 41.88,
+    "top_trader_ls": 1.4359
   },
   "macro": {
     "upcoming_events": [
@@ -20,13 +20,13 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 20.7,
+        "hours_until": 19.8,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 20.7,
+    "hours_until_next": 19.8,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Venice Token",
-      "Wiki Cat",
-      "Solana",
       "Pump.fun",
-      "Cash Cat",
       "Hyperliquid",
-      "Ether.fi"
+      "Cash Cat",
+      "Venice Token",
+      "Bittensor",
+      "Sui",
+      "Solana"
     ],
     "btc_in_trending": false,
     "trend_count": 7

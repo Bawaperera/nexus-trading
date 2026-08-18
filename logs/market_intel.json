@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T07:30:58.899995+00:00",
+  "timestamp": "2026-08-18T08:26:08.687196+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Venice Token",
       "Sui",
-      "Fusionist",
       "The Black Bull",
-      "Pi Network",
-      "Akedo",
-      "Pudgy Penguins"
+      "Pudgy Penguins",
+      "Fusionist",
+      "XRP",
+      "Monad"
     ],
     "btc_in_trending": false,
     "trend_count": 7

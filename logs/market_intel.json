@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-18T13:36:33.861887+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-18T14:24:58.258565+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Venice Token",
-      "Bitcoin",
-      "The Black Bull",
-      "Ethereum",
-      "Solana",
       "Pump.fun",
-      "Bitway"
+      "The Black Bull",
+      "Pons",
+      "Sui",
+      "Solana",
+      "Bittensor"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

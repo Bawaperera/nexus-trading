@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T02:10:45.842616+00:00",
+  "timestamp": "2026-08-18T03:37:45.581499+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "The Black Bull",
+      "Wiki Cat",
+      "Hyperliquid",
+      "Monad",
       "Venice Token",
-      "peaq",
-      "Solana",
-      "Bitcoin",
-      "Pi Network"
+      "Pudgy Penguins",
+      "Lighter",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

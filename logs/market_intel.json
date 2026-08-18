@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T16:21:32.200619+00:00",
+  "timestamp": "2026-08-18T17:19:42.070894+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Venice Token",
       "Wiki Cat",
-      "Ether.fi",
-      "Bitcoin",
-      "Sui",
       "Pump.fun",
-      "Bittensor"
+      "Sui",
+      "Bitcoin",
+      "Ethereum",
+      "Ribbita by Virtuals"
     ],
     "btc_in_trending": true,
     "trend_count": 7

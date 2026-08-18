@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T09:24:09.016348+00:00",
+  "timestamp": "2026-08-18T10:19:22.825868+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Venice Token",
-      "Fusionist",
       "\u725b\u6765 (Niu Lai)",
-      "Sui",
-      "Ethereum",
+      "Venice Token",
       "Pump.fun",
+      "The Black Bull",
+      "Lighter",
+      "Fusionist",
       "Solana"
     ],
     "btc_in_trending": false,

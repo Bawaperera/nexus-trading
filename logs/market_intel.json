@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T19:22:14.422794+00:00",
+  "timestamp": "2026-08-18T20:14:35.397018+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 22.6,
+        "hours_until": 21.8,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 22.6,
+    "hours_until_next": 21.8,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Venice Token",
       "Wiki Cat",
-      "peaq",
+      "Venice Token",
       "Bitcoin",
-      "POL (ex-MATIC)",
+      "Ether.fi",
+      "peaq",
       "Sui",
-      "Ribbita by Virtuals"
+      "Cash Cat"
     ],
     "btc_in_trending": true,
     "trend_count": 7

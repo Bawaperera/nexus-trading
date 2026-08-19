@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-08-19T16:21:44.449813+00:00",
+  "timestamp": "2026-08-19T17:19:29.646709+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.7h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 1.6,
+        "hours_until": 0.7,
         "forecast": "",
         "previous": ""
       },
@@ -28,7 +30,7 @@
         "title": "President Trump Speaks",
         "time_utc": "14:30 UTC",
         "impact": "Medium",
-        "hours_until": 2.1,
+        "hours_until": 1.2,
         "forecast": "",
         "previous": ""
       },
@@ -36,7 +38,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.1,
+        "hours_until": 19.2,
         "forecast": "24.1",
         "previous": "41.4"
       },
@@ -44,13 +46,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.1,
+        "hours_until": 19.2,
         "forecast": "210K",
         "previous": "209K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 1.6,
+    "risk_level": "high",
+    "hours_until_next": 0.7,
     "event_count_24h": 4
   },
   "social": {
@@ -65,11 +67,11 @@
     "trending_coins": [
       "Bitcoin",
       "Ethereum",
-      "Bitway",
       "Solana",
+      "Hyperliquid",
+      "Bitway",
       "Lighter",
-      "Bittensor",
-      "Pump.fun"
+      "XRP"
     ],
     "btc_in_trending": true,
     "trend_count": 7

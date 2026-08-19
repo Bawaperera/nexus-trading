@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T20:17:49.662162+00:00",
+  "timestamp": "2026-08-19T21:18:14.876424+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 16.2,
+        "hours_until": 15.2,
         "forecast": "24.1",
         "previous": "41.4"
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 16.2,
+        "hours_until": 15.2,
         "forecast": "210K",
         "previous": "209K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 16.2,
+    "hours_until_next": 15.2,
     "event_count_24h": 2
   },
   "social": {
@@ -51,9 +51,9 @@
       "Lighter",
       "pipedog",
       "Ethereum",
-      "Bitcoin",
-      "XRP",
-      "Solana"
+      "Pump.fun",
+      "Solana",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

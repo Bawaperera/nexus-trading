@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-19T05:22:13.308451+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-19T06:29:17.612848+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 12.6,
+        "hours_until": 11.5,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +28,13 @@
         "title": "President Trump Speaks",
         "time_utc": "14:30 UTC",
         "impact": "Medium",
-        "hours_until": 13.1,
+        "hours_until": 12.0,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 12.6,
+    "hours_until_next": 11.5,
     "event_count_24h": 2
   },
   "social": {
@@ -48,14 +48,14 @@
   "trending": {
     "trending_coins": [
       "Bitway",
+      "TRIA",
       "Pump.fun",
-      "Pi Network",
-      "GALA",
+      "Venice Token",
       "Hyperliquid",
-      "Akedo",
-      "Bitcoin"
+      "Solana",
+      "Wiki Cat"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

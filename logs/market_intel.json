@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T14:25:04.860373+00:00",
+  "timestamp": "2026-08-19T15:22:50.621324+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 3.6,
+        "hours_until": 2.6,
         "forecast": "",
         "previous": ""
       },
@@ -28,7 +28,7 @@
         "title": "President Trump Speaks",
         "time_utc": "14:30 UTC",
         "impact": "Medium",
-        "hours_until": 4.1,
+        "hours_until": 3.1,
         "forecast": "",
         "previous": ""
       },
@@ -36,7 +36,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 22.1,
+        "hours_until": 21.1,
         "forecast": "24.1",
         "previous": "41.4"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 22.1,
+        "hours_until": 21.1,
         "forecast": "210K",
         "previous": "209K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 3.6,
+    "hours_until_next": 2.6,
     "event_count_24h": 4
   },
   "social": {
@@ -64,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "Bitway",
+      "Solana",
+      "Ethereum",
       "Pump.fun",
       "Bitcoin",
-      "Chainlink",
-      "Venice Token",
-      "Solana",
-      "Ethereum"
+      "Zcash",
+      "Bittensor"
     ],
     "btc_in_trending": true,
     "trend_count": 7

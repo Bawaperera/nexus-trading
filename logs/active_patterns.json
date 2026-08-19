@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-19T17:19:30.765053+00:00",
-  "btc_price": 68070.81,
+  "scan_time": "2026-08-19T18:21:46.826642+00:00",
+  "btc_price": 68298.87,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 46,
-  "sentiment_score": 0.0454,
+  "sentiment_score": 0.1045,
   "patterns": [
     {
       "name": "double_bottom",
@@ -18,7 +18,7 @@
       "target": 68586.39,
       "risk_reward": 4.18,
       "confidence": 0.75,
-      "score": 75,
+      "score": 72,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -27,9 +27,9 @@
         "pattern": 19,
         "mtf": 15,
         "retest": 20,
-        "volume": 15,
+        "volume": 8,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 5.5\u00d7 average",
-        "+0 RSI 70 (risky)",
-        "+6 Sentiment +0.05"
+        "+8 Volume 1.9\u00d7 average",
+        "+0 RSI 71 (risky)",
+        "+10 Sentiment +0.10"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "target": 66941.7,
       "risk_reward": 3.34,
       "confidence": 0.65,
-      "score": 72,
+      "score": 69,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -61,9 +61,9 @@
         "pattern": 16,
         "mtf": 15,
         "retest": 20,
-        "volume": 15,
+        "volume": 8,
         "rsi": 0,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -71,9 +71,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 5.5\u00d7 average",
-        "+0 RSI 70 (risky)",
-        "+6 Sentiment +0.05"
+        "+8 Volume 1.9\u00d7 average",
+        "+0 RSI 71 (risky)",
+        "+10 Sentiment +0.10"
       ]
     }
   ]

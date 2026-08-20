@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-20T21:19:53.272732+00:00",
+  "timestamp": "2026-08-20T22:18:37.794518+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -34,9 +34,9 @@
       "Ergo",
       "Aligned",
       "pipedog",
-      "XMAQUINA",
-      "Bitcoin",
-      "Hyperliquid"
+      "Hyperliquid",
+      "Pump.fun",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

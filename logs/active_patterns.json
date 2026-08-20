@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-20T20:19:17.495372+00:00",
-  "btc_price": 72700.67,
+  "scan_time": "2026-08-20T21:19:54.364270+00:00",
+  "btc_price": 72762.39,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 62,
-  "sentiment_score": 0.1258,
+  "sentiment_score": 0.1304,
   "patterns": [
     {
       "name": "double_bottom",
@@ -14,15 +14,15 @@
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
       "entry": 65398.27,
-      "stop_loss": 64277.9,
+      "stop_loss": 64271.23,
       "target": 68586.39,
-      "risk_reward": 2.85,
+      "risk_reward": 2.83,
       "confidence": 0.75,
       "score": 64,
       "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 19,
         "mtf": 15,
@@ -37,7 +37,7 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 0.5\u00d7 average",
+        "+0 Volume 0.6\u00d7 average",
         "+0 RSI 80 (risky)",
         "+10 Sentiment +0.13"
       ]
@@ -48,15 +48,15 @@
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
       "entry": 69974.33,
-      "stop_loss": 69028.43,
+      "stop_loss": 69021.76,
       "target": 77465.02,
-      "risk_reward": 7.92,
+      "risk_reward": 7.86,
       "confidence": 0.65,
       "score": 61,
       "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 16,
         "mtf": 15,
@@ -71,11 +71,10 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 0.5\u00d7 average",
+        "+0 Volume 0.6\u00d7 average",
         "+0 RSI 80 (risky)",
         "+10 Sentiment +0.13"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-20T20:36:40.721249+00:00"
+  ]
 }

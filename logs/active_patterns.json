@@ -1,80 +1,11 @@
 {
-  "scan_time": "2026-08-20T02:12:36.213621+00:00",
-  "btc_price": 69635.58,
+  "scan_time": "2026-08-20T03:39:54.341012+00:00",
+  "btc_price": 69001.56,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 62,
-  "sentiment_score": 0.1308,
-  "patterns": [
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "daily",
-      "status": "RETEST_CONFIRMED",
-      "entry": 65398.27,
-      "stop_loss": 64591.77,
-      "target": 68586.39,
-      "risk_reward": 3.95,
-      "confidence": 0.75,
-      "score": 64,
-      "n_confluences": 3,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 0,
-        "rsi": 0,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 1.1\u00d7 average",
-        "+0 RSI 74 (risky)",
-        "+10 Sentiment +0.13"
-      ]
-    },
-    {
-      "name": "ascending_triangle",
-      "direction": "bullish",
-      "timeframe": "4h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 64902.43,
-      "stop_loss": 64256.19,
-      "target": 67321.23,
-      "risk_reward": 3.74,
-      "confidence": 0.65,
-      "score": 61,
-      "n_confluences": 3,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 0,
-        "rsi": 0,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 65%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 1.1\u00d7 average",
-        "+0 RSI 74 (risky)",
-        "+10 Sentiment +0.13"
-      ]
-    }
-  ]
+  "sentiment_score": -0.2369,
+  "patterns": []
 }

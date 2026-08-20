@@ -1,25 +1,25 @@
 {
-  "scan_time": "2026-08-20T12:30:38.320005+00:00",
-  "btc_price": 71736.73,
+  "scan_time": "2026-08-20T13:39:26.881562+00:00",
+  "btc_price": 71319.11,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 62,
-  "sentiment_score": 0.1398,
+  "sentiment_score": -0.0146,
   "patterns": [
     {
       "name": "double_bottom",
       "direction": "bullish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 65400.35,
-      "stop_loss": 64336.69,
-      "target": 68590.56,
+      "entry": 65398.27,
+      "stop_loss": 64335.03,
+      "target": 68586.39,
       "risk_reward": 3.0,
       "confidence": 0.75,
-      "score": 72,
-      "n_confluences": 4,
+      "score": 60,
+      "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
       "already_traded": false,
@@ -27,9 +27,9 @@
         "pattern": 19,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
+        "volume": 0,
         "rsi": 0,
-        "sentiment": 10,
+        "sentiment": 6,
         "onchain": 0,
         "memory": 0
       },
@@ -37,43 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+0 RSI 79 (risky)",
-        "+10 Sentiment +0.14"
-      ]
-    },
-    {
-      "name": "ascending_triangle",
-      "direction": "bullish",
-      "timeframe": "4h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 69539.22,
-      "stop_loss": 68637.83,
-      "target": 76598.74,
-      "risk_reward": 7.83,
-      "confidence": 0.65,
-      "score": 69,
-      "n_confluences": 4,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 8,
-        "rsi": 0,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 65%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.8\u00d7 average",
-        "+0 RSI 79 (risky)",
-        "+10 Sentiment +0.14"
+        "+0 Volume 0.5\u00d7 average",
+        "+0 RSI 78 (risky)",
+        "+6 Sentiment -0.01"
       ]
     }
   ]

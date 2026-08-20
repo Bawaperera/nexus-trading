@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-20T12:30:36.866876+00:00",
+  "timestamp": "2026-08-20T13:39:26.254229+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Bullballs Coin",
       "Ergo",
-      "Hyperliquid",
       "Bitcoin",
+      "Hyperliquid",
       "pipedog",
-      "Ethereum",
-      "Lighter",
-      "XRP"
+      "XRP",
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

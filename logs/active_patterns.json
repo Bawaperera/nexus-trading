@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-20T16:24:14.777089+00:00",
-  "btc_price": 72269.15,
+  "scan_time": "2026-08-20T17:20:55.735942+00:00",
+  "btc_price": 72551.92,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 62,
-  "sentiment_score": 0.0625,
+  "sentiment_score": -0.0224,
   "patterns": [
     {
       "name": "double_bottom",
@@ -14,9 +14,9 @@
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
       "entry": 65398.27,
-      "stop_loss": 64294.98,
+      "stop_loss": 64287.18,
       "target": 68586.39,
-      "risk_reward": 2.89,
+      "risk_reward": 2.87,
       "confidence": 0.75,
       "score": 60,
       "n_confluences": 3,
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 0.9\u00d7 average",
-        "+0 RSI 79 (risky)",
-        "+6 Sentiment +0.06"
+        "+0 Volume 1.0\u00d7 average",
+        "+0 RSI 80 (risky)",
+        "+6 Sentiment -0.02"
       ]
     }
   ]

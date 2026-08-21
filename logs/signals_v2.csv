@@ -1066,3 +1066,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-08-21T16:22:32.125356+00:00,ascending_triangle,bullish,daily,AWAITING_RETEST,64,4,66413.67,61387.49,71076.44,0.93,False,0.4797,72
 2026-08-21T17:21:32.300015+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,72,4,65398.27,63581.21,68586.39,1.75,False,0.2099,72
 2026-08-21T18:24:45.197115+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,60,3,65398.27,63581.21,68586.39,1.75,False,0.0979,72
+2026-08-21T19:20:07.887415+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,64,3,65398.27,63581.21,68586.39,1.75,False,0.1225,72

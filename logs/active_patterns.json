@@ -1,33 +1,33 @@
 {
-  "scan_time": "2026-08-21T21:15:49.580355+00:00",
-  "btc_price": 77606.98,
+  "scan_time": "2026-08-21T22:15:38.348670+00:00",
+  "btc_price": 78615.6,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "neutral",
   "bull_count": 3,
   "fg_value": 72,
-  "sentiment_score": 0.308,
+  "sentiment_score": 0.2227,
   "patterns": [
     {
       "name": "double_bottom",
       "direction": "bullish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 65398.27,
-      "stop_loss": 63581.21,
-      "target": 68586.39,
+      "entry": 65400.35,
+      "stop_loss": 63579.0,
+      "target": 68590.56,
       "risk_reward": 1.75,
       "confidence": 0.75,
-      "score": 72,
-      "n_confluences": 4,
+      "score": 64,
+      "n_confluences": 3,
       "tradeable_signal": true,
       "tradeable_autotrade": false,
-      "already_traded": true,
+      "already_traded": false,
       "component_scores": {
         "pattern": 19,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
+        "volume": 0,
         "rsi": 0,
         "sentiment": 10,
         "onchain": 0,
@@ -37,12 +37,11 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.7\u00d7 average",
-        "+0 RSI 85 (risky)",
-        "+10 Sentiment +0.31",
+        "+0 Volume 1.1\u00d7 average",
+        "+0 RSI 86 (risky)",
+        "+10 Sentiment +0.22",
         "R:R 1.8 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
-  ],
-  "last_entry_check": "2026-08-21T21:23:28.975618+00:00"
+  ]
 }

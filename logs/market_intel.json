@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T05:25:14.552721+00:00",
+  "timestamp": "2026-08-21T06:32:01.883987+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "President Trump Speaks",
         "time_utc": "19:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.6,
+        "hours_until": 16.5,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 17.6,
+    "hours_until_next": 16.5,
     "event_count_24h": 1
   },
   "social": {
@@ -41,11 +41,11 @@
     "trending_coins": [
       "pipedog",
       "Aligned",
+      "Sui",
       "Bitcoin",
       "Pump.fun",
-      "Ethereum",
-      "Sui",
-      "Hyperliquid"
+      "Hyperliquid",
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

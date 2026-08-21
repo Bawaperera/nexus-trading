@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-08-21T04:31:27.130954+00:00",
-  "btc_price": 74778.01,
+  "scan_time": "2026-08-21T05:25:15.859095+00:00",
+  "btc_price": 75248.68,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bearish",
   "bull_count": 3,
   "fg_value": 72,
-  "sentiment_score": 0.3273,
+  "sentiment_score": 0.3432,
   "patterns": [
     {
       "name": "double_bottom",
       "direction": "bullish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 65398.27,
-      "stop_loss": 63981.76,
-      "target": 68586.39,
+      "entry": 65400.35,
+      "stop_loss": 63983.1,
+      "target": 68590.56,
       "risk_reward": 2.25,
       "confidence": 0.75,
       "score": 68,
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+4 Volume 1.5\u00d7 average",
+        "+4 Volume 1.3\u00d7 average",
         "+0 RSI 83 (risky)",
-        "+10 Sentiment +0.33"
+        "+10 Sentiment +0.34"
       ]
     },
     {
@@ -47,10 +47,10 @@
       "direction": "bullish",
       "timeframe": "4h",
       "status": "RETEST_CONFIRMED",
-      "entry": 72526.81,
-      "stop_loss": 71284.77,
-      "target": 82412.74,
-      "risk_reward": 7.96,
+      "entry": 72513.79,
+      "stop_loss": 71271.43,
+      "target": 82384.98,
+      "risk_reward": 7.95,
       "confidence": 0.65,
       "score": 65,
       "n_confluences": 4,
@@ -71,9 +71,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+4 Volume 1.5\u00d7 average",
+        "+4 Volume 1.3\u00d7 average",
         "+0 RSI 83 (risky)",
-        "+10 Sentiment +0.33"
+        "+10 Sentiment +0.34"
       ]
     }
   ]

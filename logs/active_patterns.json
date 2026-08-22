@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-08-22T08:19:30.676751+00:00",
-  "btc_price": 77302.61,
+  "scan_time": "2026-08-22T09:19:04.149969+00:00",
+  "btc_price": 77313.4,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "neutral",
@@ -37,7 +37,7 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 0.0\u00d7 average",
+        "+0 Volume 0.2\u00d7 average",
         "+0 RSI 81 (risky)",
         "+10 Sentiment +0.66",
         "R:R 1.8 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T19:17:17.092487+00:00",
+  "timestamp": "2026-08-22T20:13:36.870912+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Official Trump",
-      "pipedog",
       "Zcash",
+      "pipedog",
       "Pump.fun",
       "Bitcoin",
-      "XRP",
-      "Aligned"
+      "Lighter",
+      "XRP"
     ],
     "btc_in_trending": true,
     "trend_count": 7

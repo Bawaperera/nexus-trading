@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T03:36:41.462184+00:00",
+  "timestamp": "2026-08-22T04:24:10.375604+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Zcash",
-      "Lighter",
-      "Pepe",
       "Hyperliquid",
+      "Pepe",
       "Bitcoin",
-      "Sui",
-      "pipedog"
+      "pipedog",
+      "Lighter",
+      "Sui"
     ],
     "btc_in_trending": true,
     "trend_count": 7

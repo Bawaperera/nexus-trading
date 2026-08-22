@@ -1091,3 +1091,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-08-22T09:19:04.149759+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,64,3,65400.35,63579.0,68590.56,1.75,False,0.663,71
 2026-08-22T10:14:44.159714+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,64,3,65398.27,63581.21,68586.39,1.75,False,0.663,71
 2026-08-22T11:13:51.342889+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,64,3,65400.35,63579.0,68590.56,1.75,False,0.663,71
+2026-08-22T12:21:58.416267+00:00,double_bottom,bullish,daily,RETEST_CONFIRMED,60,3,65400.35,63579.0,68590.56,1.75,False,0.0847,71

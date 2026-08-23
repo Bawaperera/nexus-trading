@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-23T16:15:56.000633+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-08-23T17:14:02.512721+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Elon's Space Cat",
-      "Pump.fun",
       "CyberLeek",
-      "Lighter",
-      "Zcash",
+      "Bitcoin",
       "Hyperliquid",
-      "Monero"
+      "Pump.fun",
+      "Solana",
+      "Zcash"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

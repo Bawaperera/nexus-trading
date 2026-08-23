@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-23T07:26:29.202474+00:00",
+  "timestamp": "2026-08-23T08:20:06.275230+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Pump.fun",
+      "Zcash",
       "pipedog",
+      "Hyperliquid",
       "Official Trump",
       "Bitcoin",
-      "Hyperliquid",
-      "SPX6900",
-      "Zcash"
+      "SPX6900"
     ],
     "btc_in_trending": true,
     "trend_count": 7

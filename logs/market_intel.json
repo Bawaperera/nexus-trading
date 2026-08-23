@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-23T11:13:56.215691+00:00",
+  "timestamp": "2026-08-23T12:22:43.350001+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Ethena",
-      "pipedog",
       "Pump.fun",
-      "The Interfold",
       "Lighter",
-      "Solana",
-      "Hyperliquid"
+      "Ethena",
+      "The Interfold",
+      "pipedog",
+      "Hyperliquid",
+      "Solana"
     ],
     "btc_in_trending": false,
     "trend_count": 7

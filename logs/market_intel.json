@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-23T08:20:06.275230+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-23T09:19:59.167161+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Pump.fun",
-      "Zcash",
       "pipedog",
       "Hyperliquid",
+      "The Interfold",
+      "Zcash",
       "Official Trump",
-      "Bitcoin",
-      "SPX6900"
+      "Solana"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

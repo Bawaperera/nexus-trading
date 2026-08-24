@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T14:33:50.968110+00:00",
+  "timestamp": "2026-08-24T15:31:51.923492+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Treasury Sec Bessent Speaks",
         "time_utc": "14:00 UTC",
         "impact": "Medium",
-        "hours_until": 3.4,
+        "hours_until": 2.5,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +28,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 23.4,
+        "hours_until": 22.5,
         "forecast": "90.3",
         "previous": "90.8"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 3.4,
+    "hours_until_next": 2.5,
     "event_count_24h": 2
   },
   "social": {
@@ -48,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "Zano",
+      "Cash Cat",
       "Bitcoin",
-      "Lighter",
       "Kinetiq",
-      "Pump.fun",
-      "Solana",
-      "Zcash"
+      "Ethereum",
+      "Velvet",
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

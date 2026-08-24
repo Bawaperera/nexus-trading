@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T00:47:31.015976+00:00",
+  "timestamp": "2026-08-24T02:18:47.043150+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "Treasury Sec Bessent Speaks",
         "time_utc": "14:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.2,
+        "hours_until": 15.7,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 17.2,
+    "hours_until_next": 15.7,
     "event_count_24h": 1
   },
   "social": {
@@ -41,11 +41,11 @@
     "trending_coins": [
       "Elon's Space Cat",
       "Pons",
-      "CyberLeek",
       "Pump.fun",
-      "Hyperliquid",
+      "Zcash",
       "Bitcoin",
-      "Lighter"
+      "Lighter",
+      "Hyperliquid"
     ],
     "btc_in_trending": true,
     "trend_count": 7

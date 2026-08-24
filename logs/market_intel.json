@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T17:23:51.965482+00:00",
+  "timestamp": "2026-08-24T18:29:26.900474+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 20.6,
+        "hours_until": 19.5,
         "forecast": "90.3",
         "previous": "90.8"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 20.6,
+    "hours_until_next": 19.5,
     "event_count_24h": 1
   },
   "social": {
@@ -40,12 +40,12 @@
   "trending": {
     "trending_coins": [
       "Zano",
-      "Cash Cat",
       "Bitcoin",
-      "Pump.fun",
       "Aerodrome Finance",
-      "Injective",
-      "Lighter"
+      "Cash Cat",
+      "Pump.fun",
+      "Hyperliquid",
+      "Zcash"
     ],
     "btc_in_trending": true,
     "trend_count": 7

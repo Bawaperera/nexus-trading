@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T11:19:48.693694+00:00",
+  "timestamp": "2026-08-24T12:30:56.920914+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "Treasury Sec Bessent Speaks",
         "time_utc": "14:00 UTC",
         "impact": "Medium",
-        "hours_until": 6.7,
+        "hours_until": 5.5,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 6.7,
+    "hours_until_next": 5.5,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Lighter",
       "Pons",
-      "CyberLeek",
+      "Hyperliquid",
       "Zcash",
       "Bitcoin",
-      "Pump.fun",
-      "Aligned",
-      "Lighter"
+      "Cash Cat",
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

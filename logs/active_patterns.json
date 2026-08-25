@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-08-25T22:18:18.398635+00:00",
-  "btc_price": 78867.37,
+  "scan_time": "2026-08-25T23:18:23.279077+00:00",
+  "btc_price": 78918.59,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "neutral",
   "bull_count": 2,
   "fg_value": 74,
-  "sentiment_score": 0.1643,
+  "sentiment_score": 0.1415,
   "patterns": [
     {
       "name": "rising_wedge",
@@ -37,9 +37,9 @@
         "+16 Pattern confidence 62%",
         "+0 MTF 1/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.9\u00d7 average",
+        "+15 Volume 3.4\u00d7 average",
         "+10 RSI 82 (oversold/overbought)",
-        "+6 Sentiment +0.16"
+        "+6 Sentiment +0.14"
       ]
     },
     {
@@ -71,9 +71,9 @@
         "+19 Pattern confidence 75%",
         "+8 MTF 2/4 timeframes aligned",
         "+8 Status: AWAITING_RETEST",
-        "+15 Volume 2.9\u00d7 average",
+        "+15 Volume 3.4\u00d7 average",
         "+0 RSI 82 (risky)",
-        "+10 Sentiment +0.16",
+        "+10 Sentiment +0.14",
         "R:R 0.9 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

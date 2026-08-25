@@ -1,11 +1,80 @@
 {
-  "scan_time": "2026-08-25T06:31:55.655267+00:00",
-  "btc_price": 80710.42,
+  "scan_time": "2026-08-25T07:37:27.636653+00:00",
+  "btc_price": 80608.41,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "neutral",
   "bull_count": 3,
   "fg_value": 74,
-  "sentiment_score": -0.0471,
-  "patterns": []
+  "sentiment_score": 0.3764,
+  "patterns": [
+    {
+      "name": "ascending_triangle",
+      "direction": "bullish",
+      "timeframe": "4h",
+      "status": "RETEST_CONFIRMED",
+      "entry": 79166.77,
+      "stop_loss": 78562.06,
+      "target": 94221.51,
+      "risk_reward": 24.9,
+      "confidence": 0.65,
+      "score": 61,
+      "n_confluences": 3,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 15,
+        "retest": 20,
+        "volume": 0,
+        "rsi": 0,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+0 Volume 0.0\u00d7 average",
+        "+0 RSI 84 (risky)",
+        "+10 Sentiment +0.38"
+      ]
+    },
+    {
+      "name": "double_bottom",
+      "direction": "bullish",
+      "timeframe": "1h",
+      "status": "RETEST_CONFIRMED",
+      "entry": 78025.9,
+      "stop_loss": 77737.11,
+      "target": 80450.23,
+      "risk_reward": 8.39,
+      "confidence": 0.6,
+      "score": 60,
+      "n_confluences": 3,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 15,
+        "mtf": 15,
+        "retest": 20,
+        "volume": 0,
+        "rsi": 0,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+15 Pattern confidence 60%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+0 Volume 0.0\u00d7 average",
+        "+0 RSI 84 (risky)",
+        "+10 Sentiment +0.38"
+      ]
+    }
+  ]
 }

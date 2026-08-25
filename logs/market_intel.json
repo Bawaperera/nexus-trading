@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T21:19:54.585964+00:00",
+  "timestamp": "2026-08-25T22:18:17.195520+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 15.2,
+        "hours_until": 14.2,
         "forecast": "0.2%",
         "previous": "0.1%"
       },
@@ -28,7 +28,7 @@
         "title": "Prelim GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 15.2,
+        "hours_until": 14.2,
         "forecast": "1.5%",
         "previous": "1.5%"
       },
@@ -36,13 +36,13 @@
         "title": "Prelim GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.2,
+        "hours_until": 14.2,
         "forecast": "6.2%",
         "previous": "6.2%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 15.2,
+    "hours_until_next": 14.2,
     "event_count_24h": 3
   },
   "social": {
@@ -56,12 +56,12 @@
   "trending": {
     "trending_coins": [
       "Hyperliquid",
-      "Cash Cat",
-      "Bitcoin",
       "Pons",
-      "LayerZero",
-      "Solana",
-      "XRP"
+      "Bitcoin",
+      "Pump.fun",
+      "Aerodrome Finance",
+      "Dog (Bitcoin)",
+      "Cash Cat"
     ],
     "btc_in_trending": true,
     "trend_count": 7

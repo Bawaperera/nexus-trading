@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T14:36:15.337333+00:00",
+  "timestamp": "2026-08-25T15:35:06.774735+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 21.9,
+        "hours_until": 20.9,
         "forecast": "0.2%",
         "previous": "0.1%"
       },
@@ -28,7 +28,7 @@
         "title": "Prelim GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 21.9,
+        "hours_until": 20.9,
         "forecast": "1.5%",
         "previous": "1.5%"
       },
@@ -36,13 +36,13 @@
         "title": "Prelim GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.9,
+        "hours_until": 20.9,
         "forecast": "6.2%",
         "previous": "6.2%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 21.9,
+    "hours_until_next": 20.9,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
       "peaq",
+      "LayerZero",
+      "Cash Cat",
+      "Venice Token",
       "Hyperliquid",
       "Pump.fun",
-      "LayerZero",
-      "Solana",
-      "Cash Cat"
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

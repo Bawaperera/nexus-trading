@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-26T11:21:36.770703+00:00",
+  "timestamp": "2026-08-26T12:34:52.156374+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,33 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core PCE Price Index m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "0.2%",
-        "previous": "0.1%"
-      },
-      {
-        "title": "Prelim GDP q/q",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "1.5%",
-        "previous": "1.5%"
-      },
-      {
-        "title": "Prelim GDP Price Index q/q",
+        "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 1.1,
-        "forecast": "6.2%",
-        "previous": "6.2%"
+        "hours_until": 23.9,
+        "forecast": "208K",
+        "previous": "206K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 1.1,
-    "event_count_24h": 3
+    "risk_level": "low",
+    "hours_until_next": 23.9,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -56,11 +40,11 @@
   "trending": {
     "trending_coins": [
       "Bitlayer",
-      "PolySwarm",
       "Pons",
-      "Pump.fun",
+      "PolySwarm",
       "Bitcoin",
-      "Cash Cat",
+      "Pudgy Penguins",
+      "Derive",
       "Hyperliquid"
     ],
     "btc_in_trending": true,

@@ -1,11 +1,11 @@
 {
-  "scan_time": "2026-08-26T03:46:33.657221+00:00",
-  "btc_price": 79009.0,
+  "scan_time": "2026-08-26T04:32:01.477469+00:00",
+  "btc_price": 79042.32,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "neutral",
   "bull_count": 2,
   "fg_value": 65,
-  "sentiment_score": 0.056,
+  "sentiment_score": -0.0474,
   "patterns": []
 }

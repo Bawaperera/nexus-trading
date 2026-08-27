@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-26T21:30:56.055559+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-27T02:28:03.074125+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.0,
+        "hours_until": 10.0,
         "forecast": "208K",
         "previous": "206K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 15.0,
+    "hours_until_next": 10.0,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitlayer",
-      "Pump.fun",
-      "Pons",
-      "Bitcoin",
+      "Cash Cat",
       "Hyperliquid",
+      "Pons",
+      "Ontology Gas",
       "Solana",
-      "Cash Cat"
+      "Pudgy Penguins",
+      "Bittensor"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

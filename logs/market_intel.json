@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T08:11:21.548075+00:00",
+  "timestamp": "2026-08-28T20:32:14.663471+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,43 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Fed Chairman Warsh Speaks",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 5.8,
-        "forecast": "",
-        "previous": ""
-      },
-      {
-        "title": "Prelim Benchmark Payrolls Revision",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 5.8,
-        "forecast": "",
-        "previous": "-911K"
-      },
-      {
-        "title": "Revised UoM Consumer Sentiment",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 5.8,
-        "forecast": "51.0",
-        "previous": "51.0"
-      },
-      {
-        "title": "Revised UoM Inflation Expectations",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 5.8,
-        "forecast": "",
-        "previous": "4.3%"
-      }
-    ],
-    "risk_level": "medium",
-    "hours_until_next": 5.8,
-    "event_count_24h": 4
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -63,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Ethena",
-      "Official Trump",
+      "KiiChain",
       "Bitcoin",
+      "Cash Cat",
+      "Ethena",
       "Solana",
-      "Pudgy Penguins",
-      "Pump.fun",
+      "Pons",
       "Hyperliquid"
     ],
     "btc_in_trending": true,

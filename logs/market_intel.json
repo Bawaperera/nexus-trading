@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T02:42:48.566812+00:00",
+  "timestamp": "2026-08-30T08:45:27.957397+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Pons",
-      "Chump Coin",
       "Helium",
-      "Collector Crypt",
+      "StonkBroker",
+      "The Index",
       "Pump.fun",
-      "Cash Cat",
-      "The Index"
+      "Hyperliquid",
+      "Seeker"
     ],
     "btc_in_trending": false,
     "trend_count": 7

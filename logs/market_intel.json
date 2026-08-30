@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T18:18:35.031866+00:00",
+  "timestamp": "2026-08-30T21:46:10.400668+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Helium",
       "Pons",
-      "Zylo Ecosystem",
-      "Zcash",
+      "Helium",
       "Seeker",
-      "Pump.fun",
-      "Pudgy Penguins"
+      "Zylo Ecosystem",
+      "Pudgy Penguins",
+      "Lighter",
+      "Cash Cat"
     ],
     "btc_in_trending": false,
     "trend_count": 7

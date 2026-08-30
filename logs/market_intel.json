@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T08:45:27.957397+00:00",
+  "timestamp": "2026-08-30T14:09:37.889808+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Zylo Ecosystem",
       "Pons",
       "Helium",
-      "StonkBroker",
-      "The Index",
+      "Seeker",
       "Pump.fun",
-      "Hyperliquid",
-      "Seeker"
+      "Lighter",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

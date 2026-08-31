@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-31T14:40:11.680681+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-08-31T20:32:02.752296+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "High",
-        "hours_until": 23.3,
+        "hours_until": 17.5,
         "forecast": "55.2",
         "previous": "55.6"
       },
@@ -28,21 +28,21 @@
         "title": "ISM Manufacturing Prices",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 23.3,
-        "forecast": "71.2",
+        "hours_until": 17.5,
+        "forecast": "70.5",
         "previous": "71.1"
       },
       {
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 23.3,
+        "hours_until": 17.5,
         "forecast": "7.33M",
         "previous": "7.36M"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 23.3,
+    "hours_until_next": 17.5,
     "event_count_24h": 3
   },
   "social": {
@@ -55,15 +55,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Ramses",
       "Pons",
-      "up",
+      "Hyperliquid",
       "Seeker",
-      "Lighter",
-      "Pump.fun",
-      "Bitcoin",
-      "Monero"
+      "Useless Coin",
+      "Arbitrum",
+      "up"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

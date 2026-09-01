@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-01T15:20:53.550830+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-09-01T19:03:46.423695+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 20.9,
-        "forecast": "48K",
+        "hours_until": 17.2,
+        "forecast": "47K",
         "previous": "44K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 20.9,
+    "hours_until_next": 17.2,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Ramses",
       "Pons",
+      "Hyperliquid",
       "Arbitrum",
-      "USD.AI",
-      "Pump.fun",
-      "Uniswap",
-      "Lighter"
+      "Bitcoin",
+      "Lighter",
+      "Seeker",
+      "up"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

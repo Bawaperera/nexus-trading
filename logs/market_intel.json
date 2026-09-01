@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-01T10:51:36.313390+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-01T15:20:53.550830+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,33 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "ISM Manufacturing PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "High",
-        "hours_until": 3.1,
-        "forecast": "55.2",
-        "previous": "55.6"
-      },
-      {
-        "title": "ISM Manufacturing Prices",
-        "time_utc": "10:00 UTC",
+        "title": "ADP Non-Farm Employment Change",
+        "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 3.1,
-        "forecast": "70.5",
-        "previous": "71.1"
-      },
-      {
-        "title": "JOLTS Job Openings",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 3.1,
-        "forecast": "7.33M",
-        "previous": "7.36M"
+        "hours_until": 20.9,
+        "forecast": "48K",
+        "previous": "44K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 3.1,
-    "event_count_24h": 3
+    "risk_level": "low",
+    "hours_until_next": 20.9,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -55,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Pons",
       "Ramses",
-      "up",
+      "Pons",
       "Arbitrum",
-      "Bitcoin",
-      "Hyperliquid",
-      "Ondo"
+      "USD.AI",
+      "Pump.fun",
+      "Uniswap",
+      "Lighter"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

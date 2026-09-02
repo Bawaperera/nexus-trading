@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T18:16:50.692344+00:00",
+  "timestamp": "2026-09-02T21:28:11.722290+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 18.2,
+        "hours_until": 15.0,
         "forecast": "205K",
         "previous": "203K"
       },
@@ -28,13 +28,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 19.7,
+        "hours_until": 16.5,
         "forecast": "54.2",
         "previous": "54.1"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 18.2,
+    "hours_until_next": 15.0,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Cash Cat",
-      "Akedo",
-      "Arbitrum",
       "Pons",
-      "Pump.fun",
+      "Akedo",
+      "Cash Cat",
+      "Arbitrum",
+      "Uniswap",
       "Pudgy Penguins",
-      "Hyperliquid"
+      "Pump.fun"
     ],
     "btc_in_trending": false,
     "trend_count": 7

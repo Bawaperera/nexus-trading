@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-03T16:47:49.932517+00:00",
+  "timestamp": "2026-09-03T19:32:08.450022+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.7,
+        "hours_until": 17.0,
         "forecast": "0.3%",
         "previous": "0.1%"
       },
@@ -28,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.7,
+        "hours_until": 17.0,
         "forecast": "55K",
         "previous": "-23K"
       },
@@ -36,13 +36,13 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.7,
+        "hours_until": 17.0,
         "forecast": "4.1%",
         "previous": "4.1%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 19.7,
+    "hours_until_next": 17.0,
     "event_count_24h": 3
   },
   "social": {
@@ -56,12 +56,12 @@
   "trending": {
     "trending_coins": [
       "Pons",
+      "Lil' Shrub",
       "Zcash",
       "Lighter",
-      "Arbitrum",
-      "Lil' Shrub",
-      "Solana",
-      "Useless Coin"
+      "Cash Cat",
+      "Pudgy Penguins",
+      "Ethena"
     ],
     "btc_in_trending": false,
     "trend_count": 7

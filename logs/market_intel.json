@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-03T12:24:41.740340+00:00",
+  "timestamp": "2026-09-03T16:47:49.932517+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,25 +17,33 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Unemployment Claims",
+        "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 0.1,
-        "forecast": "205K",
-        "previous": "203K"
+        "impact": "High",
+        "hours_until": 19.7,
+        "forecast": "0.3%",
+        "previous": "0.1%"
       },
       {
-        "title": "ISM Services PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 1.6,
-        "forecast": "54.2",
-        "previous": "54.1"
+        "title": "Non-Farm Employment Change",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.7,
+        "forecast": "55K",
+        "previous": "-23K"
+      },
+      {
+        "title": "Unemployment Rate",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.7,
+        "forecast": "4.1%",
+        "previous": "4.1%"
       }
     ],
-    "risk_level": "low",
-    "hours_until_next": 0.1,
-    "event_count_24h": 2
+    "risk_level": "medium",
+    "hours_until_next": 19.7,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -47,12 +55,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Lil' Shrub",
       "Pons",
+      "Zcash",
+      "Lighter",
       "Arbitrum",
-      "MarsCoin",
-      "Cash Cat",
-      "Pudgy Penguins",
+      "Lil' Shrub",
+      "Solana",
       "Useless Coin"
     ],
     "btc_in_trending": false,

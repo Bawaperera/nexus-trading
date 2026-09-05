@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T22:40:43.143803+00:00",
+  "timestamp": "2026-09-05T00:30:49.593622+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "CLUSTER PROTOCOL",
       "Pons",
-      "Zcash",
       "Lil' Shrub",
-      "Monero",
       "MarsCoin",
-      "Pudgy Penguins"
+      "Zcash",
+      "Lighter",
+      "Dash"
     ],
     "btc_in_trending": false,
     "trend_count": 7

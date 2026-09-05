@@ -1245,3 +1245,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-09-04T14:39:18.307929+00:00,double_bottom,bullish,daily,AWAITING_RETEST,63,4,65398.27,62067.21,68586.39,0.96,False,0.0868,74
 2026-09-05T09:43:42.284423+00:00,double_bottom,bullish,daily,AWAITING_RETEST,63,4,65398.27,62067.21,68586.39,0.96,False,0.0392,73
 2026-09-05T13:08:34.646783+00:00,double_bottom,bullish,daily,AWAITING_RETEST,67,4,65398.27,62067.21,68586.39,0.96,False,0.2072,73
+2026-09-05T16:25:26.439248+00:00,double_bottom,bullish,daily,AWAITING_RETEST,63,4,65400.35,62077.55,68590.56,0.96,False,0.062,73

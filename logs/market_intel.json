@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T05:21:08.707531+00:00",
+  "timestamp": "2026-09-06T09:58:53.551015+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Firo",
-      "Arbitrum",
-      "Pons",
-      "Lil' Shrub",
-      "Pudgy Penguins",
+      "CLUSTER PROTOCOL",
       "Zcash",
-      "STONK"
+      "Arbitrum",
+      "STONK",
+      "Pons",
+      "Lil' Shrub"
     ],
     "btc_in_trending": false,
     "trend_count": 7

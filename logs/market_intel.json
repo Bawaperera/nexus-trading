@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-05T22:31:21.657689+00:00",
+  "timestamp": "2026-09-06T00:26:01.365865+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "CLUSTER PROTOCOL",
       "Firo",
       "Pons",
-      "CLUSTER PROTOCOL",
-      "Arbitrum",
+      "Lil' Shrub",
       "Pudgy Penguins",
-      "Uniswap",
-      "Lil' Shrub"
+      "Arbitrum",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

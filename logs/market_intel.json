@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07T20:19:24.764427+00:00",
+  "timestamp": "2026-09-07T23:12:17.718710+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -34,9 +34,9 @@
       "Pons",
       "STONK",
       "Zcash",
-      "Anonymous Cat",
-      "Pump.fun",
-      "peaq"
+      "Aerodrome Finance",
+      "Lighter",
+      "Anonymous Cat"
     ],
     "btc_in_trending": false,
     "trend_count": 7

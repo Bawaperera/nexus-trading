@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T22:42:55.316411+00:00",
+  "timestamp": "2026-09-07T00:32:46.414266+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Firo",
-      "Robin the Frog",
       "Lil' Shrub",
-      "CLUSTER PROTOCOL",
+      "Firo",
       "Zcash",
       "Pons",
-      "Bittensor"
+      "Bittensor",
+      "Jupiter",
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

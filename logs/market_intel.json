@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-08T19:43:13.215804+00:00",
+  "timestamp": "2026-09-08T22:13:16.726558+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Venice Token",
-      "Pons",
-      "Zcash",
-      "Polkadot",
       "STONK",
-      "Lighter",
-      "Useless Coin"
+      "Pons",
+      "Useless Coin",
+      "Pudgy Penguins",
+      "Polkadot",
+      "Lighter"
     ],
     "btc_in_trending": false,
     "trend_count": 7

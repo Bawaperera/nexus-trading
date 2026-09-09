@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T10:29:11.466691+00:00",
+  "timestamp": "2026-09-09T14:56:42.269340+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,43 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "President Trump Speaks",
+        "time_utc": "21:15 UTC",
+        "impact": "Medium",
+        "hours_until": 10.3,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "Core PPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 21.6,
+        "forecast": "0.3%",
+        "previous": "0.2%"
+      },
+      {
+        "title": "PPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 21.6,
+        "forecast": "0.4%",
+        "previous": "0.0%"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 21.6,
+        "forecast": "205K",
+        "previous": "206K"
+      }
+    ],
+    "risk_level": "medium",
+    "hours_until_next": 10.3,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -30,13 +63,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Hunter Biden's Laptop",
+      "USELESS STONK",
       "Cluster Protocol",
-      "Pons",
       "Venice Token",
-      "Useless Coin",
-      "Lighter",
-      "Zcash",
-      "Bittensor"
+      "Pons",
+      "STONK",
+      "Zcash"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T05:36:46.233088+00:00",
+  "timestamp": "2026-09-09T10:29:11.466691+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Venice Token",
-      "Zcash",
-      "Lighter",
+      "Cluster Protocol",
       "Pons",
-      "STONK",
-      "Aerodrome Finance",
-      "Hyperliquid"
+      "Venice Token",
+      "Useless Coin",
+      "Lighter",
+      "Zcash",
+      "Bittensor"
     ],
     "btc_in_trending": false,
     "trend_count": 7

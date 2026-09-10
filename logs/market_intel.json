@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-10T07:41:54.005955+00:00",
+  "timestamp": "2026-09-10T12:32:32.092916+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,33 +17,41 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core PPI m/m",
+        "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 4.8,
-        "forecast": "0.3%",
+        "hours_until": 24.0,
+        "forecast": "0.2%",
         "previous": "0.2%"
       },
       {
-        "title": "PPI m/m",
+        "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 4.8,
-        "forecast": "0.4%",
-        "previous": "0.0%"
+        "hours_until": 24.0,
+        "forecast": "2.4%",
+        "previous": "2.5%"
       },
       {
-        "title": "Unemployment Claims",
+        "title": "CPI m/m",
         "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 4.8,
-        "forecast": "205K",
-        "previous": "206K"
+        "impact": "High",
+        "hours_until": 24.0,
+        "forecast": "0.4%",
+        "previous": "0.1%"
+      },
+      {
+        "title": "CPI y/y",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 24.0,
+        "forecast": "3.4%",
+        "previous": "3.4%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 4.8,
-    "event_count_24h": 3
+    "hours_until_next": 24.0,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -55,12 +63,12 @@
   },
   "trending": {
     "trending_coins": [
+      "Zano",
       "Hunter Biden's Laptop",
       "Pons",
-      "NEAR Protocol",
+      "Useless Coin",
       "STONK",
-      "Lighter",
-      "Bifrost",
+      "Kaspa",
       "Zcash"
     ],
     "btc_in_trending": false,

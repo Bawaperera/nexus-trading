@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T14:42:48.866615+00:00",
+  "timestamp": "2026-09-12T17:34:03.642694+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Artificial Inu",
-      "embercurve",
-      "Hunter Biden's Laptop",
-      "Pons",
       "STONK",
+      "Pons",
       "Pudgy Penguins",
-      "Ethereum"
+      "embercurve",
+      "Pump.fun",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

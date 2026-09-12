@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T07:30:10.589661+00:00",
+  "timestamp": "2026-09-12T11:50:21.248695+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "STONK",
-      "Pearl",
-      "Ethereum",
+      "embercurve",
       "Hunter Biden's Laptop",
       "Pons",
+      "Pudgy Penguins",
+      "STONK",
       "NEAR Protocol",
-      "Raydium"
+      "Artificial Inu"
     ],
     "btc_in_trending": false,
     "trend_count": 7

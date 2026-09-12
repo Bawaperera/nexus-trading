@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-11T23:44:03.019669+00:00",
+  "timestamp": "2026-09-12T02:22:10.392785+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Hunter Biden's Laptop",
+      "Zcash",
       "STONK",
-      "Raydium",
+      "Hunter Biden's Laptop",
+      "Pearl",
       "Pons",
-      "Artificial Inu",
-      "Pudgy Penguins",
-      "Zcash"
+      "Lighter",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": false,
     "trend_count": 7

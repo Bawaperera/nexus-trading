@@ -1,46 +1,11 @@
 {
-  "scan_time": "2026-09-12T19:55:51.116112+00:00",
-  "btc_price": 77114.06,
+  "scan_time": "2026-09-12T21:52:14.748636+00:00",
+  "btc_price": 77214.03,
   "daily_trend": "bullish",
   "4h_trend": "bearish",
   "weekly_trend": "bullish",
   "bull_count": 2,
   "fg_value": 63,
-  "sentiment_score": -0.095,
-  "patterns": [
-    {
-      "name": "head_and_shoulders",
-      "direction": "bearish",
-      "timeframe": "1h",
-      "status": "BREAKOUT",
-      "entry": 76524.25,
-      "stop_loss": 77492.58,
-      "target": 73300.12,
-      "risk_reward": 3.33,
-      "confidence": 0.75,
-      "score": 60,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 5.2\u00d7 average",
-        "+7 RSI 54 (neutral)",
-        "+6 Sentiment -0.10"
-      ]
-    }
-  ]
+  "sentiment_score": 0.0132,
+  "patterns": []
 }

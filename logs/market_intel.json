@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T19:08:56.317137+00:00",
+  "timestamp": "2026-09-13T21:58:53.194830+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Lisk",
-      "Pudgy Penguins",
-      "Pons",
-      "Hunter Biden's Laptop",
+      "STONK",
       "Filecoin",
-      "Hyperliquid",
-      "embercurve"
+      "Pons",
+      "Zcash",
+      "Pudgy Penguins",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

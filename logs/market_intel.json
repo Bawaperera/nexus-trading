@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T12:59:34.775546+00:00",
+  "timestamp": "2026-09-13T16:52:58.300683+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Lisk",
-      "embercurve",
-      "Pons",
+      "Zcash",
       "STONK",
-      "Hunter Biden's Laptop",
-      "Meteora",
-      "Civic"
+      "embercurve",
+      "Pudgy Penguins",
+      "Pons",
+      "Venice Token"
     ],
     "btc_in_trending": false,
     "trend_count": 7

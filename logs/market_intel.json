@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T02:19:40.804907+00:00",
+  "timestamp": "2026-09-13T07:50:45.990120+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Lisk",
-      "Nockchain",
-      "Pudgy Penguins",
+      "Pons",
       "Hunter Biden's Laptop",
       "embercurve",
-      "Pons",
-      "Pepe"
+      "Zcash",
+      "Anonymous Cat",
+      "STONK"
     ],
     "btc_in_trending": false,
     "trend_count": 7

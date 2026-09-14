@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T20:05:24.583961+00:00",
+  "timestamp": "2026-09-14T23:38:10.797850+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "Pons",
       "Zcash",
-      "Lisk",
-      "NEAR Protocol",
-      "STONK",
       "Pudgy Penguins",
-      "Aave"
+      "Lisk",
+      "Ethereum",
+      "Uniswap",
+      "Anonymous Cat"
     ],
     "btc_in_trending": false,
     "trend_count": 7

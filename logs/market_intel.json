@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-13T23:54:42.063082+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-14T02:37:13.795434+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "Lisk",
       "Pons",
-      "Pendle",
+      "Filecoin",
       "Lighter",
-      "Pearl",
       "STONK",
-      "Bitcoin"
+      "Zcash",
+      "Bitway"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

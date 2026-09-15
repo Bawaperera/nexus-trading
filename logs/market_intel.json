@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T08:14:15.568316+00:00",
+  "timestamp": "2026-09-15T14:02:25.480228+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,27 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "Core Retail Sales m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.5,
+        "forecast": "0.5%",
+        "previous": "-0.3%"
+      },
+      {
+        "title": "Retail Sales m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.5,
+        "forecast": "0.8%",
+        "previous": "-0.6%"
+      }
+    ],
+    "risk_level": "low",
+    "hours_until_next": 22.5,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -30,12 +47,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Power Protocol",
       "Pons",
-      "STANDARD",
-      "Lisk",
-      "Zcash",
       "Bitcoin",
+      "Arbitrum",
+      "STANDARD",
+      "Akedo",
+      "Pudgy Penguins",
       "STONK"
     ],
     "btc_in_trending": true,

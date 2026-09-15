@@ -1282,3 +1282,5 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-09-15T14:02:26.211981+00:00,double_top,bearish,4h,BREAKOUT,60,5,76088.52,79886.81,72364.94,0.98,False,0.1396,69
 2026-09-15T21:51:41.966348+00:00,double_top,bearish,4h,BREAKOUT,60,5,76173.28,79847.75,72598.18,0.97,False,-0.0934,69
 2026-09-15T21:51:42.448140+00:00,head_and_shoulders,bearish,4h,BREAKOUT,60,5,76173.28,79667.4,72598.18,1.02,False,-0.0934,69
+2026-09-15T22:16:25.288723+00:00,double_top,bearish,4h,BREAKOUT+15M,60,5,76173.28,79847.75,72598.18,0.97,False,0,0
+2026-09-15T22:16:25.792530+00:00,head_and_shoulders,bearish,4h,BREAKOUT+15M,60,5,76173.28,79667.4,72598.18,1.02,False,0,0

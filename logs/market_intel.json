@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-16T08:08:01.692827+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-16T13:56:03.155695+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,26 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core Retail Sales m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 4.4,
-        "forecast": "0.6%",
-        "previous": "-0.3%"
-      },
-      {
-        "title": "Retail Sales m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 4.4,
-        "forecast": "0.8%",
-        "previous": "-0.6%"
-      },
-      {
         "title": "Federal Funds Rate",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 9.9,
+        "hours_until": 4.1,
         "forecast": "4.00%",
         "previous": "3.75%"
       },
@@ -44,7 +28,7 @@
         "title": "FOMC Economic Projections",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 9.9,
+        "hours_until": 4.1,
         "forecast": "",
         "previous": ""
       },
@@ -52,7 +36,7 @@
         "title": "FOMC Statement",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 9.9,
+        "hours_until": 4.1,
         "forecast": "",
         "previous": ""
       },
@@ -60,13 +44,29 @@
         "title": "FOMC Press Conference",
         "time_utc": "14:30 UTC",
         "impact": "High",
-        "hours_until": 10.4,
+        "hours_until": 4.6,
         "forecast": "",
         "previous": ""
+      },
+      {
+        "title": "Philly Fed Manufacturing Index",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.6,
+        "forecast": "31.3",
+        "previous": "47.4"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 22.6,
+        "forecast": "207K",
+        "previous": "206K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 4.4,
+    "hours_until_next": 4.1,
     "event_count_24h": 6
   },
   "social": {
@@ -81,13 +81,13 @@
     "trending_coins": [
       "Firo",
       "Arbitrum",
+      "Official Trump",
       "Synapse",
+      "Argus",
       "Derive",
-      "Edel",
-      "Bitcoin",
-      "Pons"
+      "Edel"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-16T20:42:24.405599+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-16T23:26:59.216626+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.8,
+        "hours_until": 13.1,
         "forecast": "31.3",
         "previous": "47.4"
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.8,
+        "hours_until": 13.1,
         "forecast": "207K",
         "previous": "206K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 15.8,
+    "hours_until_next": 13.1,
     "event_count_24h": 2
   },
   "social": {
@@ -47,15 +47,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Argus",
       "Official Trump",
-      "Zcash",
       "Derive",
-      "Pudgy Penguins",
-      "Arbitrum",
-      "Bitcoin"
+      "Argus",
+      "Pons",
+      "Zcash",
+      "STONK",
+      "Pump.fun"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

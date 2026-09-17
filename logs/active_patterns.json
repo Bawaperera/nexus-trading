@@ -1,82 +1,11 @@
 {
-  "scan_time": "2026-09-16T23:27:00.300563+00:00",
-  "btc_price": 75990.44,
+  "scan_time": "2026-09-17T02:39:24.685915+00:00",
+  "btc_price": 76362.66,
   "daily_trend": "bullish",
   "4h_trend": "bearish",
   "weekly_trend": "bullish",
-  "bull_count": 2,
-  "fg_value": 51,
-  "sentiment_score": -0.3025,
-  "patterns": [
-    {
-      "name": "double_top",
-      "direction": "bearish",
-      "timeframe": "4h",
-      "status": "BREAKOUT",
-      "entry": 76173.28,
-      "stop_loss": 79847.75,
-      "target": 72598.18,
-      "risk_reward": 0.97,
-      "confidence": 0.75,
-      "score": 64,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 3.0\u00d7 average",
-        "+7 RSI 50 (neutral)",
-        "+10 Sentiment -0.30",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    },
-    {
-      "name": "head_and_shoulders",
-      "direction": "bearish",
-      "timeframe": "4h",
-      "status": "BREAKOUT",
-      "entry": 76173.28,
-      "stop_loss": 79667.4,
-      "target": 72598.18,
-      "risk_reward": 1.02,
-      "confidence": 0.75,
-      "score": 64,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 8,
-        "retest": 5,
-        "volume": 15,
-        "rsi": 7,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+8 MTF 2/4 timeframes aligned",
-        "+5 Status: BREAKOUT",
-        "+15 Volume 3.0\u00d7 average",
-        "+7 RSI 50 (neutral)",
-        "+10 Sentiment -0.30",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    }
-  ]
+  "bull_count": 3,
+  "fg_value": 50,
+  "sentiment_score": -0.2284,
+  "patterns": []
 }

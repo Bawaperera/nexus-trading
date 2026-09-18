@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-18T19:21:10.454313+00:00",
+  "timestamp": "2026-09-18T22:06:55.938237+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Zano",
       "Firo",
       "NEAR Protocol",
+      "Zano",
+      "Pearl",
+      "Starknet",
       "Pudgy Penguins",
-      "Zcash",
-      "Arbitrum",
-      "Pearl"
+      "Uniswap"
     ],
     "btc_in_trending": false,
     "trend_count": 7

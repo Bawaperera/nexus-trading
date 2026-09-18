@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-18T12:32:46.853004+00:00",
+  "timestamp": "2026-09-18T16:51:13.768818+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,12 +30,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Zano",
       "Firo",
-      "Pudgy Penguins",
-      "NEAR Protocol",
-      "Uniswap",
+      "Zano",
       "Zcash",
+      "NEAR Protocol",
+      "Pudgy Penguins",
+      "Derive",
       "Arbitrum"
     ],
     "btc_in_trending": false,

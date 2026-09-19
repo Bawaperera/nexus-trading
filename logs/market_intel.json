@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-19T14:04:40.076810+00:00",
+  "timestamp": "2026-09-19T17:37:23.335049+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -32,11 +32,11 @@
     "trending_coins": [
       "ZECFORGE.tech",
       "Official Trump",
-      "Firo",
       "Zama",
-      "Zcash",
+      "Firo",
+      "NEAR Protocol",
       "Pudgy Penguins",
-      "Derive"
+      "Zcash"
     ],
     "btc_in_trending": false,
     "trend_count": 7

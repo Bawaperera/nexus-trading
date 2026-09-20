@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20T20:03:17.304489+00:00",
+  "timestamp": "2026-09-20T22:49:44.430264+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Zcash",
-      "Backpack",
+      "Zano",
       "Official Trump",
-      "Akedo",
-      "Firo",
       "NEAR Protocol",
-      "Ethena"
+      "Pudgy Penguins",
+      "Avalanche",
+      "Firo",
+      "Zcash"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-09-20T08:08:31.007663+00:00",
-  "composite_signal": 0.0192,
+  "timestamp": "2026-09-20T13:22:11.106294+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
   "derivatives": {
-    "funding_rate": 0.0001,
+    "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
-    "open_interest_btc": 109283.332,
-    "oi_change_pct": -0.129,
-    "long_short_ratio": 0.926,
-    "long_pct": 48.08,
-    "short_pct": 51.92,
-    "top_trader_ls": 2.16
+    "open_interest_btc": 0.0,
+    "oi_change_pct": 0.0,
+    "long_short_ratio": 1.0,
+    "long_pct": 50.0,
+    "short_pct": 50.0,
+    "top_trader_ls": 1.0
   },
   "macro": {
     "upcoming_events": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Akedo",
+      "Zcash",
       "Harmony",
-      "Backpack",
       "Zama",
-      "Pons",
       "STONK",
-      "Pudgy Penguins",
-      "Bitcoin"
+      "Venice Token",
+      "Firo"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

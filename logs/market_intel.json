@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20T17:11:04.207970+00:00",
+  "timestamp": "2026-09-20T20:03:17.304489+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "NEAR Protocol",
-      "Official Trump",
       "Zcash",
+      "Backpack",
+      "Official Trump",
       "Akedo",
       "Firo",
-      "Zama",
-      "Render"
+      "NEAR Protocol",
+      "Ethena"
     ],
     "btc_in_trending": false,
     "trend_count": 7

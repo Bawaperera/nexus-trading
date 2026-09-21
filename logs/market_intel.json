@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-21T17:31:56.295844+00:00",
+  "timestamp": "2026-09-21T21:29:29.373164+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "astronaut",
       "Firo",
       "Pudgy Penguins",
+      "Official Trump",
       "Edel",
       "Zano",
-      "NEAR Protocol",
-      "Official Trump",
-      "Sui"
+      "Bittensor"
     ],
     "btc_in_trending": false,
     "trend_count": 7

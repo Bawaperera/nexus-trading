@@ -1,46 +1,11 @@
 {
-  "scan_time": "2026-09-22T00:26:28.017004+00:00",
-  "btc_price": 86352.28,
+  "scan_time": "2026-09-22T05:40:39.446059+00:00",
+  "btc_price": 85355.13,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bullish",
   "bull_count": 4,
   "fg_value": 78,
-  "sentiment_score": -0.0819,
-  "patterns": [
-    {
-      "name": "ascending_triangle",
-      "direction": "bullish",
-      "timeframe": "daily",
-      "status": "RETEST_CONFIRMED",
-      "entry": 81448.89,
-      "stop_loss": 80113.57,
-      "target": 100414.14,
-      "risk_reward": 14.2,
-      "confidence": 0.65,
-      "score": 62,
-      "n_confluences": 3,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 20,
-        "retest": 20,
-        "volume": 0,
-        "rsi": 0,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 65%",
-        "+20 MTF 4/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 0.4\u00d7 average",
-        "+0 RSI 72 (risky)",
-        "+6 Sentiment -0.08"
-      ]
-    }
-  ]
+  "sentiment_score": -0.2164,
+  "patterns": []
 }

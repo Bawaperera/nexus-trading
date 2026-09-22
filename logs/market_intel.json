@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-22T15:18:26.264776+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-22T19:26:45.331353+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "MESSIER",
+      "astronaut",
+      "Pudgy Penguins",
       "Edel",
       "NEAR Protocol",
-      "Pudgy Penguins",
       "Pearl",
-      "Bitcoin",
-      "Uniswap"
+      "Pons",
+      "Aurora"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

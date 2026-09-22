@@ -1309,3 +1309,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-09-21T17:31:57.382282+00:00,ascending_triangle,bullish,4h,RETEST_CONFIRMED,62,3,81892.2,81221.06,88853.4,10.37,False,0.0732,70
 2026-09-21T21:29:29.886367+00:00,ascending_triangle,bullish,daily,RETEST_CONFIRMED,66,4,81436.02,80100.7,100388.41,14.19,False,0.0001,70
 2026-09-21T21:29:30.385157+00:00,ascending_triangle,bullish,4h,RETEST_CONFIRMED,66,4,81961.82,81178.71,88992.63,8.98,False,0.0001,70
+2026-09-22T00:26:28.016868+00:00,ascending_triangle,bullish,daily,RETEST_CONFIRMED,62,3,81448.89,80113.57,100414.14,14.2,False,-0.0819,78

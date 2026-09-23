@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-22T22:34:39.462426+00:00",
+  "timestamp": "2026-09-23T01:06:25.408678+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Pudgy Penguins",
       "Edel",
+      "Zcash",
       "Pearl",
-      "STONK",
-      "Pons",
-      "NEAR Protocol",
-      "Aurora",
-      "Pudgy Penguins"
+      "Uniswap",
+      "Lighter",
+      "NEAR Protocol"
     ],
     "btc_in_trending": false,
     "trend_count": 7

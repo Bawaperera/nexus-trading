@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-24T19:39:33.653248+00:00",
+  "timestamp": "2026-09-24T22:52:21.200914+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,10 +17,18 @@
   "macro": {
     "upcoming_events": [
       {
+        "title": "President Trump Speaks",
+        "time_utc": "19:55 UTC",
+        "impact": "Medium",
+        "hours_until": 1.0,
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.3,
+        "hours_until": 15.1,
         "forecast": "47.4",
         "previous": "47.8"
       },
@@ -28,14 +36,14 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 18.3,
+        "hours_until": 15.1,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 18.3,
-    "event_count_24h": 2
+    "hours_until_next": 1.0,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -47,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "astronaut",
       "Ondo",
-      "Pudgy Penguins",
       "Edel",
+      "Bitget Token",
+      "Backpack",
+      "Pudgy Penguins",
       "NEAR Protocol",
-      "Litecoin",
-      "Backpack"
+      "peaq"
     ],
     "btc_in_trending": false,
     "trend_count": 7

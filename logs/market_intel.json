@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-24T15:37:46.007208+00:00",
+  "timestamp": "2026-09-24T19:39:33.653248+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 22.4,
+        "hours_until": 18.3,
         "forecast": "47.4",
         "previous": "47.8"
       },
@@ -28,13 +28,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 22.4,
+        "hours_until": 18.3,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 22.4,
+    "hours_until_next": 18.3,
     "event_count_24h": 2
   },
   "social": {
@@ -47,12 +47,12 @@
   },
   "trending": {
     "trending_coins": [
-      "Ondo",
-      "MESSIER",
-      "Litecoin",
-      "NEAR Protocol",
-      "Edel",
       "astronaut",
+      "Ondo",
+      "Pudgy Penguins",
+      "Edel",
+      "NEAR Protocol",
+      "Litecoin",
       "Backpack"
     ],
     "btc_in_trending": false,

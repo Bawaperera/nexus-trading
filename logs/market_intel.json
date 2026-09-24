@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T21:55:18.604476+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-09-24T00:08:44.183532+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 14.6,
+        "hours_until": 12.4,
         "forecast": "201K",
         "previous": "196K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 14.6,
+    "hours_until_next": 12.4,
     "event_count_24h": 1
   },
   "social": {
@@ -40,14 +40,14 @@
   "trending": {
     "trending_coins": [
       "Edel",
-      "Raydium",
-      "Bitcoin",
-      "Pons",
-      "Pudgy Penguins",
+      "Nillion",
       "NEAR Protocol",
-      "Zcash"
+      "Derive",
+      "Raydium",
+      "Pons",
+      "Pudgy Penguins"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

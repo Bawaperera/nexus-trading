@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-25T17:40:11.024737+00:00",
+  "timestamp": "2026-09-25T20:55:18.902552+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Aerodrome Finance",
+      "astronaut",
       "Official Trump",
-      "NEAR Protocol",
-      "Ethena",
-      "Ondo",
       "Edel",
-      "Grass"
+      "Aerodrome Finance",
+      "NEAR Protocol",
+      "Pudgy Penguins",
+      "Ethena"
     ],
     "btc_in_trending": false,
     "trend_count": 7

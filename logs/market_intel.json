@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-26T13:31:38.101116+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-09-26T17:31:24.968076+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "Super Inu",
       "Official Trump",
-      "Edel",
+      "Kaspa",
+      "Quant",
       "Pudgy Penguins",
-      "Sui",
-      "Ethena",
-      "Aerodrome Finance"
+      "Edel",
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

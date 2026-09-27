@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-27T14:27:17.870875+00:00",
+  "timestamp": "2026-09-27T18:48:06.139445+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -34,9 +34,9 @@
       "NEAR Protocol",
       "Official Trump",
       "Edel",
-      "Backpack",
+      "Sui",
       "Pudgy Penguins",
-      "Sui"
+      "Backpack"
     ],
     "btc_in_trending": false,
     "trend_count": 7

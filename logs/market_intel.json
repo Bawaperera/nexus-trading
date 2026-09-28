@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-27T21:45:49.410836+00:00",
+  "timestamp": "2026-09-28T00:10:09.107080+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Quant",
-      "RHEA",
-      "Edel",
       "Official Trump",
-      "Pump.fun",
       "NEAR Protocol",
-      "Pudgy Penguins"
+      "Edel",
+      "RHEA",
+      "Ondo",
+      "Bittensor"
     ],
     "btc_in_trending": false,
     "trend_count": 7

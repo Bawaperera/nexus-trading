@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-28T14:47:17.850342+00:00",
+  "timestamp": "2026-09-28T20:57:58.584187+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,21 +20,21 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
-        "forecast": "90.1",
+        "hours_until": 17.0,
+        "forecast": "89.2",
         "previous": "89.4"
       },
       {
         "title": "JOLTS Job Openings",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 23.2,
+        "hours_until": 17.0,
         "forecast": "7.23M",
         "previous": "7.27M"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 23.2,
+    "hours_until_next": 17.0,
     "event_count_24h": 2
   },
   "social": {
@@ -50,9 +50,9 @@
       "Quant",
       "Firo",
       "Hedera",
+      "Chainlink",
       "Official Trump",
       "NEAR Protocol",
-      "Chainlink",
       "Pudgy Penguins"
     ],
     "btc_in_trending": false,

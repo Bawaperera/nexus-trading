@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-29T13:36:06.300363+00:00",
+  "timestamp": "2026-09-29T19:01:23.638497+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,26 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "CB Consumer Confidence",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.4,
-        "forecast": "89.2",
-        "previous": "89.4"
-      },
-      {
-        "title": "JOLTS Job Openings",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.4,
-        "forecast": "7.23M",
-        "previous": "7.27M"
-      },
-      {
         "title": "ADP Non-Farm Employment Change",
         "time_utc": "08:15 UTC",
         "impact": "Medium",
-        "hours_until": 22.6,
+        "hours_until": 17.2,
         "forecast": "73K",
         "previous": "38K"
       },
@@ -44,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.9,
+        "hours_until": 17.5,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -52,7 +36,7 @@
         "title": "Final GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 22.9,
+        "hours_until": 17.5,
         "forecast": "1.5%",
         "previous": "1.5%"
       },
@@ -60,14 +44,14 @@
         "title": "Final GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 22.9,
+        "hours_until": 17.5,
         "forecast": "6.4%",
         "previous": "6.4%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 0.4,
-    "event_count_24h": 6
+    "hours_until_next": 17.2,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -80,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "Quant",
-      "Pump.fun",
+      "Official Trump",
+      "NEAR Protocol",
+      "Pudgy Penguins",
+      "Ondo",
       "Aave",
-      "Avalanche",
-      "Pearl",
-      "Chainlink",
-      "NEAR Protocol"
+      "Hedera"
     ],
     "btc_in_trending": false,
     "trend_count": 7

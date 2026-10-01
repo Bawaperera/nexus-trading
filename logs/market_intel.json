@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T00:56:38.481459+00:00",
+  "timestamp": "2026-10-01T06:45:26.104414+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.6,
+        "hours_until": 5.7,
         "forecast": "201K",
         "previous": "197K"
       },
@@ -28,7 +28,7 @@
         "title": "FOMC Member Waller Speaks",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 13.1,
+        "hours_until": 7.2,
         "forecast": "",
         "previous": ""
       },
@@ -36,13 +36,13 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 13.1,
+        "hours_until": 7.2,
         "forecast": "54.8",
         "previous": "54.6"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 11.6,
+    "hours_until_next": 5.7,
     "event_count_24h": 3
   },
   "social": {
@@ -55,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Edel",
-      "Quant",
-      "Official Trump",
       "Monad",
       "NEAR Protocol",
+      "Quant",
       "Concordium",
-      "Lighter"
+      "Backpack",
+      "Pudgy Penguins",
+      "Moonriver"
     ],
     "btc_in_trending": false,
     "trend_count": 7

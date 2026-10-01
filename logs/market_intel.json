@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-30T21:07:15.379757+00:00",
+  "timestamp": "2026-10-01T00:56:38.481459+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "FOMC Member Kashkari Speaks",
-        "time_utc": "18:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.9,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 15.4,
+        "hours_until": 11.6,
         "forecast": "201K",
         "previous": "197K"
       },
@@ -36,7 +28,7 @@
         "title": "FOMC Member Waller Speaks",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 16.9,
+        "hours_until": 13.1,
         "forecast": "",
         "previous": ""
       },
@@ -44,14 +36,14 @@
         "title": "ISM Manufacturing PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 16.9,
+        "hours_until": 13.1,
         "forecast": "54.8",
         "previous": "54.6"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 0.9,
-    "event_count_24h": 4
+    "hours_until_next": 11.6,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -63,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Concordium",
-      "Quant",
       "Edel",
+      "Quant",
       "Official Trump",
+      "Monad",
       "NEAR Protocol",
-      "Backpack",
-      "Pudgy Penguins"
+      "Concordium",
+      "Lighter"
     ],
     "btc_in_trending": false,
     "trend_count": 7

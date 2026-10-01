@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-10-01T20:00:08.292865+00:00",
-  "btc_price": 84644.93,
+  "scan_time": "2026-10-01T23:46:36.045347+00:00",
+  "btc_price": 84781.53,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bullish",
   "bull_count": 4,
   "fg_value": 74,
-  "sentiment_score": 0.0696,
+  "sentiment_score": 0.0409,
   "patterns": [
     {
       "name": "double_bottom",
@@ -37,9 +37,9 @@
         "+15 Pattern confidence 60%",
         "+20 MTF 4/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.2\u00d7 average",
         "+3 RSI 64 (neutral)",
-        "+6 Sentiment +0.07"
+        "+6 Sentiment +0.04"
       ]
     },
     {
@@ -48,7 +48,7 @@
       "timeframe": "4h",
       "status": "BREAKOUT",
       "entry": 85133.45,
-      "stop_loss": 82502.8,
+      "stop_loss": 82503.07,
       "target": 87705.7,
       "risk_reward": 0.98,
       "confidence": 0.75,
@@ -71,9 +71,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.2\u00d7 average",
         "+3 RSI 64 (neutral)",
-        "+6 Sentiment +0.07",
+        "+6 Sentiment +0.04",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -106,9 +106,9 @@
         "+16 Pattern confidence 65%",
         "+20 MTF 4/4 timeframes aligned",
         "+5 Status: BREAKOUT",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.2\u00d7 average",
         "+3 RSI 64 (neutral)",
-        "+6 Sentiment +0.07",
+        "+6 Sentiment +0.04",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     },
@@ -118,9 +118,9 @@
       "timeframe": "1h",
       "status": "FORMING",
       "entry": 85599.92,
-      "stop_loss": 82873.9,
+      "stop_loss": 82879.09,
       "target": 88280.88,
-      "risk_reward": 0.98,
+      "risk_reward": 0.99,
       "confidence": 0.75,
       "score": 63,
       "n_confluences": 4,
@@ -141,9 +141,9 @@
         "+19 Pattern confidence 75%",
         "+20 MTF 4/4 timeframes aligned",
         "+0 Status: FORMING",
-        "+15 Volume 2.7\u00d7 average",
+        "+15 Volume 2.2\u00d7 average",
         "+3 RSI 64 (neutral)",
-        "+6 Sentiment +0.07",
+        "+6 Sentiment +0.04",
         "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }

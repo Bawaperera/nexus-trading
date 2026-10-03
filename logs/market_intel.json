@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03T05:56:20.589852+00:00",
+  "timestamp": "2026-10-03T10:55:02.117628+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "The Sandbox",
-      "Pons",
-      "Pudgy Penguins",
-      "GALA",
       "Quant",
-      "Super Cat",
-      "Lighter"
+      "The Sandbox",
+      "MESSIER",
+      "Lighter",
+      "Sui",
+      "Pearl",
+      "LayerZero"
     ],
     "btc_in_trending": false,
     "trend_count": 7

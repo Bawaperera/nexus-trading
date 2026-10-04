@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T12:58:47.877300+00:00",
+  "timestamp": "2026-10-04T17:19:39.346130+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,19 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "ISM Services PMI",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 20.7,
+        "forecast": "55.1",
+        "previous": "55.4"
+      }
+    ],
+    "risk_level": "low",
+    "hours_until_next": 20.7,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -31,12 +40,12 @@
   "trending": {
     "trending_coins": [
       "Super Iguana",
-      "Solana",
-      "Beam",
-      "Quant",
-      "Pump.fun",
+      "Grass",
       "Pons",
-      "Pudgy Penguins"
+      "Sui",
+      "Pudgy Penguins",
+      "Artificial Superintelligence Alliance",
+      "Pump.fun"
     ],
     "btc_in_trending": false,
     "trend_count": 7

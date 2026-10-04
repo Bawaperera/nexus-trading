@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-04T20:42:43.536083+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-04T23:44:46.696440+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.3,
+        "hours_until": 14.3,
         "forecast": "55.1",
         "previous": "55.4"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 17.3,
+    "hours_until_next": 14.3,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Artificial Superintelligence Alliance",
+      "Pump.fun",
       "NEAR Protocol",
+      "Aerodrome Finance",
+      "Venice Token",
       "Grass",
-      "Lighter",
-      "Pons",
-      "Quant",
-      "Pudgy Penguins"
+      "Zcash",
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

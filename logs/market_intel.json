@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T06:33:37.808821+00:00",
+  "timestamp": "2026-10-04T12:58:47.877300+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Super Iguana",
+      "Solana",
+      "Beam",
+      "Quant",
       "Pump.fun",
-      "LayerZero",
-      "Monad",
-      "Pudgy Penguins",
-      "Starknet",
-      "Backpack"
+      "Pons",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": false,
     "trend_count": 7

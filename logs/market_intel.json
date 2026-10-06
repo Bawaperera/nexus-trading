@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-06T08:22:28.076121+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-06T15:35:55.172786+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "iExec RLC",
-      "NEAR Protocol",
       "Pons",
-      "Bitcoin",
+      "ZIG Finance",
+      "Numeraire",
+      "NEAR Protocol",
+      "Pudgy Penguins",
       "Quant",
-      "LayerZero",
-      "Zcash"
+      "Bittensor"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

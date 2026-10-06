@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-05T11:01:49.894356+00:00",
+  "timestamp": "2026-10-06T01:12:13.414709+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,19 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "ISM Services PMI",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 3.0,
-        "forecast": "55.1",
-        "previous": "55.4"
-      }
-    ],
-    "risk_level": "low",
-    "hours_until_next": 3.0,
-    "event_count_24h": 1
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -39,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Agent Cat",
+      "Super Inu Force",
       "Edel",
-      "Hood Inu",
+      "Lighter",
+      "Quant",
       "Pudgy Penguins",
-      "Artificial Superintelligence Alliance",
-      "Pons",
-      "Ondo"
+      "NEAR Protocol",
+      "Pons"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T20:42:03.313989+00:00",
+  "timestamp": "2026-10-07T00:16:23.232887+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "FOMC Meeting Minutes",
         "time_utc": "14:00 UTC",
         "impact": "High",
-        "hours_until": 21.3,
+        "hours_until": 17.7,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 21.3,
+    "hours_until_next": 17.7,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
       "Orca",
-      "LayerZero",
+      "Artificial Superintelligence Alliance",
       "ZIG Finance",
-      "Pons",
-      "NEAR Protocol",
-      "Quant"
+      "Pudgy Penguins",
+      "Uniswap",
+      "Ondo",
+      "Pump.fun"
     ],
     "btc_in_trending": false,
     "trend_count": 7

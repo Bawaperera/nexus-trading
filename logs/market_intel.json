@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-08T06:53:07.022142+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-08T14:15:59.779679+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,24 +17,24 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "FOMC Member Waller Speaks",
-        "time_utc": "04:30 UTC",
+        "title": "Prelim UoM Consumer Sentiment",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 1.6,
-        "forecast": "",
-        "previous": ""
+        "hours_until": 23.7,
+        "forecast": "47.5",
+        "previous": "47.8"
       },
       {
-        "title": "Unemployment Claims",
-        "time_utc": "08:30 UTC",
+        "title": "Prelim UoM Inflation Expectations",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 5.6,
-        "forecast": "200K",
-        "previous": "197K"
+        "hours_until": 23.7,
+        "forecast": "",
+        "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 1.6,
+    "hours_until_next": 23.7,
     "event_count_24h": 2
   },
   "social": {
@@ -47,15 +47,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Super Intelligent Identity",
+      "Official Trump",
       "Quantus",
-      "Meteora",
-      "NEAR Protocol",
-      "Bitcoin",
-      "Jupiter",
-      "Pons",
-      "Raydium"
+      "Pearl",
+      "Starknet",
+      "Origin Token",
+      "NEAR Protocol"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

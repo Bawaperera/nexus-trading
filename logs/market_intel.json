@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T20:21:51.294289+00:00",
+  "timestamp": "2026-10-08T00:37:39.318060+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "FOMC Member Waller Speaks",
         "time_utc": "04:30 UTC",
         "impact": "Medium",
-        "hours_until": 12.1,
+        "hours_until": 7.9,
         "forecast": "",
         "previous": ""
       },
@@ -28,13 +28,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 16.1,
+        "hours_until": 11.9,
         "forecast": "200K",
         "previous": "197K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 12.1,
+    "hours_until_next": 7.9,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "inu wif sword",
-      "Pearl",
-      "NEAR Protocol",
-      "Meteora",
-      "Pudgy Penguins",
+      "Official Trump",
       "Quantus",
-      "Official Trump"
+      "Pearl",
+      "Solana",
+      "NEAR Protocol",
+      "Pudgy Penguins",
+      "Hedera"
     ],
     "btc_in_trending": false,
     "trend_count": 7

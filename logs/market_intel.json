@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-08T20:24:07.703552+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-09T00:53:04.263176+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.6,
+        "hours_until": 13.1,
         "forecast": "47.5",
         "previous": "47.8"
       },
@@ -28,13 +28,13 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.6,
+        "hours_until": 13.1,
         "forecast": "",
         "previous": "4.6%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 17.6,
+    "hours_until_next": 13.1,
     "event_count_24h": 2
   },
   "social": {
@@ -49,13 +49,13 @@
     "trending_coins": [
       "Super Intelligent Identity",
       "Official Trump",
-      "Celestia",
-      "NEAR Protocol",
       "Derive",
+      "Backpack",
       "Quantus",
-      "Zcash"
+      "Bitcoin",
+      "Pons"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

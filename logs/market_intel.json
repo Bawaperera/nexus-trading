@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T14:49:39.605085+00:00",
+  "timestamp": "2026-10-09T19:56:39.577906+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Derive",
       "Official Trump",
-      "Backpack",
-      "Pearl",
+      "Derive",
       "Starknet",
-      "Zcash",
-      "Quantus"
+      "Pudgy Penguins",
+      "Backpack",
+      "Quantus",
+      "NEAR Protocol"
     ],
     "btc_in_trending": false,
     "trend_count": 7

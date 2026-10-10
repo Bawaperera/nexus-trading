@@ -1,21 +1,21 @@
 {
-  "scan_time": "2026-10-09T23:46:44.172144+00:00",
-  "btc_price": 82587.17,
+  "scan_time": "2026-10-10T03:34:52.699680+00:00",
+  "btc_price": 82515.12,
   "daily_trend": "bullish",
   "4h_trend": "bearish",
   "weekly_trend": "bullish",
-  "bull_count": 2,
-  "fg_value": 59,
-  "sentiment_score": 0.0769,
+  "bull_count": 3,
+  "fg_value": 64,
+  "sentiment_score": -0.0478,
   "patterns": [
     {
       "name": "rising_wedge",
       "direction": "bearish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 84456.05,
-      "stop_loss": 85190.55,
-      "target": 76753.91,
+      "entry": 84538.97,
+      "stop_loss": 85273.47,
+      "target": 76836.84,
       "risk_reward": 10.49,
       "confidence": 0.62,
       "score": 64,
@@ -37,9 +37,44 @@
         "+16 Pattern confidence 62%",
         "+0 MTF 1/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+15 Volume 4.8\u00d7 average",
+        "+15 Volume 4.2\u00d7 average",
         "+7 RSI 50 (neutral)",
-        "+6 Sentiment +0.08"
+        "+6 Sentiment -0.05"
+      ]
+    },
+    {
+      "name": "bull_flag",
+      "direction": "bullish",
+      "timeframe": "daily",
+      "status": "FORMING",
+      "entry": 87280.85,
+      "stop_loss": 80175.73,
+      "target": 92245.37,
+      "risk_reward": 0.7,
+      "confidence": 0.7,
+      "score": 61,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 18,
+        "mtf": 15,
+        "retest": 0,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 6,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+18 Pattern confidence 70%",
+        "+15 MTF 3/4 timeframes aligned",
+        "+0 Status: FORMING",
+        "+15 Volume 4.2\u00d7 average",
+        "+7 RSI 50 (neutral)",
+        "+6 Sentiment -0.05",
+        "R:R 0.7 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
       ]
     }
   ]

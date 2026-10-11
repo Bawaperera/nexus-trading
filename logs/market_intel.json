@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-10T20:24:50.688151+00:00",
+  "timestamp": "2026-10-11T00:01:20.839944+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Starknet",
-      "Official Trump",
       "SWARM ENGINE",
-      "Pudgy Penguins",
-      "USD.AI",
-      "NEAR Protocol",
-      "Celestia"
+      "Official Trump",
+      "Starknet",
+      "Quantus",
+      "Celestia",
+      "Aerodrome Finance",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": false,
     "trend_count": 7

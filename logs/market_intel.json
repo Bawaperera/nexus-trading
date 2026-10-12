@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T08:27:56.142735+00:00",
+  "timestamp": "2026-10-12T18:24:44.710355+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Wormhole",
       "Bunker Mode",
       "NEAR Protocol",
+      "Wormhole",
       "Starknet",
       "Quantus",
-      "Reserve Rights",
-      "Pudgy Penguins"
+      "Pudgy Penguins",
+      "Pons"
     ],
     "btc_in_trending": false,
     "trend_count": 7

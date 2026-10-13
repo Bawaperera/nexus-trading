@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-12T18:24:44.710355+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-13T01:02:50.968930+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Bunker Mode",
-      "NEAR Protocol",
-      "Wormhole",
+      "Bitcoin",
+      "Pearl",
       "Starknet",
-      "Quantus",
       "Pudgy Penguins",
-      "Pons"
+      "Hyperliquid",
+      "NEAR Protocol"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

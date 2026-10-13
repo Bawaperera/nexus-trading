@@ -1415,3 +1415,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-10-11T22:36:23.881324+00:00,bull_flag,bullish,daily,FORMING,70,4,87177.99,80175.73,90480.6,0.47,False,0.3155,61
 2026-10-11T22:36:24.537795+00:00,ascending_triangle,bullish,daily,FORMING,68,4,86726.82,74768.66,98538.09,0.99,False,0.3155,61
 2026-10-12T01:56:45.768141+00:00,ascending_triangle,bullish,daily,FORMING,68,4,86747.76,74782.68,98564.52,0.99,False,0.3171,69
+2026-10-13T01:02:51.505747+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,65,5,84343.48,85085.07,76641.35,10.39,False,0.0317,57

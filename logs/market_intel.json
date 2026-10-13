@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T08:45:41.016432+00:00",
+  "timestamp": "2026-10-13T16:37:23.012252+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,43 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "Core CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.9,
+        "forecast": "0.2%",
+        "previous": "0.3%"
+      },
+      {
+        "title": "Core CPI y/y",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.9,
+        "forecast": "2.5%",
+        "previous": "2.4%"
+      },
+      {
+        "title": "CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.9,
+        "forecast": "0.6%",
+        "previous": "0.4%"
+      },
+      {
+        "title": "CPI y/y",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.9,
+        "forecast": "3.6%",
+        "previous": "3.4%"
+      }
+    ],
+    "risk_level": "medium",
+    "hours_until_next": 19.9,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -31,12 +64,12 @@
   "trending": {
     "trending_coins": [
       "Wisp",
-      "Identity.md 6900",
-      "Bunker Mode",
-      "Crawlerpad",
-      "Claudia",
       "Pearl",
-      "Quantus"
+      "Zylo Ecosystem",
+      "Crawlerpad",
+      "Doge Pepe",
+      "NEAR Protocol",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": false,
     "trend_count": 7

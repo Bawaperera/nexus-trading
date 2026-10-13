@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-13T01:02:50.968930+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-13T08:45:41.016432+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Wisp",
+      "Identity.md 6900",
       "Bunker Mode",
-      "Bitcoin",
+      "Crawlerpad",
+      "Claudia",
       "Pearl",
-      "Starknet",
-      "Pudgy Penguins",
-      "Hyperliquid",
-      "NEAR Protocol"
+      "Quantus"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

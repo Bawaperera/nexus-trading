@@ -1,11 +1,117 @@
 {
-  "scan_time": "2026-10-14T00:46:33.706389+00:00",
-  "btc_price": 83568.26,
+  "scan_time": "2026-10-14T05:39:33.631885+00:00",
+  "btc_price": 83442.7,
   "daily_trend": "bullish",
   "4h_trend": "bullish",
   "weekly_trend": "bullish",
   "bull_count": 4,
   "fg_value": 62,
-  "sentiment_score": 0.0023,
-  "patterns": []
+  "sentiment_score": 0.1093,
+  "patterns": [
+    {
+      "name": "double_bottom",
+      "direction": "bullish",
+      "timeframe": "4h",
+      "status": "FORMING",
+      "entry": 84261.63,
+      "stop_loss": 80245.18,
+      "target": 88207.34,
+      "risk_reward": 0.98,
+      "confidence": 0.75,
+      "score": 71,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 19,
+        "mtf": 20,
+        "retest": 0,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+19 Pattern confidence 75%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+0 Status: FORMING",
+        "+15 Volume 2.7\u00d7 average",
+        "+7 RSI 53 (neutral)",
+        "+10 Sentiment +0.11",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    },
+    {
+      "name": "ascending_triangle",
+      "direction": "bullish",
+      "timeframe": "daily",
+      "status": "FORMING",
+      "entry": 86747.76,
+      "stop_loss": 74782.68,
+      "target": 98564.52,
+      "risk_reward": 0.99,
+      "confidence": 0.65,
+      "score": 68,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 20,
+        "retest": 0,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+0 Status: FORMING",
+        "+15 Volume 2.7\u00d7 average",
+        "+7 RSI 53 (neutral)",
+        "+10 Sentiment +0.11",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    },
+    {
+      "name": "double_bottom",
+      "direction": "bullish",
+      "timeframe": "daily",
+      "status": "FORMING",
+      "entry": 87237.4,
+      "stop_loss": 80167.61,
+      "target": 94158.87,
+      "risk_reward": 0.98,
+      "confidence": 0.6,
+      "score": 67,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 15,
+        "mtf": 20,
+        "retest": 0,
+        "volume": 15,
+        "rsi": 7,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+15 Pattern confidence 60%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+0 Status: FORMING",
+        "+15 Volume 2.7\u00d7 average",
+        "+7 RSI 53 (neutral)",
+        "+10 Sentiment +0.11",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    }
+  ]
 }

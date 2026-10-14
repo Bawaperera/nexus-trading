@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-14T10:55:22.629145+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-14T15:39:48.399591+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,41 +17,57 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Core CPI m/m",
+        "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 1.6,
-        "forecast": "0.2%",
-        "previous": "0.3%"
+        "hours_until": 20.8,
+        "forecast": "0.3%",
+        "previous": "0.2%"
       },
       {
-        "title": "Core CPI y/y",
+        "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 1.6,
-        "forecast": "2.5%",
-        "previous": "2.4%"
+        "hours_until": 20.8,
+        "forecast": "0.6%",
+        "previous": "1.4%"
       },
       {
-        "title": "CPI m/m",
+        "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 1.6,
+        "hours_until": 20.8,
         "forecast": "0.6%",
         "previous": "0.4%"
       },
       {
-        "title": "CPI y/y",
+        "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 1.6,
-        "forecast": "3.6%",
-        "previous": "3.4%"
+        "hours_until": 20.8,
+        "forecast": "0.3%",
+        "previous": "1.2%"
+      },
+      {
+        "title": "Philly Fed Manufacturing Index",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 20.8,
+        "forecast": "28.2",
+        "previous": "37.8"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 20.8,
+        "forecast": "199K",
+        "previous": "197K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 1.6,
-    "event_count_24h": 4
+    "hours_until_next": 20.8,
+    "event_count_24h": 6
   },
   "social": {
     "sentiment": 0.0,
@@ -63,15 +79,15 @@
   },
   "trending": {
     "trending_coins": [
+      "astronaut",
       "Zylo Ecosystem",
       "Pearl",
-      "Bitway",
-      "Derive",
+      "Bitcoin",
+      "Quantus",
       "Pudgy Penguins",
-      "Walrus",
-      "Arbitrum"
+      "Bitway"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

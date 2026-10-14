@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T21:40:18.398862+00:00",
+  "timestamp": "2026-10-14T00:46:33.700274+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.8,
+        "hours_until": 11.7,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.8,
+        "hours_until": 11.7,
         "forecast": "2.5%",
         "previous": "2.4%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.8,
+        "hours_until": 11.7,
         "forecast": "0.6%",
         "previous": "0.4%"
       },
@@ -44,13 +44,13 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 14.8,
+        "hours_until": 11.7,
         "forecast": "3.6%",
         "previous": "3.4%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 14.8,
+    "hours_until_next": 11.7,
     "event_count_24h": 4
   },
   "social": {
@@ -63,13 +63,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Wisp",
       "Doge Pepe",
-      "Zylo Ecosystem",
       "Crawlerpad",
-      "Basic Attention",
-      "Pearl",
-      "Wormhole"
+      "Zylo Ecosystem",
+      "Quant",
+      "Starknet",
+      "Ethena",
+      "Optimism"
     ],
     "btc_in_trending": false,
     "trend_count": 7

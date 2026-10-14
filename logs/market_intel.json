@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-14T05:39:32.058550+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-14T10:55:22.629145+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 6.8,
+        "hours_until": 1.6,
         "forecast": "0.2%",
         "previous": "0.3%"
       },
@@ -28,7 +28,7 @@
         "title": "Core CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 6.8,
+        "hours_until": 1.6,
         "forecast": "2.5%",
         "previous": "2.4%"
       },
@@ -36,7 +36,7 @@
         "title": "CPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 6.8,
+        "hours_until": 1.6,
         "forecast": "0.6%",
         "previous": "0.4%"
       },
@@ -44,13 +44,13 @@
         "title": "CPI y/y",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 6.8,
+        "hours_until": 1.6,
         "forecast": "3.6%",
         "previous": "3.4%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 6.8,
+    "hours_until_next": 1.6,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Zylo Ecosystem",
       "Pearl",
       "Bitway",
-      "Pons",
-      "Sui",
-      "Quantus",
-      "Doge Pepe",
-      "Bitcoin"
+      "Derive",
+      "Pudgy Penguins",
+      "Walrus",
+      "Arbitrum"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

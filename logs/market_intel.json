@@ -1,9 +1,11 @@
 {
-  "timestamp": "2026-10-15T06:47:11.820595+00:00",
+  "timestamp": "2026-10-15T12:20:42.560228+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [],
+  "warnings": [
+    "\u26a0\ufe0f High-impact macro event in 0.2h \u2014 auto-trade confidence reduced"
+  ],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -20,7 +22,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -28,7 +30,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "0.6%",
         "previous": "1.4%"
       },
@@ -36,7 +38,7 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "0.6%",
         "previous": "0.4%"
       },
@@ -44,7 +46,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "0.3%",
         "previous": "1.2%"
       },
@@ -52,7 +54,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "28.2",
         "previous": "37.8"
       },
@@ -60,13 +62,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 5.7,
+        "hours_until": 0.2,
         "forecast": "199K",
         "previous": "197K"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 5.7,
+    "risk_level": "high",
+    "hours_until_next": 0.2,
     "event_count_24h": 7
   },
   "social": {
@@ -79,13 +81,13 @@
   },
   "trending": {
     "trending_coins": [
-      "NEAR Protocol",
+      "Zerebro",
+      "Starknet",
       "Bitcoin",
-      "Puffer",
-      "Pudgy Penguins",
       "ZKsync",
-      "Zcash",
-      "Bitway"
+      "Pearl",
+      "Aerodrome Finance",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": true,
     "trend_count": 7

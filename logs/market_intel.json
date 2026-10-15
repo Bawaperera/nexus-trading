@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-15T01:08:38.474963+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-15T06:47:11.820595+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -28,7 +28,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "0.6%",
         "previous": "1.4%"
       },
@@ -36,7 +36,7 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "0.6%",
         "previous": "0.4%"
       },
@@ -44,7 +44,7 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "0.3%",
         "previous": "1.2%"
       },
@@ -52,7 +52,7 @@
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "28.2",
         "previous": "37.8"
       },
@@ -60,14 +60,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.4,
+        "hours_until": 5.7,
         "forecast": "199K",
         "previous": "197K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 11.4,
-    "event_count_24h": 6
+    "hours_until_next": 5.7,
+    "event_count_24h": 7
   },
   "social": {
     "sentiment": 0.0,
@@ -79,15 +79,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Pearl",
-      "Bitway",
-      "Walrus",
-      "Zcash",
-      "Quantus",
       "NEAR Protocol",
-      "Monad"
+      "Bitcoin",
+      "Puffer",
+      "Pudgy Penguins",
+      "ZKsync",
+      "Zcash",
+      "Bitway"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

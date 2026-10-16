@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-15T23:28:26.649556+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-16T02:27:32.198255+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "Fed Chairman Warsh Speaks",
         "time_utc": "23:30 UTC",
         "impact": "High",
-        "hours_until": 4.0,
+        "hours_until": 1.0,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 4.0,
+    "hours_until_next": 1.0,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Altai the Tiger",
-      "Sword Inu",
-      "IGNITION",
       "streamoors",
-      "NEAR Protocol",
+      "IGNITION",
       "Injective",
-      "Pearl"
+      "Pearl",
+      "Quantus",
+      "ZKsync",
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

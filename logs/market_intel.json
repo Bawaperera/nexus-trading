@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-16T20:19:32.973123+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-16T23:10:26.738988+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Dacity Coin",
-      "Pudgy Penguins",
-      "Bitcoin",
       "Pearl",
       "Quantus",
-      "Injective",
-      "Starknet"
+      "Starknet",
+      "NEAR Protocol",
+      "Quant",
+      "Injective"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

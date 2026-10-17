@@ -1434,3 +1434,4 @@ timestamp,pattern,direction,timeframe,status,score,confluences,entry,stop_loss,t
 2026-10-17T02:19:55.072038+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,72,5,84009.03,84790.22,76306.9,9.86,False,0.1385,55
 2026-10-17T02:19:55.556371+00:00,double_top,bearish,daily,BREAKOUT,60,5,80837.76,87550.24,74281.52,0.98,False,0.1385,55
 2026-10-17T07:22:09.691810+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,72,5,84001.89,84783.08,76299.76,9.86,False,0.0452,55
+2026-10-17T11:53:31.174003+00:00,rising_wedge,bearish,daily,RETEST_CONFIRMED,68,4,84001.89,84783.08,76299.76,9.86,False,-0.3199,55

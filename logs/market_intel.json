@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T11:53:30.656243+00:00",
+  "timestamp": "2026-10-17T14:43:38.177003+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Celestia",
-      "Starknet",
-      "NEAR Protocol",
-      "Bitcoin",
-      "Pearl",
+      "Injective",
+      "Pudgy Penguins",
       "Quantus",
-      "Quant"
+      "Bitcoin",
+      "Celestia",
+      "Sui",
+      "Derive"
     ],
     "btc_in_trending": true,
     "trend_count": 7

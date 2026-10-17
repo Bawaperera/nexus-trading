@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T17:40:02.136300+00:00",
+  "timestamp": "2026-10-17T19:54:31.530942+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -33,10 +33,10 @@
       "Quack AI",
       "NEAR Protocol",
       "Pudgy Penguins",
-      "Quant",
       "Pearl",
-      "Zcash",
-      "Celestia"
+      "Quant",
+      "Quantus",
+      "Sui"
     ],
     "btc_in_trending": false,
     "trend_count": 7

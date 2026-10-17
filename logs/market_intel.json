@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T19:54:31.530942+00:00",
+  "timestamp": "2026-10-17T21:54:31.388364+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Quack AI",
-      "NEAR Protocol",
-      "Pudgy Penguins",
       "Pearl",
-      "Quant",
+      "Ondo",
+      "Starknet",
       "Quantus",
-      "Sui"
+      "Aerodrome Finance",
+      "Pudgy Penguins",
+      "Akash Network"
     ],
     "btc_in_trending": false,
     "trend_count": 7

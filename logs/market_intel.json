@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-19T22:42:40.400683+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-20T01:23:51.775500+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "startupSI",
       "Quantus",
-      "Bitcoin",
-      "Pearl",
       "Pudgy Penguins",
-      "Ethereum",
-      "Hedera"
+      "Venice Token",
+      "NEAR Protocol",
+      "Bittensor",
+      "Backpack"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

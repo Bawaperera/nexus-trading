@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T06:55:29.805182+00:00",
+  "timestamp": "2026-10-20T12:26:54.281531+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Quantus",
+      "Pearl",
+      "Celestia",
+      "Pudgy Penguins",
       "Collector Crypt",
       "Bitcoin",
-      "Quantus",
-      "PHALA",
-      "Pearl",
-      "Pump.fun",
-      "Arbitrum"
+      "Aave"
     ],
     "btc_in_trending": true,
     "trend_count": 7

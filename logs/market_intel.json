@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-21T00:16:29.081312+00:00",
+  "timestamp": "2026-10-21T05:35:12.949228+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Zcash",
-      "NEAR Protocol",
       "Pearl",
       "Pudgy Penguins",
-      "Aerodrome Finance",
+      "Collector Crypt",
+      "NEAR Protocol",
       "Quantus",
-      "Sui"
+      "Zcash",
+      "Grass"
     ],
     "btc_in_trending": false,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-21T15:46:32.846658+00:00",
+  "timestamp": "2026-10-21T19:49:04.394752+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 20.7,
+        "hours_until": 16.7,
         "forecast": "200K",
         "previous": "199K"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 20.7,
+    "hours_until_next": 16.7,
     "event_count_24h": 1
   },
   "social": {
@@ -40,12 +40,12 @@
   "trending": {
     "trending_coins": [
       "Universal High Income",
-      "Pudgy Penguins",
       "Aerodrome Finance",
-      "Zcash",
+      "Lighter",
+      "Pudgy Penguins",
       "Pearl",
-      "Axis Robotics",
-      "Venice Token"
+      "NEAR Protocol",
+      "Axis Robotics"
     ],
     "btc_in_trending": false,
     "trend_count": 7

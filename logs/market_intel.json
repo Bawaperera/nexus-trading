@@ -1,20 +1,18 @@
 {
-  "timestamp": "2026-10-22T21:01:45.247772+00:00",
-  "composite_signal": -0.1,
-  "signal_label": "Bearish",
-  "onchain_score_adj": -2,
-  "warnings": [
-    "\u26a0\ufe0f Crowded longs (2.04x) \u2014 long squeeze possible"
-  ],
+  "timestamp": "2026-10-23T00:16:54.342638+00:00",
+  "composite_signal": 0.02,
+  "signal_label": "Neutral",
+  "onchain_score_adj": 0,
+  "warnings": [],
   "derivatives": {
-    "funding_rate": 1.265e-05,
+    "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
-    "open_interest_btc": 95480.51,
-    "oi_change_pct": -0.002,
-    "long_short_ratio": 2.0441,
-    "long_pct": 67.15,
-    "short_pct": 32.85,
-    "top_trader_ls": 1.4852
+    "open_interest_btc": 0.0,
+    "oi_change_pct": 0.0,
+    "long_short_ratio": 1.0,
+    "long_pct": 50.0,
+    "short_pct": 50.0,
+    "top_trader_ls": 1.0
   },
   "macro": {
     "upcoming_events": [
@@ -22,7 +20,7 @@
         "title": "Flash Manufacturing PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 16.7,
+        "hours_until": 13.5,
         "forecast": "55.4",
         "previous": "57.0"
       },
@@ -30,7 +28,7 @@
         "title": "Flash Services PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 16.7,
+        "hours_until": 13.5,
         "forecast": "57.9",
         "previous": "58.7"
       },
@@ -38,7 +36,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.0,
+        "hours_until": 13.7,
         "forecast": "46.3",
         "previous": "46.3"
       },
@@ -46,13 +44,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 17.0,
+        "hours_until": 13.7,
         "forecast": "",
         "previous": "4.7%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 16.7,
+    "hours_until_next": 13.5,
     "event_count_24h": 4
   },
   "social": {
@@ -65,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Dacity Coin",
       "Universal High Income",
+      "Dacity Coin",
       "OnlyAgent",
-      "NEAR Protocol",
+      "Bitcoin",
+      "Pudgy Penguins",
       "Pearl",
-      "Aerodrome Finance",
-      "Uniswap"
+      "NEAR Protocol"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-23T19:40:40.133540+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-23T22:46:43.756338+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "Irys",
-      "Universal High Income",
-      "Dacity Coin",
-      "Pudgy Penguins",
       "Pearl",
-      "Pepe",
-      "Aerodrome Finance"
+      "Bitcoin",
+      "Pudgy Penguins",
+      "Aave",
+      "Universal High Income",
+      "Canton"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-23T15:33:32.778023+00:00",
+  "timestamp": "2026-10-23T19:40:40.133540+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Irys",
       "Universal High Income",
       "Dacity Coin",
-      "Pearl",
-      "Quantus",
       "Pudgy Penguins",
-      "Irys",
-      "Monero"
+      "Pearl",
+      "Pepe",
+      "Aerodrome Finance"
     ],
     "btc_in_trending": false,
     "trend_count": 7

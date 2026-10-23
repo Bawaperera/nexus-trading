@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-23T05:36:29.290881+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-23T10:46:10.764560+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,7 +20,7 @@
         "title": "Flash Manufacturing PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 8.1,
+        "hours_until": 3.0,
         "forecast": "55.4",
         "previous": "57.0"
       },
@@ -28,7 +28,7 @@
         "title": "Flash Services PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 8.1,
+        "hours_until": 3.0,
         "forecast": "57.9",
         "previous": "58.7"
       },
@@ -36,7 +36,7 @@
         "title": "Revised UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 8.4,
+        "hours_until": 3.2,
         "forecast": "46.3",
         "previous": "46.3"
       },
@@ -44,13 +44,13 @@
         "title": "Revised UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 8.4,
+        "hours_until": 3.2,
         "forecast": "",
         "previous": "4.7%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 8.1,
+    "hours_until_next": 3.0,
     "event_count_24h": 4
   },
   "social": {
@@ -63,15 +63,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
+      "Universal High Income",
+      "Dacity Coin",
+      "Irys",
+      "Pepe",
       "Pudgy Penguins",
-      "Zcash",
-      "Axis Robotics",
-      "Pearl",
-      "Starknet",
-      "Aerodrome Finance"
+      "Aerodrome Finance",
+      "Sui"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

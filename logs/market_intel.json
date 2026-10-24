@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T11:44:59.793215+00:00",
+  "timestamp": "2026-10-24T15:07:36.218572+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,10 +31,10 @@
   "trending": {
     "trending_coins": [
       "Universal High Income",
+      "Hyperliquid",
       "Dacity Coin",
       "Binance Super CZ",
-      "Orderly",
-      "Aerodrome Finance",
+      "NEAR Protocol",
       "Bitcoin",
       "Pudgy Penguins"
     ],

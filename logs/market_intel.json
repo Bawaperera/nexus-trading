@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T06:42:31.492035+00:00",
+  "timestamp": "2026-10-24T11:44:59.793215+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Axis Robotics",
-      "Irys",
-      "Pudgy Penguins",
-      "Pearl",
+      "Universal High Income",
+      "Dacity Coin",
+      "Binance Super CZ",
+      "Orderly",
+      "Aerodrome Finance",
       "Bitcoin",
-      "Bubblemaps",
-      "Moonbirds"
+      "Pudgy Penguins"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T16:56:56.269487+00:00",
+  "timestamp": "2026-10-25T19:26:05.141876+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "evmzone",
-      "Pudgy Penguins",
-      "Pearl",
       "Bitcoin",
+      "Pudgy Penguins",
+      "NEAR Protocol",
       "Solana",
-      "Quantus",
-      "NEAR Protocol"
+      "Pearl",
+      "Render"
     ],
     "btc_in_trending": true,
     "trend_count": 7

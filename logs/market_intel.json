@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26T05:38:46.067606+00:00",
+  "timestamp": "2026-10-26T11:57:59.791536+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "evmzone",
+      "Big Titty Coin",
+      "Pudgy Penguins",
+      "Pepina",
+      "Quant",
       "Bitcoin",
       "Pearl",
-      "Quant",
-      "Ethena",
-      "NEAR Protocol",
-      "Hyperliquid"
+      "Axis Robotics"
     ],
     "btc_in_trending": true,
     "trend_count": 7

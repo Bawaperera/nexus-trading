@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-27T13:49:15.661417+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-27T19:07:53.716397+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,17 +17,33 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "CB Consumer Confidence",
-        "time_utc": "10:00 UTC",
-        "impact": "Medium",
-        "hours_until": 0.2,
-        "forecast": "81.2",
-        "previous": "81.9"
+        "title": "Federal Funds Rate",
+        "time_utc": "14:00 UTC",
+        "impact": "High",
+        "hours_until": 22.9,
+        "forecast": "4.00%",
+        "previous": "4.00%"
+      },
+      {
+        "title": "FOMC Statement",
+        "time_utc": "14:00 UTC",
+        "impact": "High",
+        "hours_until": 22.9,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Press Conference",
+        "time_utc": "14:30 UTC",
+        "impact": "High",
+        "hours_until": 23.4,
+        "forecast": "",
+        "previous": ""
       }
     ],
-    "risk_level": "low",
-    "hours_until_next": 0.2,
-    "event_count_24h": 1
+    "risk_level": "medium",
+    "hours_until_next": 22.9,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -39,15 +55,15 @@
   },
   "trending": {
     "trending_coins": [
+      "SqueekChain",
       "Infinity Ground",
-      "Bitcoin",
-      "Pearl",
-      "Quantus",
-      "Zcash",
+      "Quant",
+      "Solana",
+      "Derive",
       "Pudgy Penguins",
-      "Solana"
+      "Pearl"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

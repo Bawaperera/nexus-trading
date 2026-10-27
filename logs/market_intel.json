@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-27T07:06:35.847983+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-10-27T13:49:15.661417+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "CB Consumer Confidence",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 6.9,
+        "hours_until": 0.2,
         "forecast": "81.2",
         "previous": "81.9"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 6.9,
+    "hours_until_next": 0.2,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Quack AI",
       "Infinity Ground",
+      "Bitcoin",
       "Pearl",
-      "Quant",
-      "Ondo",
-      "Osmosis",
-      "NEAR Protocol"
+      "Quantus",
+      "Zcash",
+      "Pudgy Penguins",
+      "Solana"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

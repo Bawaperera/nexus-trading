@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-28T16:55:22.648564+00:00",
+  "timestamp": "2026-10-28T21:28:10.398569+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,34 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Federal Funds Rate",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "4.00%",
-        "previous": "4.00%"
-      },
-      {
-        "title": "FOMC Statement",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 1.1,
-        "forecast": "",
-        "previous": ""
-      },
-      {
-        "title": "FOMC Press Conference",
-        "time_utc": "14:30 UTC",
-        "impact": "High",
-        "hours_until": 1.6,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.6,
+        "hours_until": 15.0,
         "forecast": "3.2%",
         "previous": "1.5%"
       },
@@ -52,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.6,
+        "hours_until": 15.0,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -60,14 +36,22 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 19.6,
+        "hours_until": 15.0,
         "forecast": "3.2%",
         "previous": "6.2%"
+      },
+      {
+        "title": "Unemployment Claims",
+        "time_utc": "08:30 UTC",
+        "impact": "Medium",
+        "hours_until": 15.0,
+        "forecast": "198K",
+        "previous": "194K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 1.1,
-    "event_count_24h": 7
+    "hours_until_next": 15.0,
+    "event_count_24h": 4
   },
   "social": {
     "sentiment": 0.0,
@@ -79,13 +63,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pons",
-      "Bitcoin",
-      "USD.AI",
-      "Canton",
-      "Pudgy Penguins",
       "Pearl",
-      "Pepe"
+      "Bitcoin",
+      "Pons",
+      "Pudgy Penguins",
+      "Canton",
+      "Kinetiq",
+      "Jupiter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

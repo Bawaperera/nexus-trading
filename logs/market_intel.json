@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-29T14:50:06.741497+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-29T19:59:14.247715+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "Employment Cost Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 21.7,
+        "hours_until": 16.5,
         "forecast": "0.8%",
         "previous": "0.9%"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 21.7,
+    "hours_until_next": 16.5,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Super Pepe",
       "Hyperliquid",
-      "Lighter",
       "Kinetiq",
-      "Pudgy Penguins",
-      "Bitcoin",
-      "Axis Robotics",
-      "Derive"
+      "Zcash",
+      "Pepe",
+      "Quantus",
+      "Pudgy Penguins"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

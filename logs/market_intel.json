@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T01:26:40.727914+00:00",
+  "timestamp": "2026-10-29T07:51:56.015956+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Advance GDP q/q",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.1,
+        "hours_until": 4.6,
         "forecast": "3.2%",
         "previous": "1.5%"
       },
@@ -28,7 +28,7 @@
         "title": "Core PCE Price Index m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 11.1,
+        "hours_until": 4.6,
         "forecast": "0.3%",
         "previous": "0.2%"
       },
@@ -36,7 +36,7 @@
         "title": "Advance GDP Price Index q/q",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.1,
+        "hours_until": 4.6,
         "forecast": "3.2%",
         "previous": "6.2%"
       },
@@ -44,13 +44,13 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 11.1,
+        "hours_until": 4.6,
         "forecast": "198K",
         "previous": "194K"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 11.1,
+    "hours_until_next": 4.6,
     "event_count_24h": 4
   },
   "social": {
@@ -63,13 +63,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pepe",
-      "Pudgy Penguins",
-      "Pearl",
       "Bitcoin",
-      "Kinetiq",
-      "XRP",
-      "Pump.fun"
+      "Pudgy Penguins",
+      "Aerodrome Finance",
+      "Lighter",
+      "Canton",
+      "Pearl",
+      "Solana"
     ],
     "btc_in_trending": true,
     "trend_count": 7

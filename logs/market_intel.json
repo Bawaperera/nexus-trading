@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T10:38:14.232057+00:00",
+  "timestamp": "2026-10-30T16:54:14.192767+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,19 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Employment Cost Index q/q",
-        "time_utc": "08:30 UTC",
-        "impact": "Medium",
-        "hours_until": 1.9,
-        "forecast": "0.8%",
-        "previous": "0.9%"
-      }
-    ],
-    "risk_level": "low",
-    "hours_until_next": 1.9,
-    "event_count_24h": 1
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -39,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Hyperliquid",
-      "Beam",
-      "BNB",
       "Bitcoin",
-      "Pepe",
-      "Aave",
-      "Uniswap"
+      "Hyperliquid",
+      "BNB",
+      "Kinetiq",
+      "NEAR Protocol",
+      "Pearl",
+      "Pump.fun"
     ],
     "btc_in_trending": true,
     "trend_count": 7

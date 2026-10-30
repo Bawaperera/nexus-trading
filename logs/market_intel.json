@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T16:54:14.192767+00:00",
+  "timestamp": "2026-10-30T21:16:00.432961+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Super Pepe",
       "Bitcoin",
-      "Hyperliquid",
       "BNB",
-      "Kinetiq",
-      "NEAR Protocol",
-      "Pearl",
-      "Pump.fun"
+      "Lighter",
+      "Solana",
+      "Pudgy Penguins",
+      "Sui"
     ],
     "btc_in_trending": true,
     "trend_count": 7

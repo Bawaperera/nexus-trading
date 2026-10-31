@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-31T18:57:10.236765+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-10-31T22:09:28.566805+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -32,13 +32,13 @@
     "trending_coins": [
       "Super Pepe",
       "Super Inu",
+      "Pearl",
       "Canton",
-      "Aerodrome Finance",
+      "Lighter",
       "Pudgy Penguins",
-      "Hyperliquid",
-      "Bitcoin"
+      "Kinetiq"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

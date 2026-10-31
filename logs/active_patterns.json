@@ -1,12 +1,12 @@
 {
-  "scan_time": "2026-10-30T21:16:02.057242+00:00",
-  "btc_price": 76579.62,
+  "scan_time": "2026-10-31T01:17:19.312296+00:00",
+  "btc_price": 77416.26,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "neutral",
   "bull_count": 0,
   "fg_value": 30,
-  "sentiment_score": -0.529,
+  "sentiment_score": -0.4346,
   "patterns": [
     {
       "name": "double_top",
@@ -18,7 +18,7 @@
       "target": 76339.73,
       "risk_reward": 4.57,
       "confidence": 0.75,
-      "score": 72,
+      "score": 67,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -27,8 +27,8 @@
         "pattern": 19,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
-        "rsi": 0,
+        "volume": 0,
+        "rsi": 3,
         "sentiment": 10,
         "onchain": 0,
         "memory": 0
@@ -37,9 +37,9 @@
         "+19 Pattern confidence 75%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.9\u00d7 average",
-        "+0 RSI 33 (risky)",
-        "+10 Sentiment -0.53"
+        "+0 Volume 1.0\u00d7 average",
+        "+3 RSI 36 (neutral)",
+        "+10 Sentiment -0.43"
       ]
     },
     {
@@ -47,12 +47,12 @@
       "direction": "bearish",
       "timeframe": "daily",
       "status": "RETEST_CONFIRMED",
-      "entry": 79594.3,
-      "stop_loss": 80526.56,
-      "target": 71794.6,
-      "risk_reward": 8.37,
+      "entry": 79339.4,
+      "stop_loss": 80271.66,
+      "target": 71397.97,
+      "risk_reward": 8.52,
       "confidence": 0.65,
-      "score": 69,
+      "score": 64,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -61,8 +61,8 @@
         "pattern": 16,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
-        "rsi": 0,
+        "volume": 0,
+        "rsi": 3,
         "sentiment": 10,
         "onchain": 0,
         "memory": 0
@@ -71,9 +71,9 @@
         "+16 Pattern confidence 65%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.9\u00d7 average",
-        "+0 RSI 33 (risky)",
-        "+10 Sentiment -0.53"
+        "+0 Volume 1.0\u00d7 average",
+        "+3 RSI 36 (neutral)",
+        "+10 Sentiment -0.43"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "target": 72162.6,
       "risk_reward": 8.09,
       "confidence": 0.6,
-      "score": 68,
+      "score": 63,
       "n_confluences": 4,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
@@ -95,8 +95,8 @@
         "pattern": 15,
         "mtf": 15,
         "retest": 20,
-        "volume": 8,
-        "rsi": 0,
+        "volume": 0,
+        "rsi": 3,
         "sentiment": 10,
         "onchain": 0,
         "memory": 0
@@ -105,9 +105,9 @@
         "+15 Pattern confidence 60%",
         "+15 MTF 3/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.9\u00d7 average",
-        "+0 RSI 33 (risky)",
-        "+10 Sentiment -0.53"
+        "+0 Volume 1.0\u00d7 average",
+        "+3 RSI 36 (neutral)",
+        "+10 Sentiment -0.43"
       ]
     }
   ]

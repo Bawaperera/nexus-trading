@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-31T07:48:08.549465+00:00",
+  "timestamp": "2026-10-31T14:06:18.703276+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Infinity Ground",
-      "Hyperliquid",
-      "Quack AI",
-      "Pudgy Penguins",
+      "Super Inu",
+      "Super Pepe",
       "Bitcoin",
-      "Canton",
-      "Sui"
+      "Hyperliquid",
+      "Lisk",
+      "Pudgy Penguins",
+      "Lighter"
     ],
     "btc_in_trending": true,
     "trend_count": 7

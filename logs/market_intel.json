@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-01T01:44:00.958780+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-11-01T08:28:46.884427+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Super Pepe",
-      "Pepe",
-      "Solana",
-      "Pearl",
+      "Bitcoin",
+      "Beam",
       "Lighter",
-      "Venice Token",
-      "Hyperliquid"
+      "Pudgy Penguins",
+      "Hyperliquid",
+      "Monad",
+      "Pearl"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

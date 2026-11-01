@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T08:28:46.884427+00:00",
+  "timestamp": "2026-11-01T15:38:09.108745+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,19 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "ISM Manufacturing PMI",
+        "time_utc": "10:00 UTC",
+        "impact": "Medium",
+        "hours_until": 23.4,
+        "forecast": "54.7",
+        "previous": "54.5"
+      }
+    ],
+    "risk_level": "low",
+    "hours_until_next": 23.4,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -30,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
-      "Beam",
-      "Lighter",
-      "Pudgy Penguins",
+      "Super Inu",
       "Hyperliquid",
-      "Monad",
-      "Pearl"
+      "Lighter",
+      "Bitcoin",
+      "Kinetiq",
+      "Pearl",
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

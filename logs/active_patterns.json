@@ -22,7 +22,7 @@
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 19,
         "mtf": 8,
@@ -56,7 +56,7 @@
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 16,
         "mtf": 8,
@@ -90,7 +90,7 @@
       "n_confluences": 5,
       "tradeable_signal": true,
       "tradeable_autotrade": true,
-      "already_traded": false,
+      "already_traded": true,
       "component_scores": {
         "pattern": 15,
         "mtf": 8,
@@ -110,5 +110,6 @@
         "+6 Sentiment -0.09"
       ]
     }
-  ]
+  ],
+  "last_entry_check": "2026-11-01T00:07:42.372469+00:00"
 }

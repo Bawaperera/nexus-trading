@@ -1,13 +1,81 @@
 {
-  "scan_time": "2026-11-01T15:38:09.730561+00:00",
-  "btc_price": 78000.37,
+  "scan_time": "2026-11-01T20:00:25.697637+00:00",
+  "btc_price": 77693.88,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "neutral",
-  "bull_count": 1,
+  "bull_count": 0,
   "fg_value": 34,
-  "sentiment_score": -0.0358,
+  "sentiment_score": -0.1056,
   "patterns": [
+    {
+      "name": "double_top",
+      "direction": "bearish",
+      "timeframe": "4h",
+      "status": "RETEST_CONFIRMED",
+      "entry": 79161.12,
+      "stop_loss": 79372.89,
+      "target": 76370.8,
+      "risk_reward": 13.18,
+      "confidence": 0.75,
+      "score": 64,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 19,
+        "mtf": 8,
+        "retest": 20,
+        "volume": 4,
+        "rsi": 3,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+19 Pattern confidence 75%",
+        "+8 MTF 2/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+4 Volume 1.2\u00d7 average",
+        "+3 RSI 37 (neutral)",
+        "+10 Sentiment -0.11"
+      ]
+    },
+    {
+      "name": "descending_triangle",
+      "direction": "bearish",
+      "timeframe": "daily",
+      "status": "RETEST_CONFIRMED",
+      "entry": 79240.84,
+      "stop_loss": 80173.36,
+      "target": 71200.82,
+      "risk_reward": 8.62,
+      "confidence": 0.65,
+      "score": 61,
+      "n_confluences": 5,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 8,
+        "retest": 20,
+        "volume": 4,
+        "rsi": 3,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+8 MTF 2/4 timeframes aligned",
+        "+20 Status: RETEST_CONFIRMED",
+        "+4 Volume 1.2\u00d7 average",
+        "+3 RSI 37 (neutral)",
+        "+10 Sentiment -0.11"
+      ]
+    },
     {
       "name": "double_top",
       "direction": "bearish",
@@ -27,9 +95,9 @@
         "pattern": 15,
         "mtf": 8,
         "retest": 20,
-        "volume": 8,
+        "volume": 4,
         "rsi": 3,
-        "sentiment": 6,
+        "sentiment": 10,
         "onchain": 0,
         "memory": 0
       },
@@ -37,9 +105,9 @@
         "+15 Pattern confidence 60%",
         "+8 MTF 2/4 timeframes aligned",
         "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.5\u00d7 average",
-        "+3 RSI 38 (neutral)",
-        "+6 Sentiment -0.04"
+        "+4 Volume 1.2\u00d7 average",
+        "+3 RSI 37 (neutral)",
+        "+10 Sentiment -0.11"
       ]
     }
   ]

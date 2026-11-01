@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-31T22:09:28.566805+00:00",
+  "timestamp": "2026-11-01T01:44:00.958780+00:00",
   "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -31,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Super Pepe",
-      "Super Inu",
+      "Pepe",
+      "Solana",
       "Pearl",
-      "Canton",
       "Lighter",
-      "Pudgy Penguins",
-      "Kinetiq"
+      "Venice Token",
+      "Hyperliquid"
     ],
     "btc_in_trending": false,
     "trend_count": 7

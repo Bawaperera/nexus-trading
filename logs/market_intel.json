@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-03T18:52:57.864702+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-11-03T23:49:29.703255+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -20,13 +20,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 20.1,
+        "hours_until": 15.2,
         "forecast": "54.8",
         "previous": "54.9"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 20.1,
+    "hours_until_next": 15.2,
     "event_count_24h": 1
   },
   "social": {
@@ -39,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
-      "SNOWMOON",
-      "Super Pepe",
       "AudaCity",
-      "Pearl",
-      "Pudgy Penguins",
+      "Bitcoin",
+      "NEAR Protocol",
+      "Aerodrome Finance",
+      "Lighter",
       "Kinetiq",
-      "NEAR Protocol"
+      "Monad"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

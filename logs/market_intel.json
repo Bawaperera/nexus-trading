@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-03T11:30:34.839044+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-11-03T18:52:57.864702+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -17,25 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "JOLTS Job Openings",
+        "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 3.5,
-        "forecast": "7.15M",
-        "previous": "7.08M"
-      },
-      {
-        "title": "Congressional Elections",
-        "time_utc": "10:16 UTC",
-        "impact": "High",
-        "hours_until": 3.8,
-        "forecast": "",
-        "previous": ""
+        "hours_until": 20.1,
+        "forecast": "54.8",
+        "previous": "54.9"
       }
     ],
-    "risk_level": "medium",
-    "hours_until_next": 3.5,
-    "event_count_24h": 2
+    "risk_level": "low",
+    "hours_until_next": 20.1,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -47,15 +39,15 @@
   },
   "trending": {
     "trending_coins": [
+      "SNOWMOON",
+      "Super Pepe",
       "AudaCity",
-      "NEAR Protocol",
-      "Monad",
-      "Bitcoin",
+      "Pearl",
       "Pudgy Penguins",
-      "Zcash",
-      "Aave"
+      "Kinetiq",
+      "NEAR Protocol"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

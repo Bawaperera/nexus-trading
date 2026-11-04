@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-04T04:06:57.475261+00:00",
+  "timestamp": "2026-11-04T12:42:36.872681+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "ISM Services PMI",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 10.9,
+        "hours_until": 2.3,
         "forecast": "54.8",
         "previous": "54.9"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 10.9,
+    "hours_until_next": 2.3,
     "event_count_24h": 1
   },
   "social": {
@@ -40,12 +40,12 @@
   "trending": {
     "trending_coins": [
       "AudaCity",
-      "Hyperliquid",
-      "NEAR Protocol",
-      "Akedo",
+      "Official Trump",
       "Bitcoin",
+      "NEAR Protocol",
       "Pudgy Penguins",
-      "Monero"
+      "Lighter",
+      "Sui"
     ],
     "btc_in_trending": true,
     "trend_count": 7

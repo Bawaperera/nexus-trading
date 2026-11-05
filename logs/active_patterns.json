@@ -1,82 +1,11 @@
 {
-  "scan_time": "2026-11-05T08:47:42.984854+00:00",
-  "btc_price": 80441.77,
+  "scan_time": "2026-11-05T16:59:01.930973+00:00",
+  "btc_price": 76286.43,
   "daily_trend": "bearish",
-  "4h_trend": "bullish",
-  "weekly_trend": "bullish",
-  "bull_count": 3,
+  "4h_trend": "neutral",
+  "weekly_trend": "neutral",
+  "bull_count": 0,
   "fg_value": 50,
-  "sentiment_score": 0.0947,
-  "patterns": [
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "4h",
-      "status": "RETEST_CONFIRMED",
-      "entry": 78734.62,
-      "stop_loss": 78148.74,
-      "target": 81861.77,
-      "risk_reward": 5.34,
-      "confidence": 0.75,
-      "score": 75,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": true,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 8,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+8 Volume 1.6\u00d7 average",
-        "+7 RSI 51 (neutral)",
-        "+6 Sentiment +0.09"
-      ]
-    },
-    {
-      "name": "double_bottom",
-      "direction": "bullish",
-      "timeframe": "1h",
-      "status": "AWAITING_RETEST",
-      "entry": 77979.31,
-      "stop_loss": 75585.51,
-      "target": 80351.16,
-      "risk_reward": 0.99,
-      "confidence": 0.75,
-      "score": 63,
-      "n_confluences": 5,
-      "tradeable_signal": true,
-      "tradeable_autotrade": false,
-      "already_traded": true,
-      "component_scores": {
-        "pattern": 19,
-        "mtf": 15,
-        "retest": 8,
-        "volume": 8,
-        "rsi": 7,
-        "sentiment": 6,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+19 Pattern confidence 75%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+8 Status: AWAITING_RETEST",
-        "+8 Volume 1.6\u00d7 average",
-        "+7 RSI 51 (neutral)",
-        "+6 Sentiment +0.09",
-        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
-      ]
-    }
-  ],
-  "last_entry_check": "2026-11-05T09:50:57.258857+00:00"
+  "sentiment_score": -0.1731,
+  "patterns": []
 }

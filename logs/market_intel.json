@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T02:59:34.070025+00:00",
+  "timestamp": "2026-11-06T10:31:11.689355+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Average Hourly Earnings m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.5,
+        "hours_until": 3.0,
         "forecast": "0.3%",
         "previous": "0.1%"
       },
@@ -28,7 +28,7 @@
         "title": "Non-Farm Employment Change",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.5,
+        "hours_until": 3.0,
         "forecast": "65K",
         "previous": "29K"
       },
@@ -36,7 +36,7 @@
         "title": "Unemployment Rate",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 10.5,
+        "hours_until": 3.0,
         "forecast": "4.2%",
         "previous": "4.2%"
       },
@@ -44,7 +44,7 @@
         "title": "Prelim UoM Consumer Sentiment",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.0,
+        "hours_until": 4.5,
         "forecast": "48.1",
         "previous": "46.3"
       },
@@ -52,13 +52,13 @@
         "title": "Prelim UoM Inflation Expectations",
         "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 12.0,
+        "hours_until": 4.5,
         "forecast": "",
         "previous": "4.7%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 10.5,
+    "hours_until_next": 3.0,
     "event_count_24h": 5
   },
   "social": {
@@ -71,13 +71,13 @@
   },
   "trending": {
     "trending_coins": [
+      "DENIM",
+      "Solana",
       "Bitcoin",
-      "Hyperliquid",
-      "Pearl",
       "Pudgy Penguins",
-      "Ethereum",
-      "NEAR Protocol",
-      "Lighter"
+      "Sui",
+      "Injective",
+      "Kinetiq"
     ],
     "btc_in_trending": true,
     "trend_count": 7

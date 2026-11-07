@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-07T02:29:00.541782+00:00",
+  "timestamp": "2026-11-07T09:27:51.858101+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "COGE COIN",
+      "Dacity Coin",
       "Bitcoin",
-      "Zcash",
-      "Pearl",
+      "Harmony",
       "Akedo",
-      "Sui",
-      "Solana"
+      "NEAR Protocol",
+      "Hyperliquid",
+      "Ethereum"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T03:37:57.913627+00:00",
+  "timestamp": "2026-11-08T10:56:26.561950+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "WASTED",
+      "Hyperliquid",
       "Bitcoin",
-      "Worldcoin",
-      "Pudgy Penguins",
-      "XRP",
-      "Akedo",
-      "UnifAI Network",
-      "Official Trump"
+      "Kinetiq",
+      "STONK",
+      "Pearl",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": true,
     "trend_count": 7

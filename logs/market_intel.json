@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-08T10:56:26.561950+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-11-08T16:53:40.344028+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
+      "Be Like Jos\u00e9",
       "WASTED",
-      "Hyperliquid",
-      "Bitcoin",
-      "Kinetiq",
-      "STONK",
+      "Dacity Coin",
       "Pearl",
-      "Pudgy Penguins"
+      "Hyperliquid",
+      "Pump.fun",
+      "Kinetiq"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

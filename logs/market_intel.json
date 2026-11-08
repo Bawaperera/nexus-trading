@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-07T23:29:44.616696+00:00",
+  "timestamp": "2026-11-08T03:37:57.913627+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Dacity Coin",
-      "Pudgy Penguins",
-      "Kinetiq",
-      "NEAR Protocol",
       "Bitcoin",
-      "Hyperliquid",
-      "STONK"
+      "Worldcoin",
+      "Pudgy Penguins",
+      "XRP",
+      "Akedo",
+      "UnifAI Network",
+      "Official Trump"
     ],
     "btc_in_trending": true,
     "trend_count": 7

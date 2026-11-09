@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-09T07:29:44.732224+00:00",
+  "timestamp": "2026-11-09T18:02:26.114972+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -15,10 +15,35 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [],
-    "risk_level": "clear",
-    "hours_until_next": 999,
-    "event_count_24h": 0
+    "upcoming_events": [
+      {
+        "title": "FOMC Member Waller Speaks",
+        "time_utc": "04:00 UTC",
+        "impact": "Medium",
+        "hours_until": 15.0,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "Core CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.5,
+        "forecast": "0.2%",
+        "previous": "0.3%"
+      },
+      {
+        "title": "CPI m/m",
+        "time_utc": "08:30 UTC",
+        "impact": "High",
+        "hours_until": 19.5,
+        "forecast": "0.3%",
+        "previous": "0.6%"
+      }
+    ],
+    "risk_level": "medium",
+    "hours_until_next": 15.0,
+    "event_count_24h": 3
   },
   "social": {
     "sentiment": 0.0,
@@ -30,13 +55,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Dacity Coin",
+      "Avalanche",
       "Bitcoin",
-      "Janction",
-      "Ethereum",
-      "Hyperliquid",
-      "Pearl",
-      "Pudgy Penguins",
-      "NEAR Protocol"
+      "Ondo",
+      "Kinetiq",
+      "Zcash",
+      "Pearl"
     ],
     "btc_in_trending": true,
     "trend_count": 7

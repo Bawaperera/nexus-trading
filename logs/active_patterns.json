@@ -1,46 +1,11 @@
 {
-  "scan_time": "2026-11-11T10:05:54.012593+00:00",
-  "btc_price": 73676.24,
+  "scan_time": "2026-11-11T18:14:45.616155+00:00",
+  "btc_price": 74349.29,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "neutral",
-  "bull_count": 0,
+  "bull_count": 1,
   "fg_value": 29,
-  "sentiment_score": -0.1197,
-  "patterns": [
-    {
-      "name": "descending_triangle",
-      "direction": "bearish",
-      "timeframe": "daily",
-      "status": "RETEST_CONFIRMED",
-      "entry": 74982.86,
-      "stop_loss": 75967.67,
-      "target": 62974.56,
-      "risk_reward": 12.19,
-      "confidence": 0.65,
-      "score": 61,
-      "n_confluences": 3,
-      "tradeable_signal": true,
-      "tradeable_autotrade": true,
-      "already_traded": false,
-      "component_scores": {
-        "pattern": 16,
-        "mtf": 15,
-        "retest": 20,
-        "volume": 0,
-        "rsi": 0,
-        "sentiment": 10,
-        "onchain": 0,
-        "memory": 0
-      },
-      "reasons": [
-        "+16 Pattern confidence 65%",
-        "+15 MTF 3/4 timeframes aligned",
-        "+20 Status: RETEST_CONFIRMED",
-        "+0 Volume 1.0\u00d7 average",
-        "+0 RSI 34 (risky)",
-        "+10 Sentiment -0.12"
-      ]
-    }
-  ]
+  "sentiment_score": -0.1105,
+  "patterns": []
 }

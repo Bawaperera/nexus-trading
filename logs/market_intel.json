@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-10T22:05:41.292857+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-11-11T02:26:27.863550+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Super Inu",
-      "Dacity Coin",
+      "Bitcoin",
+      "Pudgy Penguins",
+      "Kinetiq",
       "Zcash",
-      "Initia",
-      "Hyperliquid",
-      "Avalanche",
-      "Gram (prev. Toncoin)"
+      "Lighter",
+      "Pearl",
+      "Venice Token"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

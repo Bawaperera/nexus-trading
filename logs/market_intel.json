@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T02:26:27.863550+00:00",
+  "timestamp": "2026-11-11T10:05:53.339136+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Bitcoin",
-      "Pudgy Penguins",
-      "Kinetiq",
       "Zcash",
+      "Bitcoin",
       "Lighter",
+      "Super Inu",
+      "Sui",
       "Pearl",
-      "Venice Token"
+      "Gram (prev. Toncoin)"
     ],
     "btc_in_trending": true,
     "trend_count": 7

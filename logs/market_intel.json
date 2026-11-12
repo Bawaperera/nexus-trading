@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T17:48:54.043037+00:00",
+  "timestamp": "2026-11-12T23:01:03.467985+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.7,
+        "hours_until": 14.5,
         "forecast": "0.3%",
         "previous": "0.7%"
       },
@@ -28,13 +28,13 @@
         "title": "PPI m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 19.7,
+        "hours_until": 14.5,
         "forecast": "0.4%",
         "previous": "1.3%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 19.7,
+    "hours_until_next": 14.5,
     "event_count_24h": 2
   },
   "social": {
@@ -51,9 +51,9 @@
       "Seppuku",
       "AudaCity",
       "Bitcoin",
-      "Pudgy Penguins",
-      "Ethereum",
-      "Pearl"
+      "Zcash",
+      "Pearl",
+      "Pudgy Penguins"
     ],
     "btc_in_trending": true,
     "trend_count": 7

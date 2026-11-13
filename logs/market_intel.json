@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-11-13T12:44:31.193265+00:00",
+  "timestamp": "2026-11-13T20:11:50.623497+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.8h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -17,27 +15,10 @@
     "top_trader_ls": 1.0
   },
   "macro": {
-    "upcoming_events": [
-      {
-        "title": "Core PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.3%",
-        "previous": "0.7%"
-      },
-      {
-        "title": "PPI m/m",
-        "time_utc": "08:30 UTC",
-        "impact": "High",
-        "hours_until": 0.8,
-        "forecast": "0.4%",
-        "previous": "1.3%"
-      }
-    ],
-    "risk_level": "high",
-    "hours_until_next": 0.8,
-    "event_count_24h": 2
+    "upcoming_events": [],
+    "risk_level": "clear",
+    "hours_until_next": 999,
+    "event_count_24h": 0
   },
   "social": {
     "sentiment": 0.0,
@@ -50,12 +31,12 @@
   "trending": {
     "trending_coins": [
       "Seppuku",
-      "Bitcoin",
+      "ni hao cat",
+      "ni hao cat",
       "Akedo",
-      "XRP",
-      "Aave",
-      "Hyperliquid",
-      "Lighter"
+      "Pudgy Penguins",
+      "Bitcoin",
+      "Pepe"
     ],
     "btc_in_trending": true,
     "trend_count": 7

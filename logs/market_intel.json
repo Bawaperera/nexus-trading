@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T20:41:03.389748+00:00",
+  "timestamp": "2026-11-16T00:33:52.434765+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,13 +20,13 @@
         "title": "Fed Chairman Warsh Speaks",
         "time_utc": "12:00 UTC",
         "impact": "High",
-        "hours_until": 20.3,
+        "hours_until": 16.4,
         "forecast": "",
         "previous": ""
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 20.3,
+    "hours_until_next": 16.4,
     "event_count_24h": 1
   },
   "social": {
@@ -39,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "ni hao cat",
-      "Macca the Gator",
-      "Gato The Cat",
-      "AudaCity",
-      "Identity.md",
       "Pudgy Penguins",
-      "Bitcoin"
+      "Aster",
+      "Solana",
+      "Bitcoin",
+      "Hedera",
+      "Hyperliquid",
+      "Macca the Gator"
     ],
     "btc_in_trending": true,
     "trend_count": 7

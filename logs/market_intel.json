@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17T01:20:25.095197+00:00",
+  "timestamp": "2026-11-17T09:56:15.491589+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Core Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.2,
+        "hours_until": 3.6,
         "forecast": "0.4%",
         "previous": "0.9%"
       },
@@ -28,13 +28,13 @@
         "title": "Retail Sales m/m",
         "time_utc": "08:30 UTC",
         "impact": "High",
-        "hours_until": 12.2,
+        "hours_until": 3.6,
         "forecast": "0.1%",
         "previous": "0.8%"
       }
     ],
     "risk_level": "medium",
-    "hours_until_next": 12.2,
+    "hours_until_next": 3.6,
     "event_count_24h": 2
   },
   "social": {
@@ -48,12 +48,12 @@
   "trending": {
     "trending_coins": [
       "Backpack",
-      "Bless",
-      "Bittensor",
-      "Pump.fun",
-      "Hyperliquid",
+      "Solana",
       "Lighter",
-      "Bitcoin"
+      "Bitcoin",
+      "EVAA Protocol",
+      "Ethereum",
+      "NEAR Protocol"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,11 +1,9 @@
 {
-  "timestamp": "2026-11-18T18:31:30.947709+00:00",
+  "timestamp": "2026-11-19T00:51:45.706510+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
-  "warnings": [
-    "\u26a0\ufe0f High-impact macro event in 0.5h \u2014 auto-trade confidence reduced"
-  ],
+  "warnings": [],
   "derivatives": {
     "funding_rate": 0.0,
     "funding_signal": "Neutral \u2014 balanced",
@@ -19,18 +17,10 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "FOMC Meeting Minutes",
-        "time_utc": "14:00 UTC",
-        "impact": "High",
-        "hours_until": 0.5,
-        "forecast": "",
-        "previous": ""
-      },
-      {
         "title": "Philly Fed Manufacturing Index",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 19.0,
+        "hours_until": 12.6,
         "forecast": "20.6",
         "previous": "20.9"
       },
@@ -38,14 +28,14 @@
         "title": "Unemployment Claims",
         "time_utc": "08:30 UTC",
         "impact": "Medium",
-        "hours_until": 19.0,
+        "hours_until": 12.6,
         "forecast": "198K",
         "previous": "200K"
       }
     ],
-    "risk_level": "high",
-    "hours_until_next": 0.5,
-    "event_count_24h": 3
+    "risk_level": "low",
+    "hours_until_next": 12.6,
+    "event_count_24h": 2
   },
   "social": {
     "sentiment": 0.0,
@@ -57,11 +47,11 @@
   },
   "trending": {
     "trending_coins": [
-      "WASTED",
-      "Wanted Star",
-      "Lucia",
-      "Official Trump",
+      "Backpack",
+      "Hyperliquid",
+      "NEAR Protocol",
       "Pearl",
+      "Zcash",
       "Pudgy Penguins",
       "Bitcoin"
     ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T22:53:10.871913+00:00",
+  "timestamp": "2026-11-21T03:39:46.516898+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
+      "Chunkee The Manatee",
       "Bitcoin",
       "Hyperliquid",
-      "Solana",
+      "Ethereum",
       "Pearl",
-      "Official Trump",
-      "Backpack",
-      "Chunkee The Manatee"
+      "Pudgy Penguins",
+      "EVAA Protocol"
     ],
     "btc_in_trending": true,
     "trend_count": 7

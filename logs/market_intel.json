@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21T11:55:49.578583+00:00",
+  "timestamp": "2026-11-21T18:30:37.986907+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "WASTED",
-      "Bitcoin",
-      "Sui",
-      "Hyperliquid",
-      "Solana",
       "Zcash",
-      "Bittensor"
+      "WASTED",
+      "Wanted Star",
+      "Backpack",
+      "Chunkee The Manatee",
+      "Pudgy Penguins",
+      "Bitcoin"
     ],
     "btc_in_trending": true,
     "trend_count": 7

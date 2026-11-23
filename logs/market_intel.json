@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23T01:16:28.114930+00:00",
+  "timestamp": "2026-11-23T10:01:59.819172+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -20,7 +20,7 @@
         "title": "Flash Manufacturing PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 13.5,
+        "hours_until": 4.7,
         "forecast": "54.5",
         "previous": "56.0"
       },
@@ -28,13 +28,13 @@
         "title": "Flash Services PMI",
         "time_utc": "09:45 UTC",
         "impact": "Medium",
-        "hours_until": 13.5,
+        "hours_until": 4.7,
         "forecast": "55.6",
         "previous": "57.9"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 13.5,
+    "hours_until_next": 4.7,
     "event_count_24h": 2
   },
   "social": {
@@ -47,13 +47,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Venice Token",
+      "Minelius",
       "Pearl",
-      "Hyperliquid",
-      "Ethereum",
-      "Bitcoin",
+      "Venice Token",
       "Pudgy Penguins",
-      "Zcash"
+      "Hyperliquid",
+      "Bitcoin",
+      "Official Trump"
     ],
     "btc_in_trending": true,
     "trend_count": 7

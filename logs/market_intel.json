@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23T10:01:59.819172+00:00",
+  "timestamp": "2026-11-23T22:20:08.563525+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -17,25 +17,17 @@
   "macro": {
     "upcoming_events": [
       {
-        "title": "Flash Manufacturing PMI",
-        "time_utc": "09:45 UTC",
+        "title": "CB Consumer Confidence",
+        "time_utc": "10:00 UTC",
         "impact": "Medium",
-        "hours_until": 4.7,
-        "forecast": "54.5",
-        "previous": "56.0"
-      },
-      {
-        "title": "Flash Services PMI",
-        "time_utc": "09:45 UTC",
-        "impact": "Medium",
-        "hours_until": 4.7,
-        "forecast": "55.6",
-        "previous": "57.9"
+        "hours_until": 16.7,
+        "forecast": "92.4",
+        "previous": "91.7"
       }
     ],
     "risk_level": "low",
-    "hours_until_next": 4.7,
-    "event_count_24h": 2
+    "hours_until_next": 16.7,
+    "event_count_24h": 1
   },
   "social": {
     "sentiment": 0.0,
@@ -47,13 +39,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Minelius",
+      "Derive",
       "Pearl",
-      "Venice Token",
-      "Pudgy Penguins",
-      "Hyperliquid",
       "Bitcoin",
-      "Official Trump"
+      "Pudgy Penguins",
+      "Solana",
+      "NEAR Protocol",
+      "Venice Token"
     ],
     "btc_in_trending": true,
     "trend_count": 7

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-26T13:24:01.839010+00:00",
-  "composite_signal": 0.0,
+  "timestamp": "2026-11-26T22:42:49.586682+00:00",
+  "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -30,15 +30,15 @@
   },
   "trending": {
     "trending_coins": [
-      "Pepe Intelligence",
-      "Pepe Wojak",
+      "Pudgy Penguins",
       "Tezos",
       "Zylo Ecosystem",
-      "Non-Playable Shiba",
-      "Pudgy Penguins",
-      "Monad"
+      "Solana",
+      "Zcash",
+      "Akash Network",
+      "Bitcoin"
     ],
-    "btc_in_trending": false,
+    "btc_in_trending": true,
     "trend_count": 7
   }
 }

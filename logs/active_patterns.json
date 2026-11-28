@@ -1,11 +1,116 @@
 {
-  "scan_time": "2026-11-28T05:41:01.627788+00:00",
-  "btc_price": 59713.87,
+  "scan_time": "2026-11-28T14:48:44.075869+00:00",
+  "btc_price": 59181.52,
   "daily_trend": "bearish",
   "4h_trend": "bearish",
   "weekly_trend": "bearish",
   "bull_count": 0,
   "fg_value": 10,
-  "sentiment_score": -0.1446,
-  "patterns": []
+  "sentiment_score": -0.3582,
+  "patterns": [
+    {
+      "name": "head_and_shoulders",
+      "direction": "bearish",
+      "timeframe": "1h",
+      "status": "BREAKOUT",
+      "entry": 59302.5,
+      "stop_loss": 60227.96,
+      "target": 56505.01,
+      "risk_reward": 3.02,
+      "confidence": 0.75,
+      "score": 69,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": true,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 19,
+        "mtf": 20,
+        "retest": 5,
+        "volume": 15,
+        "rsi": 0,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+19 Pattern confidence 75%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+15 Volume 2.5\u00d7 average",
+        "+0 RSI 26 (risky)",
+        "+10 Sentiment -0.36"
+      ]
+    },
+    {
+      "name": "descending_triangle",
+      "direction": "bearish",
+      "timeframe": "daily",
+      "status": "BREAKOUT",
+      "entry": 58851.54,
+      "stop_loss": 85084.88,
+      "target": 32852.1,
+      "risk_reward": 0.99,
+      "confidence": 0.65,
+      "score": 66,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 20,
+        "retest": 5,
+        "volume": 15,
+        "rsi": 0,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+15 Volume 2.5\u00d7 average",
+        "+0 RSI 26 (risky)",
+        "+10 Sentiment -0.36",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    },
+    {
+      "name": "descending_triangle",
+      "direction": "bearish",
+      "timeframe": "1h",
+      "status": "BREAKOUT",
+      "entry": 59052.09,
+      "stop_loss": 62127.95,
+      "target": 56004.19,
+      "risk_reward": 0.99,
+      "confidence": 0.65,
+      "score": 66,
+      "n_confluences": 4,
+      "tradeable_signal": true,
+      "tradeable_autotrade": false,
+      "already_traded": false,
+      "component_scores": {
+        "pattern": 16,
+        "mtf": 20,
+        "retest": 5,
+        "volume": 15,
+        "rsi": 0,
+        "sentiment": 10,
+        "onchain": 0,
+        "memory": 0
+      },
+      "reasons": [
+        "+16 Pattern confidence 65%",
+        "+20 MTF 4/4 timeframes aligned",
+        "+5 Status: BREAKOUT",
+        "+15 Volume 2.5\u00d7 average",
+        "+0 RSI 26 (risky)",
+        "+10 Sentiment -0.36",
+        "R:R 1.0 < 2.0 min: auto-trade blocked (unlocks at RETEST_CONFIRMED)"
+      ]
+    }
+  ]
 }

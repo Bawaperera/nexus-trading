@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-28T05:41:01.624185+00:00",
-  "composite_signal": 0.02,
+  "timestamp": "2026-11-28T14:48:42.205475+00:00",
+  "composite_signal": 0.0,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
   "warnings": [],
@@ -31,14 +31,14 @@
   "trending": {
     "trending_coins": [
       "World Liberty Financial",
-      "Centrifuge",
-      "Hyperliquid",
-      "Montra",
-      "Bitcoin",
-      "Portal",
-      "peaq"
+      "Pudgy Penguins",
+      "PumpChan",
+      "Variational X",
+      "USD1",
+      "Zylo Ecosystem",
+      "Official Trump"
     ],
-    "btc_in_trending": true,
+    "btc_in_trending": false,
     "trend_count": 7
   }
 }

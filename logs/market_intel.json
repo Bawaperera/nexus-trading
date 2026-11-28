@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27T23:05:39.715240+00:00",
+  "timestamp": "2026-11-28T05:41:01.624185+00:00",
   "composite_signal": 0.02,
   "signal_label": "Neutral",
   "onchain_score_adj": 0,
@@ -30,13 +30,13 @@
   },
   "trending": {
     "trending_coins": [
-      "Pudgy Penguins",
-      "Bitcoin",
-      "Zylo Ecosystem",
+      "World Liberty Financial",
+      "Centrifuge",
       "Hyperliquid",
+      "Montra",
+      "Bitcoin",
       "Portal",
-      "Pearl",
-      "Monero"
+      "peaq"
     ],
     "btc_in_trending": true,
     "trend_count": 7
